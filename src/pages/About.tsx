@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
+import partenaireImage from "@/assets/partenariat-handshake.png";
 
 const About = () => {
   const scrollToContact = () => {
@@ -218,13 +219,12 @@ const About = () => {
               </Card>
             </div>
             
-            <div className="bg-gradient-to-br from-primary/10 to-sustainable/10 p-8 rounded-lg">
-              <div className="aspect-square bg-background/50 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <Handshake className="text-primary mx-auto mb-4" size={64} />
-                  <p className="text-muted-foreground">2 personnes professionnelles qui se tapent dans la main</p>
-                </div>
-              </div>
+            <div className="relative">
+              <img 
+                src={partenaireImage} 
+                alt="Deux professionnels se tapent dans la main pour célébrer leur partenariat"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
