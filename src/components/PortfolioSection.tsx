@@ -170,7 +170,7 @@ export const PortfolioSection = () => {
         {/* Statistics */}
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">50+</div>
+            <div className="text-4xl font-bold text-primary mb-2">100+</div>
             <p className="text-muted-foreground">Startups accompagnées</p>
           </div>
           <div className="text-center">
@@ -182,8 +182,8 @@ export const PortfolioSection = () => {
             <p className="text-muted-foreground">Années d'expérience</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">6</div>
-            <p className="text-muted-foreground">Partenaires stratégiques</p>
+            <div className="text-4xl font-bold text-primary mb-2">16M€</div>
+            <p className="text-muted-foreground">Financements cumulés pour un client fidèle</p>
           </div>
         </div>
 

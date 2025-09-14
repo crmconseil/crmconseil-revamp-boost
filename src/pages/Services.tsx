@@ -155,7 +155,7 @@ const Services = () => {
       </section>
 
       {/* Commercial Services Section */}
-      <section className="py-20">
+      <section id="commercial-services" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">Services Commerciaux</h2>
@@ -190,7 +190,7 @@ const Services = () => {
       </section>
 
       {/* RSE Services Section */}
-      <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
+      <section id="rse-services" className="py-20 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">Services RSE & Durabilité</h2>

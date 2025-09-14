@@ -99,6 +99,19 @@ export const ServicesSection = () => {
                 </div>
               </Card>
             </div>
+            
+            {/* En savoir plus button for Commercial */}
+            <div className="text-center mt-8">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="group"
+                onClick={() => window.location.href = '/services#commercial-services'}
+              >
+                En savoir plus
+                <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+              </Button>
+            </div>
           </div>
 
           {/* RSE/Sustainability Services */}
@@ -164,12 +177,30 @@ export const ServicesSection = () => {
                 </div>
               </Card>
             </div>
+            
+            {/* En savoir plus button for RSE */}
+            <div className="text-center mt-8">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="group"
+                onClick={() => window.location.href = '/services#rse-services'}
+              >
+                En savoir plus
+                <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+              </Button>
+            </div>
           </div>
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
-          <Button variant="sustainable" size="lg" className="group">
+        <div className="text-center mt-16">
+          <Button 
+            variant="sustainable" 
+            size="lg" 
+            className="group"
+            onClick={() => window.location.href = '/contact'}
+          >
             Discuter de votre projet
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </Button>
