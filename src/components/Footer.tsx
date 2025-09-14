@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {/* Logo & Mission */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
@@ -18,6 +18,18 @@ export const Footer = () => {
             <div className="flex items-center space-x-2 text-primary-foreground/80">
               <Leaf size={16} />
               <span className="text-xs">Certifié Développement Durable MIT</span>
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-lg">Navigation</h3>
+            <div className="space-y-2 text-sm text-primary-foreground/80">
+              <div><a href="/" className="hover:text-primary-foreground transition-colors">Accueil</a></div>
+              <div><a href="/services" className="hover:text-primary-foreground transition-colors">Services</a></div>
+              <div><a href="/a-propos" className="hover:text-primary-foreground transition-colors">À propos</a></div>
+              <div><a href="/contact" className="hover:text-primary-foreground transition-colors">Contact</a></div>
+              <div><a href="/engagements-rse" className="hover:text-primary-foreground transition-colors">Nos engagements RSE</a></div>
             </div>
           </div>
 
