@@ -1,314 +1,343 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { 
-  Users, 
-  TrendingUp, 
-  Target,
-  Handshake,
-  Calendar,
-  Leaf,
-  ArrowRight,
-  Lightbulb,
-  Award,
-  CheckCircle,
-  Zap,
-  Cpu,
-  Activity,
-  Cog,
-  Globe,
-  BarChart3,
-  Settings,
-  FileText,
-  Presentation,
-  MessageSquare,
-  Phone
-} from "lucide-react";
-import servicesImage from "@/assets/services-background.jpg";
+import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award } from "lucide-react";
+import servicesBackground from "@/assets/services-background.jpg";
 
 const Services = () => {
-  const scrollToContact = () => {
-    window.location.href = "/#contact";
-  };
-
-  const commercialServices = [
-    {
-      icon: Target,
-      title: "Ciblage / Acquisition",
-      description: "Identification et qualification de prospects qualifiés pour optimiser votre taux de conversion",
-      features: ["Analyse de marché", "Segmentation clients", "Stratégies d'acquisition", "Qualification prospects"]
-    },
-    {
-      icon: TrendingUp,
-      title: "Accélération / Valorisation",
-      description: "Optimisation du cycle de vente et valorisation de votre proposition de valeur",
-      features: ["Optimisation du tunnel de vente", "Argumentation commerciale", "Techniques de closing", "Suivi performance"]
-    },
-    {
-      icon: Settings,
-      title: "Optimisation des process",
-      description: "Structuration et automatisation de vos processus commerciaux pour une efficacité maximale",
-      features: ["Mise en place CRM", "Automatisation workflow", "KPIs commerciaux", "Formation équipes"]
-    }
-  ];
-
-  const rseServices = [
-    {
-      icon: BarChart3,
-      title: "Bilan Emissions Directes - Scope 1",
-      description: "Mesure précise de vos émissions directes pour un premier niveau de diagnostic environnemental",
-      features: ["Audit énergétique", "Calcul empreinte carbone", "Plan d'action immédiat", "Reporting réglementaire"]
-    },
-    {
-      icon: Globe,
-      title: "Bilan RSE Complet - Scope 1, 2, 3",
-      description: "Analyse complète de votre impact environnemental et social avec stratégie d'amélioration",
-      features: ["Bilan carbone complet", "Matrice de matérialité", "Stratégie RSE", "ROI développement durable"]
-    },
-    {
-      icon: Leaf,
-      title: "Bilan Impact Biodiversité",
-      description: "Évaluation de votre impact sur la biodiversité avec plan d'action concret",
-      features: ["Diagnostic biodiversité", "Mesure d'impact", "Plan d'amélioration", "Compensation carbone"]
-    }
-  ];
-
-  const operationalServices = [
-    {
-      icon: Handshake,
-      title: "Audit externe et accompagnement terrain",
-      description: "Analyse neutre de vos processus + accompagnement opérationnel lors de rendez-vous prospects"
-    },
-    {
-      icon: Cog,
-      title: "Configuration pratique d'outils CRM/ERP",
-      description: "Installation, paramétrage et formation sur site pour une prise en main immédiate"
-    },
-    {
-      icon: FileText,
-      title: "Création de supports commerciaux sur mesure",
-      description: "Slides de présentation, argumentaires et outils de vente adaptés à vos prospects"
-    },
-    {
-      icon: Users,
-      title: "Formations terrain et coaching",
-      description: "Formation de vos équipes directement sur leurs projets réels avec suivi personnalisé"
-    }
-  ];
-
-  const processSteps = [
-    {
-      step: "01",
-      title: "Diagnostic Initial",
-      description: "Audit complet de votre situation commerciale et RSE actuelle",
-      icon: Presentation
-    },
-    {
-      step: "02", 
-      title: "Stratégie Personnalisée",
-      description: "Élaboration d'un plan d'action sur mesure adapté à vos objectifs",
-      icon: Lightbulb
-    },
-    {
-      step: "03",
-      title: "Mise en Œuvre Terrain",
-      description: "Accompagnement opérationnel direct avec vos équipes",
-      icon: Settings
-    },
-    {
-      step: "04",
-      title: "Suivi & Optimisation",
-      description: "Mesure des résultats et ajustements pour une amélioration continue",
-      icon: BarChart3
-    }
-  ];
-
   return (
     <div className="min-h-screen">
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-20 py-20 overflow-hidden">
+      <section className="relative pt-20 py-20">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${servicesImage})` }}
-        >
-          <div className="absolute inset-0 bg-background/90"></div>
-        </div>
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+          style={{ backgroundImage: `url(${servicesBackground})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-sustainable/20 to-primary/20" />
         
-        <div className="relative z-10 container mx-auto px-4">
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Nos{" "}
+              Expert{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
-                Services
+                CRM & Développement Commercial
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-              Découvrez notre gamme complète de services alliant performance commerciale et responsabilité environnementale. 
-              Un accompagnement terrain et opérationnel pour transformer vos défis en opportunités durables.
+              CRM Conseil accompagne les startups et PMEs innovantes dans l'augmentation de leurs résultats commerciaux par une approche concrète et terrain : création de slides sur mesure, accompagnement lors de vos rendez-vous prospects grands comptes, configuration pratique d'outils CRM/ERP/IA et formations commerciales opérationnelles.
             </p>
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
+              <a 
+                href="#contact" 
+                className="inline-flex items-center px-8 py-3 bg-sustainable hover:bg-sustainable/90 text-white rounded-lg font-medium transition-colors"
+              >
+                Audit commercial gratuit
+              </a>
+              <a 
+                href="#accompagnement" 
+                className="inline-flex items-center px-8 py-3 border border-sustainable text-sustainable hover:bg-sustainable hover:text-white rounded-lg font-medium transition-colors"
+              >
+                Découvrir nos services
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Commercial Services Section */}
-      <section id="commercial-services" className="py-20">
+      {/* Services principaux */}
+      <section id="accompagnement" className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Services Commerciaux</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
+              Accompagnement Terrain CRM, ERP et Développement Commercial B2B
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Optimisez votre performance commerciale avec nos méthodes éprouvées adaptées aux entreprises innovantes.
+              CRM Conseil vous accompagne concrètement sur le terrain avec des services opérationnels : création de supports sur mesure, accompagnement lors de rendez-vous prospects, configuration pratique d'outils et formations directement sur vos projets réels pour des résultats immédiats.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {commercialServices.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <Card key={index} className="p-8 hover:shadow-lg transition-all duration-300 group">
-                  <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <IconComponent className="text-primary" size={32} />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4 text-center">{service.title}</h3>
-                  <p className="text-muted-foreground mb-6 text-center">{service.description}</p>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                        <CheckCircle className="text-primary mr-2 flex-shrink-0" size={16} />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </Card>
-              );
-            })}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Optimisation commerciale */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <TrendingUp className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Optimisation Commerciale Terrain</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Création de slides personnalisées, accompagnement lors de rendez-vous prospects, optimisation de vos processus de vente B2B et formations opérationnelles de vos équipes sur leurs projets réels.
+              </p>
+            </div>
+
+            {/* Configuration CRM/ERP */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Settings className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Configuration CRM, ERP & IA</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Installation, paramétrage et formation sur site de vos outils CRM, ERP et IA. Accompagnement terrain pour une prise en main immédiate et une optimisation de vos processus commerciaux B2B.
+              </p>
+            </div>
+
+            {/* Stratégies RSE */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Leaf className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Stratégies RSE Commerciales</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Création de supports de communication RSE, accompagnement terrain pour intégrer la durabilité dans vos argumentaires commerciaux B2B et formation de vos équipes aux enjeux environnementaux.
+              </p>
+            </div>
+
+            {/* Levée de fonds */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Target className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Valorisation pour Levée de Fonds</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Création de slides de présentation sur mesure, coaching pour vos rendez-vous investisseurs et préparation opérationnelle aux questions critiques pour maximiser vos chances de succès.
+              </p>
+            </div>
+
+            {/* Prospection */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Users className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Prospection & Leads B2B</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Accompagnement opérationnel dans vos actions de prospection grands comptes, création d'argumentaires personnalisés et qualification terrain de vos prospects pour optimiser votre taux de conversion.
+              </p>
+            </div>
+
+            {/* Transformation digitale */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Globe className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Transformation Digitale</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Formation sur site de vos équipes, accompagnement dans l'adoption de nouveaux outils et coaching opérationnel pour faciliter la transformation de vos processus commerciaux B2B.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* RSE Services Section */}
-      <section id="rse-services" className="py-20 bg-gradient-to-br from-secondary/30 to-background">
+      {/* Notre approche */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Services RSE & Durabilité</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Intégrez une démarche RSE performante et mesurable pour faire de la durabilité votre avantage concurrentiel.
-            </p>
-          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
+                Notre Approche Terrain
+              </h2>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {rseServices.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <Card key={index} className="p-8 hover:shadow-lg transition-all duration-300 group">
-                  <div className="bg-sustainable/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <IconComponent className="text-sustainable" size={32} />
+            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
+              <div className="space-y-6 text-lg leading-relaxed">
+                <p className="text-muted-foreground">
+                  CRM Conseil vous accompagne concrètement sur le terrain dans votre développement commercial B2B. Nous ne nous contentons pas de donner des conseils : <strong className="text-sustainable">nous nous intégrons temporairement à vos équipes</strong> pour créer vos supports de vente, vous accompagner lors de rendez-vous prospects stratégiques, configurer vos outils CRM/ERP et former vos équipes directement sur le terrain.
+                </p>
+                <p className="text-muted-foreground">
+                  Notre approche opérationnelle inclut la création de slides personnalisées, l'accompagnement physique lors de rendez-vous clients grands comptes, la mise en place pratique d'outils de pilotage commercial et l'optimisation concrète de vos processus de vente B2B.
+                </p>
+                <p className="text-muted-foreground">
+                  Cette approche terrain nous permet de comprendre vos enjeux réels et d'apporter des solutions pratiques immédiatement applicables. <strong className="text-sustainable">Finis les cabinets qui vous laissent seuls après leurs recommandations</strong> : CRM Conseil reste à vos côtés jusqu'à l'obtention de résultats concrets.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 mt-10">
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
+                    <span>Experts en CRM, ERP, développement commercial B2B</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4 text-center">{service.title}</h3>
-                  <p className="text-muted-foreground mb-6 text-center">{service.description}</p>
-                  <ul className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                        <CheckCircle className="text-sustainable mr-2 flex-shrink-0" size={16} />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </Card>
-              );
-            })}
+                  <div className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
+                    <span>Accompagnement opérationnel terrain</span>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
+                    <span>Intégration temporaire dans vos équipes</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
+                    <span>Formations pratiques et stratégies RSE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Operational Approach Section */}
-      <section className="py-20">
+      {/* Engagement RSE */}
+      <section className="py-16 bg-sustainable/5">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Notre Approche Opérationnelle</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Un accompagnement concret et personnalisé pour des résultats mesurables immédiatement.
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
+              Notre Engagement RSE et Développement Durable
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+              Chez CRM Conseil, nous appliquons nos propres conseils en stratégie RSE. Nos initiatives durables ne sont pas seulement un engagement, mais aussi un laboratoire d'expérimentation pour développer des stratégies RSE performantes que nous transmettons à nos clients.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {operationalServices.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
-                      <IconComponent className="text-primary" size={20} />
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground">{service.title}</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm">{service.description}</p>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 text-center">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Leaf className="w-6 h-6 text-sustainable" />
+              </div>
+              <h3 className="font-semibold mb-2">Énergie 100% Renouvelable</h3>
+              <p className="text-sm text-muted-foreground">Nos locaux fonctionnent exclusivement avec de l'énergie verte</p>
+            </div>
 
-      {/* Process Section */}
-      <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Notre Processus d'Accompagnement</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Une méthodologie éprouvée en 4 étapes pour garantir votre succès.
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 text-center">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Globe className="w-6 h-6 text-sustainable" />
+              </div>
+              <h3 className="font-semibold mb-2">Mobilité Douce</h3>
+              <p className="text-sm text-muted-foreground">Vélos électriques et programme de recyclage complet</p>
+            </div>
+
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 text-center">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Award className="w-6 h-6 text-sustainable" />
+              </div>
+              <h3 className="font-semibold mb-2">Formation MIT</h3>
+              <p className="text-sm text-muted-foreground">Équipes formées par MIT sur les stratégies durables</p>
+            </div>
+
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 text-center">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Handshake className="w-6 h-6 text-sustainable" />
+              </div>
+              <h3 className="font-semibold mb-2">Pacte National Monaco</h3>
+              <p className="text-sm text-muted-foreground">5 ans d'engagement pour la Transition Énergétique</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
+            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
+              <strong className="text-sustainable">Transformez votre RSE en Avantage Commercial</strong><br />
+              Nos propres initiatives RSE nous permettent de comprendre concrètement les enjeux et opportunités.
             </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => {
-              const IconComponent = step.icon;
-              return (
-                <Card key={index} className="p-6 text-center hover:shadow-lg transition-all duration-300 group relative">
-                  <div className="text-6xl font-bold text-primary/20 mb-4">{step.step}</div>
-                  <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <IconComponent className="text-primary" size={32} />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-primary/5 to-sustainable/5">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-foreground mb-6">
-            Prêt à booster votre performance ?
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Découvrons ensemble comment nos services peuvent transformer votre approche commerciale et RSE.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              variant="sustainable" 
-              size="lg" 
-              className="group"
-              onClick={scrollToContact}
+            <a 
+              href="#contact" 
+              className="inline-flex items-center px-8 py-3 bg-sustainable hover:bg-sustainable/90 text-white rounded-lg font-medium transition-colors"
             >
-              Réserver une consultation gratuite
-              <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="group"
-              onClick={scrollToContact}
-            >
-              Discuter de votre projet
-              <MessageSquare className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
-            </Button>
+              Développer votre stratégie RSE commerciale
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise par secteurs */}
+      <section id="expertise" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
+              Notre Expertise
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Des solutions éprouvées adaptées à votre secteur d'activité et à vos enjeux spécifiques, pour des résultats durables et mesurables.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Leaf className="w-8 h-8 text-sustainable" />
+              </div>
+              <h3 className="text-lg font-semibold text-center mb-3">GreenTech</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Accompagnement des entreprises innovantes dans les technologies vertes et le développement durable pour optimiser leur impact commercial et environnemental.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Target className="w-8 h-8 text-sustainable" />
+              </div>
+              <h3 className="text-lg font-semibold text-center mb-3">HealthTech</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Solutions commerciales dédiées aux entreprises de technologies de santé, dispositifs médicaux et innovations pharmaceutiques.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Settings className="w-8 h-8 text-sustainable" />
+              </div>
+              <h3 className="text-lg font-semibold text-center mb-3">Industrie</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Optimisation des processus commerciaux et transformation digitale pour les acteurs industriels et manufacturiers.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Globe className="w-8 h-8 text-sustainable" />
+              </div>
+              <h3 className="text-lg font-semibold text-center mb-3">Dev-AI</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Stratégies commerciales spécialisées pour les entreprises de développement logiciel et d'intelligence artificielle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section id="contact" className="py-16 bg-sustainable/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
+              Prêt à transformer votre organisation ?
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              Basé à Monaco - Intervention Monaco, France, Europe, International
+            </p>
+            <div className="flex flex-col md:flex-row gap-4 justify-center">
+              <a 
+                href="/#contactez-nous" 
+                className="inline-flex items-center px-8 py-3 bg-sustainable hover:bg-sustainable/90 text-white rounded-lg font-medium transition-colors"
+              >
+                Réserver une consultation
+              </a>
+              <div className="flex flex-col md:flex-row gap-4 items-center">
+                <a 
+                  href="tel:+33622953137" 
+                  className="text-sustainable hover:text-sustainable/80 font-medium"
+                >
+                  +33 6 22 95 31 37
+                </a>
+                <a 
+                  href="mailto:contact@crmconseil.com" 
+                  className="text-sustainable hover:text-sustainable/80 font-medium"
+                >
+                  contact@crmconseil.com
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
