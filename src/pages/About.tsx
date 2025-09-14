@@ -118,15 +118,16 @@ const About = () => {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Accompagnement Terrain et Opérationnel en{" "}
+              Accompagnement Terrain et Opérationnel en Développement Commercial B2B et{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
-                Développement Commercial B2B
+                Mise en Place de Plans d'Action RSE Tangibles
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-              Depuis 2014, CRM Conseil révolutionne l'accompagnement commercial en travaillant concrètement sur le terrain avec vos équipes. 
-              Nous créons vos supports de vente sur mesure, vous accompagnons lors de rendez-vous prospects grands comptes, configurons vos outils CRM/ERP 
-              et formons vos équipes directement sur leurs projets réels. Notre approche opérationnelle garantit des résultats immédiats et mesurables.
+              Depuis 2014, CRM Conseil révolutionne l'accompagnement commercial en alliant performance et durabilité. 
+              Nous créons vos supports de vente sur mesure, vous accompagnons lors de rendez-vous clés, configurons vos outils CRM/ERP 
+              et suivons vos équipes dans une stratégie commerciale qui fait de la RSE un véritable levier de croissance durable pour votre entreprise. 
+              Notre approche opérationnelle garantit des résultats tangibles alliant performance et impact positif.
             </p>
           </div>
         </div>
