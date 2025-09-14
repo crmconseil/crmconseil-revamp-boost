@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Leaf, Target, Users, Globe, Handshake, Bike, Wind, Recycle } from "lucide-react";
+import rseBackground from "@/assets/rse-background.jpg";
 
 const EngagementsRSE = () => {
   return (
@@ -9,7 +10,14 @@ const EngagementsRSE = () => {
       
       {/* Hero Section */}
       <section className="relative pt-20 py-20">
-        <div className="container mx-auto px-4">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{ backgroundImage: `url(${rseBackground})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-sustainable/10 to-primary/10" />
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
               Nos Engagements{" "}
