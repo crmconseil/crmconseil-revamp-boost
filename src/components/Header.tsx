@@ -29,24 +29,18 @@ export const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection('services')}
+            <a
+              href="/"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Accueil
+            </a>
+            <a
+              href="/services"
               className="text-foreground hover:text-primary transition-colors"
             >
               Services
-            </button>
-            <button
-              onClick={() => scrollToSection('expertise')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Expertise
-            </button>
-            <button
-              onClick={() => scrollToSection('portfolio')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Références
-            </button>
+            </a>
             <a
               href="/a-propos"
               className="text-foreground hover:text-primary transition-colors"
@@ -54,10 +48,11 @@ export const Header = () => {
               À Propos
             </a>
             <Button 
-              variant="sustainable"
+              variant="outline"
+              className="border-primary text-primary hover:bg-primary hover:text-white"
               onClick={() => scrollToSection('contact')}
             >
-              Contact
+              Nous contacter
             </Button>
           </nav>
 
@@ -74,36 +69,33 @@ export const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-primary/20">
             <nav className="flex flex-col space-y-4">
-              <button
-                onClick={() => scrollToSection('services')}
+              <a
+                href="/"
                 className="text-left text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Accueil
+              </a>
+              <a
+                href="/services"
+                className="text-left text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Services
-              </button>
-              <button
-                onClick={() => scrollToSection('expertise')}
-                className="text-left text-foreground hover:text-primary transition-colors"
-              >
-                Expertise
-              </button>
-              <button
-                onClick={() => scrollToSection('portfolio')}
-                className="text-left text-foreground hover:text-primary transition-colors"
-              >
-                Références
-              </button>
+              </a>
               <a
                 href="/a-propos"
                 className="text-left text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 À Propos
               </a>
               <Button 
-                variant="sustainable"
-                className="w-fit"
+                variant="outline"
+                className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
                 onClick={() => scrollToSection('contact')}
               >
-                Contact
+                Nous contacter
               </Button>
             </nav>
           </div>
