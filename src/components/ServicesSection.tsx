@@ -199,7 +199,7 @@ export const ServicesSection = () => {
             variant="sustainable" 
             size="lg" 
             className="group"
-            onClick={() => window.location.href = '/contact'}
+            onClick={() => window.location.href = '/#contact'}
           >
             Discuter de votre projet
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />

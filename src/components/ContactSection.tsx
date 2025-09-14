@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import contactBackground from "@/assets/contact-background.jpg";
+import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -68,13 +69,13 @@ export const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">
-                Sabrina Broggini
-              </h3>
-              <p className="text-muted-foreground text-lg mb-8">
-                Fondatrice & Consultante Senior en Performance Commerciale Durable
-              </p>
+            {/* Logo */}
+            <div className="text-center">
+              <img 
+                src={logoImage} 
+                alt="CRM Conseil Logo" 
+                className="h-20 w-auto mx-auto mb-6"
+              />
             </div>
 
             {/* Contact Details */}
@@ -119,9 +120,21 @@ export const ContactSection = () => {
                     <MapPin className="text-commercial" size={24} />
                   </div>
                   <div>
+                    <h4 className="font-semibold">Adresse</h4>
+                    <p className="text-muted-foreground">Monaco</p>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-primary-light p-3 rounded-lg group-hover:scale-110 transition-transform">
+                    <MapPin className="text-primary" size={24} />
+                  </div>
+                  <div>
                     <h4 className="font-semibold">Zone d'intervention</h4>
                     <p className="text-muted-foreground">
-                      France • Europe • International
+                      Monaco • France • Europe • International
                     </p>
                   </div>
                 </div>
@@ -181,7 +194,7 @@ export const ContactSection = () => {
 
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                  Entreprise
+                  Entreprise *
                 </label>
                 <Input
                   id="company"
@@ -189,6 +202,7 @@ export const ContactSection = () => {
                   type="text"
                   value={formData.company}
                   onChange={handleChange}
+                  required
                   placeholder="Nom de votre entreprise"
                   className="w-full"
                 />

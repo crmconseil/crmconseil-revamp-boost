@@ -4,10 +4,7 @@ import heroImage from "@/assets/hero-sustainable-business.jpg";
 
 export const HeroSection = () => {
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.location.href = "/#contact";
   };
 
   const scrollToServices = () => {
