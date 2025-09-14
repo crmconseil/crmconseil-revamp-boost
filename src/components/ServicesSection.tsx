@@ -1,0 +1,170 @@
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { 
+  Target, 
+  TrendingUp, 
+  Settings, 
+  Leaf, 
+  BarChart3, 
+  Shield,
+  ArrowRight,
+  Users,
+  Lightbulb,
+  Award
+} from "lucide-react";
+
+export const ServicesSection = () => {
+  return (
+    <section id="services" className="py-20 bg-gradient-section">
+      <div className="container mx-auto px-4">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Nos Services
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Une approche unique combinant performance commerciale et développement durable
+          </p>
+        </div>
+
+        {/* Services Grid */}
+        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          {/* Commercial Services */}
+          <div className="space-y-8">
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-commercial mb-4">
+                Accompagnement Commercial
+              </h3>
+              <p className="text-muted-foreground">
+                Solutions éprouvées pour accélérer votre croissance commerciale
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-commercial-light p-3 rounded-lg group-hover:scale-110 transition-transform">
+                    <Target className="text-commercial" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold mb-2">Ciblage / Acquisition</h4>
+                    <ul className="text-muted-foreground space-y-1">
+                      <li>• Optimisation du discours et ciblage commercial</li>
+                      <li>• Étude de marché</li>
+                      <li>• Génération de leads externalisée</li>
+                    </ul>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-commercial-light p-3 rounded-lg group-hover:scale-110 transition-transform">
+                    <TrendingUp className="text-commercial" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold mb-2">Accélération / Valorisation</h4>
+                    <ul className="text-muted-foreground space-y-1">
+                      <li>• Levée de fonds</li>
+                      <li>• Choix d'outils CRM/ERP</li>
+                      <li>• Accélération du pipeline</li>
+                    </ul>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-commercial-light p-3 rounded-lg group-hover:scale-110 transition-transform">
+                    <Settings className="text-commercial" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold mb-2">Optimisation des process</h4>
+                    <ul className="text-muted-foreground space-y-1">
+                      <li>• Audit des outils et process commerciaux</li>
+                      <li>• Accompagnement au changement</li>
+                      <li>• Formation des équipes commerciales</li>
+                    </ul>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+
+          {/* RSE/Sustainability Services */}
+          <div className="space-y-8">
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-sustainable mb-4">
+                Accompagnement RSE / Durabilité
+              </h3>
+              <p className="text-muted-foreground">
+                Expertise certifiée pour votre stratégie de développement durable
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-sustainable-light p-3 rounded-lg group-hover:scale-110 transition-transform">
+                    <BarChart3 className="text-sustainable" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold mb-2">Bilan Emissions Directes - Scope 1</h4>
+                    <ul className="text-muted-foreground space-y-1">
+                      <li>• Analyse Impact Carbone direct</li>
+                      <li>• Analyse Impact Social</li>
+                      <li>• Modélisation de scénarios</li>
+                      <li>• Suivi d'impacts</li>
+                    </ul>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-sustainable-light p-3 rounded-lg group-hover:scale-110 transition-transform">
+                    <Shield className="text-sustainable" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold mb-2">Bilan RSE Complet - Scope 1, 2, 3</h4>
+                    <ul className="text-muted-foreground space-y-1">
+                      <li>• Impacts Carbone et Sociaux Directs/Indirects</li>
+                      <li>• Double matérialité - impacts et vulnérabilité</li>
+                      <li>• Scénarios et calcul de ROI</li>
+                      <li>• Suivi plan d'action</li>
+                    </ul>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+                <div className="flex items-start space-x-4">
+                  <div className="bg-sustainable-light p-3 rounded-lg group-hover:scale-110 transition-transform">
+                    <Leaf className="text-sustainable" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-semibold mb-2">Bilan Impact Biodiversité</h4>
+                    <ul className="text-muted-foreground space-y-1">
+                      <li>• Impacts directs et indirects sur la biodiversité</li>
+                      <li>• Matrice de matérialité Biodiversité</li>
+                      <li>• Modélisation de scénarios</li>
+                      <li>• Suivi d'impacts</li>
+                    </ul>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center">
+          <Button variant="sustainable" size="lg" className="group">
+            Discuter de votre projet
+            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
