@@ -47,6 +47,12 @@ export const Header = () => {
             >
               Références
             </button>
+            <a
+              href="/a-propos"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              À Propos
+            </a>
             <Button 
               variant="sustainable"
               onClick={() => scrollToSection('contact')}
@@ -86,6 +92,12 @@ export const Header = () => {
               >
                 Références
               </button>
+              <a
+                href="/a-propos"
+                className="text-left text-foreground hover:text-primary transition-colors"
+              >
+                À Propos
+              </a>
               <Button 
                 variant="sustainable"
                 className="w-fit"

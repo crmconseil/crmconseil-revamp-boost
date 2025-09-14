@@ -11,6 +11,12 @@ import {
   ArrowRight
 } from "lucide-react";
 import portfolioBackground from "@/assets/portfolio-background.jpg";
+import poleScsLogo from "@/assets/logos/pole-scs.png";
+import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
+import monacoTechLogo from "@/assets/logos/monacotech.png";
+import initiativeLogo from "@/assets/logos/initiative.png";
+import terresAzurLogo from "@/assets/logos/terres-azur.png";
+import metropoleNiceLogo from "@/assets/logos/metropole-nice.png";
 
 export const PortfolioSection = () => {
   const sectors = [
@@ -117,15 +123,47 @@ export const PortfolioSection = () => {
           </h3>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {partners.map((partner, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-card-sustainable transition-all duration-300 group">
-                <div className="flex items-center justify-center mb-3">
-                  <Building2 className="text-primary group-hover:scale-110 transition-transform" size={24} />
-                </div>
-                <h4 className="font-semibold text-foreground mb-2">{partner.name}</h4>
-                <Badge variant="outline" className="text-xs">{partner.type}</Badge>
-              </Card>
-            ))}
+            {partners.map((partner, index) => {
+              // Map partner names to imported logos
+              const getPartnerLogo = (name: string) => {
+                switch(name) {
+                  case "Pôle SCS":
+                    return poleScsLogo;
+                  case "Incubateur Paca-Est":
+                    return incubateurPacaLogo;
+                  case "MonacoTech":
+                    return monacoTechLogo;
+                  case "Initiative":
+                    return initiativeLogo;
+                  case "Terres d'Azur Hub":
+                    return terresAzurLogo;
+                  case "Métropole Nice Côte d'Azur":
+                    return metropoleNiceLogo;
+                  default:
+                    return null;
+                }
+              };
+
+              const logoSrc = getPartnerLogo(partner.name);
+              
+              return (
+                <Card key={index} className="p-6 text-center hover:shadow-card-sustainable transition-all duration-300 group">
+                  <div className="flex items-center justify-center mb-4 h-16">
+                    {logoSrc ? (
+                      <img 
+                        src={logoSrc} 
+                        alt={`${partner.name} logo`}
+                        className="max-h-12 max-w-full object-contain group-hover:scale-110 transition-transform"
+                      />
+                    ) : (
+                      <Building2 className="text-primary group-hover:scale-110 transition-transform" size={24} />
+                    )}
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">{partner.name}</h4>
+                  <Badge variant="outline" className="text-xs">{partner.type}</Badge>
+                </Card>
+              );
+            })}
           </div>
         </div>
 
