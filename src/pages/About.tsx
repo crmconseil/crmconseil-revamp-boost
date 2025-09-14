@@ -19,7 +19,8 @@ import {
   Zap,
   Cpu,
   Activity,
-  Cog
+  Cog,
+  Globe
 } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
@@ -59,7 +60,7 @@ const About = () => {
       description: "Formation de vos équipes directement sur leurs projets réels avec suivi personnalisé"
     },
     {
-      icon: TrendingUp,
+      icon: Globe,
       title: "Bilan RSE",
       description: "Analyse de vos process interne pour calcul de l'impact carbone, Matrice de double matérialité, modélisation de scénarii plus durable avec calcul ROI"
     },
