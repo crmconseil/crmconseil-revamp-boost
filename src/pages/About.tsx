@@ -193,6 +193,10 @@ const About = () => {
       {/* Approach Section */}
       <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Notre Approche Terrain et Opérationnelle</h2>
+          </div>
+          
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <Card className="p-6">
