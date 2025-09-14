@@ -12,11 +12,21 @@ import {
   Lightbulb,
   Award
 } from "lucide-react";
+import servicesBackground from "@/assets/services-background.jpg";
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 bg-gradient-section">
-      <div className="container mx-auto px-4">
+    <section id="services" className="relative py-20 overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${servicesBackground})` }}
+      >
+        <div className="absolute inset-0 bg-background/90"></div>
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

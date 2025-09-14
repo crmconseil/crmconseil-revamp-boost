@@ -14,6 +14,7 @@ import {
   TrendingUp
 } from "lucide-react";
 import { useState } from "react";
+import contactBackground from "@/assets/contact-background.jpg";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -43,8 +44,17 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="relative py-20 overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${contactBackground})` }}
+      >
+        <div className="absolute inset-0 bg-background/93"></div>
+      </div>
+      
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

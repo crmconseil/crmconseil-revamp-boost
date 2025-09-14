@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,9 +19,12 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">CRM</div>
-            <div className="text-2xl font-bold text-sustainable">CONSEIL</div>
+          <div className="flex items-center">
+            <img 
+              src={logoImage} 
+              alt="CRM Conseil Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
