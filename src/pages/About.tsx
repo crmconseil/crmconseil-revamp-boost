@@ -154,7 +154,7 @@ const About = () => {
       </section>
 
       {/* Notre Histoire Section */}
-      <section className="py-20">
+      <section className="py-20 relative">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -174,7 +174,11 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary/10 to-sustainable/10 p-4 rounded-lg">
+            
+            {/* Ligne verticale séparatrice */}
+            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-px h-64 bg-gradient-to-b from-primary/20 via-primary/40 to-primary/20"></div>
+            
+            <div className="relative">
               <img 
                 src={evolutionImage} 
                 alt="Évolution de CRM Conseil du commercial traditionnel vers l'approche RSE et durable"
