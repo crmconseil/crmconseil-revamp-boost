@@ -199,7 +199,7 @@ const About = () => {
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <Card className="p-6">
+              <Card className="p-6 bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20">
                 <p className="text-muted-foreground mb-4">
                   Chez CRM Conseil, nous ne donnons pas seulement des conseils : nous travaillons concrètement avec vous sur le terrain pour optimiser vos ventes.
                 </p>
@@ -212,10 +212,8 @@ const About = () => {
                 </p>
               </Card>
               
-              <Card className="p-6">
-                <p className="text-muted-foreground mb-4">
-                  Finis les conseils théoriques sans mise en pratique !
-                </p>
+              <Card className="p-6 bg-gradient-to-br from-sustainable/5 to-sustainable/10 border-sustainable/20">
+                <h3 className="text-xl font-bold text-foreground mb-4">Finis les conseils théoriques sans mise en pratique !</h3>
                 <p className="text-muted-foreground">
                   CRM Conseil s'intègre à votre équipe pour transformer vos défis commerciaux en succès concrets : 
                   supports de vente personnalisés, accompagnement terrain et configuration d'outils adaptés à vos besoins.
