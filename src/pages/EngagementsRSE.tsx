@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Leaf, Target, Users, Globe, Handshake, Bike, Wind, Recycle } from "lucide-react";
-import rseBackground from "@/assets/rse-background.jpg";
+import rseBackground from "@/assets/rse-photo-background.jpg";
 
 const EngagementsRSE = () => {
   return (
