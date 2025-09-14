@@ -39,20 +39,34 @@ const About = () => {
 
   const methods = [
     {
+      icon: Handshake,
       title: "Audit externe et accompagnement terrain",
       description: "Analyse neutre de vos processus + accompagnement opérationnel lors de rendez-vous prospects"
     },
     {
+      icon: Cog,
       title: "Configuration pratique d'outils CRM/ERP",
       description: "Installation, paramétrage et formation sur site pour une prise en main immédiate"
     },
     {
+      icon: Zap,
       title: "Création de supports commerciaux sur mesure",
       description: "Slides de présentation, argumentaires et outils de vente adaptés à vos prospects"
     },
     {
-      title: "Formations terrain et coaching opérationnel",
+      icon: Users,
+      title: "Formations terrain et coaching",
       description: "Formation de vos équipes directement sur leurs projets réels avec suivi personnalisé"
+    },
+    {
+      icon: TrendingUp,
+      title: "Bilan RSE",
+      description: "Analyse de vos process interne pour calcul de l'impact carbone, Matrice de double matérialité, modélisation de scénarii plus durable avec calcul ROI"
+    },
+    {
+      icon: Leaf,
+      title: "Bilan Biodiversité",
+      description: "Calcul de votre impact Biodiversité et modélisation de plan d'action d'amélioration"
     }
   ];
 
@@ -241,20 +255,28 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
-              Notre méthode d'accompagnement opérationnel
+              Notre méthode d'accompagnement
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Nous travaillons main dans la main avec vos équipes pour des actions concrètes et des résultats mesurables immédiatement.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            {methods.map((method, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
-                <h3 className="text-xl font-bold text-foreground mb-4">{method.title}</h3>
-                <p className="text-muted-foreground">{method.description}</p>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {methods.map((method, index) => {
+              const IconComponent = method.icon;
+              return (
+                <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                      <IconComponent className="text-primary" size={20} />
+                    </div>
+                    <h3 className="text-xl font-bold text-foreground">{method.title}</h3>
+                  </div>
+                  <p className="text-muted-foreground">{method.description}</p>
+                </Card>
+              );
+            })}
           </div>
 
           <Card className="p-8 bg-gradient-to-r from-primary/5 to-sustainable/5">
