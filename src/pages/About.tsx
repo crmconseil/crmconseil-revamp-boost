@@ -113,10 +113,10 @@ const About = () => {
   ];
 
   const sectors = [
-    { icon: Leaf, title: "GreenTech", description: "Expertise sectorielle approfondie" },
-    { icon: Activity, title: "HealthTech", description: "Expertise sectorielle approfondie" },
-    { icon: Cog, title: "Industrie 4.0", description: "Expertise sectorielle approfondie" },
-    { icon: Cpu, title: "Dev-AI", description: "Expertise sectorielle approfondie" }
+    { icon: Leaf, title: "GreenTech" },
+    { icon: Activity, title: "HealthTech" },
+    { icon: Cog, title: "Industrie 4.0" },
+    { icon: Cpu, title: "Dev-AI" }
   ];
 
   return (
@@ -366,7 +366,6 @@ const About = () => {
                     <IconComponent className="text-primary" size={32} />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-4">{sector.title}</h3>
-                  <p className="text-muted-foreground">{sector.description}</p>
                 </Card>
               );
             })}
