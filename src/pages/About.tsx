@@ -4,13 +4,22 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
-  User, 
-  GraduationCap, 
-  Briefcase, 
-  Award,
+  Users, 
+  TrendingUp, 
   Target,
+  Euro,
+  CheckCircle,
+  Handshake,
+  Calendar,
   Leaf,
-  ArrowRight 
+  ArrowRight,
+  Lightbulb,
+  Award,
+  Heart,
+  Zap,
+  Cpu,
+  Activity,
+  Cog
 } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 
@@ -19,46 +28,78 @@ const About = () => {
     window.location.href = "/#contact";
   };
 
-  const qualifications = [
+  const keyStats = [
+    { icon: Users, number: "100+", label: "Startups et PME innovantes accompagnées" },
+    { icon: TrendingUp, number: "+27%", label: "Augmentation des résultats commerciaux" },
+    { icon: Target, number: "4", label: "Secteurs d'expertise" },
+    { icon: Euro, number: "16M€", label: "Financements cumulés pour un client fidèle" }
+  ];
+
+  const methods = [
     {
-      icon: GraduationCap,
-      title: "Bachelor of Business Administration",
-      description: "USA/SKEMA Business School",
-      category: "Formation"
+      title: "Audit externe et accompagnement terrain",
+      description: "Analyse neutre de vos processus + accompagnement opérationnel lors de rendez-vous prospects"
     },
     {
-      icon: Award,
-      title: "Certification Miller Heiman et SPI",
-      description: "Vente stratégique avancée",
-      category: "Certification"
+      title: "Configuration pratique d'outils CRM/ERP",
+      description: "Installation, paramétrage et formation sur site pour une prise en main immédiate"
     },
     {
-      icon: Leaf,
-      title: "MIT - Certification in Sustainable Strategy Design",
-      description: "Stratégies durables et innovation",
-      category: "Spécialisation"
+      title: "Création de supports commerciaux sur mesure",
+      description: "Slides de présentation, argumentaires et outils de vente adaptés à vos prospects"
+    },
+    {
+      title: "Formations terrain et coaching opérationnel",
+      description: "Formation de vos équipes directement sur leurs projets réels avec suivi personnalisé"
     }
   ];
 
-  const experience = [
+  const values = [
     {
-      years: "15 ans",
-      title: "Responsable Marketing & Directrice Commerciale",
-      description: "EMEA / USA au sein de startups et PMEs, spécialisée dans la vente d'innovation auprès de Grands comptes",
-      color: "text-primary"
+      icon: Award,
+      title: "Excellence Opérationnelle",
+      description: "Nous nous engageons à livrer des résultats concrets et mesurables, en optimisant chaque aspect de votre stratégie commerciale."
     },
     {
-      years: "11 ans",
-      title: "Conseil en Performances Commerciales",
-      description: "Accompagnement de startups et PME innovantes avec forte dimension durable",
-      color: "text-sustainable"
+      icon: Lightbulb,
+      title: "Innovation Continue",
+      description: "Nous intégrons les dernières technologies et méthodologies pour vous donner un avantage concurrentiel durable."
     },
     {
-      years: "Depuis 2010",
-      title: "Entreprenariat",
-      description: "Expérience dans l'E-commerce, le conseil en innovation et le tourisme",
-      color: "text-commercial"
+      icon: Heart,
+      title: "Impact Durable",
+      description: "Au-delà des performances commerciales, nous vous aidons à construire une entreprise responsable et pérenne."
     }
+  ];
+
+  const timeline = [
+    {
+      year: "2014",
+      title: "Création de CRM Conseil",
+      description: "Fondation de l'entreprise avec un focus sur la performance commerciale de startups en utilisant des méthodes de grands comptes."
+    },
+    {
+      year: "2018",
+      title: "Tournant vers le Développement Durable",
+      description: "Évolution naturelle vers l'accompagnement de sociétés orientées développement durable et greentech."
+    },
+    {
+      year: "2019",
+      title: "Expertise Levées de Fonds",
+      description: "Développement de notre expertise en préparation et accompagnement aux levées de fonds."
+    },
+    {
+      year: "2024",
+      title: "Spécialisation RSE & Durabilité",
+      description: "Spécialisation dans l'accompagnement des transformations RSE et stratégies de durabilité."
+    }
+  ];
+
+  const sectors = [
+    { icon: Leaf, title: "GreenTech", description: "Expertise sectorielle approfondie" },
+    { icon: Activity, title: "HealthTech", description: "Expertise sectorielle approfondie" },
+    { icon: Cog, title: "Industrie 4.0", description: "Expertise sectorielle approfondie" },
+    { icon: Cpu, title: "Dev-AI", description: "Expertise sectorielle approfondie" }
   ];
 
   return (
@@ -77,105 +118,214 @@ const About = () => {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              À Propos de 
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
-                Sabrina Rebelo
+              Accompagnement Terrain et Opérationnel en{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                Développement Commercial B2B
               </span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Fondatrice de CRM Conseil, experte en performance commerciale durable 
-              avec plus de 25 ans d'expérience dans l'accompagnement d'entreprises innovantes.
+            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
+              Depuis 2014, CRM Conseil révolutionne l'accompagnement commercial en travaillant concrètement sur le terrain avec vos équipes. 
+              Nous créons vos supports de vente sur mesure, vous accompagnons lors de rendez-vous prospects grands comptes, configurons vos outils CRM/ERP 
+              et formons vos équipes directement sur leurs projets réels. Notre approche opérationnelle garantit des résultats immédiats et mesurables.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Vision Section */}
-      <section className="py-20 bg-gradient-to-br from-background to-secondary/30">
+      {/* Key Stats Section */}
+      <section className="py-16 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              Notre Vision
-            </h2>
-            <div className="text-xl text-muted-foreground leading-relaxed">
-              <p className="mb-6">
-                Chez CRM Conseil, nous sommes profondément convaincus que{" "}
-                <span className="text-primary font-semibold">
-                  l'alignement de la performance commerciale avec le développement durable
-                </span>{" "}
-                est la seule voie viable pour l'avenir.
-              </p>
-              <p>
-                Notre approche unique combine{" "}
-                <span className="text-sustainable font-semibold">performance</span>,{" "}
-                <span className="text-sustainable font-semibold">durabilité écologique</span> et{" "}
-                <span className="text-sustainable font-semibold">responsabilité sociétale</span>{" "}
-                pour créer une valeur durable et mesurable.
-              </p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {keyStats.map((stat, index) => {
+              const IconComponent = stat.icon;
+              return (
+                <div key={index} className="text-center">
+                  <div className="bg-background rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <IconComponent className="text-primary mx-auto mb-4" size={32} />
+                    <div className="text-3xl font-bold text-foreground mb-2">{stat.number}</div>
+                    <p className="text-sm text-muted-foreground">{stat.label}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Notre Histoire Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-foreground mb-6">Notre Histoire</h2>
+              <div className="space-y-6 text-muted-foreground">
+                <p>
+                  CRM Conseil a été créée en 2014 avec pour objectif d'appliquer les méthodes commerciales des grands comptes aux startups en phase de croissance. 
+                  Cette approche innovante permettait aux jeunes entreprises de structurer efficacement leur développement commercial.
+                </p>
+                <p>
+                  Vers 2018, nous avons naturellement évolué vers l'accompagnement de sociétés orientées développement durable et greentech, 
+                  anticipant les enjeux de demain. Cette transition reflétait notre conviction que les entreprises responsables seraient les leaders de demain.
+                </p>
+                <p>
+                  Aujourd'hui, après 10 ans d'évolution, nous sommes devenus les spécialistes de l'accompagnement commercial pour les entreprises 
+                  qui placent la durabilité au cœur de leur stratégie de croissance.
+                </p>
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-primary/10 to-sustainable/10 p-8 rounded-lg">
+              <div className="aspect-square bg-background/50 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <Target className="text-primary mx-auto mb-4" size={64} />
+                  <p className="text-muted-foreground">Visuel représentant notre évolution</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Experience Section */}
+      {/* Approach Section */}
+      <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <Card className="p-6">
+                <p className="text-muted-foreground mb-4">
+                  Chez CRM Conseil, nous ne donnons pas seulement des conseils : nous travaillons concrètement avec vous sur le terrain pour optimiser vos ventes.
+                </p>
+                <h3 className="text-xl font-bold text-foreground mb-4">Notre différence ?</h3>
+                <p className="text-muted-foreground mb-4">
+                  Nous créons vos slides, vous accompagnons en rendez-vous, configurons vos outils et formons vos équipes sur leurs projets réels.
+                </p>
+                <p className="text-primary font-semibold">
+                  Un accompagnement 100% opérationnel pour des résultats immédiats.
+                </p>
+              </Card>
+              
+              <Card className="p-6">
+                <p className="text-muted-foreground mb-4">
+                  Finis les conseils théoriques sans mise en pratique !
+                </p>
+                <p className="text-muted-foreground">
+                  CRM Conseil s'intègre à votre équipe pour transformer vos défis commerciaux en succès concrets : 
+                  supports de vente personnalisés, accompagnement terrain et configuration d'outils adaptés à vos besoins.
+                </p>
+              </Card>
+            </div>
+            
+            <div className="bg-gradient-to-br from-primary/10 to-sustainable/10 p-8 rounded-lg">
+              <div className="aspect-square bg-background/50 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <Handshake className="text-primary mx-auto mb-4" size={64} />
+                  <p className="text-muted-foreground">2 personnes professionnelles qui se tapent dans la main</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Method Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-foreground mb-6">
-              Expérience & Expertise
+              Notre méthode d'accompagnement opérationnel
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Un parcours riche et diversifié au service de votre croissance durable
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Nous travaillons main dans la main avec vos équipes pour des actions concrètes et des résultats mesurables immédiatement.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            {experience.map((exp, index) => (
-              <Card key={index} className="p-8 hover:shadow-card-sustainable transition-all duration-300">
-                <div className="text-center">
-                  <div className={`text-4xl font-bold ${exp.color} mb-3`}>
-                    {exp.years}
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            {methods.map((method, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+                <h3 className="text-xl font-bold text-foreground mb-4">{method.title}</h3>
+                <p className="text-muted-foreground">{method.description}</p>
+              </Card>
+            ))}
+          </div>
+
+          <Card className="p-8 bg-gradient-to-r from-primary/5 to-sustainable/5">
+            <h3 className="text-2xl font-bold text-foreground mb-4">Notre engagement terrain</h3>
+            <p className="text-muted-foreground text-lg">
+              Nous copilotons concrètement vos actions commerciales : création de supports, accompagnement en rendez-vous, 
+              configuration d'outils et formations pratiques pour des résultats garantis.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Nos Valeurs</h2>
+            <p className="text-xl text-muted-foreground">
+              Ces principes fondamentaux guident chacune de nos actions et nous permettent de créer de la valeur durable pour nos clients.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {values.map((value, index) => {
+              const IconComponent = value.icon;
+              return (
+                <Card key={index} className="p-8 text-center hover:shadow-lg transition-all duration-300 group">
+                  <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                    <IconComponent className="text-primary" size={32} />
                   </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">
-                    {exp.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {exp.description}
-                  </p>
-                </div>
+                  <h3 className="text-xl font-bold text-foreground mb-4">{value.title}</h3>
+                  <p className="text-muted-foreground">{value.description}</p>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Notre Évolution</h2>
+            <p className="text-xl text-muted-foreground">
+              Découvrez les étapes clés qui ont façonné CRM Conseil et notre expertise.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {timeline.map((item, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+                <div className="text-3xl font-bold text-primary mb-4">{item.year}</div>
+                <h3 className="text-lg font-bold text-foreground mb-4">{item.title}</h3>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Qualifications Section */}
+      {/* Sectors Section */}
       <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              Formations & Certifications
-            </h2>
+            <h2 className="text-4xl font-bold text-foreground mb-6">Secteurs d'Expertise</h2>
             <p className="text-xl text-muted-foreground">
-              Une expertise certifiée et reconnue internationalement
+              Nous concentrons notre expertise sur quatre secteurs d'avenir où innovation et durabilité se rencontrent.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {qualifications.map((qual, index) => {
-              const IconComponent = qual.icon;
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {sectors.map((sector, index) => {
+              const IconComponent = sector.icon;
               return (
-                <Card key={index} className="p-8 text-center hover:shadow-card-sustainable transition-all duration-300 group">
+                <Card key={index} className="p-6 text-center hover:shadow-lg transition-all duration-300 group">
                   <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                     <IconComponent className="text-primary" size={32} />
                   </div>
-                  <Badge variant="outline" className="mb-4">{qual.category}</Badge>
-                  <h3 className="text-xl font-bold text-foreground mb-4">
-                    {qual.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {qual.description}
-                  </p>
+                  <h3 className="text-xl font-bold text-foreground mb-4">{sector.title}</h3>
+                  <p className="text-muted-foreground">{sector.description}</p>
                 </Card>
               );
             })}
@@ -190,18 +340,28 @@ const About = () => {
             Prêt à transformer votre approche commerciale ?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Discutons de vos défis et explorons ensemble comment allier 
-            performance commerciale et développement durable.
+            Découvrez comment nous pouvons vous accompagner dans votre croissance tout en intégrant une démarche RSE performante.
           </p>
-          <Button 
-            variant="sustainable" 
-            size="lg" 
-            className="group"
-            onClick={scrollToContact}
-          >
-            Planifier un échange
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              variant="sustainable" 
+              size="lg" 
+              className="group"
+              onClick={scrollToContact}
+            >
+              Réserver une consultation
+              <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="group"
+              onClick={scrollToContact}
+            >
+              Nous contacter
+              <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+            </Button>
+          </div>
         </div>
       </section>
 
