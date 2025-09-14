@@ -338,7 +338,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {timeline.map((item, index) => (
               <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-sm border-white/20">
-                <div className="text-3xl font-bold text-primary-glow mb-4">{item.year}</div>
+                <div className="text-3xl font-bold text-sustainable-light mb-4">{item.year}</div>
                 <h3 className="text-lg font-bold text-white mb-4">{item.title}</h3>
                 <p className="text-white/80 text-sm">{item.description}</p>
               </Card>
