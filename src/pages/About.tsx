@@ -318,21 +318,29 @@ const About = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
+      <section className="py-20 relative overflow-hidden">
+        {/* Background with gradient */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        >
+          <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
+        </div>
+        
+        <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Notre Évolution</h2>
-            <p className="text-xl text-muted-foreground">
+            <h2 className="text-4xl font-bold text-white mb-6">Notre Évolution</h2>
+            <p className="text-xl text-white/90">
               Découvrez les étapes clés qui ont façonné CRM Conseil et notre expertise.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {timeline.map((item, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
-                <div className="text-3xl font-bold text-primary mb-4">{item.year}</div>
-                <h3 className="text-lg font-bold text-foreground mb-4">{item.title}</h3>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
+              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 bg-white/10 backdrop-blur-sm border-white/20">
+                <div className="text-3xl font-bold text-primary-glow mb-4">{item.year}</div>
+                <h3 className="text-lg font-bold text-white mb-4">{item.title}</h3>
+                <p className="text-white/80 text-sm">{item.description}</p>
               </Card>
             ))}
           </div>
