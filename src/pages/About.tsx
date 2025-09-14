@@ -22,6 +22,7 @@ import {
   Cog
 } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable-business.jpg";
+import evolutionImage from "@/assets/evolution-histoire.png";
 
 const About = () => {
   const scrollToContact = () => {
@@ -173,13 +174,12 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary/10 to-sustainable/10 p-8 rounded-lg">
-              <div className="aspect-square bg-background/50 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <Target className="text-primary mx-auto mb-4" size={64} />
-                  <p className="text-muted-foreground">Visuel représentant notre évolution</p>
-                </div>
-              </div>
+            <div className="bg-gradient-to-br from-primary/10 to-sustainable/10 p-4 rounded-lg">
+              <img 
+                src={evolutionImage} 
+                alt="Évolution de CRM Conseil du commercial traditionnel vers l'approche RSE et durable"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
