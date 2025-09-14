@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Leaf, Target, Users, Globe } from "lucide-react";
+import { Leaf, Target, Users, Globe, Handshake, Bike, Wind, Recycle } from "lucide-react";
 
 const EngagementsRSE = () => {
   return (
@@ -42,7 +42,7 @@ const EngagementsRSE = () => {
               <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
                 <div className="flex items-center mb-6">
                   <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                    <Users className="w-6 h-6 text-sustainable" />
+                    <Handshake className="w-6 h-6 text-sustainable" />
                   </div>
                   <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
                     1. Clients & Stratégie RSE
@@ -68,7 +68,7 @@ const EngagementsRSE = () => {
               <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
                 <div className="flex items-center mb-6">
                   <div className="p-3 bg-primary/20 rounded-full mr-4">
-                    <Globe className="w-6 h-6 text-primary" />
+                    <Bike className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
                     2. Transports Durables
@@ -94,7 +94,7 @@ const EngagementsRSE = () => {
               <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
                 <div className="flex items-center mb-6">
                   <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                    <Leaf className="w-6 h-6 text-sustainable" />
+                    <Wind className="w-6 h-6 text-sustainable" />
                   </div>
                   <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
                     3. Sourcing Énergétique Propre
@@ -124,7 +124,7 @@ const EngagementsRSE = () => {
               <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
                 <div className="flex items-center mb-6">
                   <div className="p-3 bg-primary/20 rounded-full mr-4">
-                    <Target className="w-6 h-6 text-primary" />
+                    <Recycle className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
                     4. Gestion des Déchets
@@ -164,7 +164,6 @@ const EngagementsRSE = () => {
                     <Target className="w-8 h-8 text-sustainable" />
                   </div>
                   <h3 className="text-lg font-semibold mb-3">Bilan Émissions Directes - Scope 1</h3>
-                  <p className="text-sm text-muted-foreground mb-4">5-7JH ~ 6,000€</p>
                   <div className="text-left text-xs space-y-2">
                     <h4 className="font-semibold">Livrables :</h4>
                     <ul className="space-y-1 text-muted-foreground">
@@ -180,7 +179,6 @@ const EngagementsRSE = () => {
                     <Globe className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold mb-3">Bilan RSE Complet</h3>
-                  <p className="text-sm text-muted-foreground mb-4">12-15JH ~ 10,000€ / 12,000€</p>
                   <div className="text-left text-xs space-y-2">
                     <h4 className="font-semibold">Livrables :</h4>
                     <ul className="space-y-1 text-muted-foreground">
@@ -197,7 +195,6 @@ const EngagementsRSE = () => {
                     <Leaf className="w-8 h-8 text-sustainable" />
                   </div>
                   <h3 className="text-lg font-semibold mb-3">Impact Biodiversité</h3>
-                  <p className="text-sm text-muted-foreground mb-4">8-10JH ~ 8,000€ / 10,000€</p>
                   <div className="text-left text-xs space-y-2">
                     <h4 className="font-semibold">Approche :</h4>
                     <ul className="space-y-1 text-muted-foreground">
