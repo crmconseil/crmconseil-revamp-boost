@@ -15,7 +15,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative pt-24 min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -27,14 +27,8 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Logo */}
-          <div className="flex items-center justify-center space-x-4 mb-8">
-            <div className="text-6xl md:text-8xl font-bold text-white">CRM</div>
-            <div className="text-6xl md:text-8xl font-bold text-white opacity-90">CONSEIL</div>
-          </div>
-
           {/* Tagline */}
-          <h1 className="text-2xl md:text-4xl font-bold text-white mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Votre partenaire pour une{" "}
             <span className="text-primary-glow">Performance commerciale durable</span>
           </h1>
