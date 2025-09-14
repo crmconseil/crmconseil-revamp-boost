@@ -204,20 +204,24 @@ const About = () => {
                   Chez CRM Conseil, nous ne donnons pas seulement des conseils : nous travaillons concrètement avec vous sur le terrain pour optimiser vos ventes.
                 </p>
                 <h3 className="text-xl font-bold text-foreground mb-4">Notre différence ?</h3>
-                <p className="text-muted-foreground mb-4">
-                  Nous créons vos slides, vous accompagnons en rendez-vous, configurons vos outils et formons vos équipes sur leurs projets réels.
-                </p>
-                <p className="text-primary font-semibold">
-                  Un accompagnement 100% opérationnel pour des résultats immédiats.
-                </p>
+                <div className="border-l-4 border-primary pl-4 mb-4">
+                  <p className="text-muted-foreground mb-4">
+                    Nous créons vos slides, vous accompagnons en rendez-vous, configurons vos outils et formons vos équipes sur leurs projets réels.
+                  </p>
+                  <p className="text-primary font-semibold">
+                    Un accompagnement 100% opérationnel pour des résultats immédiats.
+                  </p>
+                </div>
               </Card>
               
-              <Card className="p-6 bg-gradient-to-br from-sustainable/5 to-sustainable/10 border-sustainable/20">
+              <Card className="p-6 bg-gradient-to-br from-secondary/5 to-secondary/10 border-secondary/20">
                 <h3 className="text-xl font-bold text-foreground mb-4">Finis les conseils théoriques sans mise en pratique !</h3>
-                <p className="text-muted-foreground">
-                  CRM Conseil s'intègre à votre équipe pour transformer vos défis commerciaux en succès concrets : 
-                  supports de vente personnalisés, accompagnement terrain et configuration d'outils adaptés à vos besoins.
-                </p>
+                <div className="border-l-4 border-secondary pl-4">
+                  <p className="text-muted-foreground">
+                    CRM Conseil s'intègre à votre équipe pour transformer vos défis commerciaux en succès concrets : 
+                    supports de vente personnalisés, accompagnement terrain et configuration d'outils adaptés à vos besoins.
+                  </p>
+                </div>
               </Card>
             </div>
             
