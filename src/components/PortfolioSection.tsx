@@ -38,7 +38,7 @@ export const PortfolioSection = () => {
       title: "GreenTech",
       color: "text-sustainable",
       bgColor: "bg-sustainable-light",
-      companies: ["ActionAir", "Mycophyto", "Tethys", "Hydro", "Inalve", "La Pousseraie"],
+      companies: ["ActionAir", "Mycophyto", "Hydro", "Inalve", "La Pousseraie"],
       description: "Technologies environnementales et solutions durables"
     },
     {
@@ -54,7 +54,7 @@ export const PortfolioSection = () => {
       title: "HealthTech",
       color: "text-pink-600",
       bgColor: "bg-pink-100",
-      companies: ["LifeScientis", "Laselis", "Sensoria"],
+      companies: ["LifeScientis", "Laselis", "Sensoria", "Tethys"],
       description: "Technologies médicales et e-santé"
     },
     {
