@@ -16,6 +16,7 @@ import mycophytoLogo from "@/assets/logos/mycophyto.png";
 import tethysLogo from "@/assets/logos/tethys.jpg";
 import hydroLogo from "@/assets/logos/hydro.jpeg";
 import inalveLogo from "@/assets/logos/inalve.png";
+import laPousseraieLogo from "@/assets/logos/la-pousseraie.jpg";
 import lumataLogo from "@/assets/logos/lumata.png";
 import daiaLogo from "@/assets/logos/daia.jpg";
 import himydataLogo from "@/assets/logos/himydata.png";
@@ -35,7 +36,7 @@ export const PortfolioSection = () => {
       title: "GreenTech",
       color: "text-sustainable",
       bgColor: "bg-sustainable-light",
-      companies: ["ActionAir", "Mycophyto", "Tethys", "Hydro", "Inalve"],
+      companies: ["ActionAir", "Mycophyto", "Tethys", "Hydro", "Inalve", "La Pousseraie"],
       description: "Technologies environnementales et solutions durables"
     },
     {
@@ -127,6 +128,8 @@ export const PortfolioSection = () => {
                             return hydroLogo;
                           case "Inalve":
                             return inalveLogo;
+                          case "La Pousseraie":
+                            return laPousseraieLogo;
                           case "Lumata":
                             return lumataLogo;
                           case "Daia":
