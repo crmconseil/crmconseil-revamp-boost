@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import portfolioBackground from "@/assets/portfolio-background.jpg";
 import actionAirLogo from "@/assets/logos/action-air.jpg";
+import mycophytoLogo from "@/assets/logos/mycophyto.png";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -110,6 +111,8 @@ export const PortfolioSection = () => {
                         switch(companyName) {
                           case "ActionAir":
                             return actionAirLogo;
+                          case "Mycophyto":
+                            return mycophytoLogo;
                           default:
                             return null;
                         }
