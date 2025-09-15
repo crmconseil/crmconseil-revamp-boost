@@ -22,6 +22,7 @@ import daiaLogo from "@/assets/logos/daia.jpg";
 import himydataLogo from "@/assets/logos/himydata.png";
 import arcanSecurityLogo from "@/assets/logos/arcan-security.jpg";
 import lifescientisLogo from "@/assets/logos/lifescientis.png";
+import laselisLogo from "@/assets/logos/laselis.png";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -139,6 +140,8 @@ export const PortfolioSection = () => {
                             return arcanSecurityLogo;
                           case "LifeScientis":
                             return lifescientisLogo;
+                          case "Laselis":
+                            return laselisLogo;
                           default:
                             return null;
                         }
