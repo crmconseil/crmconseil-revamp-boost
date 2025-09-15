@@ -42,16 +42,16 @@ export const Header = () => {
               Services
             </button>
             <button
-              onClick={() => scrollToSection('references')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Références
-            </button>
-            <button
               onClick={() => scrollToSection('expertise')}
               className="text-foreground hover:text-primary transition-colors"
             >
               À Propos
+            </button>
+            <button
+              onClick={() => scrollToSection('references')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Références
             </button>
             <a
               href="/engagements-rse"
@@ -62,7 +62,13 @@ export const Header = () => {
             <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => window.location.href = '/contact'}
+              onClick={() => {
+                if (window.location.pathname !== '/') {
+                  window.location.href = '/#contact';
+                } else {
+                  scrollToSection('contact');
+                }
+              }}
             >
               Nous contacter
             </Button>
@@ -95,16 +101,16 @@ export const Header = () => {
                 Services
               </button>
               <button
-                onClick={() => scrollToSection('references')}
-                className="text-left text-foreground hover:text-primary transition-colors"
-              >
-                Références
-              </button>
-              <button
                 onClick={() => scrollToSection('expertise')}
                 className="text-left text-foreground hover:text-primary transition-colors"
               >
                 À Propos
+              </button>
+              <button
+                onClick={() => scrollToSection('references')}
+                className="text-left text-foreground hover:text-primary transition-colors"
+              >
+                Références
               </button>
               <a
                 href="/engagements-rse"
@@ -116,7 +122,13 @@ export const Header = () => {
               <Button 
                 variant="outline"
                 className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.location.href = '/contact'}
+                onClick={() => {
+                  if (window.location.pathname !== '/') {
+                    window.location.href = '/#contact';
+                  } else {
+                    scrollToSection('contact');
+                  }
+                }}
               >
                 Nous contacter
               </Button>

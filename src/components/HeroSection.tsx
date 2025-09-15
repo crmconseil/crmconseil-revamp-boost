@@ -65,7 +65,7 @@ export const HeroSection = () => {
             <Button 
               variant="outline-sustainable" 
               size="lg"
-              onClick={scrollToContact}
+              onClick={() => window.location.href = '/#contact'}
               className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary"
             >
               Nous contacter

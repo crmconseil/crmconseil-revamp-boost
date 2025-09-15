@@ -14,7 +14,7 @@ import {
   TrendingUp
 } from "lucide-react";
 import { useState } from "react";
-import contactBackground from "@/assets/contact-background.jpg";
+import contactBackground from "@/assets/contact-background-light.jpg";
 import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 export const ContactSection = () => {
@@ -61,7 +61,7 @@ export const ContactSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Contactez-nous
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-foreground/80 max-w-3xl mx-auto font-medium">
             Parlons de votre projet et découvrons comment allier performance commerciale et développement durable
           </p>
         </div>
