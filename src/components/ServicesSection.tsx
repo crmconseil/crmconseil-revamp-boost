@@ -43,11 +43,8 @@ export const ServicesSection = () => {
           <div className="space-y-8">
             <div className="text-center">
               <h3 className="text-3xl font-bold text-commercial mb-4 leading-tight">
-                Accompagnement<br />Commercial
+                Optimisation<br />commerciale
               </h3>
-              <p className="text-muted-foreground">
-                Solutions éprouvées pour accélérer votre croissance commerciale
-              </p>
             </div>
 
             <div className="space-y-6">
@@ -120,9 +117,6 @@ export const ServicesSection = () => {
               <h3 className="text-3xl font-bold text-sustainable mb-4">
                 Accompagnement RSE / Durabilité
               </h3>
-              <p className="text-muted-foreground">
-                Expertise certifiée pour votre stratégie de développement durable
-              </p>
             </div>
 
             <div className="space-y-6">
