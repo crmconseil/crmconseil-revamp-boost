@@ -59,7 +59,7 @@ export const PortfolioSection = () => {
     { name: "Incubateur Paca-Est", type: "Incubateur" },
     { name: "MonacoTech", type: "Startup Program" },
     { name: "Pôle Mer", type: "Financement" },
-    { name: "Terres d'Azur Hub", type: "Hub Innovation" },
+    { name: "Initiative Terres d'Azur Grasse", type: "Hub Innovation" },
     { name: "Métropole Nice Côte d'Azur", type: "Collectivité" }
   ];
 
@@ -135,7 +135,7 @@ export const PortfolioSection = () => {
                     return monacoTechLogo;
                   case "Pôle Mer":
                     return poleMerLogo;
-                  case "Terres d'Azur Hub":
+                  case "Initiative Terres d'Azur Grasse":
                     return terresAzurLogo;
                   case "Métropole Nice Côte d'Azur":
                     return metropoleNiceLogo;
