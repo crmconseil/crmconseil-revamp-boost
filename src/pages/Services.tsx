@@ -231,7 +231,7 @@ const Services = () => {
           {/* Ce que nous vous apportons */}
           <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-12">
             <h3 className="text-2xl font-bold text-center mb-8">Ce que nous vous apportons:</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
                 <span className="text-muted-foreground">Diagnostic approfondi de vos processus commerciaux</span>
@@ -240,13 +240,17 @@ const Services = () => {
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
                 <span className="text-muted-foreground">Formations personnalisées pour vos équipes</span>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">+60% de taux de réussite de vos levées de fonds.</span>
+              <div className="flex items-center bg-sustainable/10 rounded-lg p-4 border border-sustainable/30">
+                <CheckCircle className="w-6 h-6 text-sustainable mr-3" />
+                <span className="text-foreground font-semibold">
+                  <span className="text-2xl text-sustainable font-bold">+60%</span> de taux de réussite de vos levées de fonds
+                </span>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">+29% d'augmentation des ventes</span>
+              <div className="flex items-center bg-primary/10 rounded-lg p-4 border border-primary/30">
+                <CheckCircle className="w-6 h-6 text-primary mr-3" />
+                <span className="text-foreground font-semibold">
+                  <span className="text-2xl text-primary font-bold">+29%</span> d'augmentation des ventes
+                </span>
               </div>
             </div>
           </div>
