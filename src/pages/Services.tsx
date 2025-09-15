@@ -225,89 +225,60 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
-              Accompagnement Terrain CRM, ERP et Développement Commercial B2B
+              Missions d'Optimisations commerciales
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              CRM Conseil vous accompagne concrètement sur le terrain avec des services opérationnels : création de supports sur mesure, accompagnement lors de rendez-vous prospects, configuration pratique d'outils et formations directement sur vos projets réels pour des résultats immédiats.
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Optimisation commerciale */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Optimisation des process commerciaux */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <TrendingUp className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Optimisation Commerciale Terrain</h3>
+                <h3 className="text-xl font-bold">Optimisation des process commerciaux</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                Création de slides personnalisées, accompagnement lors de rendez-vous prospects, optimisation de vos processus de vente B2B et formations opérationnelles de vos équipes sur leurs projets réels.
+                Analyse et restructuration de vos processus de vente, amélioration du cycle commercial, optimisation des argumentaires et méthodes de prospection pour maximiser votre efficacité commerciale.
               </p>
             </div>
 
-            {/* Configuration CRM/ERP */}
+            {/* Choix et Configuration d'outils de pilotage */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Settings className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Configuration CRM, ERP & IA</h3>
+                <h3 className="text-xl font-bold">Choix et Configuration d'outils de pilotage (CRM/ERP)</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                Installation, paramétrage et formation sur site de vos outils CRM, ERP et IA. Accompagnement terrain pour une prise en main immédiate et une optimisation de vos processus commerciaux B2B.
+                Sélection, installation et paramétrage personnalisé de vos outils CRM/ERP. Formation de vos équipes et mise en place de tableaux de bord pour un pilotage commercial optimal.
               </p>
             </div>
 
-            {/* Stratégies RSE */}
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Leaf className="w-6 h-6 text-sustainable" />
-                </div>
-                <h3 className="text-xl font-bold">Stratégies RSE Commerciales</h3>
-              </div>
-              <p className="text-muted-foreground mb-4">
-                Création de supports de communication RSE, accompagnement terrain pour intégrer la durabilité dans vos argumentaires commerciaux B2B et formation de vos équipes aux enjeux environnementaux.
-              </p>
-            </div>
-
-            {/* Levée de fonds */}
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Target className="w-6 h-6 text-sustainable" />
-                </div>
-                <h3 className="text-xl font-bold">Valorisation pour Levée de Fonds</h3>
-              </div>
-              <p className="text-muted-foreground mb-4">
-                Création de slides de présentation sur mesure, coaching pour vos rendez-vous investisseurs et préparation opérationnelle aux questions critiques pour maximiser vos chances de succès.
-              </p>
-            </div>
-
-            {/* Prospection */}
+            {/* Générations de leads B2B */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Users className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Prospection & Leads B2B</h3>
+                <h3 className="text-xl font-bold">Générations de leads B2B</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                Accompagnement opérationnel dans vos actions de prospection grands comptes, création d'argumentaires personnalisés et qualification terrain de vos prospects pour optimiser votre taux de conversion.
+                Stratégies de prospection multicanales, qualification de leads, mise en place de campagnes ciblées et accompagnement dans la génération de prospects qualifiés pour développer votre portefeuille clients.
               </p>
             </div>
 
-            {/* Transformation digitale */}
+            {/* Valorisation commerciale pour levée de fonds */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Globe className="w-6 h-6 text-sustainable" />
+                  <Target className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Transformation Digitale</h3>
+                <h3 className="text-xl font-bold">Valorisation commerciale pour levée de fonds</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                Formation sur site de vos équipes, accompagnement dans l'adoption de nouveaux outils et coaching opérationnel pour faciliter la transformation de vos processus commerciaux B2B.
+                Préparation de pitchs investisseurs, valorisation de votre modèle économique, coaching pour les présentations et optimisation de votre approche commerciale pour séduire les investisseurs.
               </p>
             </div>
           </div>
