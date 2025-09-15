@@ -92,54 +92,126 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Notre approche terrain */}
+      {/* Optimisation commerciale et formations */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
-                Notre Approche Terrain
+                Optimisation commerciale et formations
               </h2>
+              <p className="text-xl text-primary font-medium">Maximisez l'efficacité de vos équipes commerciales</p>
             </div>
 
             <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
-              <div className="space-y-6 text-lg leading-relaxed">
-                <p className="text-muted-foreground">
-                  CRM Conseil vous accompagne concrètement sur le terrain, à la fois dans votre développement commercial B2B et dans la mise en œuvre de votre stratégie RSE.
-                </p>
-                <p className="text-muted-foreground">
-                  <strong className="text-sustainable">Nous ne nous contentons pas de donner des recommandations : nous nous intégrons temporairement à vos équipes pour agir à vos côtés.</strong>
-                </p>
-                <p className="text-muted-foreground">
-                  Sur le plan commercial, notre approche opérationnelle inclut l'optimisation de vos supports commerciaux, l'accompagnement lors de rendez-vous clients stratégiques, la mise en place et configuration d'outils de pilotage (CRM/ERP) et l'optimisation de vos processus commerciaux avec la formation de vos équipes à des méthodes de vente B2B éprouvées.
-                </p>
-                <p className="text-muted-foreground">
-                  Sur le plan RSE, nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : réalisation de votre bilan carbone, définition et implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité. L'objectif est d'aligner performance commerciale et performance durable pour renforcer votre compétitivité.
-                </p>
-                <p className="text-muted-foreground">
-                  <strong className="text-sustainable">Finis les cabinets qui vous laissent seuls après leurs recommandations : CRM Conseil reste à vos côtés jusqu'à l'obtention de résultats concrets, mesurables et durables. avec un suivi de l'évolution de vos KPIs</strong>
-                </p>
-              </div>
+              <div className="grid lg:grid-cols-2 gap-12 items-start">
+                {/* Partie gauche - Description */}
+                <div className="space-y-6 text-lg leading-relaxed">
+                  <p className="text-muted-foreground">
+                    Moins de 40 % du temps des commerciaux est dédié à la vente. CRM Conseil aide les startups et PME à éliminer les blocages, optimiser leurs processus de vente et maximiser leur efficacité commerciale. Simplifiez vos outils, perfectionnez vos pitchs et atteignez des résultats durables.
+                  </p>
+                  <p className="text-muted-foreground">
+                    Notre approche combine analyse des performances actuelles, formation pratique et accompagnement sur le terrain pour transformer vos équipes commerciales en forces de vente performantes.
+                  </p>
+                  <p className="text-muted-foreground">
+                    <strong className="text-sustainable">Nous nous intégrons temporairement à vos équipes pour agir à vos côtés et obtenir des résultats concrets, mesurables et durables.</strong>
+                  </p>
+                </div>
 
-              <div className="grid md:grid-cols-2 gap-8 mt-10">
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
-                    <span>Experts en CRM, ERP, développement commercial B2B</span>
+                {/* Partie droite - Ce que nous apportons */}
+                <div>
+                  <div className="flex items-center mb-6">
+                    <div className="p-2 bg-primary/20 rounded-full mr-3">
+                      <Target className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground">Ce que nous vous apportons</h3>
                   </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
-                    <span>Accompagnement opérationnel terrain</span>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Diagnostic approfondi de vos processus commerciaux</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Formations personnalisées pour vos équipes</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Optimisation des cycles de vente</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Amélioration des techniques de prospection</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Développement de scripts de vente efficaces</span>
+                    </div>
                   </div>
                 </div>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
-                    <span>Intégration temporaire dans vos équipes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Accompagnement RSE et Durabilité */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
+                Accompagnement RSE et Durabilité
+              </h2>
+              <p className="text-xl text-sustainable font-medium">De la stratégie à l'action concrète</p>
+            </div>
+
+            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
+              <div className="grid lg:grid-cols-2 gap-12 items-start">
+                {/* Partie gauche - Description */}
+                <div className="space-y-6 text-lg leading-relaxed">
+                  <p className="text-muted-foreground">
+                    Sur le plan RSE, nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : réalisation de votre bilan carbone, définition et implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
+                  </p>
+                  <p className="text-muted-foreground">
+                    <strong className="text-sustainable">L'objectif est d'aligner performance commerciale et performance durable pour renforcer votre compétitivité.</strong>
+                  </p>
+                  <p className="text-muted-foreground">
+                    Notre expertise RSE ne se limite pas aux conseils : nous vous accompagnons dans la mise en œuvre opérationnelle de votre stratégie de durabilité avec un suivi de l'évolution de vos KPIs environnementaux et sociaux.
+                  </p>
+                </div>
+
+                {/* Partie droite - Services RSE */}
+                <div>
+                  <div className="flex items-center mb-6">
+                    <div className="p-2 bg-sustainable/20 rounded-full mr-3">
+                      <Leaf className="w-6 h-6 text-sustainable" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground">Nos services RSE</h3>
                   </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
-                    <span>Formations pratiques et stratégies RSE</span>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Réalisation de bilans carbone complets</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Stratégie RSE globale et double matérialité</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Évaluation d'impact biodiversité</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Intégration RSE dans les argumentaires commerciaux</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Suivi et pilotage des KPIs durables</span>
+                    </div>
                   </div>
                 </div>
               </div>
