@@ -16,7 +16,7 @@ import servicesBackground from "@/assets/services-background.jpg";
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="relative py-20 overflow-hidden">
+    <section id="services" className="relative py-12 overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -187,8 +187,11 @@ export const ServicesSection = () => {
           </div>
         </div>
 
+        {/* Separator */}
+        <div className="border-t border-muted mt-16 pt-16"></div>
+
         {/* Statistics moved from Portfolio */}
-        <div className="grid md:grid-cols-4 gap-8 mt-20">
+        <div className="grid md:grid-cols-4 gap-8">
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">100+</div>
             <p className="text-muted-foreground">Startups accompagnées</p>

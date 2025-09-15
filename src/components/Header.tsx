@@ -35,17 +35,29 @@ export const Header = () => {
             >
               Accueil
             </a>
-            <a
-              href="/services"
+            <button
+              onClick={() => scrollToSection('services')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Services
-            </a>
-            <a
-              href="/a-propos"
+            </button>
+            <button
+              onClick={() => scrollToSection('references')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Références
+            </button>
+            <button
+              onClick={() => scrollToSection('expertise')}
               className="text-foreground hover:text-primary transition-colors"
             >
               À Propos
+            </button>
+            <a
+              href="/engagements-rse"
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Nos engagements RSE
             </a>
             <Button 
               variant="outline"
@@ -76,19 +88,30 @@ export const Header = () => {
               >
                 Accueil
               </a>
-              <a
-                href="/services"
+              <button
+                onClick={() => scrollToSection('services')}
                 className="text-left text-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
               >
                 Services
-              </a>
+              </button>
+              <button
+                onClick={() => scrollToSection('references')}
+                className="text-left text-foreground hover:text-primary transition-colors"
+              >
+                Références
+              </button>
+              <button
+                onClick={() => scrollToSection('expertise')}
+                className="text-left text-foreground hover:text-primary transition-colors"
+              >
+                À Propos
+              </button>
               <a
-                href="/a-propos"
+                href="/engagements-rse"
                 className="text-left text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                À Propos
+                Nos engagements RSE
               </a>
               <Button 
                 variant="outline"

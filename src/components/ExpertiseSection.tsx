@@ -1,18 +1,20 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { 
   Award, 
   Users, 
   GraduationCap, 
   Building2,
   CheckCircle,
-  Star
+  Star,
+  ArrowRight
 } from "lucide-react";
 import expertiseBackground from "@/assets/expertise-background.jpg";
 
 export const ExpertiseSection = () => {
   return (
-    <section id="expertise" className="relative py-20 overflow-hidden">
+    <section id="expertise" className="relative py-12 overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -168,7 +170,7 @@ export const ExpertiseSection = () => {
         {/* Key Strengths */}
         <div className="text-center">
           <h3 className="text-2xl font-bold text-foreground mb-8">Notre approche unique</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center text-center">
               <div className="bg-primary-light p-4 rounded-full mb-4">
                 <CheckCircle className="text-primary" size={32} />
@@ -199,6 +201,16 @@ export const ExpertiseSection = () => {
               </p>
             </div>
           </div>
+          
+          <Button 
+            variant="outline"
+            size="lg"
+            onClick={() => window.location.href = '/a-propos'}
+            className="group"
+          >
+            Découvrez qui nous sommes
+            <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+          </Button>
         </div>
       </div>
     </section>
