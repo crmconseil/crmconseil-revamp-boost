@@ -47,7 +47,7 @@ export const PortfolioSection = () => {
       title: "DeepTech / IA",
       color: "text-commercial",
       bgColor: "bg-commercial-light",
-      companies: ["Lumata", "Daia", "HimyData", "Arcan Security"],
+      companies: ["Daia", "HimyData"],
       description: "Intelligence artificielle et technologies avancées"
     },
     {
@@ -63,7 +63,7 @@ export const PortfolioSection = () => {
       title: "IT / Digital",
       color: "text-blue-600",
       bgColor: "bg-blue-100",
-      companies: ["Tekoway", "Make IT Simple", "Buongiorno", "Orange"],
+      companies: ["Tekoway", "Make IT Simple", "Buongiorno", "Orange", "Lumata", "Arcan Security"],
       description: "Solutions digitales et transformation numérique"
     }
   ];
