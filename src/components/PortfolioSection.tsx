@@ -26,6 +26,7 @@ import laselisLogo from "@/assets/logos/laselis.png";
 import sensoriaLogo from "@/assets/logos/sensoria.jpeg";
 import azothSystemsLogo from "@/assets/logos/azoth-systems.jpg";
 import toumaiLogo from "@/assets/logos/toumai.png";
+import neurodecLogo from "@/assets/logos/neurodec.png";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -48,7 +49,7 @@ export const PortfolioSection = () => {
       title: "DeepTech / IA",
       color: "text-commercial",
       bgColor: "bg-commercial-light",
-      companies: ["Daia", "HimyData", "Toumai"],
+      companies: ["Daia", "HimyData", "Toumai", "Neurodec"],
       description: "Intelligence artificielle et technologies avancées"
     },
     {
@@ -141,6 +142,8 @@ export const PortfolioSection = () => {
                             return himydataLogo;
                           case "Toumai":
                             return toumaiLogo;
+                          case "Neurodec":
+                            return neurodecLogo;
                           case "Arcan Security":
                             return arcanSecurityLogo;
                           case "LifeScientis":
