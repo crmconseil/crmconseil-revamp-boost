@@ -24,6 +24,7 @@ import arcanSecurityLogo from "@/assets/logos/arcan-security.jpg";
 import lifescientisLogo from "@/assets/logos/lifescientis.png";
 import laselisLogo from "@/assets/logos/laselis.png";
 import sensoriaLogo from "@/assets/logos/sensoria.jpeg";
+import azothSystemsLogo from "@/assets/logos/azoth-systems.jpg";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -54,7 +55,7 @@ export const PortfolioSection = () => {
       title: "HealthTech",
       color: "text-pink-600",
       bgColor: "bg-pink-100",
-      companies: ["LifeScientis", "Laselis", "Sensoria", "Tethys"],
+      companies: ["LifeScientis", "Laselis", "Sensoria", "Tethys", "Azoth Systems"],
       description: "Technologies médicales et e-santé"
     },
     {
@@ -145,6 +146,8 @@ export const PortfolioSection = () => {
                             return laselisLogo;
                           case "Sensoria":
                             return sensoriaLogo;
+                          case "Azoth Systems":
+                            return azothSystemsLogo;
                           default:
                             return null;
                         }
