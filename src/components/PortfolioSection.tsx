@@ -23,6 +23,7 @@ import himydataLogo from "@/assets/logos/himydata.png";
 import arcanSecurityLogo from "@/assets/logos/arcan-security.jpg";
 import lifescientisLogo from "@/assets/logos/lifescientis.png";
 import laselisLogo from "@/assets/logos/laselis.png";
+import sensoriaLogo from "@/assets/logos/sensoria.jpeg";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -53,7 +54,7 @@ export const PortfolioSection = () => {
       title: "HealthTech",
       color: "text-pink-600",
       bgColor: "bg-pink-100",
-      companies: ["LifeScientis", "Laselis", "Centre Laser Esthétique"],
+      companies: ["LifeScientis", "Laselis", "Sensoria"],
       description: "Technologies médicales et e-santé"
     },
     {
@@ -142,6 +143,8 @@ export const PortfolioSection = () => {
                             return lifescientisLogo;
                           case "Laselis":
                             return laselisLogo;
+                          case "Sensoria":
+                            return sensoriaLogo;
                           default:
                             return null;
                         }
