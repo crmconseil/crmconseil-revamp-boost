@@ -122,47 +122,46 @@ export const PortfolioSection = () => {
             Nos Partenaires
           </h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {partners.map((partner, index) => {
-              // Map partner names to imported logos
-              const getPartnerLogo = (name: string) => {
-                switch(name) {
-                  case "Pôle SCS":
-                    return poleScsLogo;
-                  case "Incubateur Paca-Est":
-                    return incubateurPacaLogo;
-                  case "MonacoTech":
-                    return monacoTechLogo;
-                  case "Pôle Mer":
-                    return poleMerLogo;
-                  case "Initiative Terres d'Azur Grasse":
-                    return terresAzurLogo;
-                  case "Innovation Hub Nice Côte d'Azur":
-                    return metropoleNiceLogo;
-                  default:
-                    return null;
-                }
-              };
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg">
+            <div className="flex items-center justify-center gap-8 flex-wrap">
+              {partners.map((partner, index) => {
+                // Map partner names to imported logos
+                const getPartnerLogo = (name: string) => {
+                  switch(name) {
+                    case "Pôle SCS":
+                      return poleScsLogo;
+                    case "Incubateur Paca-Est":
+                      return incubateurPacaLogo;
+                    case "MonacoTech":
+                      return monacoTechLogo;
+                    case "Pôle Mer":
+                      return poleMerLogo;
+                    case "Initiative Terres d'Azur Grasse":
+                      return terresAzurLogo;
+                    case "Innovation Hub Nice Côte d'Azur":
+                      return metropoleNiceLogo;
+                    default:
+                      return null;
+                  }
+                };
 
-              const logoSrc = getPartnerLogo(partner.name);
-              
-              return (
-                <Card key={index} className="p-6 text-center hover:shadow-card-sustainable transition-all duration-300 group">
-                  <div className="flex items-center justify-center mb-4 h-16">
+                const logoSrc = getPartnerLogo(partner.name);
+                
+                return (
+                  <div key={index} className="flex items-center justify-center h-16 w-32 hover:scale-110 transition-transform group">
                     {logoSrc ? (
                       <img 
                         src={logoSrc} 
                         alt={`${partner.name} logo`}
-                        className="max-h-12 max-w-full object-contain group-hover:scale-110 transition-transform"
+                        className="max-h-14 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                       />
                     ) : (
-                      <Building2 className="text-primary group-hover:scale-110 transition-transform" size={24} />
+                      <Building2 className="text-muted-foreground group-hover:text-primary transition-colors" size={32} />
                     )}
                   </div>
-                  <h4 className="font-semibold text-foreground">{partner.name}</h4>
-                </Card>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
 
