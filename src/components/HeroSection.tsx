@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, TrendingUp } from "lucide-react";
-import heroImage from "@/assets/hero-sustainable-business.jpg";
+import heroImage from "@/assets/hero-business-sustainability.jpg";
 
 export const HeroSection = () => {
   const scrollToContact = () => {
