@@ -92,71 +92,6 @@ const Services = () => {
         </div>
       </section>
 
-
-      {/* Accompagnement RSE et Durabilité */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
-                Accompagnement RSE et Durabilité
-              </h2>
-              <p className="text-xl text-sustainable font-medium">De la stratégie à l'action concrète</p>
-            </div>
-
-            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
-              <div className="grid lg:grid-cols-2 gap-12 items-start">
-                {/* Partie gauche - Description */}
-                <div className="space-y-6 text-lg leading-relaxed">
-                  <p className="text-muted-foreground">
-                    Sur le plan RSE, nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : réalisation de votre bilan carbone, définition et implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
-                  </p>
-                  <p className="text-muted-foreground">
-                    <strong className="text-sustainable">L'objectif est d'aligner performance commerciale et performance durable pour renforcer votre compétitivité.</strong>
-                  </p>
-                  <p className="text-muted-foreground">
-                    Notre expertise RSE ne se limite pas aux conseils : nous vous accompagnons dans la mise en œuvre opérationnelle de votre stratégie de durabilité avec un suivi de l'évolution de vos KPIs environnementaux et sociaux.
-                  </p>
-                </div>
-
-                {/* Partie droite - Services RSE */}
-                <div>
-                  <div className="flex items-center mb-6">
-                    <div className="p-2 bg-sustainable/20 rounded-full mr-3">
-                      <Leaf className="w-6 h-6 text-sustainable" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground">Nos services RSE</h3>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Réalisation de bilans carbone complets</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Stratégie RSE globale et double matérialité</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Évaluation d'impact biodiversité</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Intégration RSE dans les argumentaires commerciaux</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Suivi et pilotage des KPIs durables</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services principaux */}
       <section id="missions-commerciales" className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
@@ -276,6 +211,70 @@ const Services = () => {
               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
                 1 à 5 JH ~ 950€ - 4,750€
               </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Accompagnement RSE et Durabilité */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
+                Accompagnement RSE et Durabilité
+              </h2>
+              <p className="text-xl text-sustainable font-medium">De la stratégie à l'action concrète</p>
+            </div>
+
+            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
+              <div className="grid lg:grid-cols-2 gap-12 items-start">
+                {/* Partie gauche - Description */}
+                <div className="space-y-6 text-lg leading-relaxed">
+                  <p className="text-muted-foreground">
+                    Sur le plan RSE, nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : réalisation de votre bilan carbone, définition et implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
+                  </p>
+                  <p className="text-muted-foreground">
+                    <strong className="text-sustainable">L'objectif est d'aligner performance commerciale et performance durable pour renforcer votre compétitivité.</strong>
+                  </p>
+                  <p className="text-muted-foreground">
+                    Notre expertise RSE ne se limite pas aux conseils : nous vous accompagnons dans la mise en œuvre opérationnelle de votre stratégie de durabilité avec un suivi de l'évolution de vos KPIs environnementaux et sociaux.
+                  </p>
+                </div>
+
+                {/* Partie droite - Services RSE */}
+                <div>
+                  <div className="flex items-center mb-6">
+                    <div className="p-2 bg-sustainable/20 rounded-full mr-3">
+                      <Leaf className="w-6 h-6 text-sustainable" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-foreground">Nos services RSE</h3>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Réalisation de bilans carbone complets</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Stratégie RSE globale et double matérialité</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Évaluation d'impact biodiversité</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Intégration RSE dans les argumentaires commerciaux</span>
+                    </div>
+                    <div className="flex items-start">
+                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                      <span className="text-muted-foreground">Suivi et pilotage des KPIs durables</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
