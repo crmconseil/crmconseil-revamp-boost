@@ -273,6 +273,18 @@ const Services = () => {
               </div>
             </div>
           </div>
+
+          {/* Tarifs et délais */}
+          <div className="bg-gradient-to-r from-primary/10 to-sustainable/10 rounded-2xl p-8 shadow-lg border border-primary/30 max-w-4xl mx-auto mt-8">
+            <h3 className="text-2xl font-bold text-center mb-6">Tarifs et délais</h3>
+            <div className="text-center">
+              <div className="bg-background/80 backdrop-blur-sm rounded-xl p-6 inline-block">
+                <span className="text-3xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
+                  1 à 5 JH ~ 950€ - 4,750€
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
