@@ -14,7 +14,7 @@ import portfolioBackground from "@/assets/portfolio-background.jpg";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
-import initiativeLogo from "@/assets/logos/initiative.png";
+import poleMerLogo from "@/assets/logos/pole-mer.png";
 import terresAzurLogo from "@/assets/logos/terres-azur.png";
 import metropoleNiceLogo from "@/assets/logos/metropole-nice.png";
 
@@ -58,7 +58,7 @@ export const PortfolioSection = () => {
     { name: "Pôle SCS", type: "Réseau Innovation" },
     { name: "Incubateur Paca-Est", type: "Incubateur" },
     { name: "MonacoTech", type: "Startup Program" },
-    { name: "Initiative", type: "Financement" },
+    { name: "Pôle Mer", type: "Financement" },
     { name: "Terres d'Azur Hub", type: "Hub Innovation" },
     { name: "Métropole Nice Côte d'Azur", type: "Collectivité" }
   ];
@@ -133,8 +133,8 @@ export const PortfolioSection = () => {
                     return incubateurPacaLogo;
                   case "MonacoTech":
                     return monacoTechLogo;
-                  case "Initiative":
-                    return initiativeLogo;
+                  case "Pôle Mer":
+                    return poleMerLogo;
                   case "Terres d'Azur Hub":
                     return terresAzurLogo;
                   case "Métropole Nice Côte d'Azur":
