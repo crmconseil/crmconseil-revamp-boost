@@ -180,11 +180,11 @@ export const PortfolioSection = () => {
                       const logoSrc = getCompanyLogo(company);
                       
                       return logoSrc ? (
-                        <div key={idx} className="flex items-center justify-center h-16 bg-white/50 rounded-lg p-3">
+                        <div key={idx} className="flex items-center justify-center h-20 bg-white/50 rounded-lg p-4">
                           <img 
                             src={logoSrc} 
                             alt={`${company} logo`}
-                            className="max-h-12 max-w-full object-contain"
+                            className="max-h-16 max-w-full object-contain"
                           />
                         </div>
                       ) : (
