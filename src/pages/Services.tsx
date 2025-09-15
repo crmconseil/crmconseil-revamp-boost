@@ -217,64 +217,119 @@ const Services = () => {
       </section>
 
       {/* Accompagnement RSE et Durabilité */}
-      <section className="py-16 bg-muted/30">
+      <section id="accompagnements-rse" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
-                Accompagnement RSE et Durabilité
-              </h2>
-              <p className="text-xl text-sustainable font-medium">De la stratégie à l'action concrète</p>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
+              Accompagnement RSE et Durabilité
+            </h2>
+            <div className="max-w-4xl mx-auto mt-8">
+              <p className="text-lg text-muted-foreground mb-4">
+                Et si intégrer des pratiques durables dans votre stratégie devenait un atout pour réduire vos coûts, fidéliser vos équipes, innover vos offres et conquérir de nouveaux marchés ?
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Notre expertise combine performance économique et responsabilité sociétale pour créer une stratégie durable qui renforce votre positionnement concurrentiel. Nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : Réalisation de votre bilan carbone ADEME, définition et implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Bilan - Emissions Directes - Scope 1 */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Globe className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Bilan - Emissions Directes - Scope 1</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Analyse complète de vos émissions directes de gaz à effet de serre issues de vos activités propres pour établir votre bilan carbone initial.
+              </p>
             </div>
 
-            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
-              <div className="grid lg:grid-cols-2 gap-12 items-start">
-                {/* Partie gauche - Description */}
-                <div className="space-y-6 text-lg leading-relaxed">
-                  <p className="text-muted-foreground">
-                    Sur le plan RSE, nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : réalisation de votre bilan carbone, définition et implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
-                  </p>
-                  <p className="text-muted-foreground">
-                    <strong className="text-sustainable">L'objectif est d'aligner performance commerciale et performance durable pour renforcer votre compétitivité.</strong>
-                  </p>
-                  <p className="text-muted-foreground">
-                    Notre expertise RSE ne se limite pas aux conseils : nous vous accompagnons dans la mise en œuvre opérationnelle de votre stratégie de durabilité avec un suivi de l'évolution de vos KPIs environnementaux et sociaux.
-                  </p>
+            {/* Bilan RSE Complet – Scope 1, 2, 3 */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Leaf className="w-6 h-6 text-sustainable" />
                 </div>
-
-                {/* Partie droite - Services RSE */}
-                <div>
-                  <div className="flex items-center mb-6">
-                    <div className="p-2 bg-sustainable/20 rounded-full mr-3">
-                      <Leaf className="w-6 h-6 text-sustainable" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground">Nos services RSE</h3>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Réalisation de bilans carbone complets</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Stratégie RSE globale et double matérialité</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Évaluation d'impact biodiversité</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Intégration RSE dans les argumentaires commerciaux</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Suivi et pilotage des KPIs durables</span>
-                    </div>
-                  </div>
-                </div>
+                <h3 className="text-xl font-bold">Bilan RSE Complet – Scope 1, 2, 3</h3>
               </div>
+              <p className="text-muted-foreground mb-4">
+                Évaluation exhaustive de vos impacts environnementaux et sociaux incluant toutes vos émissions directes et indirectes.
+              </p>
+            </div>
+
+            {/* Bilan Impact Biodiversité */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Award className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Bilan Impact Biodiversité</h3>
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Mesure et évaluation de l'impact de vos activités sur la biodiversité avec des recommandations concrètes d'amélioration.
+              </p>
+            </div>
+          </div>
+
+          {/* Ce que nous vous apportons */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-12">
+            <h3 className="text-2xl font-bold text-center mb-8">Ce que nous vous apportons:</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Réalisation de bilans carbone complets</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Stratégie RSE globale et double matérialité</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Évaluation d'impact biodiversité</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Intégration RSE dans les supports commerciaux</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Formation des équipes à la stratégie RSE</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Suivi et pilotage des KPIs durabilité</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Nos livrables */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-8">
+            <h3 className="text-2xl font-bold text-center mb-8">Nos livrables</h3>
+            <div className="grid md:grid-cols-2 gap-4 mb-8">
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Rapport d'analyse carbone chiffré valorisable au niveau de l'ADEME</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Rapport de bilans et stratégie RSE chiffré avec ROI</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Rapport d'Impact Biodiversité chiffré</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Formation des équipes à la stratégie RSE</span>
+              </div>
+            </div>
+            <div className="text-center">
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
+                5 - 15JH ~ 6,000€ et 12,000€ avec possibilité de subventions BPI France, si dossier éligible
+              </span>
             </div>
           </div>
         </div>
