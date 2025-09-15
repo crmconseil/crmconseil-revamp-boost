@@ -17,28 +17,72 @@ const Services = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-sustainable/20 to-primary/20" />
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Expert{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
-                CRM & Développement Commercial
-              </span>
+          <div className="max-w-6xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-12 text-center">
+              Nos services détaillés
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-              CRM Conseil accompagne les startups et PMEs innovantes dans l'augmentation de leurs résultats commerciaux par une approche concrète et terrain : création de slides sur mesure, accompagnement lors de vos rendez-vous prospects grands comptes, configuration pratique d'outils CRM/ERP/IA et formations commerciales opérationnelles.
-            </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center">
+            
+            {/* Citation et schéma */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+              {/* Citation à gauche */}
+              <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 border border-sustainable/20">
+                <blockquote className="text-2xl md:text-3xl text-muted-foreground italic leading-relaxed">
+                  "Chez CRM Conseil, nous sommes profondément convaincus que l'alignement de la performance commerciale avec une démarche concrète de durabilité est la seule voie viable pour l'avenir."
+                </blockquote>
+              </div>
+              
+              {/* Schéma à droite */}
+              <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 border border-sustainable/20">
+                <div className="flex items-center justify-between">
+                  {/* Performance commerciale */}
+                  <div className="flex flex-col items-center text-center flex-1">
+                    <div className="p-4 bg-primary/20 rounded-full mb-4">
+                      <div className="flex space-x-1">
+                        <Users className="w-6 h-6 text-primary" />
+                        <TrendingUp className="w-6 h-6 text-primary" />
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">Performance et durabilité commerciale</h3>
+                  </div>
+                  
+                  {/* Flèches bidirectionnelles */}
+                  <div className="flex flex-col items-center mx-6">
+                    <div className="flex items-center">
+                      <div className="w-8 h-0.5 bg-sustainable"></div>
+                      <div className="w-0 h-0 border-l-4 border-l-sustainable border-t-2 border-t-transparent border-b-2 border-b-transparent"></div>
+                    </div>
+                    <div className="flex items-center mt-1">
+                      <div className="w-0 h-0 border-r-4 border-r-sustainable border-t-2 border-t-transparent border-b-2 border-b-transparent"></div>
+                      <div className="w-8 h-0.5 bg-sustainable"></div>
+                    </div>
+                  </div>
+                  
+                  {/* Durabilité écologique */}
+                  <div className="flex flex-col items-center text-center flex-1">
+                    <div className="p-4 bg-sustainable/20 rounded-full mb-4">
+                      <div className="relative">
+                        <Leaf className="w-8 h-8 text-sustainable" />
+                      </div>
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">Durabilité écologique et sociétale</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Boutons d'ancrage */}
+            <div className="flex flex-col md:flex-row gap-6 justify-center">
               <a 
-                href="#contact" 
-                className="inline-flex items-center px-8 py-3 bg-sustainable hover:bg-sustainable/90 text-white rounded-lg font-medium transition-colors"
+                href="#missions-commerciales" 
+                className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-colors text-lg"
               >
-                Audit commercial gratuit
+                Missions d'optimisation commerciale
               </a>
               <a 
-                href="#accompagnement" 
-                className="inline-flex items-center px-8 py-3 border border-sustainable text-sustainable hover:bg-sustainable hover:text-white rounded-lg font-medium transition-colors"
+                href="#accompagnements-rse" 
+                className="inline-flex items-center justify-center px-8 py-4 border-2 border-sustainable text-sustainable hover:bg-sustainable hover:text-white rounded-lg font-medium transition-colors text-lg"
               >
-                Découvrir nos services
+                Accompagnements et Bilans RSE
               </a>
             </div>
           </div>
@@ -46,7 +90,7 @@ const Services = () => {
       </section>
 
       {/* Services principaux */}
-      <section id="accompagnement" className="py-16 bg-muted/50">
+      <section id="missions-commerciales" className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
@@ -190,7 +234,7 @@ const Services = () => {
       </section>
 
       {/* Engagement RSE */}
-      <section className="py-16 bg-sustainable/5">
+      <section id="accompagnements-rse" className="py-16 bg-sustainable/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
