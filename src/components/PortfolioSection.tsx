@@ -11,6 +11,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import portfolioBackground from "@/assets/portfolio-background.jpg";
+import actionAirLogo from "@/assets/logos/action-air.jpg";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -103,12 +104,33 @@ export const PortfolioSection = () => {
                 
                 <div className="space-y-3">
                   <h4 className="font-semibold text-foreground">Clients accompagnés :</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {sector.companies.map((company, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-sm">
-                        {company}
-                      </Badge>
-                    ))}
+                  <div className="flex flex-wrap gap-3">
+                    {sector.companies.map((company, idx) => {
+                      const getCompanyLogo = (companyName: string) => {
+                        switch(companyName) {
+                          case "ActionAir":
+                            return actionAirLogo;
+                          default:
+                            return null;
+                        }
+                      };
+                      
+                      const logoSrc = getCompanyLogo(company);
+                      
+                      return logoSrc ? (
+                        <div key={idx} className="flex items-center justify-center h-8 w-16">
+                          <img 
+                            src={logoSrc} 
+                            alt={`${company} logo`}
+                            className="max-h-8 max-w-full object-contain"
+                          />
+                        </div>
+                      ) : (
+                        <Badge key={idx} variant="secondary" className="text-sm">
+                          {company}
+                        </Badge>
+                      );
+                    })}
                   </div>
                 </div>
               </Card>
