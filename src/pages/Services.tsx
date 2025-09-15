@@ -184,7 +184,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Optimisation des process commerciaux</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                Analyse et restructuration de vos processus de vente, amélioration du cycle commercial, optimisation des argumentaires et méthodes de prospection pour maximiser votre efficacité commerciale.
+                Analyse et restructuration de vos processus de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation des argumentaires et méthodes de prospection pour maximiser votre efficacité commerciale.
               </p>
             </div>
 
@@ -242,15 +242,30 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Optimisation des cycles de vente</span>
+                <span className="text-muted-foreground">+60% de taux de réussite de vos levées de fonds.</span>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Amélioration des techniques de prospection</span>
+                <span className="text-muted-foreground">+29% d'augmentation des ventes</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Nos livrables */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-8">
+            <h3 className="text-2xl font-bold text-center mb-8">Nos livrables</h3>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Slides de présentation commerciale révisée</span>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Développement de scripts de vente efficaces</span>
+                <span className="text-muted-foreground">Outils CRM/ERP implémentés et personnalisés</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Listes de leads qualifiés</span>
               </div>
             </div>
           </div>
