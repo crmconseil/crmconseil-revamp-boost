@@ -29,6 +29,7 @@ import toumaiLogo from "@/assets/logos/toumai.png";
 import neurodecLogo from "@/assets/logos/neurodec.png";
 import akidaiaLogo from "@/assets/logos/akidaia.jpg";
 import plenesysLogo from "@/assets/logos/plenesys.jpg";
+import tekowayLogo from "@/assets/logos/tekoway.jpg";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -152,6 +153,8 @@ export const PortfolioSection = () => {
                             return plenesysLogo;
                           case "Arcan Security":
                             return arcanSecurityLogo;
+                          case "Tekoway":
+                            return tekowayLogo;
                           case "LifeScientis":
                             return lifescientisLogo;
                           case "Laselis":
