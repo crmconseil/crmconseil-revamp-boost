@@ -36,7 +36,7 @@ export const HeroSection = () => {
           {/* Description */}
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Accompagnement commercial stratégique et opérationnel pour startups et PME innovantes, 
-            alliant optimisation commerciale et valorisation d'une stratégie RSE tangible.
+            alliant <span className="text-commercial-light font-semibold text-xl md:text-2xl">optimisation commerciale</span> et <span className="text-sustainable-light font-semibold text-xl md:text-2xl">valorisation d'une stratégie RSE tangible</span>.
           </p>
 
           {/* Value Props */}

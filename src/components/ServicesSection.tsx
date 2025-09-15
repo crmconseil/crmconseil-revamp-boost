@@ -187,17 +187,24 @@ export const ServicesSection = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <Button 
-            variant="sustainable" 
-            size="lg" 
-            className="group"
-            onClick={() => window.location.href = '/#contact'}
-          >
-            Discuter de votre projet
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-          </Button>
+        {/* Statistics moved from Portfolio */}
+        <div className="grid md:grid-cols-4 gap-8 mt-20">
+          <div className="text-center">
+            <div className="text-4xl font-bold text-primary mb-2">100+</div>
+            <p className="text-muted-foreground">Startups accompagnées</p>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-sustainable mb-2">4</div>
+            <p className="text-muted-foreground">Secteurs d'expertise</p>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-commercial mb-2">25+</div>
+            <p className="text-muted-foreground">Années d'expérience</p>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-primary mb-2">16M€</div>
+            <p className="text-muted-foreground">Financements cumulés pour un client fidèle</p>
+          </div>
         </div>
       </div>
     </section>

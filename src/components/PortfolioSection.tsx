@@ -249,36 +249,6 @@ export const PortfolioSection = () => {
           </div>
         </div>
 
-        {/* Statistics */}
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">100+</div>
-            <p className="text-muted-foreground">Startups accompagnées</p>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-sustainable mb-2">4</div>
-            <p className="text-muted-foreground">Secteurs d'expertise</p>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-commercial mb-2">25+</div>
-            <p className="text-muted-foreground">Années d'expérience</p>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">16M€</div>
-            <p className="text-muted-foreground">Financements cumulés pour un client fidèle</p>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <p className="text-lg text-muted-foreground mb-6">
-            Rejoignez notre portfolio de clients innovants
-          </p>
-          <Button variant="sustainable" size="lg" className="group">
-            Devenir client
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-          </Button>
-        </div>
       </div>
     </section>
   );
