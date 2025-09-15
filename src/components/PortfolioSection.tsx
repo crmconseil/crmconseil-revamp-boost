@@ -32,6 +32,7 @@ import plenesysLogo from "@/assets/logos/plenesys.jpg";
 import tekowayLogo from "@/assets/logos/tekoway.jpg";
 import orangeLogo from "@/assets/logos/orange.png";
 import inovafiLogo from "@/assets/logos/inovafi.png";
+import ononpayLogo from "@/assets/logos/ononpay.png";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -70,7 +71,7 @@ export const PortfolioSection = () => {
       title: "IT / Digital",
       color: "text-blue-600",
       bgColor: "bg-blue-100",
-      companies: ["Tekoway", "Make IT Simple", "Buongiorno", "Orange", "Lumata", "Arcan Security", "Inovafi"],
+      companies: ["Tekoway", "Orange", "Lumata", "Arcan Security", "Inovafi", "Ononpay"],
       description: "Solutions digitales et transformation numérique"
     }
   ];
@@ -161,6 +162,8 @@ export const PortfolioSection = () => {
                             return orangeLogo;
                           case "Inovafi":
                             return inovafiLogo;
+                          case "Ononpay":
+                            return ononpayLogo;
                           case "LifeScientis":
                             return lifescientisLogo;
                           case "Laselis":
