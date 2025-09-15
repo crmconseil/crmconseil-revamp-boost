@@ -92,69 +92,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Optimisation commerciale et formations */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
-                Optimisation commerciale et formations
-              </h2>
-              <p className="text-xl text-primary font-medium">Maximisez l'efficacité de vos équipes commerciales</p>
-            </div>
-
-            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
-              <div className="grid lg:grid-cols-2 gap-12 items-start">
-                {/* Partie gauche - Description */}
-                <div className="space-y-6 text-lg leading-relaxed">
-                  <p className="text-muted-foreground">
-                    Moins de 40 % du temps des commerciaux est dédié à la vente. CRM Conseil aide les startups et PME à éliminer les blocages, optimiser leurs processus de vente et maximiser leur efficacité commerciale. Simplifiez vos outils, perfectionnez vos pitchs et atteignez des résultats durables.
-                  </p>
-                  <p className="text-muted-foreground">
-                    Notre approche combine analyse des performances actuelles, formation pratique et accompagnement sur le terrain pour transformer vos équipes commerciales en forces de vente performantes.
-                  </p>
-                  <p className="text-muted-foreground">
-                    <strong className="text-sustainable">Nous nous intégrons temporairement à vos équipes pour agir à vos côtés et obtenir des résultats concrets, mesurables et durables.</strong>
-                  </p>
-                </div>
-
-                {/* Partie droite - Ce que nous apportons */}
-                <div>
-                  <div className="flex items-center mb-6">
-                    <div className="p-2 bg-primary/20 rounded-full mr-3">
-                      <Target className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold text-foreground">Ce que nous vous apportons</h3>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Diagnostic approfondi de vos processus commerciaux</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Formations personnalisées pour vos équipes</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Optimisation des cycles de vente</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Amélioration des techniques de prospection</span>
-                    </div>
-                    <div className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                      <span className="text-muted-foreground">Développement de scripts de vente efficaces</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Accompagnement RSE et Durabilité */}
       <section className="py-16 bg-muted/30">
@@ -227,6 +164,14 @@ const Services = () => {
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
               Missions d'Optimisations commerciales
             </h2>
+            <div className="max-w-4xl mx-auto mt-8">
+              <p className="text-lg text-muted-foreground mb-4">
+                Moins de 40 % du temps des commerciaux est dédié à la vente. CRM Conseil aide les startups et PME à éliminer les blocages, optimiser leurs processus de vente et maximiser leur efficacité commerciale. Simplifiez vos outils, perfectionnez vos pitchs et atteignez des résultats durables.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Notre approche combine analyse des performances actuelles, formation pratique et accompagnement sur le terrain pour transformer vos équipes commerciales en forces de vente performantes.
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -280,6 +225,33 @@ const Services = () => {
               <p className="text-muted-foreground mb-4">
                 Préparation de pitchs investisseurs, valorisation de votre modèle économique, coaching pour les présentations et optimisation de votre approche commerciale pour séduire les investisseurs.
               </p>
+            </div>
+            </div>
+
+          {/* Ce que nous vous apportons */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-12">
+            <h3 className="text-2xl font-bold text-center mb-8">Ce que nous vous apportons:</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Diagnostic approfondi de vos processus commerciaux</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Formations personnalisées pour vos équipes</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Optimisation des cycles de vente</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Amélioration des techniques de prospection</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Développement de scripts de vente efficaces</span>
+              </div>
             </div>
           </div>
         </div>
