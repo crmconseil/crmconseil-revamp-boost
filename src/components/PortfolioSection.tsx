@@ -14,6 +14,7 @@ import portfolioBackground from "@/assets/portfolio-background.jpg";
 import actionAirLogo from "@/assets/logos/action-air.jpg";
 import mycophytoLogo from "@/assets/logos/mycophyto.png";
 import tethysLogo from "@/assets/logos/tethys.jpg";
+import hydroLogo from "@/assets/logos/hydro.jpeg";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -116,6 +117,8 @@ export const PortfolioSection = () => {
                             return mycophytoLogo;
                           case "Tethys":
                             return tethysLogo;
+                          case "Hydro":
+                            return hydroLogo;
                           default:
                             return null;
                         }
