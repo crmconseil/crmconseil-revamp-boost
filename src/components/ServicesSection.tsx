@@ -33,7 +33,7 @@ export const ServicesSection = () => {
             Nos Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Une approche unique combinant performance commerciale et développement durable
+            Des solutions personnalisées pour votre croissance et développement durable
           </p>
         </div>
 
@@ -42,8 +42,8 @@ export const ServicesSection = () => {
           {/* Commercial Services */}
           <div className="space-y-8">
             <div className="text-center">
-              <h3 className="text-3xl font-bold text-commercial mb-4">
-                Accompagnement Commercial
+              <h3 className="text-3xl font-bold text-commercial mb-4 leading-tight">
+                Accompagnement<br />Commercial
               </h3>
               <p className="text-muted-foreground">
                 Solutions éprouvées pour accélérer votre croissance commerciale
