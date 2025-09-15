@@ -159,8 +159,7 @@ export const PortfolioSection = () => {
                       <Building2 className="text-primary group-hover:scale-110 transition-transform" size={24} />
                     )}
                   </div>
-                  <h4 className="font-semibold text-foreground mb-2">{partner.name}</h4>
-                  <Badge variant="outline" className="text-xs">{partner.type}</Badge>
+                  <h4 className="font-semibold text-foreground">{partner.name}</h4>
                 </Card>
               );
             })}
