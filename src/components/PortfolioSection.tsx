@@ -112,9 +112,8 @@ export const PortfolioSection = () => {
                   </div>
                 </div>
                 
-                <div className="space-y-3">
-                  <h4 className="font-semibold text-foreground">Clients accompagnés :</h4>
-                  <div className="flex flex-wrap gap-3">
+                <div className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
                     {sector.companies.map((company, idx) => {
                       const getCompanyLogo = (companyName: string) => {
                         switch(companyName) {
@@ -148,15 +147,15 @@ export const PortfolioSection = () => {
                       const logoSrc = getCompanyLogo(company);
                       
                       return logoSrc ? (
-                        <div key={idx} className="flex items-center justify-center h-8 w-16">
+                        <div key={idx} className="flex items-center justify-center h-16 bg-white/50 rounded-lg p-3">
                           <img 
                             src={logoSrc} 
                             alt={`${company} logo`}
-                            className="max-h-8 max-w-full object-contain"
+                            className="max-h-12 max-w-full object-contain"
                           />
                         </div>
                       ) : (
-                        <Badge key={idx} variant="secondary" className="text-sm">
+                        <Badge key={idx} variant="secondary" className="text-sm justify-center py-2">
                           {company}
                         </Badge>
                       );
