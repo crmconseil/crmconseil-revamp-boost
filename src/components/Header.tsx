@@ -62,13 +62,7 @@ export const Header = () => {
             <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => {
-                if (window.location.pathname !== '/') {
-                  window.location.href = '/#contact';
-                } else {
-                  scrollToSection('contact');
-                }
-              }}
+              onClick={() => window.location.href = '/#contact'}
             >
               Nous contacter
             </Button>
@@ -122,13 +116,7 @@ export const Header = () => {
               <Button 
                 variant="outline"
                 className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => {
-                  if (window.location.pathname !== '/') {
-                    window.location.href = '/#contact';
-                  } else {
-                    scrollToSection('contact');
-                  }
-                }}
+                onClick={() => window.location.href = '/#contact'}
               >
                 Nous contacter
               </Button>
