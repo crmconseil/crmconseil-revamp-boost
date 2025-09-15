@@ -17,6 +17,7 @@ import tethysLogo from "@/assets/logos/tethys.jpg";
 import hydroLogo from "@/assets/logos/hydro.jpeg";
 import lumataLogo from "@/assets/logos/lumata.png";
 import daiaLogo from "@/assets/logos/daia.jpg";
+import himydataLogo from "@/assets/logos/himydata.png";
 import poleScsLogo from "@/assets/logos/pole-scs.png";
 import incubateurPacaLogo from "@/assets/logos/incubateur-paca.png";
 import monacoTechLogo from "@/assets/logos/monacotech.png";
@@ -125,6 +126,8 @@ export const PortfolioSection = () => {
                             return lumataLogo;
                           case "Daia":
                             return daiaLogo;
+                          case "HimyData":
+                            return himydataLogo;
                           default:
                             return null;
                         }
