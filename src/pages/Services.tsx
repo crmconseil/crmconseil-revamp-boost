@@ -23,17 +23,17 @@ const Services = () => {
             </h1>
             
             {/* Citation et schéma */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch mb-16">
               {/* Citation à gauche */}
-              <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 border border-sustainable/20">
-                <blockquote className="text-2xl md:text-3xl text-muted-foreground italic leading-relaxed">
-                  "Chez CRM Conseil, nous sommes profondément convaincus que l'alignement de la performance commerciale avec une démarche concrète de durabilité est la seule voie viable pour l'avenir."
+              <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 border border-sustainable/20 flex items-center">
+                <blockquote className="text-lg md:text-xl text-muted-foreground italic leading-relaxed">
+                  "Chez CRM Conseil, nous sommes profondément convaincus que <strong className="text-sustainable font-semibold">l'alignement de la performance commerciale avec une démarche concrète de durabilité</strong> est la seule voie viable pour l'avenir."
                 </blockquote>
               </div>
               
               {/* Schéma à droite */}
-              <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 border border-sustainable/20">
-                <div className="flex items-center justify-between">
+              <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-8 border border-sustainable/20 flex items-center">
+                <div className="flex items-center justify-between w-full">
                   {/* Performance commerciale */}
                   <div className="flex flex-col items-center text-center flex-1">
                     <div className="p-4 bg-primary/20 rounded-full mb-4">
@@ -70,20 +70,79 @@ const Services = () => {
               </div>
             </div>
             
-            {/* Boutons d'ancrage */}
-            <div className="flex flex-col md:flex-row gap-6 justify-center">
-              <a 
-                href="#missions-commerciales" 
-                className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-colors text-lg"
-              >
-                Missions d'optimisation commerciale
-              </a>
-              <a 
-                href="#accompagnements-rse" 
-                className="inline-flex items-center justify-center px-8 py-4 border-2 border-sustainable text-sustainable hover:bg-sustainable hover:text-white rounded-lg font-medium transition-colors text-lg"
-              >
-                Accompagnements et Bilans RSE
-              </a>
+            {/* Sous-titre et Boutons d'ancrage */}
+            <div className="text-center">
+              <h2 className="text-2xl font-semibold text-foreground mb-8">Découvrez nos services</h2>
+              <div className="flex flex-col md:flex-row gap-6 justify-center">
+                <a 
+                  href="#missions-commerciales" 
+                  className="inline-flex items-center justify-center px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-colors text-lg"
+                >
+                  Missions d'optimisation commerciale
+                </a>
+                <a 
+                  href="#accompagnements-rse" 
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-sustainable text-sustainable hover:bg-sustainable hover:text-white rounded-lg font-medium transition-colors text-lg"
+                >
+                  Accompagnements et Bilans RSE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Notre approche terrain */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
+                Notre Approche Terrain
+              </h2>
+            </div>
+
+            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
+              <div className="space-y-6 text-lg leading-relaxed">
+                <p className="text-muted-foreground">
+                  CRM Conseil vous accompagne concrètement sur le terrain, à la fois dans votre développement commercial B2B et dans la mise en œuvre de votre stratégie RSE.
+                </p>
+                <p className="text-muted-foreground">
+                  <strong className="text-sustainable">Nous ne nous contentons pas de donner des recommandations : nous nous intégrons temporairement à vos équipes pour agir à vos côtés.</strong>
+                </p>
+                <p className="text-muted-foreground">
+                  Sur le plan commercial, notre approche opérationnelle inclut l'optimisation de vos supports commerciaux, l'accompagnement lors de rendez-vous clients stratégiques, la mise en place et configuration d'outils de pilotage (CRM/ERP) et l'optimisation de vos processus commerciaux avec la formation de vos équipes à des méthodes de vente B2B éprouvées.
+                </p>
+                <p className="text-muted-foreground">
+                  Sur le plan RSE, nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : réalisation de votre bilan carbone, définition et implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité. L'objectif est d'aligner performance commerciale et performance durable pour renforcer votre compétitivité.
+                </p>
+                <p className="text-muted-foreground">
+                  <strong className="text-sustainable">Finis les cabinets qui vous laissent seuls après leurs recommandations : CRM Conseil reste à vos côtés jusqu'à l'obtention de résultats concrets, mesurables et durables. avec un suivi de l'évolution de vos KPIs</strong>
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 mt-10">
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
+                    <span>Experts en CRM, ERP, développement commercial B2B</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
+                    <span>Accompagnement opérationnel terrain</span>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
+                    <span>Intégration temporaire dans vos équipes</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
+                    <span>Formations pratiques et stratégies RSE</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -178,56 +237,6 @@ const Services = () => {
               <p className="text-muted-foreground mb-4">
                 Formation sur site de vos équipes, accompagnement dans l'adoption de nouveaux outils et coaching opérationnel pour faciliter la transformation de vos processus commerciaux B2B.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Notre approche */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
-                Notre Approche Terrain
-              </h2>
-            </div>
-
-            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-sustainable/20">
-              <div className="space-y-6 text-lg leading-relaxed">
-                <p className="text-muted-foreground">
-                  CRM Conseil vous accompagne concrètement sur le terrain dans votre développement commercial B2B. Nous ne nous contentons pas de donner des conseils : <strong className="text-sustainable">nous nous intégrons temporairement à vos équipes</strong> pour créer vos supports de vente, vous accompagner lors de rendez-vous prospects stratégiques, configurer vos outils CRM/ERP et former vos équipes directement sur le terrain.
-                </p>
-                <p className="text-muted-foreground">
-                  Notre approche opérationnelle inclut la création de slides personnalisées, l'accompagnement physique lors de rendez-vous clients grands comptes, la mise en place pratique d'outils de pilotage commercial et l'optimisation concrète de vos processus de vente B2B.
-                </p>
-                <p className="text-muted-foreground">
-                  Cette approche terrain nous permet de comprendre vos enjeux réels et d'apporter des solutions pratiques immédiatement applicables. <strong className="text-sustainable">Finis les cabinets qui vous laissent seuls après leurs recommandations</strong> : CRM Conseil reste à vos côtés jusqu'à l'obtention de résultats concrets.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8 mt-10">
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
-                    <span>Experts en CRM, ERP, développement commercial B2B</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
-                    <span>Accompagnement opérationnel terrain</span>
-                  </div>
-                </div>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
-                    <span>Intégration temporaire dans vos équipes</span>
-                  </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-sustainable mr-3" />
-                    <span>Formations pratiques et stratégies RSE</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
