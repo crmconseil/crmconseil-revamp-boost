@@ -62,7 +62,18 @@ export const Header = () => {
             <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => window.location.href = '/#contact'}
+              onClick={() => {
+                if (window.location.pathname === '/') {
+                  // Si on est déjà sur la page d'accueil, scroll vers la section contact
+                  const contactElement = document.getElementById('contact');
+                  if (contactElement) {
+                    contactElement.scrollIntoView({ behavior: 'smooth' });
+                  }
+                } else {
+                  // Si on est sur une autre page, rediriger vers la page d'accueil avec l'ancre
+                  window.location.href = '/#contact';
+                }
+              }}
             >
               Nous contacter
             </Button>
@@ -116,7 +127,19 @@ export const Header = () => {
               <Button 
                 variant="outline"
                 className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.location.href = '/#contact'}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  if (window.location.pathname === '/') {
+                    // Si on est déjà sur la page d'accueil, scroll vers la section contact
+                    const contactElement = document.getElementById('contact');
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  } else {
+                    // Si on est sur une autre page, rediriger vers la page d'accueil avec l'ancre
+                    window.location.href = '/#contact';
+                  }
+                }}
               >
                 Nous contacter
               </Button>
