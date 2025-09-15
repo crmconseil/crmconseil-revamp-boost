@@ -3,10 +3,6 @@ import { ArrowRight, Leaf, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-business-sustainability.jpg";
 
 export const HeroSection = () => {
-  const scrollToContact = () => {
-    window.location.href = "/#contact";
-  };
-
   const scrollToServices = () => {
     const element = document.getElementById('services');
     if (element) {
@@ -65,7 +61,7 @@ export const HeroSection = () => {
             <Button 
               variant="outline-sustainable" 
               size="lg"
-              onClick={() => window.location.href = '/#contact'}
+              onClick={() => window.location.href = '/contact'}
               className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary"
             >
               Nous contacter

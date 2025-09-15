@@ -396,7 +396,7 @@ const About = () => {
               variant="outline" 
               size="lg" 
               className="group"
-              onClick={() => window.location.href = '/#contact'}
+              onClick={() => window.location.href = '/contact'}
             >
               Nous contacter
               <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
