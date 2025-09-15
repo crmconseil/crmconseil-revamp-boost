@@ -258,7 +258,7 @@ const Services = () => {
           {/* Nos livrables */}
           <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-8">
             <h3 className="text-2xl font-bold text-center mb-8">Nos livrables</h3>
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
               <div className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
                 <span className="text-muted-foreground">Slides de présentation commerciale révisée</span>
@@ -272,17 +272,10 @@ const Services = () => {
                 <span className="text-muted-foreground">Listes de leads qualifiés</span>
               </div>
             </div>
-          </div>
-
-          {/* Tarifs et délais */}
-          <div className="bg-gradient-to-r from-primary/10 to-sustainable/10 rounded-2xl p-8 shadow-lg border border-primary/30 max-w-4xl mx-auto mt-8">
-            <h3 className="text-2xl font-bold text-center mb-6">Tarifs et délais</h3>
             <div className="text-center">
-              <div className="bg-background/80 backdrop-blur-sm rounded-xl p-6 inline-block">
-                <span className="text-3xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
-                  1 à 5 JH ~ 950€ - 4,750€
-                </span>
-              </div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
+                1 à 5 JH ~ 950€ - 4,750€
+              </span>
             </div>
           </div>
         </div>
