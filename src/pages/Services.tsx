@@ -476,9 +476,9 @@ const Services = () => {
                     <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
                       <Leaf className="w-10 h-10 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold text-primary mb-2">Stratégie RSE complète</h4>
+                    <h4 className="text-xl font-bold text-primary mb-2">Bilan Carbone® - Stratégie RSE complète</h4>
                     <div className="inline-block px-3 py-1 bg-primary/20 rounded-full">
-                      <p className="text-xs font-medium text-primary">Scope 1, 2, 3 + sociétal</p>
+                      <p className="text-xs font-medium text-primary">Scope 1, 2, 3 + sociétal et humain</p>
                     </div>
                   </div>
                   
@@ -486,8 +486,8 @@ const Services = () => {
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">+20 à 40%</div>
-                        <p className="text-xs text-muted-foreground">de revenus additionnels sur de nouveaux marchés/clients sensibles aux critères RSE (PwC)</p>
+                        <div className="text-2xl font-bold text-primary mb-1">+10 à 30%</div>
+                        <p className="text-xs text-muted-foreground">de revenus additionnels sur de nouveaux marchés/clients sensibles aux critères RSE</p>
                       </div>
                     </div>
                     
@@ -495,15 +495,23 @@ const Services = () => {
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
                         <div className="text-2xl font-bold text-primary mb-1">+30%</div>
-                        <p className="text-xs text-muted-foreground">de chances supplémentaires de réussir une levée de fonds (EY, 2023)</p>
+                        <p className="text-xs text-muted-foreground">de captation de valeur de levée de fonds</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">-25 à -50%</div>
-                        <p className="text-xs text-muted-foreground">du turnover : jusqu'à 3x moins de coûts RH liés au recrutement (Gallup)</p>
+                        <div className="text-2xl font-bold text-primary mb-1">+25 à 50%</div>
+                        <p className="text-xs text-muted-foreground">de fidélisation clients et employés</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-primary mb-1">ROI direct et indirect</div>
+                        <p className="text-xs text-muted-foreground">10x à 20x l'investissement</p>
                       </div>
                     </div>
                   </div>
