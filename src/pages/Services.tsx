@@ -132,7 +132,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Choix et Configuration d'outils de pilotage (CRM/ERP)</h3>
               </div>
               <p className="text-muted-foreground mb-4">
-                Sélection, installation et paramétrage personnalisé de vos outils CRM/ERP. Formation de vos équipes et mise en place de tableaux de bord pour un pilotage commercial optimal.
+                Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
               </p>
             </div>
 
@@ -163,29 +163,81 @@ const Services = () => {
             </div>
             </div>
 
-          {/* Ce que nous vous apportons */}
-          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-12">
+          {/* Ce que nous vous apportons - Infographie */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
             <h3 className="text-2xl font-bold text-center mb-8">Ce que nous vous apportons:</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Diagnostic approfondi de vos processus commerciaux</span>
+            
+            {/* Infographie en bandeau avec 2 phases */}
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Phase 1 - Acquisition */}
+              <div className="bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl p-6 border border-primary/30">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center p-3 bg-primary/20 rounded-full mb-3">
+                    <Target className="w-8 h-8 text-primary" />
+                  </div>
+                  <h4 className="text-xl font-bold text-primary mb-2">Phase 1 – Ciblage / Acquisition</h4>
+                  <p className="text-sm text-muted-foreground">Startups early stage</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="bg-white/50 rounded-lg p-4 border border-primary/20">
+                    <div className="text-2xl font-bold text-primary mb-1">+30 à +50%</div>
+                    <p className="text-sm text-muted-foreground">d'augmentation du taux de conversion prospects → clients</p>
+                  </div>
+                  
+                  <div className="bg-white/50 rounded-lg p-4 border border-primary/20">
+                    <div className="text-2xl font-bold text-primary mb-1">-25 à -40%</div>
+                    <p className="text-sm text-muted-foreground">de réduction de la durée du cycle de vente</p>
+                  </div>
+                  
+                  <div className="bg-white/50 rounded-lg p-4 border border-primary/20">
+                    <div className="text-2xl font-bold text-primary mb-1">+20 à +35%</div>
+                    <p className="text-sm text-muted-foreground">de rendez-vous qualifiés obtenus</p>
+                  </div>
+                  
+                  <div className="bg-white/50 rounded-lg p-4 border border-primary/20">
+                    <div className="text-2xl font-bold text-primary mb-1">2 à 3x</div>
+                    <p className="text-sm text-muted-foreground">plus rapidement - 1er client signé</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Formations personnalisées pour vos équipes</span>
-              </div>
-              <div className="flex items-center bg-sustainable/10 rounded-lg p-4 border border-sustainable/30">
-                <CheckCircle className="w-6 h-6 text-sustainable mr-3" />
-                <span className="text-foreground font-semibold">
-                  <span className="text-2xl text-sustainable font-bold">+60%</span> de taux de réussite de vos levées de fonds
-                </span>
-              </div>
-              <div className="flex items-center bg-primary/10 rounded-lg p-4 border border-primary/30">
-                <CheckCircle className="w-6 h-6 text-primary mr-3" />
-                <span className="text-foreground font-semibold">
-                  <span className="text-2xl text-primary font-bold">+29%</span> d'augmentation des ventes
-                </span>
+              
+              {/* Phase 2 - Accélération */}
+              <div className="bg-gradient-to-br from-sustainable/10 to-sustainable/20 rounded-xl p-6 border border-sustainable/30">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center p-3 bg-sustainable/20 rounded-full mb-3">
+                    <TrendingUp className="w-8 h-8 text-sustainable" />
+                  </div>
+                  <h4 className="text-xl font-bold text-sustainable mb-2">Phase 2 – Accélération / Valorisation</h4>
+                  <p className="text-sm text-muted-foreground">Startups & PME établies</p>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
+                    <div className="text-2xl font-bold text-sustainable mb-1">+40 à +60%</div>
+                    <p className="text-sm text-muted-foreground">d'augmentation de la valeur du pipeline</p>
+                  </div>
+                  
+                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
+                    <div className="text-2xl font-bold text-sustainable mb-1">+25 à +50%</div>
+                    <p className="text-sm text-muted-foreground">d'opportunités additionnelles générées</p>
+                  </div>
+                  
+                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
+                    <div className="text-2xl font-bold text-sustainable mb-1">2x</div>
+                    <p className="text-sm text-muted-foreground">plus de chances de convaincre des investisseurs</p>
+                  </div>
+                  
+                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
+                    <div className="text-2xl font-bold text-sustainable mb-1">+20 à +30%</div>
+                    <p className="text-sm text-muted-foreground">montants levés supérieurs en moyenne</p>
+                  </div>
+                  
+                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
+                    <div className="text-2xl font-bold text-sustainable mb-1">3 à 6 mois</div>
+                    <p className="text-sm text-muted-foreground">de gain de temps sur la levée de fonds</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
