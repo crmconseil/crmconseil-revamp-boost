@@ -169,14 +169,6 @@ const Services = () => {
             
             {/* Infographie visuelle améliorée */}
             <div className="relative">
-              {/* Connexion visuelle entre les phases */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:block">
-                <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-sustainable rounded-full"></div>
-                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                  <ArrowRight className="w-6 h-6 text-accent" />
-                </div>
-              </div>
-              
               <div className="grid lg:grid-cols-2 gap-8">
                 {/* Phase 1 - Acquisition */}
                 <div className="relative bg-gradient-to-br from-primary/5 via-primary/10 to-primary/20 rounded-2xl p-8 border-2 border-primary/30 shadow-xl overflow-hidden">
@@ -220,8 +212,8 @@ const Services = () => {
                             </div>
                           </div>
                           <div>
-                            <div className="text-3xl font-bold text-primary mb-1">-25 à -40%</div>
-                            <p className="text-sm text-muted-foreground">de réduction de la durée du cycle de vente</p>
+                            <div className="text-3xl font-bold text-primary mb-1">+25 à +40%</div>
+                            <p className="text-sm text-muted-foreground">d'accélération du cycle de vente</p>
                           </div>
                         </div>
                       </div>
@@ -301,7 +293,7 @@ const Services = () => {
                             </div>
                           </div>
                           <div>
-                            <div className="text-3xl font-bold text-sustainable mb-1">+40% - 60%</div>
+                            <div className="text-3xl font-bold text-sustainable mb-1">+50 à +60%</div>
                             <p className="text-sm text-muted-foreground">de taux de succès de la levée de fonds</p>
                           </div>
                         </div>
@@ -314,7 +306,7 @@ const Services = () => {
           </div>
 
           {/* Nos livrables */}
-          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-8">
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-8">
             <h3 className="text-2xl font-bold text-center mb-8">Nos livrables</h3>
             <div className="grid md:grid-cols-3 gap-4 mb-8">
               <div className="flex items-start">
@@ -323,16 +315,28 @@ const Services = () => {
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Slides Deck investisseur révisé</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
                 <span className="text-muted-foreground">Outils CRM/ERP implémentés et personnalisés</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Questionnaire de qualification et process de vente optimisé</span>
               </div>
               <div className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
                 <span className="text-muted-foreground">Listes de leads qualifiés</span>
               </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Pipeline et marché cible valorisé et sécurisé</span>
+              </div>
             </div>
             <div className="text-center">
               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
-                1 à 5 JH ~ 950€ - 4,750€
+                1 à 8 JH ~ 950€ - 7,600€
               </span>
             </div>
           </div>
