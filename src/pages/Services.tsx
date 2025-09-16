@@ -414,33 +414,137 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Ce que nous vous apportons */}
-          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-12">
+          {/* Ce que nous vous apportons - Infographie RSE */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
             <h3 className="text-2xl font-bold text-center mb-8">Ce que nous vous apportons:</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Réalisation de bilans carbone complets</span>
+            
+            {/* Infographie visuelle RSE sur 3 colonnes */}
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Colonne 1 - Bilan Carbone Scope 1 */}
+              <div className="relative bg-gradient-to-br from-sustainable/5 via-sustainable/10 to-sustainable/20 rounded-2xl p-8 border-2 border-sustainable/30 shadow-xl overflow-hidden">
+                {/* Éléments décoratifs */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-sustainable/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-sustainable/5 rounded-full -ml-12 -mb-12"></div>
+                
+                <div className="relative z-10">
+                  <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-sustainable to-sustainable/80 rounded-2xl shadow-lg mb-4">
+                      <Globe className="w-10 h-10 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold text-sustainable mb-2">Bilan Carbone Scope 1</h4>
+                    <div className="inline-block px-3 py-1 bg-sustainable/20 rounded-full">
+                      <p className="text-xs font-medium text-sustainable">Impacts directs</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-sustainable mb-1">Jusqu'à -30%</div>
+                        <p className="text-xs text-muted-foreground">de coûts énergétiques par an via l'efficacité énergétique (ADEME)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-sustainable mb-1">-20%</div>
+                        <p className="text-xs text-muted-foreground">des coûts d'exploitation grâce à la diminution des déchets et gaspillages (Capgemini)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Stratégie RSE globale et double matérialité</span>
+              
+              {/* Colonne 2 - Stratégie RSE complète */}
+              <div className="relative bg-gradient-to-br from-primary/5 via-primary/10 to-primary/20 rounded-2xl p-8 border-2 border-primary/30 shadow-xl overflow-hidden">
+                {/* Éléments décoratifs */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full -ml-12 -mb-12"></div>
+                
+                <div className="relative z-10">
+                  <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
+                      <Leaf className="w-10 h-10 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold text-primary mb-2">Stratégie RSE complète</h4>
+                    <div className="inline-block px-3 py-1 bg-primary/20 rounded-full">
+                      <p className="text-xs font-medium text-primary">Scope 1, 2, 3 + sociétal</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-primary mb-1">+20 à 40%</div>
+                        <p className="text-xs text-muted-foreground">de revenus additionnels sur de nouveaux marchés/clients sensibles aux critères RSE (PwC)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-primary mb-1">+30%</div>
+                        <p className="text-xs text-muted-foreground">de chances supplémentaires de réussir une levée de fonds (EY, 2023)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-primary mb-1">-25 à -50%</div>
+                        <p className="text-xs text-muted-foreground">du turnover : jusqu'à 3x moins de coûts RH liés au recrutement (Gallup)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Évaluation d'impact biodiversité</span>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Intégration RSE dans les supports commerciaux</span>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Formation des équipes à la stratégie RSE</span>
-              </div>
-              <div className="flex items-start">
-                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
-                <span className="text-muted-foreground">Suivi et pilotage des KPIs durabilité</span>
+              
+              {/* Colonne 3 - Bilan Impact Biodiversité */}
+              <div className="relative bg-gradient-to-br from-accent/5 via-accent/10 to-accent/20 rounded-2xl p-8 border-2 border-accent/30 shadow-xl overflow-hidden">
+                {/* Éléments décoratifs */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/5 rounded-full -ml-12 -mb-12"></div>
+                
+                <div className="relative z-10">
+                  <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-accent to-accent/80 rounded-2xl shadow-lg mb-4">
+                      <Award className="w-10 h-10 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold text-accent mb-2">Bilan Impact Biodiversité</h4>
+                    <div className="inline-block px-3 py-1 bg-accent/20 rounded-full">
+                      <p className="text-xs font-medium text-accent">Écosystèmes</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">-20 à -30%</div>
+                        <p className="text-xs text-muted-foreground">des risques financiers liés aux chaînes d'approvisionnement (Forum Économique Mondial)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">+25%</div>
+                        <p className="text-xs text-muted-foreground">de valeur sur des produits/services différenciés grâce à l'intégration de critères biodiversité (UNEP)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">+40%</div>
+                        <p className="text-xs text-muted-foreground">d'image positive accrue auprès des parties prenantes (étude Deloitte)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
