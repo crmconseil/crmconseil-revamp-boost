@@ -97,13 +97,13 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
-              Missions d'Optimisations commerciales
+              Optimisation commerciale
             </h2>
             <div className="max-w-4xl mx-auto mt-8">
               <p className="text-lg text-muted-foreground text-justify mb-4">
                 Moins de 40 % du temps des commerciaux est dédié à la vente. CRM Conseil aide les startups et PME à éliminer les blocages, optimiser leurs processus de vente et maximiser leur efficacité commerciale. Simplifiez vos outils, perfectionnez vos pitchs et atteignez des résultats durables.
               </p>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground text-justify">
                 Notre approche combine analyse des performances actuelles, formation pratique et accompagnement sur le terrain pour transformer vos équipes commerciales en forces de vente performantes. Nos missions sont courtes et pratiques pour respecter les budgets et le temps rapide de nos clients startups et PMEs. Vous récupérez des éléments utilisables immédiatement pour continuer votre prospection en toute autonomie.
               </p>
             </div>
@@ -383,7 +383,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Bilan - Emissions Directes - Scope 1</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Analyse complète de vos émissions directes de gaz à effet de serre issues de vos activités propres pour établir votre bilan carbone initial.
+                  Analyse de vos consommations énergétiques et émissions directes de gaz à effet de serres, issues de vos activités propres. Modélisation de scénarii d'optimisation avec calcul de ROI, mise en place et suivi des actions.
                 </p>
             </div>
 
@@ -393,10 +393,10 @@ const Services = () => {
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Leaf className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Bilan RSE Complet – Scope 1, 2, 3</h3>
+                <h3 className="text-xl font-bold">Bilan Carbone ADEME® - Scope 1, 2, 3</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Évaluation exhaustive de vos impacts environnementaux et sociaux incluant toutes vos émissions directes et indirectes.
+                  Analyse complète de vos impacts environnementaux et sociétaux, bilan carbone ADEME®, incluant toutes vos émissions de gaz à effet de serres, directes et indirectes, la double matérialité avec risques portés par votre entreprise par rapport aux changements climatiques, et les impacts que celle-ci génère, modélisation de scénarii d'optimisation, et suivi d'impacts sur 12-18 mois.
                 </p>
             </div>
 
@@ -409,7 +409,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Bilan Impact Biodiversité</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Mesure et évaluation de l'impact de vos activités sur la biodiversité avec des recommandations concrètes d'amélioration.
+                  Le bilan biodiversité permet aux TPE et PME d'identifier leurs impacts et dépendances vis-à-vis des écosystèmes. Il offre une vision claire des risques et opportunités, aide à réduire les pressions sur la nature et à construire un plan d'action concret. Résultat : plus de résilience, de valeur et d'alignement réglementaire.
                 </p>
             </div>
           </div>
