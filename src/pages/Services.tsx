@@ -608,7 +608,7 @@ const Services = () => {
       <section className="py-16 bg-gradient-to-r from-sustainable/10 to-primary/10">
         <div className="container mx-auto px-4 text-center">
           <Link 
-            to="/about"
+            to="/a-propos"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-sustainable to-primary hover:from-sustainable/90 hover:to-primary/90 text-white rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl group"
           >
             Découvrez plus qui nous sommes
