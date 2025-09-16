@@ -563,14 +563,6 @@ const Services = () => {
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">40 à 50%</div>
-                        <p className="text-xs text-muted-foreground">de possibilité de subventions BPI France</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
                         <div className="text-2xl font-bold text-accent mb-1">ROI Mixte</div>
                         <p className="text-xs text-muted-foreground">5x à 10x l'investissement</p>
                       </div>
@@ -603,9 +595,9 @@ const Services = () => {
               </div>
             </div>
             <div className="text-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
-                5 - 15JH ~ 6,000€ et 12,000€ avec possibilité de subventions BPI France, si dossier éligible
-              </span>
+               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
+                 5 - 15JH ~ 6,000€ et 12,000€ avec possibilité de subventions BPI France de 40 à 50%, si dossier éligible
+               </span>
             </div>
           </div>
         </div>
