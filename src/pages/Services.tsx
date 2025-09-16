@@ -383,7 +383,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Bilan - Emissions Directes - Scope 1</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Analyse de vos consommations énergétiques et émissions directes de gaz à effet de serres, issues de vos activités propres. Modélisation de scénarii d'optimisation avec calcul de ROI, mise en place et suivi des actions.
+                  Le Bilan Scope 1 évalue vos émissions directes de gaz à effet de serre issues de vos consommations énergétiques et activités propres. Il met en lumière vos leviers d'efficacité, propose des scénarios d'optimisation énergétiques chiffrés et accompagne la mise en œuvre. Résultat : économies énergétiques mesurables directes, ROI clair et rapide, et réduction immédiate de vos impacts.
                 </p>
             </div>
 
@@ -396,7 +396,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Bilan Carbone ADEME® - Scope 1, 2, 3</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Analyse complète de vos impacts environnementaux et sociétaux, bilan carbone ADEME®, incluant toutes vos émissions de gaz à effet de serres, directes et indirectes, la double matérialité avec risques portés par votre entreprise par rapport aux changements climatiques, et les impacts que celle-ci génère, modélisation de scénarii d'optimisation, et suivi d'impacts sur 12-18 mois.
+                  Le bilan carbone RSE ADEME® analyse vos émissions directes et indirectes sur l'ensemble de la chaîne de valeur, tout en évaluant les impacts sociétaux sur vos employés, vos clients et la société. Il intègre la double matérialité : les risques climatiques subis par votre entreprise et les impacts qu'elle génère sur l'environnement et la société. Ce bilan favorise la transformation durable de votre entreprise, l'ouverture de nouveaux marchés, une réduction profonde de votre impact carbone, un repositionnement compétitif, ainsi qu'une attractivité renforcée pour vos employés et investisseurs.
                 </p>
             </div>
 
