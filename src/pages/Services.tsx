@@ -348,14 +348,20 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
-              Accompagnement RSE et Durabilité
+              Valorisation RSE et Durabilité
             </h2>
             <div className="max-w-4xl mx-auto mt-8">
               <p className="text-lg text-muted-foreground mb-4">
-                Et si intégrer des pratiques durables dans votre stratégie devenait un atout pour réduire vos coûts, fidéliser vos équipes, innover vos offres et conquérir de nouveaux marchés ?
+                Et si intégrer des pratiques durables dans votre stratégie devenait un atout commercial?
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                Notre expertise combine performance économique et responsabilité sociétale pour créer une stratégie durable qui renforce votre positionnement concurrentiel.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                Nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : Réalisation de votre bilan carbone ADEME, Implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
               </p>
               <p className="text-lg text-muted-foreground">
-                Notre expertise combine performance économique et responsabilité sociétale pour créer une stratégie durable qui renforce votre positionnement concurrentiel. Nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : Réalisation de votre bilan carbone ADEME, définition et implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
+                <strong>Résultats :</strong> - réduction direct de vos couts énergétiques, - réduction de votre impact carbone et biodiversité, - fidélisation de vos équipes et clients, - ventes accrues et accès à de nouveaux marchés, - augmentation des options d'investisseurs à la recherche de sociétés engagées RSE.
               </p>
             </div>
           </div>
