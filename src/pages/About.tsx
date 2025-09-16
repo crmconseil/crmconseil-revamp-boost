@@ -42,33 +42,63 @@ const About = () => {
   const methods = [
     {
       icon: Handshake,
-      title: "Audit externe et accompagnement terrain",
-      description: "Analyse neutre de vos processus + accompagnement opérationnel lors de rendez-vous prospects"
+      title: "Audit externe",
+      points: [
+        "1. Analyse neutre de vos processus",
+        "2. Propositions d'optimisations",
+        "3. Support à la mise en place",
+        "4. Suivi des impacts"
+      ]
     },
     {
       icon: Cog,
-      title: "Configuration pratique d'outils CRM/ERP",
-      description: "Installation, paramétrage et formation sur site pour une prise en main immédiate"
+      title: "Configuration pratique d'outils",
+      points: [
+        "1. Analyse de vos outils existants",
+        "2. Propositions d'outils complémentaires ou optimisations d'usages",
+        "3. Configuration des outils",
+        "4. Formation et suivi d'usage des équipes"
+      ]
     },
     {
       icon: Zap,
-      title: "Création de supports commerciaux sur mesure",
-      description: "Slides de présentation, argumentaires et outils de vente adaptés à vos prospects"
+      title: "Création de supports commerciaux",
+      points: [
+        "1. Analyse de vos supports existants",
+        "2. Propositions d'optimisations",
+        "3. Co-production des nouveaux supports",
+        "4. Test des supports en RDV client"
+      ]
     },
     {
       icon: Users,
-      title: "Formations terrain et coaching",
-      description: "Formation de vos équipes directement sur leurs projets réels avec suivi personnalisé"
+      title: "Formation et coaching des équipes",
+      points: [
+        "1. Evaluation des compétences et méthodes des équipes commerciales",
+        "2. Proposition de coaching ou formations spécifiques aux enjeux de l'équipe",
+        "3. Déroulé de la formation",
+        "4. Suivi d'impact terrain sur les ventes"
+      ]
     },
     {
       icon: Globe,
-      title: "Bilan RSE",
-      description: "Analyse de vos process interne pour calcul de l'impact carbone, Matrice de double matérialité, modélisation de scénarii plus durable avec calcul ROI"
+      title: "Bilan Carbone",
+      points: [
+        "1. Analyse des impacts carbone existants",
+        "2. Brainstorming corporate des changements plus durables",
+        "3. Modélisation et analyse des impacts et ROI de chaque scénario",
+        "4. Suivi de mise en place et impact KPIs"
+      ]
     },
     {
       icon: Leaf,
       title: "Bilan Biodiversité",
-      description: "Calcul de votre impact Biodiversité et modélisation de plan d'action d'amélioration"
+      points: [
+        "1. Analyse de l'impact biodiversité existant",
+        "2. Co-Construction d'une feuille de route d'évolution",
+        "3. Modélisation et analyse des impacts et ROI de chaque option",
+        "4. Suivi de mise en place et impacts KPIs"
+      ]
     }
   ];
 
@@ -149,27 +179,22 @@ const About = () => {
         </div>
       </section>
 
-      {/* Notre Expertise Section */}
-      <section id="expertise" className="py-16">
+      {/* Notre Expertise Section avec chiffres clés */}
+      <section id="expertise" className="py-16 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
               Notre Expertise
             </h2>
           </div>
-        </div>
-      </section>
-
-      {/* Key Stats Section */}
-      <section className="py-16 bg-gradient-to-r from-primary/10 to-sustainable/10">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {keyStats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
                 <div key={index} className="text-center">
-                  <div className="bg-background rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300">
-                    <IconComponent className="text-primary mx-auto mb-4" size={32} />
+                  <div className="bg-background rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 h-32 flex flex-col justify-center">
+                    <IconComponent className="text-primary mx-auto mb-4" size={24} />
                     <div className="text-3xl font-bold text-foreground mb-2">{stat.number}</div>
                     <p className="text-sm text-muted-foreground">{stat.label}</p>
                   </div>
@@ -180,59 +205,82 @@ const About = () => {
         </div>
       </section>
 
-      {/* Secteurs d'activité */}
-      <section className="py-16">
+      {/* Secteurs d'activité - dans le même bloc */}
+      <section className="py-8 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-background rounded-xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-64 flex flex-col justify-center">
-              <div className="p-4 bg-sustainable/20 rounded-full w-fit mx-auto mb-6">
-                <Leaf className="w-10 h-10 text-sustainable" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-48 flex flex-col justify-center">
+              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Leaf className="w-6 h-6 text-sustainable" />
               </div>
-              <h3 className="text-xl font-semibold text-center mb-4">GreenTech</h3>
-              <p className="text-sm text-muted-foreground text-center flex-grow">
-                Accompagnement des entreprises innovantes dans les technologies vertes et le développement durable.
+              <h3 className="text-lg font-semibold text-center mb-3">GreenTech</h3>
+              <p className="text-xs text-muted-foreground text-justify leading-tight">
+                Accompagnement des entreprises innovantes dans les technologies vertes et le développement durable pour une croissance responsable.
               </p>
             </div>
 
-            <div className="bg-background rounded-xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-64 flex flex-col justify-center">
-              <div className="p-4 bg-sustainable/20 rounded-full w-fit mx-auto mb-6">
-                <Activity className="w-10 h-10 text-sustainable" />
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-48 flex flex-col justify-center">
+              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Activity className="w-6 h-6 text-sustainable" />
               </div>
-              <h3 className="text-xl font-semibold text-center mb-4">HealthTech</h3>
-              <p className="text-sm text-muted-foreground text-center flex-grow">
-                Solutions commerciales dédiées aux entreprises de technologies de santé et dispositifs médicaux.
+              <h3 className="text-lg font-semibold text-center mb-3">HealthTech</h3>
+              <p className="text-xs text-muted-foreground text-justify leading-tight">
+                Solutions commerciales dédiées aux entreprises de technologies de santé et dispositifs médicaux innovants.
               </p>
             </div>
 
-            <div className="bg-background rounded-xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-64 flex flex-col justify-center">
-              <div className="p-4 bg-sustainable/20 rounded-full w-fit mx-auto mb-6">
-                <Cog className="w-10 h-10 text-sustainable" />
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-48 flex flex-col justify-center">
+              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Cog className="w-6 h-6 text-sustainable" />
               </div>
-              <h3 className="text-xl font-semibold text-center mb-4">Industrie</h3>
-              <p className="text-sm text-muted-foreground text-center flex-grow">
-                Optimisation des processus commerciaux et transformation digitale pour les acteurs industriels.
+              <h3 className="text-lg font-semibold text-center mb-3">Industrie</h3>
+              <p className="text-xs text-muted-foreground text-justify leading-tight">
+                Optimisation des processus commerciaux et transformation digitale pour les acteurs industriels modernes.
               </p>
             </div>
 
-            <div className="bg-background rounded-xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-64 flex flex-col justify-center">
-              <div className="p-4 bg-sustainable/20 rounded-full w-fit mx-auto mb-6">
-                <Cpu className="w-10 h-10 text-sustainable" />
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-48 flex flex-col justify-center">
+              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Cpu className="w-6 h-6 text-sustainable" />
               </div>
-              <h3 className="text-xl font-semibold text-center mb-4">Dev-AI</h3>
-              <p className="text-sm text-muted-foreground text-center flex-grow">
+              <h3 className="text-lg font-semibold text-center mb-3">Dev-AI</h3>
+              <p className="text-xs text-muted-foreground text-justify leading-tight">
                 Stratégies commerciales pour les entreprises de développement logiciel et d'intelligence artificielle.
               </p>
+            </div>
+          </div>
+
+          {/* Nos certifications & Partenariats */}
+          <div className="bg-background rounded-2xl p-6 shadow-lg border border-primary/10">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
+                Nos Certifications & Partenariats
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6 text-center">
+                <div className="p-4 bg-muted/30 rounded-lg">
+                  <h4 className="font-semibold text-sustainable mb-2">MIT Certification</h4>
+                  <p className="text-xs text-muted-foreground">Sustainable Strategy Design</p>
+                </div>
+                <div className="p-4 bg-muted/30 rounded-lg">
+                  <h4 className="font-semibold text-primary mb-2">ADEME</h4>
+                  <p className="text-xs text-muted-foreground">Partenaire Officiel</p>
+                </div>
+                <div className="p-4 bg-muted/30 rounded-lg">
+                  <h4 className="font-semibold text-sustainable mb-2">Pacte National</h4>
+                  <p className="text-xs text-muted-foreground">Transition Énergétique</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Notre Histoire Section */}
-      <section className="py-20 relative">
+      <section className="py-12 relative">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-foreground mb-6">Notre Histoire</h2>
+              <h2 className="text-4xl font-bold text-foreground mb-6 text-center lg:text-left">Notre Histoire</h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
                   CRM Conseil a été créée en 2014 avec pour objectif d'appliquer les méthodes commerciales des grands comptes aux startups en phase de croissance. 
@@ -263,10 +311,16 @@ const About = () => {
         </div>
       </section>
 
-      {/* Notre Évolution */}
-      <section className="py-16 bg-gradient-to-r from-sustainable/10 to-sustainable/20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      {/* Notre Évolution - remonté après Notre histoire */}
+      <section className="py-12 bg-gradient-to-r from-sustainable/10 to-sustainable/20 relative">
+        <div className="container mx-auto px-4 relative">
+          {/* Flèche de fond */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-20">
+            <ArrowRight className="w-full h-8 text-sustainable" style={{ width: '80%' }} />
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
             {timeline.map((item, index) => (
               <div key={index} className="text-center p-6 bg-background rounded-lg shadow-lg">
                 <div className="text-3xl font-bold text-sustainable mb-4">{item.year}</div>
@@ -328,62 +382,60 @@ const About = () => {
       </section>
 
       {/* Method Section - Schéma en 4 étapes */}
-      <section className="py-20">
+      <section className="py-16">
         <div className="container mx-auto px-4">
+          <h3 className="text-2xl font-semibold text-foreground mb-8 text-left">Comment se déroulent nos missions ?</h3>
           <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col lg:flex-row items-center justify-between relative">
+            <div className="flex flex-col lg:flex-row items-center justify-center relative space-y-8 lg:space-y-0 lg:space-x-16">
               {/* Étape 1 */}
-              <div className="flex flex-col items-center text-center mb-8 lg:mb-0 relative">
+              <div className="flex flex-col items-center text-center">
                 <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
                   <span className="text-white font-bold text-xl">1</span>
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Analyse de l'existant</h3>
                 <p className="text-sm text-muted-foreground max-w-xs">Audit complet de vos processus commerciaux actuels</p>
-                
-                {/* Flèche vers la droite */}
-                <div className="hidden lg:block absolute -right-16 top-8">
-                  <ArrowRight className="w-8 h-8 text-primary" />
-                </div>
-                {/* Flèche vers le bas pour mobile */}
-                <div className="lg:hidden mt-4">
-                  <ArrowRight className="w-6 h-6 text-primary rotate-90" />
-                </div>
+              </div>
+
+              {/* Flèche 1 */}
+              <div className="hidden lg:block">
+                <ArrowRight className="w-8 h-8 text-primary" />
+              </div>
+              <div className="lg:hidden">
+                <ArrowRight className="w-6 h-6 text-primary rotate-90" />
               </div>
 
               {/* Étape 2 */}
-              <div className="flex flex-col items-center text-center mb-8 lg:mb-0 relative">
+              <div className="flex flex-col items-center text-center">
                 <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
                   <span className="text-white font-bold text-xl">2</span>
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Propositions argumentées</h3>
                 <p className="text-sm text-muted-foreground max-w-xs">Solutions chiffrées et adaptées à vos besoins</p>
-                
-                {/* Flèche vers la droite */}
-                <div className="hidden lg:block absolute -right-16 top-8">
-                  <ArrowRight className="w-8 h-8 text-primary" />
-                </div>
-                {/* Flèche vers le bas pour mobile */}
-                <div className="lg:hidden mt-4">
-                  <ArrowRight className="w-6 h-6 text-primary rotate-90" />
-                </div>
+              </div>
+
+              {/* Flèche 2 */}
+              <div className="hidden lg:block">
+                <ArrowRight className="w-8 h-8 text-primary" />
+              </div>
+              <div className="lg:hidden">
+                <ArrowRight className="w-6 h-6 text-primary rotate-90" />
               </div>
 
               {/* Étape 3 */}
-              <div className="flex flex-col items-center text-center mb-8 lg:mb-0 relative">
+              <div className="flex flex-col items-center text-center">
                 <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
                   <span className="text-white font-bold text-xl">3</span>
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Mise en place collaborative</h3>
                 <p className="text-sm text-muted-foreground max-w-xs">Implémentation avec vos équipes</p>
-                
-                {/* Flèche vers la droite */}
-                <div className="hidden lg:block absolute -right-16 top-8">
-                  <ArrowRight className="w-8 h-8 text-primary" />
-                </div>
-                {/* Flèche vers le bas pour mobile */}
-                <div className="lg:hidden mt-4">
-                  <ArrowRight className="w-6 h-6 text-primary rotate-90" />
-                </div>
+              </div>
+
+              {/* Flèche 3 */}
+              <div className="hidden lg:block">
+                <ArrowRight className="w-8 h-8 text-primary" />
+              </div>
+              <div className="lg:hidden">
+                <ArrowRight className="w-6 h-6 text-primary rotate-90" />
               </div>
 
               {/* Étape 4 */}
@@ -408,7 +460,14 @@ const About = () => {
                     </div>
                     <h3 className="text-xl font-bold text-foreground">{method.title}</h3>
                   </div>
-                  <p className="text-muted-foreground">{method.description}</p>
+                  <ul className="space-y-2 text-muted-foreground text-sm">
+                    {method.points.map((point, pointIndex) => (
+                      <li key={pointIndex} className="flex items-start">
+                        <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </Card>
               );
             })}
@@ -416,17 +475,17 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Nos engagements */}
       <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Nos Valeurs</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-6">Nos engagements</h2>
             <p className="text-xl text-muted-foreground">
-              Ces principes fondamentaux guident chacune de nos actions et nous permettent de créer de la valeur durable pour nos clients.
+              Chez CRM Conseil, nous ne nous contentons pas de conseiller : nous incarnons nos valeurs au quotidien
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
@@ -440,10 +499,121 @@ const About = () => {
               );
             })}
           </div>
+
+          {/* Nos Actions RSE en 4 piliers - remontés ici */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Pilier 1: Clients & Stratégie RSE */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Handshake className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                  1. Clients & Stratégie RSE
+                </h3>
+              </div>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Ciblage clients / partenaires / fournisseurs avec engagements RSE</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Adhérent Pacte National Transition Énergétique</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Accompagnement et formation des équipes (MIT)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pilier 2: Transports Durables */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-primary/20 rounded-full mr-4">
+                  <Activity className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                  2. Transports Durables
+                </h3>
+              </div>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Limitation des déplacements</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Abonnements transports partagés</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Vélo électrique d'entreprise</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pilier 3: Sourcing Énergétique Propre */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Zap className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                  3. Sourcing Énergétique Propre
+                </h3>
+              </div>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Électricité 100% renouvelable</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Équipements/Matières 1ères recyclables/recyclés</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>LED / Thermostats intelligents</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Digitalisation des documents</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pilier 4: Gestion des Déchets */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-primary/20 rounded-full mr-4">
+                  <Globe className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                  4. Gestion des Déchets
+                </h3>
+              </div>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Tri sélectif</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>Compostage</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>No Plastic</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - Prêt à transformer votre approche commerciale */}
       <section className="py-20 bg-gradient-to-r from-primary/5 to-sustainable/5">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-foreground mb-6">
@@ -471,217 +641,6 @@ const About = () => {
               Nous contacter
               <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
             </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Section RSE - Nos Engagements */}
-      <section className="py-20 bg-gradient-to-br from-sustainable/10 to-primary/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
-                Nos Engagements RSE et Développement Durable
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Chez CRM Conseil, nous ne nous contentons pas de conseiller : nous incarnons nos valeurs au quotidien
-              </p>
-            </div>
-
-            {/* Nos Actions RSE en 4 piliers */}
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              {/* Pilier 1: Clients & Stratégie RSE */}
-              <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
-                <div className="flex items-center mb-6">
-                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                    <Handshake className="w-6 h-6 text-sustainable" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
-                    1. Clients & Stratégie RSE
-                  </h3>
-                </div>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Ciblage clients / partenaires / fournisseurs avec engagements RSE</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Adhérent Pacte National Transition Énergétique</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Accompagnement et formation des équipes (MIT)</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Pilier 2: Transports Durables */}
-              <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
-                <div className="flex items-center mb-6">
-                  <div className="p-3 bg-primary/20 rounded-full mr-4">
-                    <Activity className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
-                    2. Transports Durables
-                  </h3>
-                </div>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Limitation des déplacements</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Abonnements transports partagés</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Vélo électrique d'entreprise</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Pilier 3: Sourcing Énergétique Propre */}
-              <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
-                <div className="flex items-center mb-6">
-                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                    <Zap className="w-6 h-6 text-sustainable" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
-                    3. Sourcing Énergétique Propre
-                  </h3>
-                </div>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Électricité 100% renouvelable</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Équipements/Matières 1ères recyclables/recyclés</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>LED / Thermostats intelligents</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Digitalisation des documents</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Pilier 4: Gestion des Déchets */}
-              <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
-                <div className="flex items-center mb-6">
-                  <div className="p-3 bg-primary/20 rounded-full mr-4">
-                    <Globe className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
-                    4. Gestion des Déchets
-                  </h3>
-                </div>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Tri sélectif</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>Compostage</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                    <span>No Plastic</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Services RSE */}
-            <div className="bg-background rounded-2xl p-8 md:p-12 shadow-lg border border-primary/10 mb-12">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
-                  Nos Services d'Accompagnement RSE
-                </h2>
-                <p className="text-muted-foreground text-lg">
-                  Des solutions concrètes pour mesurer et améliorer votre impact
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center p-6 border border-primary/10 rounded-xl bg-muted/30">
-                  <div className="p-4 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                    <Target className="w-8 h-8 text-sustainable" />
-                  </div>
-                  <h3 className="text-lg font-semibold mb-3">Bilan Émissions Directes - Scope 1</h3>
-                  <div className="text-left text-xs space-y-2">
-                    <h4 className="font-semibold">Livrables :</h4>
-                    <ul className="space-y-1 text-muted-foreground">
-                      <li>• Bilan carbone initial</li>
-                      <li>• Rapport d'impact scénarii</li>
-                      <li>• Matrice de suivi d'impact</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="text-center p-6 border border-primary/10 rounded-xl bg-muted/30">
-                  <div className="p-4 bg-primary/20 rounded-full w-fit mx-auto mb-4">
-                    <Globe className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold mb-3">Bilan RSE Complet</h3>
-                  <div className="text-left text-xs space-y-2">
-                    <h4 className="font-semibold">Livrables :</h4>
-                    <ul className="space-y-1 text-muted-foreground">
-                      <li>• Bilan Scope 1, 2, 3 initial</li>
-                      <li>• Rapport des vulnérabilités ESG</li>
-                      <li>• Rapport impact Scénarii+ROI</li>
-                      <li>• Matrice de suivi d'impact</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div className="text-center p-6 border border-primary/10 rounded-xl bg-muted/30">
-                  <div className="p-4 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                    <Leaf className="w-8 h-8 text-sustainable" />
-                  </div>
-                  <h3 className="text-lg font-semibold mb-3">Impact Biodiversité</h3>
-                  <div className="text-left text-xs space-y-2">
-                    <h4 className="font-semibold">Approche :</h4>
-                    <ul className="space-y-1 text-muted-foreground">
-                      <li>• Double matérialité</li>
-                      <li>• Impacts écologiques</li>
-                      <li>• Impacts sociaux</li>
-                      <li>• Gouvernance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Certifications */}
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
-                  Nos Certifications & Partenariats
-                </h3>
-                <div className="grid md:grid-cols-3 gap-6 text-center">
-                  <div className="p-4 bg-muted/30 rounded-lg">
-                    <h4 className="font-semibold text-sustainable mb-2">MIT Certification</h4>
-                    <p className="text-xs text-muted-foreground">Sustainable Strategy Design</p>
-                  </div>
-                  <div className="p-4 bg-muted/30 rounded-lg">
-                    <h4 className="font-semibold text-primary mb-2">ADEME</h4>
-                    <p className="text-xs text-muted-foreground">Partenaire Officiel</p>
-                  </div>
-                  <div className="p-4 bg-muted/30 rounded-lg">
-                    <h4 className="font-semibold text-sustainable mb-2">Pacte National</h4>
-                    <p className="text-xs text-muted-foreground">Transition Énergétique</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
