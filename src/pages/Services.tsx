@@ -360,7 +360,7 @@ const Services = () => {
               <p className="text-lg text-muted-foreground text-justify mb-4">
                 Nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : Réalisation de votre bilan carbone ADEME, Implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
               </p>
-              <div className="text-lg text-muted-foreground">
+              <div className="text-lg text-muted-foreground text-left">
                 <p className="font-semibold mb-3">Résultats :</p>
                 <ul className="space-y-2 list-disc list-inside">
                   <li>Réduction directe de vos coûts énergétiques</li>
