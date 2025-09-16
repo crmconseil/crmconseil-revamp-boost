@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award } from "lucide-react";
+import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award, ArrowRight, Rocket, Clock, Calendar, BarChart3, Zap } from "lucide-react";
 import servicesBackground from "@/assets/services-background.jpg";
 
 const Services = () => {
@@ -161,81 +161,152 @@ const Services = () => {
                 Préparation de pitchs investisseurs, valorisation de votre modèle économique, coaching pour les présentations et optimisation de votre approche commerciale pour séduire les investisseurs.
               </p>
             </div>
-            </div>
+          </div>
 
           {/* Ce que nous vous apportons - Infographie */}
           <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
             <h3 className="text-2xl font-bold text-center mb-8">Ce que nous vous apportons:</h3>
             
-            {/* Infographie en bandeau avec 2 phases */}
-            <div className="grid lg:grid-cols-2 gap-8">
-              {/* Phase 1 - Acquisition */}
-              <div className="bg-gradient-to-br from-primary/10 to-primary/20 rounded-xl p-6 border border-primary/30">
-                <div className="text-center mb-6">
-                  <div className="inline-flex items-center justify-center p-3 bg-primary/20 rounded-full mb-3">
-                    <Target className="w-8 h-8 text-primary" />
-                  </div>
-                  <h4 className="text-xl font-bold text-primary mb-2">Phase 1 – Ciblage / Acquisition</h4>
-                  <p className="text-sm text-muted-foreground">Startups early stage</p>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="bg-white/50 rounded-lg p-4 border border-primary/20">
-                    <div className="text-2xl font-bold text-primary mb-1">+30 à +50%</div>
-                    <p className="text-sm text-muted-foreground">d'augmentation du taux de conversion prospects → clients</p>
-                  </div>
-                  
-                  <div className="bg-white/50 rounded-lg p-4 border border-primary/20">
-                    <div className="text-2xl font-bold text-primary mb-1">-25 à -40%</div>
-                    <p className="text-sm text-muted-foreground">de réduction de la durée du cycle de vente</p>
-                  </div>
-                  
-                  <div className="bg-white/50 rounded-lg p-4 border border-primary/20">
-                    <div className="text-2xl font-bold text-primary mb-1">+20 à +35%</div>
-                    <p className="text-sm text-muted-foreground">de rendez-vous qualifiés obtenus</p>
-                  </div>
-                  
-                  <div className="bg-white/50 rounded-lg p-4 border border-primary/20">
-                    <div className="text-2xl font-bold text-primary mb-1">2 à 3x</div>
-                    <p className="text-sm text-muted-foreground">plus rapidement - 1er client signé</p>
-                  </div>
+            {/* Infographie visuelle améliorée */}
+            <div className="relative">
+              {/* Connexion visuelle entre les phases */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden lg:block">
+                <div className="w-20 h-1 bg-gradient-to-r from-primary via-accent to-sustainable rounded-full"></div>
+                <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
+                  <ArrowRight className="w-6 h-6 text-accent" />
                 </div>
               </div>
               
-              {/* Phase 2 - Accélération */}
-              <div className="bg-gradient-to-br from-sustainable/10 to-sustainable/20 rounded-xl p-6 border border-sustainable/30">
-                <div className="text-center mb-6">
-                  <div className="inline-flex items-center justify-center p-3 bg-sustainable/20 rounded-full mb-3">
-                    <TrendingUp className="w-8 h-8 text-sustainable" />
+              <div className="grid lg:grid-cols-2 gap-8">
+                {/* Phase 1 - Acquisition */}
+                <div className="relative bg-gradient-to-br from-primary/5 via-primary/10 to-primary/20 rounded-2xl p-8 border-2 border-primary/30 shadow-xl overflow-hidden">
+                  {/* Éléments décoratifs */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full -ml-12 -mb-12"></div>
+                  
+                  <div className="relative z-10">
+                    <div className="text-center mb-8">
+                      <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
+                        <Target className="w-10 h-10 text-white" />
+                      </div>
+                      <h4 className="text-2xl font-bold text-primary mb-2">Phase 1 – Ciblage / Acquisition</h4>
+                      <div className="inline-block px-4 py-2 bg-primary/20 rounded-full">
+                        <p className="text-sm font-medium text-primary">Startups early stage</p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="relative flex items-center">
+                          <div className="mr-4">
+                            <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                              <TrendingUp className="w-6 h-6 text-primary" />
+                            </div>
+                          </div>
+                          <div>
+                            <div className="text-3xl font-bold text-primary mb-1">+30 à +50%</div>
+                            <p className="text-sm text-muted-foreground">d'augmentation du taux de conversion prospects → clients</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="relative flex items-center">
+                          <div className="mr-4">
+                            <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                              <Clock className="w-6 h-6 text-primary" />
+                            </div>
+                          </div>
+                          <div>
+                            <div className="text-3xl font-bold text-primary mb-1">-25 à -40%</div>
+                            <p className="text-sm text-muted-foreground">de réduction de la durée du cycle de vente</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="relative flex items-center">
+                          <div className="mr-4">
+                            <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+                              <Calendar className="w-6 h-6 text-primary" />
+                            </div>
+                          </div>
+                          <div>
+                            <div className="text-3xl font-bold text-primary mb-1">+20 à +35%</div>
+                            <p className="text-sm text-muted-foreground">de rendez-vous qualifiés obtenus</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-sustainable mb-2">Phase 2 – Accélération / Valorisation</h4>
-                  <p className="text-sm text-muted-foreground">Startups & PME établies</p>
                 </div>
                 
-                <div className="space-y-4">
-                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
-                    <div className="text-2xl font-bold text-sustainable mb-1">+40 à +60%</div>
-                    <p className="text-sm text-muted-foreground">d'augmentation de la valeur du pipeline</p>
-                  </div>
+                {/* Phase 2 - Accélération */}
+                <div className="relative bg-gradient-to-br from-sustainable/5 via-sustainable/10 to-sustainable/20 rounded-2xl p-8 border-2 border-sustainable/30 shadow-xl overflow-hidden">
+                  {/* Éléments décoratifs */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-sustainable/10 rounded-full -mr-16 -mt-16"></div>
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-sustainable/5 rounded-full -ml-12 -mb-12"></div>
                   
-                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
-                    <div className="text-2xl font-bold text-sustainable mb-1">+25 à +50%</div>
-                    <p className="text-sm text-muted-foreground">d'opportunités additionnelles générées</p>
-                  </div>
-                  
-                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
-                    <div className="text-2xl font-bold text-sustainable mb-1">2x</div>
-                    <p className="text-sm text-muted-foreground">plus de chances de convaincre des investisseurs</p>
-                  </div>
-                  
-                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
-                    <div className="text-2xl font-bold text-sustainable mb-1">+20 à +30%</div>
-                    <p className="text-sm text-muted-foreground">montants levés supérieurs en moyenne</p>
-                  </div>
-                  
-                  <div className="bg-white/50 rounded-lg p-4 border border-sustainable/20">
-                    <div className="text-2xl font-bold text-sustainable mb-1">3 à 6 mois</div>
-                    <p className="text-sm text-muted-foreground">de gain de temps sur la levée de fonds</p>
+                  <div className="relative z-10">
+                    <div className="text-center mb-8">
+                      <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-sustainable to-sustainable/80 rounded-2xl shadow-lg mb-4">
+                        <Rocket className="w-10 h-10 text-white" />
+                      </div>
+                      <h4 className="text-2xl font-bold text-sustainable mb-2">Phase 2 – Accélération / Valorisation</h4>
+                      <div className="inline-block px-4 py-2 bg-sustainable/20 rounded-full">
+                        <p className="text-sm font-medium text-sustainable">Startups & PME établies</p>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="relative flex items-center">
+                          <div className="mr-4">
+                            <div className="w-12 h-12 bg-sustainable/20 rounded-lg flex items-center justify-center">
+                              <BarChart3 className="w-6 h-6 text-sustainable" />
+                            </div>
+                          </div>
+                          <div>
+                            <div className="text-3xl font-bold text-sustainable mb-1">+40 à +60%</div>
+                            <p className="text-sm text-muted-foreground">d'augmentation de la valeur du pipeline</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="relative flex items-center">
+                          <div className="mr-4">
+                            <div className="w-12 h-12 bg-sustainable/20 rounded-lg flex items-center justify-center">
+                              <Zap className="w-6 h-6 text-sustainable" />
+                            </div>
+                          </div>
+                          <div>
+                            <div className="text-3xl font-bold text-sustainable mb-1">+25 à +50%</div>
+                            <p className="text-sm text-muted-foreground">d'opportunités additionnelles générées</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                        <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="relative flex items-center">
+                          <div className="mr-4">
+                            <div className="w-12 h-12 bg-sustainable/20 rounded-lg flex items-center justify-center">
+                              <TrendingUp className="w-6 h-6 text-sustainable" />
+                            </div>
+                          </div>
+                          <div>
+                            <div className="text-3xl font-bold text-sustainable mb-1">+40% - 60%</div>
+                            <p className="text-sm text-muted-foreground">de taux de succès de la levée de fonds</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -357,10 +428,10 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Nos livrables */}
+          {/* Nos livrables RSE */}
           <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-8">
             <h3 className="text-2xl font-bold text-center mb-8">Nos livrables</h3>
-            <div className="grid md:grid-cols-2 gap-4 mb-8">
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="flex items-start">
                 <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
                 <span className="text-muted-foreground">Rapport d'analyse carbone chiffré valorisable au niveau de l'ADEME</span>
@@ -394,8 +465,8 @@ const Services = () => {
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
               Notre Engagement RSE et Développement Durable
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              Chez CRM Conseil, nous appliquons nos propres conseils en stratégie RSE. Nos initiatives durables ne sont pas seulement un engagement, mais aussi un laboratoire d'expérimentation pour développer des stratégies RSE performantes que nous transmettons à nos clients.
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Chez CRM Conseil, nous ne nous contentons pas de conseiller : nous incarnons nos valeurs au quotidien
             </p>
           </div>
 
@@ -512,22 +583,30 @@ const Services = () => {
               Prêt à transformer votre organisation ?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Basé à Monaco - Intervention Monaco, France, Europe, International
+              Discutons de vos enjeux et trouvons ensemble les solutions adaptées à vos besoins
             </p>
-            <div className="flex flex-col md:flex-row gap-4 justify-center">
-              <a 
-                href="/#contactez-nous" 
-                className="inline-flex items-center px-8 py-3 bg-sustainable hover:bg-sustainable/90 text-white rounded-lg font-medium transition-colors"
-              >
-                Réserver une consultation
-              </a>
-              <div className="flex flex-col md:flex-row gap-4 items-center">
+            
+            <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-2">Prenez rendez-vous</h3>
+                <p className="text-muted-foreground mb-4">
+                  Un premier échange gratuit de 30 minutes pour comprendre vos défis
+                </p>
                 <a 
-                  href="tel:+33622953137" 
-                  className="text-sustainable hover:text-sustainable/80 font-medium"
+                  href="https://calendly.com/crmconseil" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-colors"
                 >
-                  +33 6 22 95 31 37
+                  Réserver un créneau
                 </a>
+              </div>
+              
+              <div className="text-center">
+                <h3 className="text-lg font-semibold mb-2">Contactez-nous</h3>
+                <p className="text-muted-foreground mb-4">
+                  Une question ? Parlons de votre projet
+                </p>
                 <a 
                   href="mailto:contact@crmconseil.com" 
                   className="text-sustainable hover:text-sustainable/80 font-medium"
