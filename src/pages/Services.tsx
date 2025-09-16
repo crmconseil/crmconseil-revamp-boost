@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award, ArrowRight, Rocket, Clock, Calendar, BarChart3, Zap, Bug } from "lucide-react";
+import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award, ArrowRight, Rocket, Clock, Calendar, BarChart3, Zap, Sparkles } from "lucide-react";
 import servicesBackground from "@/assets/services-background.jpg";
 
 const Services = () => {
@@ -527,7 +527,7 @@ const Services = () => {
                 <div className="relative z-10">
                   <div className="text-center mb-8">
                     <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-accent to-accent/80 rounded-2xl shadow-lg mb-4">
-                      <Bug className="w-10 h-10 text-white" />
+                      <Sparkles className="w-10 h-10 text-white" />
                     </div>
                     <h4 className="text-xl font-bold text-accent mb-2">Bilan Impact Biodiversité</h4>
                     <div className="inline-block px-3 py-1 bg-accent/20 rounded-full">
@@ -557,6 +557,14 @@ const Services = () => {
                       <div className="relative">
                         <div className="text-2xl font-bold text-accent mb-1">+40%</div>
                         <p className="text-xs text-muted-foreground">d'image positive accrue auprès des parties prenantes (étude Deloitte)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">40 à 50%</div>
+                        <p className="text-xs text-muted-foreground">de possibilité de subventions BPI France</p>
                       </div>
                     </div>
                     
@@ -603,64 +611,22 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Engagement RSE */}
-      <section id="accompagnements-rse" className="py-16 bg-sustainable/5">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
-              Notre Engagement RSE et Développement Durable
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Chez CRM Conseil, nous ne nous contentons pas de conseiller : nous incarnons nos valeurs au quotidien
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 text-center">
-              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                <Leaf className="w-6 h-6 text-sustainable" />
-              </div>
-              <h3 className="font-semibold mb-2">Énergie 100% Renouvelable</h3>
-              <p className="text-sm text-muted-foreground">Nos locaux fonctionnent exclusivement avec de l'énergie verte</p>
-            </div>
-
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 text-center">
-              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                <Globe className="w-6 h-6 text-sustainable" />
-              </div>
-              <h3 className="font-semibold mb-2">Mobilité Douce</h3>
-              <p className="text-sm text-muted-foreground">Vélos électriques et programme de recyclage complet</p>
-            </div>
-
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 text-center">
-              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                <Award className="w-6 h-6 text-sustainable" />
-              </div>
-              <h3 className="font-semibold mb-2">Formation MIT</h3>
-              <p className="text-sm text-muted-foreground">Équipes formées par MIT sur les stratégies durables</p>
-            </div>
-
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 text-center">
-              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                <Handshake className="w-6 h-6 text-sustainable" />
-              </div>
-              <h3 className="font-semibold mb-2">Pacte National Monaco</h3>
-              <p className="text-sm text-muted-foreground">5 ans d'engagement pour la Transition Énergétique</p>
-            </div>
-          </div>
-
-          <div className="text-center mt-10">
-            <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-              <strong className="text-sustainable">Transformez votre RSE en Avantage Commercial</strong><br />
-              Nos propres initiatives RSE nous permettent de comprendre concrètement les enjeux et opportunités.
-            </p>
-            <a 
-              href="#contact" 
-              className="inline-flex items-center px-8 py-3 bg-sustainable hover:bg-sustainable/90 text-white rounded-lg font-medium transition-colors"
-            >
-              Développer votre stratégie RSE commerciale
-            </a>
-          </div>
+      {/* Découvrez plus */}
+      <section className="py-16 bg-gradient-to-r from-sustainable/10 to-primary/10">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
+            Découvrez Plus Qui Nous Sommes
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Nous incarnons nos valeurs au quotidien et accompagnons votre transformation RSE de manière concrète et opérationnelle.
+          </p>
+          <a 
+            href="/about"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-sustainable to-primary hover:from-sustainable/90 hover:to-primary/90 text-white rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl group"
+          >
+            Découvrez plus qui nous sommes
+            <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
+          </a>
         </div>
       </section>
 
