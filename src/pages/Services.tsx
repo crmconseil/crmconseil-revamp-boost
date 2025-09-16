@@ -100,7 +100,7 @@ const Services = () => {
               Missions d'Optimisations commerciales
             </h2>
             <div className="max-w-4xl mx-auto mt-8">
-              <p className="text-lg text-muted-foreground mb-4">
+              <p className="text-lg text-muted-foreground text-justify mb-4">
                 Moins de 40 % du temps des commerciaux est dédié à la vente. CRM Conseil aide les startups et PME à éliminer les blocages, optimiser leurs processus de vente et maximiser leur efficacité commerciale. Simplifiez vos outils, perfectionnez vos pitchs et atteignez des résultats durables.
               </p>
               <p className="text-lg text-muted-foreground">
@@ -118,9 +118,9 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-bold">Optimisation des process commerciaux</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
-                Analyse et restructuration de vos processus de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation des argumentaires et méthodes de prospection pour maximiser votre efficacité commerciale.
-              </p>
+                <p className="text-muted-foreground text-justify mb-4">
+                  Analyse et restructuration de vos processus de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation des argumentaires et méthodes de prospection pour maximiser votre efficacité commerciale.
+                </p>
             </div>
 
             {/* Choix et Configuration d'outils de pilotage */}
@@ -131,9 +131,9 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-bold">Choix et Configuration d'outils de pilotage (CRM/ERP)</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
-                Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
-              </p>
+                <p className="text-muted-foreground text-justify mb-4">
+                  Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
+                </p>
             </div>
 
             {/* Générations de leads B2B */}
@@ -144,9 +144,9 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-bold">Générations de leads B2B</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
-                Stratégies de prospection multicanales, qualification de leads, mise en place de campagnes ciblées et accompagnement dans la génération de prospects qualifiés pour développer votre portefeuille clients.
-              </p>
+                <p className="text-muted-foreground text-justify mb-4">
+                  Stratégies de prospection multicanales, qualification de leads, mise en place de campagnes ciblées et accompagnement dans la génération de prospects qualifiés pour développer votre portefeuille clients.
+                </p>
             </div>
 
             {/* Valorisation commerciale pour levée de fonds */}
@@ -157,9 +157,9 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-bold">Valorisation commerciale pour levée de fonds</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
-                Préparation de pitchs investisseurs, valorisation de votre modèle économique, coaching pour les présentations et optimisation de votre approche commerciale pour séduire les investisseurs.
-              </p>
+                <p className="text-muted-foreground text-justify mb-4">
+                  Préparation de pitchs investisseurs, valorisation de votre modèle économique, coaching pour les présentations et optimisation de votre approche commerciale pour séduire les investisseurs.
+                </p>
             </div>
           </div>
 
@@ -351,13 +351,13 @@ const Services = () => {
               Valorisation RSE et Durabilité
             </h2>
             <div className="max-w-4xl mx-auto mt-8">
-              <p className="text-lg text-muted-foreground mb-4">
+              <p className="text-lg text-muted-foreground text-justify mb-4">
                 Et si intégrer des pratiques durables dans votre stratégie devenait un atout commercial?
               </p>
-              <p className="text-lg text-muted-foreground mb-4">
+              <p className="text-lg text-muted-foreground text-justify mb-4">
                 Notre expertise combine performance économique et responsabilité sociétale pour créer une stratégie durable qui renforce votre positionnement concurrentiel.
               </p>
-              <p className="text-lg text-muted-foreground mb-4">
+              <p className="text-lg text-muted-foreground text-justify mb-4">
                 Nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : Réalisation de votre bilan carbone ADEME, Implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
               </p>
               <div className="text-lg text-muted-foreground">
@@ -382,9 +382,9 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-bold">Bilan - Emissions Directes - Scope 1</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
-                Analyse complète de vos émissions directes de gaz à effet de serre issues de vos activités propres pour établir votre bilan carbone initial.
-              </p>
+                <p className="text-muted-foreground text-justify mb-4">
+                  Analyse complète de vos émissions directes de gaz à effet de serre issues de vos activités propres pour établir votre bilan carbone initial.
+                </p>
             </div>
 
             {/* Bilan RSE Complet – Scope 1, 2, 3 */}
@@ -395,9 +395,9 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-bold">Bilan RSE Complet – Scope 1, 2, 3</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
-                Évaluation exhaustive de vos impacts environnementaux et sociaux incluant toutes vos émissions directes et indirectes.
-              </p>
+                <p className="text-muted-foreground text-justify mb-4">
+                  Évaluation exhaustive de vos impacts environnementaux et sociaux incluant toutes vos émissions directes et indirectes.
+                </p>
             </div>
 
             {/* Bilan Impact Biodiversité */}
@@ -408,9 +408,9 @@ const Services = () => {
                 </div>
                 <h3 className="text-xl font-bold">Bilan Impact Biodiversité</h3>
               </div>
-              <p className="text-muted-foreground mb-4">
-                Mesure et évaluation de l'impact de vos activités sur la biodiversité avec des recommandations concrètes d'amélioration.
-              </p>
+                <p className="text-muted-foreground text-justify mb-4">
+                  Mesure et évaluation de l'impact de vos activités sur la biodiversité avec des recommandations concrètes d'amélioration.
+                </p>
             </div>
           </div>
 
