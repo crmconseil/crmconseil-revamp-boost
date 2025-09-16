@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award, ArrowRight, Rocket, Clock, Calendar, BarChart3, Zap } from "lucide-react";
+import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award, ArrowRight, Rocket, Clock, Calendar, BarChart3, Zap, Bug } from "lucide-react";
 import servicesBackground from "@/assets/services-background.jpg";
 
 const Services = () => {
@@ -510,7 +510,7 @@ const Services = () => {
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">ROI direct et indirect</div>
+                        <div className="text-2xl font-bold text-primary mb-1">ROI Mixte</div>
                         <p className="text-xs text-muted-foreground">10x à 20x l'investissement</p>
                       </div>
                     </div>
@@ -527,7 +527,7 @@ const Services = () => {
                 <div className="relative z-10">
                   <div className="text-center mb-8">
                     <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-accent to-accent/80 rounded-2xl shadow-lg mb-4">
-                      <Award className="w-10 h-10 text-white" />
+                      <Bug className="w-10 h-10 text-white" />
                     </div>
                     <h4 className="text-xl font-bold text-accent mb-2">Bilan Impact Biodiversité</h4>
                     <div className="inline-block px-3 py-1 bg-accent/20 rounded-full">
@@ -540,15 +540,15 @@ const Services = () => {
                       <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
                         <div className="text-2xl font-bold text-accent mb-1">-20 à -30%</div>
-                        <p className="text-xs text-muted-foreground">des risques financiers liés aux chaînes d'approvisionnement (Forum Économique Mondial)</p>
+                        <p className="text-xs text-muted-foreground">des risques financiers liés aux chaînes d'approvisionnement</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">+25%</div>
-                        <p className="text-xs text-muted-foreground">de valeur sur des produits/services différenciés grâce à l'intégration de critères biodiversité (UNEP)</p>
+                        <div className="text-2xl font-bold text-accent mb-1">10 à 25%</div>
+                        <p className="text-xs text-muted-foreground">de facturables supplémentaires sur des produits/services différenciés grâce à l'intégration de critères biodiversité</p>
                       </div>
                     </div>
                     
@@ -557,6 +557,14 @@ const Services = () => {
                       <div className="relative">
                         <div className="text-2xl font-bold text-accent mb-1">+40%</div>
                         <p className="text-xs text-muted-foreground">d'image positive accrue auprès des parties prenantes (étude Deloitte)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">ROI Mixte</div>
+                        <p className="text-xs text-muted-foreground">5x à 10x l'investissement</p>
                       </div>
                     </div>
                   </div>
