@@ -20,7 +20,8 @@ import {
   Cpu,
   Activity,
   Cog,
-  Globe
+  Globe,
+  Settings
 } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
@@ -165,6 +166,62 @@ const About = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Expertise par secteurs */}
+      <section id="expertise" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
+              Notre Expertise
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Des solutions éprouvées adaptées à votre secteur d'activité et à vos enjeux spécifiques, pour des résultats durables et mesurables.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Leaf className="w-8 h-8 text-sustainable" />
+              </div>
+              <h3 className="text-lg font-semibold text-center mb-3">GreenTech</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Accompagnement des entreprises innovantes dans les technologies vertes et le développement durable pour optimiser leur impact commercial et environnemental.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Target className="w-8 h-8 text-sustainable" />
+              </div>
+              <h3 className="text-lg font-semibold text-center mb-3">HealthTech</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Solutions commerciales dédiées aux entreprises de technologies de santé, dispositifs médicaux et innovations pharmaceutiques.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Settings className="w-8 h-8 text-sustainable" />
+              </div>
+              <h3 className="text-lg font-semibold text-center mb-3">Industrie</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Optimisation des processus commerciaux et transformation digitale pour les acteurs industriels et manufacturiers.
+              </p>
+            </div>
+
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="p-3 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
+                <Globe className="w-8 h-8 text-sustainable" />
+              </div>
+              <h3 className="text-lg font-semibold text-center mb-3">Dev-AI</h3>
+              <p className="text-sm text-muted-foreground text-center">
+                Stratégies commerciales spécialisées pour les entreprises de développement logiciel et d'intelligence artificielle.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -343,32 +400,6 @@ const About = () => {
                 <p className="text-white/80 text-sm">{item.description}</p>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Sectors Section */}
-      <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Secteurs d'Expertise</h2>
-            <p className="text-xl text-muted-foreground">
-              Nous concentrons notre expertise sur quatre secteurs d'avenir où innovation et durabilité se rencontrent.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {sectors.map((sector, index) => {
-              const IconComponent = sector.icon;
-              return (
-                <Card key={index} className="p-6 text-center hover:shadow-lg transition-all duration-300 group">
-                  <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <IconComponent className="text-primary" size={32} />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-4">{sector.title}</h3>
-                </Card>
-              );
-            })}
           </div>
         </div>
       </section>
