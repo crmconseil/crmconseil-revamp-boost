@@ -606,12 +606,6 @@ const Services = () => {
       {/* Découvrez plus */}
       <section className="py-16 bg-gradient-to-r from-sustainable/10 to-primary/10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
-            Découvrez Plus Qui Nous Sommes
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Nous incarnons nos valeurs au quotidien et accompagnons votre transformation RSE de manière concrète et opérationnelle.
-          </p>
           <a 
             href="/about"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-sustainable to-primary hover:from-sustainable/90 hover:to-primary/90 text-white rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl group"
