@@ -396,7 +396,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Bilan Carbone ADEME® - Scope 1, 2, 3</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Le bilan carbone RSE ADEME® analyse vos émissions directes et indirectes sur l'ensemble de la chaîne de valeur, tout en évaluant les impacts sociétaux sur vos employés, vos clients et la société. Il intègre la double matérialité : les risques climatiques subis par votre entreprise et les impacts qu'elle génère sur l'environnement et la société. Ce bilan favorise la transformation durable de votre entreprise, l'ouverture de nouveaux marchés, une réduction profonde de votre impact carbone, un repositionnement compétitif, ainsi qu'une attractivité renforcée pour vos employés et investisseurs.
+                  Le bilan carbone RSE ADEME® analyse vos émissions directes et indirectes sur l'ensemble de la chaîne de valeur, tout en évaluant les impacts sociétaux sur vos employés, vos clients et la société. Il intègre la double matérialité : les risques climatiques subis par votre entreprise et les impacts qu'elle génère sur l'environnement et la société. Résultats : transformation durable, ouverture de nouveaux marchés, réduction profonde de votre impact carbone, repositionnement compétitif de votre entreprise, et attractivité renforcée vis-à-vis d'employés et investisseurs.
                 </p>
             </div>
 
