@@ -180,7 +180,7 @@ const About = () => {
       </section>
 
       {/* Notre Expertise Section avec chiffres clés */}
-      <section id="expertise" className="py-12 bg-gradient-to-r from-primary/10 to-sustainable/10">
+      <section id="expertise" className="py-6 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-6">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
@@ -272,7 +272,7 @@ const About = () => {
       </section>
 
       {/* Notre Histoire Section */}
-      <section className="py-8 relative">
+      <section className="py-6 relative">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -309,16 +309,8 @@ const About = () => {
 
 
       {/* Notre Évolution - remonté après Notre histoire */}
-      <section className="py-8 bg-gradient-to-r from-sustainable/10 to-sustainable/20 relative">
+      <section className="py-6 bg-gradient-to-r from-sustainable/10 to-sustainable/20 relative">
         <div className="container mx-auto px-4 relative">
-          {/* Flèche de fond plus visible */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-40">
-            <div className="flex items-center justify-between w-full max-w-6xl">
-              <ArrowRight className="w-12 h-12 text-sustainable" />
-              <ArrowRight className="w-12 h-12 text-sustainable" />
-              <ArrowRight className="w-12 h-12 text-sustainable" />
-            </div>
-          </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
             {timeline.map((item, index) => (
@@ -328,8 +320,8 @@ const About = () => {
                 <p className="text-sm text-muted-foreground">{item.description}</p>
                 {/* Flèche entre les vignettes sauf pour la dernière */}
                 {index < timeline.length - 1 && (
-                  <div className="absolute top-1/2 -right-3 transform -translate-y-1/2 hidden lg:block">
-                    <ArrowRight className="w-6 h-6 text-sustainable/70" />
+                  <div className="absolute top-1/2 -right-6 transform -translate-y-1/2 hidden lg:block z-20">
+                    <ArrowRight className="w-8 h-8 text-sustainable drop-shadow-lg" />
                   </div>
                 )}
               </div>
@@ -339,7 +331,7 @@ const About = () => {
       </section>
 
       {/* Approach Section */}
-      <section className="py-12 bg-gradient-to-br from-secondary/30 to-background">
+      <section className="py-8 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-6">Notre méthode d'accompagnement terrain</h2>
@@ -388,9 +380,9 @@ const About = () => {
       </section>
 
       {/* Method Section - Schéma en 4 étapes */}
-      <section className="py-8">
+      <section className="py-6">
         <div className="container mx-auto px-4">
-          <h3 className="text-xl font-semibold text-foreground mb-6 text-left">Comment se déroulent nos missions ?</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-4 text-left">Comment se déroulent nos missions ?</h3>
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-center relative space-y-8 lg:space-y-0 lg:space-x-16">
               {/* Étape 1 */}

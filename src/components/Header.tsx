@@ -1,16 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsMenuOpen(false);
+    }
+  };
+
+  const handleNavigation = (type: 'services' | 'about') => {
+    if (isHomePage) {
+      // On homepage, scroll to anchor
+      const sectionId = type === 'services' ? 'services' : 'expertise';
+      scrollToSection(sectionId);
+    } else {
+      // On other pages, navigate to dedicated page
+      const path = type === 'services' ? '/nos-services' : '/a-propos';
+      window.location.href = path;
     }
   };
 
@@ -36,29 +51,17 @@ export const Header = () => {
               Accueil
             </a>
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => handleNavigation('services')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Services
             </button>
             <button
-              onClick={() => scrollToSection('expertise')}
+              onClick={() => handleNavigation('about')}
               className="text-foreground hover:text-primary transition-colors"
             >
               À Propos
             </button>
-            <button
-              onClick={() => scrollToSection('references')}
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Références
-            </button>
-            <a
-              href="/engagements-rse"
-              className="text-foreground hover:text-primary transition-colors"
-            >
-              Nos engagements RSE
-            </a>
             <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
@@ -89,30 +92,17 @@ export const Header = () => {
                 Accueil
               </a>
               <button
-                onClick={() => scrollToSection('services')}
+                onClick={() => handleNavigation('services')}
                 className="text-left text-foreground hover:text-primary transition-colors"
               >
                 Services
               </button>
               <button
-                onClick={() => scrollToSection('expertise')}
+                onClick={() => handleNavigation('about')}
                 className="text-left text-foreground hover:text-primary transition-colors"
               >
                 À Propos
               </button>
-              <button
-                onClick={() => scrollToSection('references')}
-                className="text-left text-foreground hover:text-primary transition-colors"
-              >
-                Références
-              </button>
-              <a
-                href="/engagements-rse"
-                className="text-left text-foreground hover:text-primary transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Nos engagements RSE
-              </a>
               <Button 
                 variant="outline"
                 className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
