@@ -203,13 +203,13 @@ export const ExpertiseSection = () => {
           </div>
           
           <Button 
-            variant="outline"
+            variant="sustainable"
             size="lg"
             onClick={() => window.location.href = '/a-propos'}
-            className="group"
+            className="group px-12 py-4 text-lg"
           >
             Découvrez qui nous sommes
-            <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+            <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={24} />
           </Button>
         </div>
       </div>
