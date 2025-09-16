@@ -180,15 +180,15 @@ const About = () => {
       </section>
 
       {/* Notre Expertise Section avec chiffres clés */}
-      <section id="expertise" className="py-16 bg-gradient-to-r from-primary/10 to-sustainable/10">
+      <section id="expertise" className="py-12 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
               Notre Expertise
             </h2>
           </div>
           
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-4">
             {keyStats.map((stat, index) => {
               const IconComponent = stat.icon;
               return (
@@ -202,50 +202,46 @@ const About = () => {
               );
             })}
           </div>
-        </div>
-      </section>
 
-      {/* Secteurs d'activité - dans le même bloc */}
-      <section className="py-8 bg-gradient-to-r from-primary/10 to-sustainable/10">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-48 flex flex-col justify-center">
-              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                <Leaf className="w-6 h-6 text-sustainable" />
+          {/* Secteurs d'activité - dans le même bloc */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
+              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
+                <Leaf className="w-5 h-5 text-sustainable" />
               </div>
-              <h3 className="text-lg font-semibold text-center mb-3">GreenTech</h3>
-              <p className="text-xs text-muted-foreground text-justify leading-tight">
-                Accompagnement des entreprises innovantes dans les technologies vertes et le développement durable pour une croissance responsable.
+              <h3 className="text-lg font-semibold text-center mb-2">GreenTech</h3>
+              <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
+                Accompagnement des entreprises innovantes dans les technologies vertes et développement durable.
               </p>
             </div>
 
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-48 flex flex-col justify-center">
-              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                <Activity className="w-6 h-6 text-sustainable" />
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
+              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
+                <Activity className="w-5 h-5 text-sustainable" />
               </div>
-              <h3 className="text-lg font-semibold text-center mb-3">HealthTech</h3>
-              <p className="text-xs text-muted-foreground text-justify leading-tight">
+              <h3 className="text-lg font-semibold text-center mb-2">HealthTech</h3>
+              <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
                 Solutions commerciales dédiées aux entreprises de technologies de santé et dispositifs médicaux innovants.
               </p>
             </div>
 
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-48 flex flex-col justify-center">
-              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                <Cog className="w-6 h-6 text-sustainable" />
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
+              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
+                <Cog className="w-5 h-5 text-sustainable" />
               </div>
-              <h3 className="text-lg font-semibold text-center mb-3">Industrie</h3>
-              <p className="text-xs text-muted-foreground text-justify leading-tight">
+              <h3 className="text-lg font-semibold text-center mb-2">Industrie</h3>
+              <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
                 Optimisation des processus commerciaux et transformation digitale pour les acteurs industriels modernes.
               </p>
             </div>
 
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-48 flex flex-col justify-center">
-              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-4">
-                <Cpu className="w-6 h-6 text-sustainable" />
+            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
+              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
+                <Cpu className="w-5 h-5 text-sustainable" />
               </div>
-              <h3 className="text-lg font-semibold text-center mb-3">Dev-AI</h3>
-              <p className="text-xs text-muted-foreground text-justify leading-tight">
-                Stratégies commerciales pour les entreprises de développement logiciel et d'intelligence artificielle.
+              <h3 className="text-lg font-semibold text-center mb-2">Dev-AI</h3>
+              <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
+                Stratégies commerciales pour les entreprises de développement logiciel et intelligence artificielle.
               </p>
             </div>
           </div>
@@ -276,11 +272,11 @@ const About = () => {
       </section>
 
       {/* Notre Histoire Section */}
-      <section className="py-12 relative">
+      <section className="py-8 relative">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-foreground mb-6 text-center lg:text-left">Notre Histoire</h2>
+              <h2 className="text-4xl font-bold text-foreground mb-6 text-center">Notre Histoire</h2>
               <div className="space-y-6 text-muted-foreground">
                 <p>
                   CRM Conseil a été créée en 2014 avec pour objectif d'appliquer les méthodes commerciales des grands comptes aux startups en phase de croissance. 
@@ -313,19 +309,29 @@ const About = () => {
 
 
       {/* Notre Évolution - remonté après Notre histoire */}
-      <section className="py-12 bg-gradient-to-r from-sustainable/10 to-sustainable/20 relative">
+      <section className="py-8 bg-gradient-to-r from-sustainable/10 to-sustainable/20 relative">
         <div className="container mx-auto px-4 relative">
-          {/* Flèche de fond */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-20">
-            <ArrowRight className="w-full h-8 text-sustainable" style={{ width: '80%' }} />
+          {/* Flèche de fond plus visible */}
+          <div className="absolute inset-0 flex items-center justify-center opacity-40">
+            <div className="flex items-center justify-between w-full max-w-6xl">
+              <ArrowRight className="w-12 h-12 text-sustainable" />
+              <ArrowRight className="w-12 h-12 text-sustainable" />
+              <ArrowRight className="w-12 h-12 text-sustainable" />
+            </div>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
             {timeline.map((item, index) => (
-              <div key={index} className="text-center p-6 bg-background rounded-lg shadow-lg">
+              <div key={index} className="text-center p-6 bg-background rounded-lg shadow-lg relative">
                 <div className="text-3xl font-bold text-sustainable mb-4">{item.year}</div>
                 <h3 className="text-lg font-semibold text-foreground mb-3">{item.title}</h3>
                 <p className="text-sm text-muted-foreground">{item.description}</p>
+                {/* Flèche entre les vignettes sauf pour la dernière */}
+                {index < timeline.length - 1 && (
+                  <div className="absolute top-1/2 -right-3 transform -translate-y-1/2 hidden lg:block">
+                    <ArrowRight className="w-6 h-6 text-sustainable/70" />
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -333,7 +339,7 @@ const About = () => {
       </section>
 
       {/* Approach Section */}
-      <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
+      <section className="py-12 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-6">Notre méthode d'accompagnement terrain</h2>
@@ -382,9 +388,9 @@ const About = () => {
       </section>
 
       {/* Method Section - Schéma en 4 étapes */}
-      <section className="py-16">
+      <section className="py-8">
         <div className="container mx-auto px-4">
-          <h3 className="text-2xl font-semibold text-foreground mb-8 text-left">Comment se déroulent nos missions ?</h3>
+          <h3 className="text-xl font-semibold text-foreground mb-6 text-left">Comment se déroulent nos missions ?</h3>
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center justify-center relative space-y-8 lg:space-y-0 lg:space-x-16">
               {/* Étape 1 */}
@@ -426,7 +432,7 @@ const About = () => {
                 <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
                   <span className="text-white font-bold text-xl">3</span>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Mise en place collaborative</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Mise en place<br/>collaborative</h3>
                 <p className="text-sm text-muted-foreground max-w-xs">Implémentation avec vos équipes</p>
               </div>
 
@@ -443,13 +449,13 @@ const About = () => {
                 <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
                   <span className="text-white font-bold text-xl">4</span>
                 </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">Suivi d'impacts</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Suivi<br/>d'impacts</h3>
                 <p className="text-sm text-muted-foreground max-w-xs">Mesure des résultats et optimisation continue</p>
               </div>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {methods.map((method, index) => {
               const IconComponent = method.icon;
               return (
@@ -460,14 +466,14 @@ const About = () => {
                     </div>
                     <h3 className="text-xl font-bold text-foreground">{method.title}</h3>
                   </div>
-                  <ul className="space-y-2 text-muted-foreground text-sm">
+                  <div className="space-y-2 text-muted-foreground text-sm">
                     {method.points.map((point, pointIndex) => (
-                      <li key={pointIndex} className="flex items-start">
-                        <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                        <span>{point}</span>
-                      </li>
+                      <div key={pointIndex} className="flex items-start">
+                        <span className="font-bold text-primary mr-2">{pointIndex + 1}.</span>
+                        <span>{point.replace(/^\d+\.\s*/, '')}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </Card>
               );
             })}
@@ -476,16 +482,13 @@ const About = () => {
       </section>
 
       {/* Nos engagements */}
-      <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
+      <section className="py-12 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Nos engagements</h2>
-            <p className="text-xl text-muted-foreground">
-              Chez CRM Conseil, nous ne nous contentons pas de conseiller : nous incarnons nos valeurs au quotidien
-            </p>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Nos engagements d'excellence et de durabilité</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
@@ -494,10 +497,17 @@ const About = () => {
                     <IconComponent className="text-primary" size={32} />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-4">{value.title}</h3>
-                  <p className="text-muted-foreground">{value.description}</p>
+                  <p className="text-muted-foreground text-justify">{value.description}</p>
                 </Card>
               );
             })}
+          </div>
+
+          {/* Phrase déplacée ici */}
+          <div className="text-center mb-8">
+            <p className="text-xl text-muted-foreground">
+              Chez CRM Conseil, nous ne nous contentons pas de vous conseiller : nous incarnons nos valeurs au quotidien par des actions de durabilité concrètes.
+            </p>
           </div>
 
           {/* Nos Actions RSE en 4 piliers - remontés ici */}
@@ -613,11 +623,11 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA Section - Prêt à transformer votre approche commerciale */}
-      <section className="py-20 bg-gradient-to-r from-primary/5 to-sustainable/5">
+      {/* CTA Section - Prêt à transformer activité durablement */}
+      <section className="py-16 bg-gradient-to-r from-primary/5 to-sustainable/5">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Prêt à transformer votre approche commerciale ?
+            Prêt à transformer activité durablement ?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Découvrez comment nous pouvons vous accompagner dans votre croissance tout en intégrant une démarche RSE performante.
@@ -627,7 +637,7 @@ const About = () => {
               variant="sustainable" 
               size="lg" 
               className="group"
-              onClick={scrollToContact}
+              onClick={() => window.open('https://calendly.com', '_blank')}
             >
               Réserver une consultation
               <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
