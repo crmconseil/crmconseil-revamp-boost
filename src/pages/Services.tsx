@@ -431,7 +431,7 @@ const Services = () => {
                     <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-sustainable to-sustainable/80 rounded-2xl shadow-lg mb-4">
                       <Globe className="w-10 h-10 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold text-sustainable mb-2">Bilan Carbone Scope 1</h4>
+                    <h4 className="text-xl font-bold text-sustainable mb-2">Bilan Emissions Directes Scope 1</h4>
                     <div className="inline-block px-3 py-1 bg-sustainable/20 rounded-full">
                       <p className="text-xs font-medium text-sustainable">Impacts directs</p>
                     </div>
@@ -442,7 +442,7 @@ const Services = () => {
                       <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
                         <div className="text-2xl font-bold text-sustainable mb-1">Jusqu'à -30%</div>
-                        <p className="text-xs text-muted-foreground">de coûts énergétiques par an via l'efficacité énergétique (ADEME)</p>
+                        <p className="text-xs text-muted-foreground">de réduction des couts énergétiques / an via l'efficacité énergétique</p>
                       </div>
                     </div>
                     
@@ -450,7 +450,15 @@ const Services = () => {
                       <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
                         <div className="text-2xl font-bold text-sustainable mb-1">-20%</div>
-                        <p className="text-xs text-muted-foreground">des coûts d'exploitation grâce à la diminution des déchets et gaspillages (Capgemini)</p>
+                        <p className="text-xs text-muted-foreground">des coûts d'exploitation grâce à la diminution du gaspillage et valorisation des déchets</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-sustainable mb-1">ROI direct</div>
+                        <p className="text-xs text-muted-foreground">2 à 3x l'investissement dès la 1ère année (pour TPE/PME de 200K€ à 2M€ de CA annuel)</p>
                       </div>
                     </div>
                   </div>
