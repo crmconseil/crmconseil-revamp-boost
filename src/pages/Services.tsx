@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Link } from "react-router-dom";
 import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award, ArrowRight, Rocket, Clock, Calendar, BarChart3, Zap, Sparkles } from "lucide-react";
 import servicesBackground from "@/assets/services-background.jpg";
 
@@ -606,13 +607,13 @@ const Services = () => {
       {/* Découvrez plus */}
       <section className="py-16 bg-gradient-to-r from-sustainable/10 to-primary/10">
         <div className="container mx-auto px-4 text-center">
-          <a 
-            href="/about"
+          <Link 
+            to="/about"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-sustainable to-primary hover:from-sustainable/90 hover:to-primary/90 text-white rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl group"
           >
             Découvrez plus qui nous sommes
             <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
-          </a>
+          </Link>
         </div>
       </section>
 
