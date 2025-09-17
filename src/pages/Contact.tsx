@@ -154,6 +154,7 @@ const Contact = () => {
                 name="contact-fr" 
                 method="POST" 
                 data-netlify="true"
+                action="/contact?success=true"
                 className="space-y-6" 
                 aria-label="Formulaire de contact"
               >

@@ -127,6 +127,7 @@ const ContactEN = () => {
                         name="contact-en" 
                         method="POST" 
                         data-netlify="true"
+                        action="/en/contact?success=true"
                         className="space-y-6"
                       >
                         <input type="hidden" name="form-name" value="contact-en" />

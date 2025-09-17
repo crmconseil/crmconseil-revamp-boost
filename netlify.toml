@@ -1,0 +1,72 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Form handling configuration
+[[forms]]
+  name = "contact-fr"
+  
+[[forms]]
+  name = "contact-en"
+  
+[[forms]]
+  name = "contact-homepage"
+
+# Notifications for form submissions
+[[plugins]]
+  package = "@netlify/plugin-forms"
+
+# Email notifications (require configuration in Netlify dashboard)
+[form.notifications]
+  # Configure in Netlify dashboard: Site settings > Forms > Form notifications
+  # Add email notification to: contact@crmconseil.com
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+  for = "/.well-known/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+# Redirects
+[[redirects]]
+  from = "/mentions_legales"
+  to = "/mentions-legales"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/services.html"
+  to = "/nos-services"
+  status = 301
+
+[[redirects]]
+  from = "/services"
+  to = "/nos-services"
+  status = 301
+
+[[redirects]]
+  from = "/rendez-vous"
+  to = "/book-appointment"
+  status = 301
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

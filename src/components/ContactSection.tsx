@@ -137,6 +137,7 @@ export const ContactSection = () => {
               name="contact-homepage" 
               method="POST" 
               data-netlify="true"
+              action="/?success=true"
               className="space-y-6"
             >
               <input type="hidden" name="form-name" value="contact-homepage" />
