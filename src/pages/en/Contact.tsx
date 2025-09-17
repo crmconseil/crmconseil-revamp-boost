@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
-import contactBackground from "@/assets/contact-background.jpg";
+import contactBackground from "@/assets/contact-background-professional.jpg";
 
 const ContactEN = () => {
   return (

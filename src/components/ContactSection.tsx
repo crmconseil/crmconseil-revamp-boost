@@ -15,7 +15,7 @@ import {
   TrendingUp
 } from "lucide-react";
 import { useState } from "react";
-import contactBackground from "@/assets/contact-background-light.jpg";
+import contactBackground from "@/assets/contact-background-professional.jpg";
 import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 export const ContactSection = () => {

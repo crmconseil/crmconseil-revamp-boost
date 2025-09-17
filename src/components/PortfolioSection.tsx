@@ -11,7 +11,7 @@ import {
   Users,
   ArrowRight
 } from "lucide-react";
-import portfolioBackground from "@/assets/portfolio-background.jpg";
+import portfolioBackground from "@/assets/portfolio-background-professional.jpg";
 import actionAirLogo from "@/assets/logos/action-air.jpg";
 import mycophytoLogo from "@/assets/logos/mycophyto.png";
 import tethysLogo from "@/assets/logos/tethys.jpg";
