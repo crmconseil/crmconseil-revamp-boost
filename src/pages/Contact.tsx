@@ -22,14 +22,40 @@ import logoImage from "@/assets/crm-conseil-logo.jpg";
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formErrors, setFormErrors] = useState<{[key: string]: boolean}>({});
+
+  const validateForm = (formData: FormData): boolean => {
+    const errors: {[key: string]: boolean} = {};
+    const requiredFields = ['name', 'email', 'company', 'message'];
+    
+    requiredFields.forEach(field => {
+      const value = formData.get(field) as string;
+      if (!value || value.trim() === '') {
+        errors[field] = true;
+      }
+    });
+    
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    const formData = new FormData(e.currentTarget);
+    
+    if (!validateForm(formData)) {
+      toast({
+        title: "Champs obligatoires manquants",
+        description: "Veuillez remplir tous les champs obligatoires.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
-      const formData = new FormData(e.currentTarget);
-      
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -43,6 +69,7 @@ const Contact = () => {
           variant: "default",
         });
         (e.target as HTMLFormElement).reset();
+        setFormErrors({});
       } else {
         throw new Error('Network response was not ok');
       }
@@ -209,7 +236,7 @@ const Contact = () => {
                       type="text"
                       required
                       placeholder="Votre nom"
-                      className="w-full"
+                      className={`w-full ${formErrors.name ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                       aria-describedby="name-required"
                     />
                   </div>
@@ -223,7 +250,7 @@ const Contact = () => {
                       type="email"
                       required
                       placeholder="votre@email.com"
-                      className="w-full"
+                      className={`w-full ${formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                       aria-describedby="email-required"
                     />
                   </div>
@@ -239,7 +266,7 @@ const Contact = () => {
                     type="text"
                     required
                     placeholder="Nom de votre entreprise"
-                    className="w-full"
+                    className={`w-full ${formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                     aria-describedby="company-required"
                   />
                 </div>
@@ -273,7 +300,7 @@ const Contact = () => {
                     required
                     placeholder="Décrivez brièvement votre projet ou vos besoins..."
                     rows={4}
-                    className="w-full"
+                    className={`w-full ${formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                     aria-describedby="message-required"
                   />
                 </div>

@@ -22,14 +22,40 @@ export const ContactSection = () => {
   const { t } = useLanguage();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formErrors, setFormErrors] = useState<{[key: string]: boolean}>({});
+
+  const validateForm = (formData: FormData): boolean => {
+    const errors: {[key: string]: boolean} = {};
+    const requiredFields = ['name', 'email', 'company', 'message'];
+    
+    requiredFields.forEach(field => {
+      const value = formData.get(field) as string;
+      if (!value || value.trim() === '') {
+        errors[field] = true;
+      }
+    });
+    
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    const formData = new FormData(e.currentTarget);
+    
+    if (!validateForm(formData)) {
+      toast({
+        title: t('contact.error_validation_title'),
+        description: t('contact.error_validation_description'),
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
-      const formData = new FormData(e.currentTarget);
-      
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -43,6 +69,7 @@ export const ContactSection = () => {
           variant: "default",
         });
         (e.target as HTMLFormElement).reset();
+        setFormErrors({});
       } else {
         throw new Error('Network response was not ok');
       }
@@ -191,7 +218,7 @@ export const ContactSection = () => {
                     type="text"
                     required
                     placeholder={t('contact.form_name_placeholder')}
-                    className="w-full"
+                    className={`w-full ${formErrors.name ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                   />
                 </div>
                 <div>
@@ -204,7 +231,7 @@ export const ContactSection = () => {
                     type="email"
                     required
                     placeholder={t('contact.form_email_placeholder')}
-                    className="w-full"
+                    className={`w-full ${formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                   />
                 </div>
               </div>
@@ -219,7 +246,7 @@ export const ContactSection = () => {
                   type="text"
                   required
                   placeholder={t('contact.form_company_placeholder')}
-                  className="w-full"
+                  className={`w-full ${formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                 />
               </div>
 
@@ -251,7 +278,7 @@ export const ContactSection = () => {
                   required
                   placeholder={t('contact.form_message_placeholder')}
                   rows={4}
-                  className="w-full"
+                  className={`w-full ${formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                 />
               </div>
 

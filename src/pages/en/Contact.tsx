@@ -16,14 +16,40 @@ import contactBackground from "@/assets/contact-background-professional.jpg";
 const ContactEN = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formErrors, setFormErrors] = useState<{[key: string]: boolean}>({});
+
+  const validateForm = (formData: FormData): boolean => {
+    const errors: {[key: string]: boolean} = {};
+    const requiredFields = ['firstName', 'lastName', 'email', 'company', 'subject', 'message'];
+    
+    requiredFields.forEach(field => {
+      const value = formData.get(field) as string;
+      if (!value || value.trim() === '') {
+        errors[field] = true;
+      }
+    });
+    
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    const formData = new FormData(e.currentTarget);
+    
+    if (!validateForm(formData)) {
+      toast({
+        title: "Required fields missing",
+        description: "Please fill in all required fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
-      const formData = new FormData(e.currentTarget);
-      
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -37,6 +63,7 @@ const ContactEN = () => {
           variant: "default",
         });
         (e.target as HTMLFormElement).reset();
+        setFormErrors({});
       } else {
         throw new Error('Network response was not ok');
       }
@@ -178,6 +205,7 @@ const ContactEN = () => {
                               name="firstName"
                               placeholder="Your first name"
                               required
+                              className={formErrors.firstName ? 'border-destructive focus-visible:ring-destructive' : ''}
                             />
                           </div>
                           <div className="space-y-2">
@@ -187,6 +215,7 @@ const ContactEN = () => {
                               name="lastName"
                               placeholder="Your last name"
                               required
+                              className={formErrors.lastName ? 'border-destructive focus-visible:ring-destructive' : ''}
                             />
                           </div>
                         </div>
@@ -199,15 +228,18 @@ const ContactEN = () => {
                             type="email" 
                             placeholder="your.email@example.com"
                             required
+                            className={formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}
                           />
                         </div>
                         
                         <div className="space-y-2">
-                          <Label htmlFor="company">Company</Label>
+                          <Label htmlFor="company">Company *</Label>
                           <Input 
                             id="company"
                             name="company"
                             placeholder="Your company name"
+                            required
+                            className={formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}
                           />
                         </div>
                         
@@ -218,6 +250,7 @@ const ContactEN = () => {
                             name="subject"
                             placeholder="Subject of your message"
                             required
+                            className={formErrors.subject ? 'border-destructive focus-visible:ring-destructive' : ''}
                           />
                         </div>
                         
@@ -229,6 +262,7 @@ const ContactEN = () => {
                             placeholder="Describe your project, your needs, your challenges..."
                             rows={6}
                             required
+                            className={formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}
                           />
                         </div>
                         

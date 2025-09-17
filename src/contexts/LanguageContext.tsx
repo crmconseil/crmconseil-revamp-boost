@@ -69,6 +69,8 @@ const translations = {
     'contact.success_toast_description': 'Merci pour votre message. Nous vous répondrons dans les plus brefs délais.',
     'contact.error_toast_title': 'Erreur d\'envoi',
     'contact.error_toast_description': 'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer ou nous contacter directement.',
+    'contact.error_validation_title': 'Champs obligatoires manquants',
+    'contact.error_validation_description': 'Veuillez remplir tous les champs obligatoires.',
     'contact.sending': 'Envoi en cours...',
     
     // Footer
@@ -493,6 +495,8 @@ const translations = {
     'contact.success_toast_description': 'Thank you for your message. We will respond to you as soon as possible.',
     'contact.error_toast_title': 'Submission error',
     'contact.error_toast_description': 'An error occurred while sending your message. Please try again or contact us directly.',
+    'contact.error_validation_title': 'Required fields missing',
+    'contact.error_validation_description': 'Please fill in all required fields.',
     'contact.sending': 'Sending...',
   }
 };
