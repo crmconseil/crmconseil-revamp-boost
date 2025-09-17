@@ -28,7 +28,7 @@ const RendezVous = () => {
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto bg-background p-8 rounded-lg shadow-lg">
               <iframe 
                 src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3F0CJ0zkLvTIQtA5yGzsNzKBO3Hkl9Mu2dYsubLvh5wIqr7q9dInq68yTahLwT8lnp32eyxG9a?gv=true" 
                 style={{ border: 0 }} 
@@ -36,7 +36,7 @@ const RendezVous = () => {
                 height="600" 
                 frameBorder="0"
                 title="Calendrier de prise de rendez-vous"
-                className="rounded-lg shadow-lg"
+                className="rounded-lg"
               />
             </div>
           </div>
