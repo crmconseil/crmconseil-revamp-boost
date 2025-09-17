@@ -222,5 +222,3 @@ const AboutEN = () => {
 };
 
 export default AboutEN;
-
-export default AboutEN;
