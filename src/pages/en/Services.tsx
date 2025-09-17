@@ -182,7 +182,7 @@ const ServicesEN = () => {
 
           {/* Ce que nous vous apportons - Infographie */}
           <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
-            <h3 className="text-2xl font-bold text-center mb-8">{t('services.what_we_bring')}</h3>
+            <h3 className="text-2xl font-bold text-center mb-8">Expected Results: Commercial Performance</h3>
             
             <div className="relative">
               <div className="grid lg:grid-cols-2 gap-8">
@@ -289,10 +289,10 @@ const ServicesEN = () => {
                               <Zap className="w-6 h-6 text-sustainable" />
                             </div>
                           </div>
-                          <div>
-                            <div className="text-3xl font-bold text-sustainable mb-1">x2 to x3</div>
-                            <p className="text-sm text-muted-foreground">{t('services.commercial_efficiency')}</p>
-                          </div>
+                           <div>
+                             <div className="text-3xl font-bold text-sustainable mb-1">+25 to +50%</div>
+                             <p className="text-sm text-muted-foreground">additional opportunities generated</p>
+                           </div>
                         </div>
                       </div>
                       
@@ -304,10 +304,10 @@ const ServicesEN = () => {
                               <Award className="w-6 h-6 text-sustainable" />
                             </div>
                           </div>
-                          <div>
-                            <div className="text-3xl font-bold text-sustainable mb-1">90%</div>
-                            <p className="text-sm text-muted-foreground">{t('services.success_rate')}</p>
-                          </div>
+                           <div>
+                             <div className="text-3xl font-bold text-sustainable mb-1">+50 to +60%</div>
+                             <p className="text-sm text-muted-foreground">fundraising success rate</p>
+                           </div>
                         </div>
                       </div>
                     </div>
@@ -428,7 +428,7 @@ const ServicesEN = () => {
 
           {/* Ce que nous vous apportons - Infographie RSE */}
           <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
-            <h3 className="text-2xl font-bold text-center mb-8">{t('services.what_we_bring')}</h3>
+            <h3 className="text-2xl font-bold text-center mb-8">Expected Results: Sustainable Development Impacts</h3>
             
             {/* Infographie visuelle RSE sur 3 colonnes */}
             <div className="grid lg:grid-cols-3 gap-8">
