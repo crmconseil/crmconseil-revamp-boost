@@ -19,35 +19,42 @@ export const Header = () => {
 
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-primary/20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-primary/20" role="banner">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src={logoImage} 
-              alt="CRM Conseil Logo" 
-              className="h-16 w-auto"
-            />
+            <a href="/" aria-label="CRM Conseil - Retour à l'accueil">
+              <img 
+                src={logoImage} 
+                alt="CRM Conseil - Logo de l'entreprise spécialisée en performance commerciale durable" 
+                className="h-16 w-auto"
+                width="64"
+                height="64"
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Navigation principale">
             <a
               href="/"
               className="text-foreground hover:text-primary transition-colors"
+              aria-label="Page d'accueil CRM Conseil"
             >
               Accueil
             </a>
             <a
               href="/services"
               className="text-foreground hover:text-primary transition-colors"
+              aria-label="Nos services de conseil commercial et RSE"
             >
               Services
             </a>
             <a
               href="/a-propos"
               className="text-foreground hover:text-primary transition-colors"
+              aria-label="À propos de CRM Conseil et notre expertise"
             >
               Qui sommes-nous
             </a>

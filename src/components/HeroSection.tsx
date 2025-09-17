@@ -11,18 +11,24 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative pt-24 min-h-screen flex items-center justify-center overflow-hidden">
+    <section 
+      className="relative pt-24 min-h-screen flex items-center justify-center overflow-hidden"
+      role="banner"
+      aria-label="Section principale - Performance commerciale durable"
+    >
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
+        role="img"
+        aria-label="Image de fond représentant une entreprise durable et performante"
       >
         <div className="absolute inset-0 bg-gradient-hero opacity-80"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto">
+        <header className="max-w-4xl mx-auto">
           {/* Tagline */}
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Votre partenaire pour une{" "}
@@ -48,12 +54,13 @@ export const HeroSection = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <nav className="flex flex-col sm:flex-row gap-4 justify-center" aria-label="Actions principales">
             <Button 
               variant="hero" 
               size="lg"
               onClick={scrollToServices}
               className="group"
+              aria-label="Découvrir nos services de conseil commercial et RSE"
             >
               Découvrir nos services
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
@@ -63,11 +70,12 @@ export const HeroSection = () => {
               size="lg"
               onClick={() => window.location.href = '/contact'}
               className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary"
+              aria-label="Contacter CRM Conseil pour un accompagnement personnalisé"
             >
               Nous contacter
             </Button>
-          </div>
-        </div>
+          </nav>
+        </header>
       </div>
 
       {/* Scroll Indicator */}
