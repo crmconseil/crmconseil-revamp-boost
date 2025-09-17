@@ -68,7 +68,12 @@ export const HeroSection = () => {
             <Button 
               variant="outline-sustainable" 
               size="lg"
-              onClick={() => window.location.href = '/contact'}
+              onClick={() => {
+                const element = document.getElementById('contact');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
               className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary"
               aria-label="Contacter CRM Conseil pour un accompagnement personnalisé"
             >
