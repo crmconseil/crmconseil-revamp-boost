@@ -19,13 +19,15 @@ const RendezVous = () => {
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4">
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Prenez rendez-vous avec nos experts
-              </h1>
-              <p className="text-xl text-foreground/80 max-w-3xl mx-auto font-medium">
-                Planifiez votre consultation gratuite de 30 minutes pour discuter de vos besoins 
-                et découvrir comment CRM Conseil peut accompagner votre entreprise vers plus de performance et de durabilité.
-              </p>
+              <div className="max-w-4xl mx-auto bg-background p-8 rounded-lg shadow-lg">
+                <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                  Prenez rendez-vous avec nos experts
+                </h1>
+                <p className="text-xl text-foreground/80 max-w-3xl mx-auto font-medium">
+                  Planifiez votre consultation gratuite de 30 minutes pour discuter de vos besoins 
+                  et découvrir comment CRM Conseil peut accompagner votre entreprise vers plus de performance et de durabilité.
+                </p>
+              </div>
             </div>
 
             <div className="max-w-4xl mx-auto bg-background p-8 rounded-lg shadow-lg">
