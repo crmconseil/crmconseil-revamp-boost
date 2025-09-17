@@ -12,9 +12,25 @@ import {
   Lightbulb,
   Award
 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import servicesBackground from "@/assets/services-background.jpg";
 
 export const ServicesSection = () => {
+  const { language, t } = useLanguage();
+  
+  const getLocalizedPath = (path: string) => {
+    if (language === 'en') {
+      return path === '/' ? '/en' : `/en${path}`;
+    }
+    return path;
+  };
+
+  const renderListItems = (items: string) => {
+    return items.split('\n').map((item, index) => (
+      <li key={index}>{item}</li>
+    ));
+  };
+
   return (
     <section id="services" className="relative py-12 overflow-hidden">
       {/* Background Image */}
@@ -30,10 +46,10 @@ export const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Nos Services
+            {t('services.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Des solutions personnalisées pour votre croissance et développement durable
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -43,7 +59,7 @@ export const ServicesSection = () => {
           <div className="space-y-8">
             <div className="text-center">
               <h3 className="text-3xl font-bold text-commercial mb-4 leading-tight">
-                Optimisation<br />commerciale
+                {t('services.commercial_optimization')}
               </h3>
             </div>
 
@@ -54,11 +70,9 @@ export const ServicesSection = () => {
                     <Target className="text-commercial" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-semibold mb-2">Ciblage / Acquisition</h4>
+                    <h4 className="text-xl font-semibold mb-2">{t('services.targeting_title')}</h4>
                     <ul className="text-muted-foreground space-y-1">
-                      <li>• Optimisation du discours et ciblage commercial</li>
-                      <li>• Étude de marché</li>
-                      <li>• Génération de leads externalisée</li>
+                      {renderListItems(t('services.targeting_items'))}
                     </ul>
                   </div>
                 </div>
@@ -70,11 +84,9 @@ export const ServicesSection = () => {
                     <TrendingUp className="text-commercial" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-semibold mb-2">Accélération / Valorisation</h4>
+                    <h4 className="text-xl font-semibold mb-2">{t('services.acceleration_title')}</h4>
                     <ul className="text-muted-foreground space-y-1">
-                      <li>• Levée de fonds</li>
-                      <li>• Choix d'outils CRM/ERP</li>
-                      <li>• Accélération du pipeline</li>
+                      {renderListItems(t('services.acceleration_items'))}
                     </ul>
                   </div>
                 </div>
@@ -86,11 +98,9 @@ export const ServicesSection = () => {
                     <Settings className="text-commercial" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-semibold mb-2">Optimisation des process</h4>
+                    <h4 className="text-xl font-semibold mb-2">{t('services.optimization_title')}</h4>
                     <ul className="text-muted-foreground space-y-1">
-                      <li>• Audit des outils et process commerciaux</li>
-                      <li>• Accompagnement au changement</li>
-                      <li>• Formation des équipes commerciales</li>
+                      {renderListItems(t('services.optimization_items'))}
                     </ul>
                   </div>
                 </div>
@@ -102,7 +112,7 @@ export const ServicesSection = () => {
           <div className="space-y-8">
             <div className="text-center">
               <h3 className="text-3xl font-bold text-sustainable mb-4">
-                Accompagnement RSE / Durabilité
+                {t('services.rse_support')}
               </h3>
             </div>
 
@@ -113,12 +123,9 @@ export const ServicesSection = () => {
                     <BarChart3 className="text-sustainable" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-semibold mb-2">Bilan Emissions Directes - Scope 1</h4>
+                    <h4 className="text-xl font-semibold mb-2">{t('services.scope1_title')}</h4>
                     <ul className="text-muted-foreground space-y-1">
-                      <li>• Analyse Impact Carbone direct</li>
-                      <li>• Analyse Impact Social</li>
-                      <li>• Modélisation de scénarios</li>
-                      <li>• Suivi d'impacts</li>
+                      {renderListItems(t('services.scope1_items'))}
                     </ul>
                   </div>
                 </div>
@@ -130,12 +137,9 @@ export const ServicesSection = () => {
                     <Shield className="text-sustainable" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-semibold mb-2">Bilan RSE Complet - Scope 1, 2, 3</h4>
+                    <h4 className="text-xl font-semibold mb-2">{t('services.scope123_title')}</h4>
                     <ul className="text-muted-foreground space-y-1">
-                      <li>• Impacts Carbone et Sociaux Directs/Indirects</li>
-                      <li>• Double matérialité - impacts et vulnérabilité</li>
-                      <li>• Scénarios et calcul de ROI</li>
-                      <li>• Suivi plan d'action</li>
+                      {renderListItems(t('services.scope123_items'))}
                     </ul>
                   </div>
                 </div>
@@ -147,12 +151,9 @@ export const ServicesSection = () => {
                     <Leaf className="text-sustainable" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-semibold mb-2">Bilan Impact Biodiversité</h4>
+                    <h4 className="text-xl font-semibold mb-2">{t('services.biodiversity_title')}</h4>
                     <ul className="text-muted-foreground space-y-1">
-                      <li>• Impacts directs et indirects sur la biodiversité</li>
-                      <li>• Matrice de matérialité Biodiversité</li>
-                      <li>• Modélisation de scénarios</li>
-                      <li>• Suivi d'impacts</li>
+                      {renderListItems(t('services.biodiversity_items'))}
                     </ul>
                   </div>
                 </div>
@@ -167,9 +168,9 @@ export const ServicesSection = () => {
             variant="hero" 
             size="lg" 
             className="group px-12 py-4 text-lg"
-            onClick={() => window.location.href = '/nos-services'}
+            onClick={() => window.location.href = getLocalizedPath('/nos-services')}
           >
-            En savoir plus sur nos services
+            {t('common.learn_more_services')}
             <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={24} />
           </Button>
         </div>
@@ -181,19 +182,19 @@ export const ServicesSection = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">100+</div>
-            <p className="text-muted-foreground">Startups accompagnées</p>
+            <p className="text-muted-foreground">{t('services.stats_startups')}</p>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-sustainable mb-2">4</div>
-            <p className="text-muted-foreground">Secteurs d'expertise</p>
+            <p className="text-muted-foreground">{t('services.stats_sectors')}</p>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-commercial mb-2">25+</div>
-            <p className="text-muted-foreground">Années d'expérience</p>
+            <p className="text-muted-foreground">{t('services.stats_experience')}</p>
           </div>
           <div className="text-center">
             <div className="text-4xl font-bold text-primary mb-2">16M€</div>
-            <p className="text-muted-foreground">Financements cumulés pour un client fidèle</p>
+            <p className="text-muted-foreground">{t('services.stats_funding')}</p>
           </div>
         </div>
       </div>

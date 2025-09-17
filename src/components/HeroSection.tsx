@@ -1,8 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Leaf, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroImage from "@/assets/hero-business-sustainability.jpg";
 
 export const HeroSection = () => {
+  const { language, t } = useLanguage();
+  
+  const getLocalizedPath = (path: string) => {
+    if (language === 'en') {
+      return path === '/' ? '/en' : `/en${path}`;
+    }
+    return path;
+  };
+
   const scrollToServices = () => {
     const element = document.getElementById('services');
     if (element) {
@@ -31,25 +41,24 @@ export const HeroSection = () => {
         <header className="max-w-4xl mx-auto">
           {/* Tagline */}
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Votre partenaire pour une{" "}
-            <span className="text-primary-glow">Performance commerciale durable</span>
+            {t('hero.title')}{" "}
+            <span className="text-primary-glow">{t('hero.title_highlight')}</span>
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Accompagnement commercial stratégique et opérationnel pour startups et PME innovantes, 
-            alliant <span className="text-commercial-light font-semibold text-xl md:text-2xl">optimisation commerciale</span> et <span className="text-sustainable-light font-semibold text-xl md:text-2xl">valorisation d'une stratégie RSE tangible</span>.
+            {t('hero.subtitle')}
           </p>
 
           {/* Value Props */}
           <div className="flex flex-wrap justify-center gap-6 mb-12">
             <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <TrendingUp className="text-commercial-light" size={20} />
-              <span className="text-white font-medium">Performance Commerciale</span>
+              <span className="text-white font-medium">{t('hero.commercial_performance')}</span>
             </div>
             <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <Leaf className="text-sustainable-light" size={20} />
-              <span className="text-white font-medium">Développement Durable</span>
+              <span className="text-white font-medium">{t('hero.sustainable_development')}</span>
             </div>
           </div>
 
@@ -62,17 +71,17 @@ export const HeroSection = () => {
               className="group"
               aria-label="Découvrir nos services de conseil commercial et RSE"
             >
-              Découvrir nos services
+              {t('common.discover_services')}
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </Button>
             <Button 
               variant="outline-sustainable" 
               size="lg"
-              onClick={() => window.location.href = '/contact'}
+              onClick={() => window.location.href = getLocalizedPath('/contact')}
               className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary"
               aria-label="Contacter CRM Conseil pour un accompagnement personnalisé"
             >
-              Nous contacter
+              {t('common.contact_us')}
             </Button>
           </nav>
         </header>

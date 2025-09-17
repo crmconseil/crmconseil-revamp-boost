@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { 
   Award, 
   Users, 
@@ -13,6 +14,15 @@ import {
 import expertiseBackground from "@/assets/expertise-background.jpg";
 
 export const ExpertiseSection = () => {
+  const { language, t } = useLanguage();
+  
+  const getLocalizedPath = (path: string) => {
+    if (language === 'en') {
+      return path === '/' ? '/en' : `/en${path}`;
+    }
+    return path;
+  };
+
   return (
     <section id="expertise" className="relative py-12 overflow-hidden">
       {/* Background Image */}
@@ -28,10 +38,10 @@ export const ExpertiseSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Notre Expertise
+            {t('expertise.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Plus de 25 ans d'expérience combinée en développement commercial et stratégie durable
+            {t('expertise.subtitle')}
           </p>
         </div>
 
@@ -45,13 +55,12 @@ export const ExpertiseSection = () => {
                   <Award className="text-white" size={32} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">15 ans</h3>
-                  <p className="text-white/90">d'expérience commerciale</p>
+                  <h3 className="text-2xl font-bold">{t('expertise.commercial_years')}</h3>
+                  <p className="text-white/90">{t('expertise.commercial_experience')}</p>
                 </div>
               </div>
               <p className="text-white/90 mb-4">
-                Responsable marketing et directrice commerciale (EMEA / USA) au sein de startups et PMEs, 
-                spécialisée dans la vente d'innovation auprès de Grands comptes.
+                {t('expertise.commercial_desc')}
               </p>
             </Card>
 
@@ -61,23 +70,22 @@ export const ExpertiseSection = () => {
                   <Users className="text-white" size={32} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">11 ans</h3>
-                  <p className="text-white/90">de conseil spécialisé</p>
+                  <h3 className="text-2xl font-bold">{t('expertise.consulting_years')}</h3>
+                  <p className="text-white/90">{t('expertise.consulting_experience')}</p>
                 </div>
               </div>
               <p className="text-white/90 mb-4">
-                Conseil en performances commerciales pour startups / PME innovantes 
-                avec forte dimension durable.
+                {t('expertise.consulting_desc')}
               </p>
             </Card>
 
             <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300">
               <div className="flex items-center space-x-4 mb-4">
                 <Building2 className="text-primary" size={24} />
-                <h4 className="text-xl font-semibold">Entrepreneuriat</h4>
+                <h4 className="text-xl font-semibold">{t('expertise.entrepreneurship')}</h4>
               </div>
               <p className="text-muted-foreground">
-                Expérience entrepreneuriale dans l'e-commerce, le conseil en innovation et le tourisme.
+                {t('expertise.entrepreneurship_desc')}
               </p>
             </Card>
           </div>
@@ -87,16 +95,16 @@ export const ExpertiseSection = () => {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
                 <GraduationCap className="mr-3 text-primary" size={28} />
-                Certifications & Formation
+                {t('expertise.certifications_title')}
               </h3>
               
               <div className="space-y-4">
                 <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">MIT - Certification in Sustainable Strategy Design</h4>
+                      <h4 className="font-semibold text-lg mb-2">{t('expertise.mit_title')}</h4>
                       <p className="text-muted-foreground text-sm">
-                        Stratégie de développement durable certifiée par le MIT
+                        {t('expertise.mit_desc')}
                       </p>
                     </div>
                     <Badge variant="outline" className="ml-4">
@@ -109,9 +117,9 @@ export const ExpertiseSection = () => {
                 <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">Certification en vente stratégique</h4>
+                      <h4 className="font-semibold text-lg mb-2">{t('expertise.sales_title')}</h4>
                       <p className="text-muted-foreground text-sm">
-                        Miller Heiman et SPI - Méthodes de vente avancées
+                        {t('expertise.sales_desc')}
                       </p>
                     </div>
                     <Badge variant="outline" className="ml-4">
@@ -123,9 +131,9 @@ export const ExpertiseSection = () => {
                 <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">Bachelor of Business Administration</h4>
+                      <h4 className="font-semibold text-lg mb-2">{t('expertise.mba_title')}</h4>
                       <p className="text-muted-foreground text-sm">
-                        USA/SKEMA - Formation business internationale
+                        {t('expertise.mba_desc')}
                       </p>
                     </div>
                     <Badge variant="outline" className="ml-4">
@@ -139,12 +147,12 @@ export const ExpertiseSection = () => {
             {/* Methodologies */}
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6">
-                Méthodologies & Outils
+                {t('expertise.methodologies')}
               </h3>
               
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-commercial">Optimisation commerciale</h4>
+                  <h4 className="font-semibold text-commercial">{t('expertise.commercial_optimization')}</h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Business Model Canvas</Badge>
                     <Badge variant="secondary">BANT</Badge>
@@ -154,7 +162,7 @@ export const ExpertiseSection = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-sustainable">Bilan RSE / Biodiversité</h4>
+                  <h4 className="font-semibold text-sustainable">{t('expertise.rse_biodiversity')}</h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">MIT</Badge>
                     <Badge variant="secondary">ADEME</Badge>
@@ -169,15 +177,15 @@ export const ExpertiseSection = () => {
 
         {/* Key Strengths */}
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Notre approche unique</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-8">{t('expertise.unique_approach')}</h3>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="flex flex-col items-center text-center">
               <div className="bg-primary-light p-4 rounded-full mb-4">
                 <CheckCircle className="text-primary" size={32} />
               </div>
-              <h4 className="font-semibold text-lg mb-2">Performance & Durabilité</h4>
+              <h4 className="font-semibold text-lg mb-2">{t('expertise.performance_sustainability')}</h4>
               <p className="text-muted-foreground">
-                Alignement de la performance commerciale avec le développement durable
+                {t('expertise.performance_desc')}
               </p>
             </div>
             
@@ -185,9 +193,9 @@ export const ExpertiseSection = () => {
               <div className="bg-commercial-light p-4 rounded-full mb-4">
                 <Users className="text-commercial" size={32} />
               </div>
-              <h4 className="font-semibold text-lg mb-2">Expertise Sectorielle</h4>
+              <h4 className="font-semibold text-lg mb-2">{t('expertise.sector_expertise')}</h4>
               <p className="text-muted-foreground">
-                Spécialisation GreenTech, DeepTech, HealthTech et innovations durables
+                {t('expertise.sector_desc')}
               </p>
             </div>
             
@@ -195,9 +203,9 @@ export const ExpertiseSection = () => {
               <div className="bg-sustainable-light p-4 rounded-full mb-4">
                 <Award className="text-sustainable" size={32} />
               </div>
-              <h4 className="font-semibold text-lg mb-2">Certifications Reconnues</h4>
+              <h4 className="font-semibold text-lg mb-2">{t('expertise.recognized_certifications')}</h4>
               <p className="text-muted-foreground">
-                Formations MIT, ADEME et outils certifiés de mesure d'impact
+                {t('expertise.certifications_desc')}
               </p>
             </div>
           </div>
@@ -205,10 +213,10 @@ export const ExpertiseSection = () => {
           <Button 
             variant="sustainable"
             size="lg"
-            onClick={() => window.location.href = '/a-propos'}
+            onClick={() => window.location.href = getLocalizedPath('/a-propos')}
             className="group px-12 py-4 text-lg"
           >
-            Découvrez qui nous sommes
+            {t('expertise.discover_about')}
             <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={24} />
           </Button>
         </div>

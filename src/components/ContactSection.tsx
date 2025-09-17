@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { 
   Mail, 
   Phone, 
@@ -19,6 +20,7 @@ import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 export const ContactSection = () => {
   const { toast } = useToast();
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -31,8 +33,8 @@ export const ContactSection = () => {
     e.preventDefault();
     // In a real application, you would send this data to your backend
     toast({
-      title: "Message envoyé !",
-      description: "Nous vous recontacterons dans les plus brefs délais.",
+      title: t('contact.toast_sent'),
+      description: t('contact.description'),
     });
     setFormData({ name: '', email: '', company: '', service: '', message: '' });
   };
@@ -59,10 +61,10 @@ export const ContactSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Contactez-nous
+            {t('contact.title')}
           </h2>
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto font-medium">
-            Parlons de votre projet et découvrons comment allier performance commerciale et développement durable
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -103,7 +105,7 @@ export const ContactSection = () => {
                     <Phone className="text-sustainable" size={24} />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Téléphone</h4>
+                    <h4 className="font-semibold">{t('contact.phone_label')}</h4>
                     <a 
                       href="tel:+33622953137" 
                       className="text-sustainable hover:underline"
@@ -120,8 +122,8 @@ export const ContactSection = () => {
                     <MapPin className="text-commercial" size={24} />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Adresse</h4>
-                    <p className="text-muted-foreground">Monaco</p>
+                    <h4 className="font-semibold">{t('contact.address_label')}</h4>
+                    <p className="text-muted-foreground">{t('contact.address_value')}</p>
                   </div>
                 </div>
               </Card>
@@ -132,9 +134,9 @@ export const ContactSection = () => {
                     <MapPin className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h4 className="font-semibold">Zone d'intervention</h4>
+                    <h4 className="font-semibold">{t('contact.service_area')}</h4>
                     <p className="text-muted-foreground">
-                      Monaco • France • Europe • International
+                      {t('contact.service_area_value')}
                     </p>
                   </div>
                 </div>
@@ -145,13 +147,13 @@ export const ContactSection = () => {
             <div className="grid grid-cols-2 gap-4">
               <Card className="p-4 text-center bg-gradient-primary text-primary-foreground">
                 <TrendingUp className="mx-auto mb-2" size={24} />
-                <h4 className="font-semibold text-sm">Commercial</h4>
-                <p className="text-xs opacity-90">Performance & Croissance</p>
+                <h4 className="font-semibold text-sm">{t('contact.commercial_card')}</h4>
+                <p className="text-xs opacity-90">{t('contact.commercial_desc')}</p>
               </Card>
               <Card className="p-4 text-center bg-gradient-sustainable text-sustainable-foreground">
                 <Leaf className="mx-auto mb-2" size={24} />
-                <h4 className="font-semibold text-sm">RSE / Durabilité</h4>
-                <p className="text-xs opacity-90">Impact & Mesure</p>
+                <h4 className="font-semibold text-sm">{t('contact.rse_card')}</h4>
+                <p className="text-xs opacity-90">{t('contact.rse_desc')}</p>
               </Card>
             </div>
           </div>
@@ -162,7 +164,7 @@ export const ContactSection = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    Nom complet *
+                    {t('contact.form_full_name')}
                   </label>
                   <Input
                     id="name"
@@ -171,13 +173,13 @@ export const ContactSection = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    placeholder="Votre nom"
+                    placeholder={t('contact.form_name_placeholder')}
                     className="w-full"
                   />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    Email *
+                    {t('contact.form_email')}
                   </label>
                   <Input
                     id="email"
@@ -186,7 +188,7 @@ export const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="votre@email.com"
+                    placeholder={t('contact.form_email_placeholder')}
                     className="w-full"
                   />
                 </div>
@@ -194,7 +196,7 @@ export const ContactSection = () => {
 
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                  Entreprise *
+                  {t('contact.form_company')}
                 </label>
                 <Input
                   id="company"
@@ -203,14 +205,14 @@ export const ContactSection = () => {
                   value={formData.company}
                   onChange={handleChange}
                   required
-                  placeholder="Nom de votre entreprise"
+                  placeholder={t('contact.form_company_placeholder')}
                   className="w-full"
                 />
               </div>
 
               <div>
                 <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
-                  Service d'intérêt
+                  {t('contact.form_service')}
                 </label>
                 <select
                   id="service"
@@ -219,18 +221,18 @@ export const ContactSection = () => {
                   onChange={handleChange}
                   className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 >
-                  <option value="">Sélectionnez un service</option>
-                  <option value="commercial">Accompagnement Commercial</option>
-                  <option value="rse-scope1">Bilan RSE - Scope 1</option>
-                  <option value="rse-complet">Bilan RSE Complet - Scope 1,2,3</option>
-                  <option value="biodiversite">Bilan Impact Biodiversité</option>
-                  <option value="autre">Autre / Conseil personnalisé</option>
+                  <option value="">{t('contact.form_service_select')}</option>
+                  <option value="commercial">{t('contact.form_service_commercial')}</option>
+                  <option value="rse-scope1">{t('contact.form_service_scope1')}</option>
+                  <option value="rse-complet">{t('contact.form_service_complete')}</option>
+                  <option value="biodiversite">{t('contact.form_service_biodiversity')}</option>
+                  <option value="autre">{t('contact.form_service_other')}</option>
                 </select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Message *
+                  {t('contact.form_message')}
                 </label>
                 <Textarea
                   id="message"
@@ -238,7 +240,7 @@ export const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="Décrivez brièvement votre projet ou vos besoins..."
+                  placeholder={t('contact.form_message_placeholder')}
                   rows={4}
                   className="w-full"
                 />
@@ -246,11 +248,11 @@ export const ContactSection = () => {
 
               <Button type="submit" variant="sustainable" size="lg" className="w-full group">
                 <Send className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
-                Envoyer le message
+                {t('contact.form_send')}
               </Button>
 
               <p className="text-xs text-muted-foreground text-center">
-                * Champs obligatoires. Vos données sont traitées de manière confidentielle.
+                {t('contact.form_required')}
               </p>
             </form>
           </Card>

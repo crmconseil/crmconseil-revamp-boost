@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { 
   Leaf, 
   Brain, 
@@ -41,38 +42,40 @@ import terresAzurLogo from "@/assets/logos/terres-azur.png";
 import metropoleNiceLogo from "@/assets/logos/metropole-nice.png";
 
 export const PortfolioSection = () => {
+  const { t } = useLanguage();
+
   const sectors = [
     {
       icon: Leaf,
-      title: "GreenTech",
+      title: t('portfolio.greentech'),
       color: "text-sustainable",
       bgColor: "bg-sustainable-light",
       companies: ["ActionAir", "Mycophyto", "Hydro", "Inalve", "La Pousseraie"],
-      description: "Technologies environnementales et solutions durables"
+      description: t('portfolio.greentech_desc')
     },
     {
       icon: Brain,
-      title: "DeepTech / IA",
+      title: t('portfolio.deeptech'),
       color: "text-commercial",
       bgColor: "bg-commercial-light",
       companies: ["Daia", "HimyData", "Toumai", "Neurodec", "Akidaia", "Plenesys"],
-      description: "Intelligence artificielle et technologies avancées"
+      description: t('portfolio.deeptech_desc')
     },
     {
       icon: Heart,
-      title: "HealthTech",
+      title: t('portfolio.healthtech'),
       color: "text-pink-600",
       bgColor: "bg-pink-100",
       companies: ["LifeScientis", "Laselis", "Sensoria", "Tethys", "Azoth Systems"],
-      description: "Technologies médicales et e-santé"
+      description: t('portfolio.healthtech_desc')
     },
     {
       icon: Monitor,
-      title: "IT / Digital",
+      title: t('portfolio.digital'),
       color: "text-blue-600",
       bgColor: "bg-blue-100",
       companies: ["Tekoway", "Orange", "Lumata", "Arcan Security", "Inovafi", "Ononpay"],
-      description: "Solutions digitales et transformation numérique"
+      description: t('portfolio.digital_desc')
     }
   ];
 
@@ -100,10 +103,10 @@ export const PortfolioSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Nos Références
+            {t('portfolio.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Portfolio diversifié d'accompagnements réussis dans l'innovation et la durabilité
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
@@ -203,7 +206,7 @@ export const PortfolioSection = () => {
         {/* Partners Section */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-center text-foreground mb-12">
-            Nos Partenaires
+            {t('portfolio.partners')}
           </h3>
           
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg">
