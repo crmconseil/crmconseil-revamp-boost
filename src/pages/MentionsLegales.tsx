@@ -101,6 +101,138 @@ const MentionsLegales = () => {
                     Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du Site, sans autorisation expresse de l'Editeur est prohibée et pourra entraîner des actions et poursuites judiciaires telles que prévues par la règlementation en vigueur.
                   </p>
                 </div>
+
+                <div className="border-l-4 border-primary/30 pl-6">
+                  <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
+                    POLITIQUE DE GESTION DES COOKIES
+                  </h2>
+                  
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Qu'est-ce qu'un cookie ?</h3>
+                  <p className="mb-4">
+                    Un cookie est un petit fichier de données stocké sur votre ordinateur, tablette ou smartphone lorsque vous visitez un site web. Les cookies permettent au site de se souvenir de vos actions et préférences (comme la langue, la taille des caractères et d'autres paramètres d'affichage) pendant une période donnée.
+                  </p>
+
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Types de cookies utilisés</h3>
+                  
+                  <div className="space-y-4 mb-6">
+                    <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
+                      <h4 className="font-semibold text-primary mb-2">🔒 Cookies Nécessaires</h4>
+                      <p className="text-sm text-foreground/80 mb-2">
+                        Ces cookies sont indispensables au fonctionnement du site et ne peuvent pas être désactivés dans nos systèmes.
+                      </p>
+                      <ul className="text-sm text-foreground/70 space-y-1">
+                        <li>• Gestion de la session utilisateur</li>
+                        <li>• Mémorisation du consentement aux cookies</li>
+                        <li>• Sécurité et prévention des fraudes</li>
+                        <li>• Fonctionnement du formulaire de contact</li>
+                      </ul>
+                      <p className="text-xs text-primary mt-2 font-medium">Durée de conservation : Session ou 12 mois maximum</p>
+                    </div>
+
+                    <div className="bg-sustainable/5 border border-sustainable/20 rounded-lg p-4">
+                      <h4 className="font-semibold text-sustainable mb-2">📊 Cookies Analytiques</h4>
+                      <p className="text-sm text-foreground/80 mb-2">
+                        Ces cookies nous permettent de compter les visites et sources de trafic afin d'améliorer les performances de notre site.
+                      </p>
+                      <ul className="text-sm text-foreground/70 space-y-1">
+                        <li>• Mesure d'audience et statistiques de visite</li>
+                        <li>• Analyse du comportement des utilisateurs</li>
+                        <li>• Optimisation de l'expérience utilisateur</li>
+                        <li>• Identification des pages populaires</li>
+                      </ul>
+                      <p className="text-xs text-sustainable mt-2 font-medium">Durée de conservation : 24 mois maximum</p>
+                    </div>
+
+                    <div className="bg-commercial/5 border border-commercial/20 rounded-lg p-4">
+                      <h4 className="font-semibold text-commercial mb-2">🎯 Cookies Marketing</h4>
+                      <p className="text-sm text-foreground/80 mb-2">
+                        Ces cookies peuvent être définis par nos partenaires publicitaires pour personnaliser les annonces.
+                      </p>
+                      <ul className="text-sm text-foreground/70 space-y-1">
+                        <li>• Personnalisation des publicités</li>
+                        <li>• Mesure de l'efficacité des campagnes</li>
+                        <li>• Remarketing et reciblage publicitaire</li>
+                        <li>• Partage sur les réseaux sociaux</li>
+                      </ul>
+                      <p className="text-xs text-commercial mt-2 font-medium">Durée de conservation : 12 mois maximum</p>
+                    </div>
+
+                    <div className="bg-muted/30 border border-input rounded-lg p-4">
+                      <h4 className="font-semibold text-foreground mb-2">⚙️ Cookies Fonctionnels</h4>
+                      <p className="text-sm text-foreground/80 mb-2">
+                        Ces cookies permettent d'améliorer les fonctionnalités et la personnalisation du site.
+                      </p>
+                      <ul className="text-sm text-foreground/70 space-y-1">
+                        <li>• Mémorisation des préférences utilisateur</li>
+                        <li>• Intégration de widgets tiers (cartes, chat)</li>
+                        <li>• Amélioration de la navigation</li>
+                        <li>• Fonctionnalités avancées du site</li>
+                      </ul>
+                      <p className="text-xs text-muted-foreground mt-2 font-medium">Durée de conservation : 12 mois maximum</p>
+                    </div>
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Gestion de vos préférences</h3>
+                  <p className="mb-4">
+                    Conformément à la réglementation en vigueur, vous avez la possibilité de gérer vos préférences concernant les cookies :
+                  </p>
+                  
+                  <div className="bg-muted/50 rounded-lg p-4 mb-4">
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>Bandeau de consentement :</strong> Lors de votre première visite, un bandeau vous permet d'accepter ou refuser les cookies optionnels</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>Paramètres détaillés :</strong> Vous pouvez personnaliser vos choix par catégorie de cookies</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>Modification :</strong> Vous pouvez modifier vos préférences à tout moment en supprimant les cookies de votre navigateur</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>Navigateur :</strong> Vous pouvez également paramétrer votre navigateur pour refuser les cookies</li>
+                    </ul>
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Paramétrage de votre navigateur</h3>
+                  <p className="mb-4">
+                    Vous pouvez configurer votre navigateur pour gérer les cookies selon vos préférences :
+                  </p>
+                  
+                  <div className="grid md:grid-cols-2 gap-4 mb-4">
+                    <div className="bg-muted/30 rounded-lg p-3">
+                      <h5 className="font-semibold text-sm mb-2">Google Chrome</h5>
+                      <p className="text-xs text-muted-foreground">Paramètres → Confidentialité et sécurité → Cookies et autres données</p>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-3">
+                      <h5 className="font-semibold text-sm mb-2">Mozilla Firefox</h5>
+                      <p className="text-xs text-muted-foreground">Préférences → Vie privée et sécurité → Cookies et données</p>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-3">
+                      <h5 className="font-semibold text-sm mb-2">Safari</h5>
+                      <p className="text-xs text-muted-foreground">Préférences → Confidentialité → Cookies et données</p>
+                    </div>
+                    <div className="bg-muted/30 rounded-lg p-3">
+                      <h5 className="font-semibold text-sm mb-2">Microsoft Edge</h5>
+                      <p className="text-xs text-muted-foreground">Paramètres → Cookies et autorisations de site</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-primary/10 border-l-4 border-primary rounded-lg p-4 mb-4">
+                    <h4 className="font-semibold text-primary mb-2">⚠️ Important</h4>
+                    <p className="text-sm text-foreground/80">
+                      Désactiver certains cookies peut affecter le bon fonctionnement du site et réduire la qualité de votre expérience de navigation. Les cookies nécessaires ne peuvent pas être désactivés car ils sont indispensables au fonctionnement du site.
+                    </p>
+                  </div>
+
+                  <h3 className="text-xl font-semibold text-foreground mb-4">Contact</h3>
+                  <p className="mb-4">
+                    Pour toute question concernant notre politique de cookies ou pour exercer vos droits, vous pouvez nous contacter :
+                  </p>
+                  <div className="bg-muted/50 rounded-lg p-4 mb-4">
+                    <ul className="space-y-2 text-sm">
+                      <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span>Email : contact@crmconseil.com</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span>Formulaire de contact sur le site</li>
+                      <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span>Courrier : CRM Conseil, 12 Boulevard Princesse Charlotte, 98000 Monaco</li>
+                    </ul>
+                  </div>
+
+                  <p className="text-xs text-muted-foreground">
+                    Dernière mise à jour de cette politique : 17 décembre 2024
+                  </p>
+                </div>
               </div>
             </div>
           </div>
