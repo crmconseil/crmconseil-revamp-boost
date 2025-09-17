@@ -17,17 +17,6 @@ export const Header = () => {
     }
   };
 
-  const handleNavigation = (type: 'services' | 'about') => {
-    if (isHomePage) {
-      // On homepage, scroll to anchor
-      const sectionId = type === 'services' ? 'services' : 'expertise';
-      scrollToSection(sectionId);
-    } else {
-      // On other pages, navigate to dedicated page
-      const path = type === 'services' ? '/nos-services' : '/a-propos';
-      window.location.href = path;
-    }
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-primary/20">
@@ -50,18 +39,18 @@ export const Header = () => {
             >
               Accueil
             </a>
-            <button
-              onClick={() => handleNavigation('services')}
+            <a
+              href="/services"
               className="text-foreground hover:text-primary transition-colors"
             >
               Services
-            </button>
-            <button
-              onClick={() => handleNavigation('about')}
+            </a>
+            <a
+              href="/a-propos"
               className="text-foreground hover:text-primary transition-colors"
             >
-              À Propos
-            </button>
+              Qui sommes-nous
+            </a>
             <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
@@ -91,18 +80,20 @@ export const Header = () => {
               >
                 Accueil
               </a>
-              <button
-                onClick={() => handleNavigation('services')}
+              <a
+                href="/services"
                 className="text-left text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
                 Services
-              </button>
-              <button
-                onClick={() => handleNavigation('about')}
+              </a>
+              <a
+                href="/a-propos"
                 className="text-left text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
-                À Propos
-              </button>
+                Qui sommes-nous
+              </a>
               <Button 
                 variant="outline"
                 className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
