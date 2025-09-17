@@ -225,12 +225,37 @@ const translations = {
     'footer.certifications': 'MIT Sustainable Strategy Certified • ADEME Partner • Miller Heiman Certified',
     
     // Contact Section
-    'contact.title': 'Contact us',
-    'contact.description': 'We will get back to you as soon as possible.',
+    'contact.title': 'Contact Us',
+    'contact.subtitle': 'Let\'s talk about your project and discover how to combine commercial performance and sustainable development',
+    'contact.description': 'We will contact you as soon as possible.',
+    'contact.phone_label': 'Phone',
+    'contact.address_label': 'Address', 
+    'contact.address_value': 'Monaco',
+    'contact.service_area': 'Service Area',
+    'contact.service_area_value': 'Monaco • France • Europe • International',
+    'contact.commercial_card': 'Commercial',
+    'contact.commercial_desc': 'Performance & Growth',  
+    'contact.rse_card': 'CSR / Sustainability',
+    'contact.rse_desc': 'Impact & Measurement',
     'contact.form_name': 'Name',
-    'contact.form_email': 'Email',
-    'contact.form_message': 'Message',
-    'contact.form_send': 'Send',
+    'contact.form_full_name': 'Full Name *',
+    'contact.form_name_placeholder': 'Your name',
+    'contact.form_email': 'Email *',
+    'contact.form_email_placeholder': 'your@email.com',
+    'contact.form_company': 'Company *',
+    'contact.form_company_placeholder': 'Your company name',
+    'contact.form_service': 'Service of Interest',
+    'contact.form_service_select': 'Select a service',
+    'contact.form_service_commercial': 'Commercial Support',
+    'contact.form_service_scope1': 'CSR Report - Scope 1',
+    'contact.form_service_complete': 'Complete CSR Report - Scope 1,2,3',
+    'contact.form_service_biodiversity': 'Biodiversity Impact Report',
+    'contact.form_service_other': 'Other / Personalized Consultation',
+    'contact.form_message': 'Message *',
+    'contact.form_message_placeholder': 'Briefly describe your project or needs...',
+    'contact.form_send': 'Send Message',
+    'contact.form_required': '* Required fields. Your data is processed confidentially.',
+    'contact.toast_sent': 'Message sent!',
     
     // Expertise Section
     'expertise.title': 'Our Expertise',
@@ -443,7 +468,7 @@ const translations = {
     'services.deliverable_6': 'Valued and secured pipeline and target market',
     'services.pricing_commercial': '1 to 8 person-days ~ €950 - €7,600',
     'services.ready_transform': 'Ready to transform your business?',
-    'services.transform_desc': 'Book your free 30-minute consultation to discuss your needs and discover how we can support your company.',
+    'services.transform_desc': 'Book your free 30-minute consultation to discuss your needs and discover how we can support your company.'
   }
 };
 
