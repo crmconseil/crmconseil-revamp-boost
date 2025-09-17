@@ -1,22 +1,20 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
-import logoImage from "@/assets/crm-conseil-logo.jpg";
+import crmLogo from "@/assets/crm-conseil-logo.jpg";
+import { LanguageSelector } from "@/components/LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const location = useLocation();
-  const isHomePage = location.pathname === '/';
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+  const { language, t } = useLanguage();
+  
+  const getLocalizedPath = (path: string) => {
+    if (language === 'en') {
+      return path === '/' ? '/en' : `/en${path}`;
     }
+    return path;
   };
-
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-primary/20" role="banner">
@@ -24,9 +22,9 @@ export const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" aria-label="CRM Conseil - Retour à l'accueil">
+            <a href={getLocalizedPath('/')} aria-label="CRM Conseil - Retour à l'accueil">
               <img 
-                src={logoImage} 
+                src={crmLogo} 
                 alt="CRM Conseil - Logo de l'entreprise spécialisée en performance commerciale durable" 
                 className="h-16 w-auto"
                 width="64"
@@ -38,41 +36,42 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Navigation principale">
             <a
-              href="/"
+              href={getLocalizedPath('/')}
               className="text-foreground hover:text-primary transition-colors"
-              aria-label="Page d'accueil CRM Conseil"
             >
-              Accueil
+              {t('nav.home')}
             </a>
             <a
-              href="/nos-services"
+              href={getLocalizedPath('/nos-services')}
               className="text-foreground hover:text-primary transition-colors"
-              aria-label="Nos services de conseil commercial et RSE"
             >
-              Services
+              {t('nav.services')}
             </a>
             <a
-              href="/a-propos"
+              href={getLocalizedPath('/a-propos')}
               className="text-foreground hover:text-primary transition-colors"
-              aria-label="À propos de CRM Conseil et notre expertise"
             >
-              Qui sommes-nous
+              {t('nav.about')}
             </a>
             <a
-              href="/contact"
+              href={getLocalizedPath('/contact')}
               className="text-foreground hover:text-primary transition-colors"
-              aria-label="Contactez CRM Conseil"
             >
-              Contact
+              {t('nav.contact')}
             </a>
-            <Button 
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => window.location.href = '/book-appointment'}
-            >
-              Prendre rendez-vous
-            </Button>
           </nav>
+
+          {/* Language Selector & CTA Button */}
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSelector />
+            <Button 
+              variant="outline" 
+              className="border-primary text-primary hover:bg-primary hover:text-white"
+              onClick={() => window.location.href = getLocalizedPath('/book-appointment')}
+            >
+              {t('nav.appointment')}
+            </Button>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -86,46 +85,49 @@ export const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-primary/20">
-            <nav className="flex flex-col space-y-4">
+            <div className="px-2 pt-2 pb-3 space-y-1">
               <a
-                href="/"
+                href={getLocalizedPath('/')}
                 className="text-left text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Accueil
+                {t('nav.home')}
               </a>
               <a
-                href="/nos-services"
+                href={getLocalizedPath('/nos-services')}
                 className="text-left text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Services
+                {t('nav.services')}
               </a>
               <a
-                href="/a-propos"
+                href={getLocalizedPath('/a-propos')}
                 className="text-left text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Qui sommes-nous
+                {t('nav.about')}
               </a>
               <a
-                href="/contact"
+                href={getLocalizedPath('/contact')}
                 className="text-left text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contact
+                {t('nav.contact')}
               </a>
+              <div className="flex items-center justify-center py-2">
+                <LanguageSelector />
+              </div>
               <Button 
-                variant="outline"
-                className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
+                variant="outline" 
+                className="w-full mt-4 border-primary text-primary hover:bg-primary hover:text-white"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.location.href = '/book-appointment';
+                  window.location.href = getLocalizedPath('/book-appointment');
                 }}
               >
-                Prendre rendez-vous
+                {t('nav.appointment')}
               </Button>
-            </nav>
+            </div>
           </div>
         )}
       </div>
