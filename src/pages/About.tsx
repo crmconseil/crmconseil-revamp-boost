@@ -629,7 +629,7 @@ const About = () => {
               variant="sustainable" 
               size="lg" 
               className="group"
-              onClick={() => window.open('https://calendly.com', '_blank')}
+              onClick={() => window.location.href = '/rendez-vous'}
             >
               Réserver une consultation
               <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />

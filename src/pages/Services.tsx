@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award, ArrowRight, Rocket, Clock, Calendar, BarChart3, Zap, Sparkles } from "lucide-react";
 import servicesBackground from "@/assets/services-background.jpg";
@@ -600,6 +601,38 @@ const Services = () => {
                  5 - 15JH ~ 6,000€ et 12,000€ avec possibilité de subventions BPI France de 40 à 50%, si dossier éligible
                </span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="py-16 bg-gradient-section">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-foreground mb-6">
+            Prêt à transformer votre activité durablement ?
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Découvrez comment nous pouvons vous accompagner dans votre croissance tout en intégrant une démarche RSE performante.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              variant="sustainable" 
+              size="lg" 
+              className="group"
+              onClick={() => window.location.href = '/rendez-vous'}
+            >
+              Réserver une consultation
+              <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="group"
+              onClick={() => window.location.href = '/#contact'}
+            >
+              Nous contacter
+              <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+            </Button>
           </div>
         </div>
       </section>
