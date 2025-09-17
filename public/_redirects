@@ -4,4 +4,6 @@
 # Redirect old URLs if any
 /mentions_legales  /mentions-legales  301
 /contact.html      /contact           301
-/services.html     /services          301
+/services.html     /nos-services      301
+/services          /nos-services      301
+/rendez-vous       /book-appointment  301

@@ -14,7 +14,7 @@ const Services = () => {
         title="Services - CRM Conseil | Accompagnement Commercial & RSE pour PME"
         description="Découvrez nos services d'accompagnement commercial et RSE : bilan carbone, stratégie commerciale, conseil développement durable. Expertise certifiée pour startups et PME à Nice, Monaco, Cannes."
         keywords="services conseil commercial, bilan carbone PME, accompagnement RSE, stratégie commerciale, développement durable entreprise, consultant Nice Monaco"
-        canonical="/services"
+        canonical="/nos-services"
       />
       <StructuredData type="service" />
       <Header />
@@ -628,7 +628,7 @@ const Services = () => {
               variant="sustainable" 
               size="lg" 
               className="group"
-              onClick={() => window.location.href = '/rendez-vous'}
+              onClick={() => window.location.href = '/book-appointment'}
             >
               Réserver une consultation
               <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />

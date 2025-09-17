@@ -167,7 +167,7 @@ export const ServicesSection = () => {
             variant="hero" 
             size="lg" 
             className="group px-12 py-4 text-lg"
-            onClick={() => window.location.href = '/services'}
+            onClick={() => window.location.href = '/nos-services'}
           >
             En savoir plus sur nos services
             <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={24} />

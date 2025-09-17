@@ -11,7 +11,7 @@ const RendezVous = () => {
         title="Rendez-vous - CRM Conseil | Réservez votre consultation gratuite"
         description="Prenez rendez-vous avec nos experts en performance commerciale et RSE. Consultation gratuite pour votre projet d'accompagnement commercial durable. Disponible à Nice, Monaco, Cannes."
         keywords="rendez-vous CRM conseil, consultation gratuite, expert commercial RSE, prise de contact, accompagnement personnalisé"
-        canonical="/rendez-vous"
+        canonical="/book-appointment"
       />
       <StructuredData type="service" />
       <Header />

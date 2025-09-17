@@ -638,7 +638,7 @@ const About = () => {
               variant="sustainable" 
               size="lg" 
               className="group"
-              onClick={() => window.location.href = '/rendez-vous'}
+              onClick={() => window.location.href = '/book-appointment'}
             >
               Réserver une consultation
               <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />

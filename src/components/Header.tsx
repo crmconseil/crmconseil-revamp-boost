@@ -45,7 +45,7 @@ export const Header = () => {
               Accueil
             </a>
             <a
-              href="/services"
+              href="/nos-services"
               className="text-foreground hover:text-primary transition-colors"
               aria-label="Nos services de conseil commercial et RSE"
             >
@@ -68,7 +68,7 @@ export const Header = () => {
             <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => window.location.href = '/rendez-vous'}
+              onClick={() => window.location.href = '/book-appointment'}
             >
               Prendre rendez-vous
             </Button>
@@ -95,7 +95,7 @@ export const Header = () => {
                 Accueil
               </a>
               <a
-                href="/services"
+                href="/nos-services"
                 className="text-left text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -120,7 +120,7 @@ export const Header = () => {
                 className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.location.href = '/rendez-vous';
+                  window.location.href = '/book-appointment';
                 }}
               >
                 Prendre rendez-vous
