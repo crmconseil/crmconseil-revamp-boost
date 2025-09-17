@@ -75,8 +75,7 @@ const ContactEN = () => {
                           </div>
                           <div>
                             <h3 className="font-bold text-foreground mb-2">Phone</h3>
-                            <p className="text-foreground/70">+33 (0)4 93 XX XX XX</p>
-                            <p className="text-sm text-foreground/60">Monday to Friday, 9am to 6pm</p>
+                            <p className="text-foreground/70">+33 6 22 95 31 37</p>
                           </div>
                         </div>
                       </CardContent>
@@ -91,7 +90,6 @@ const ContactEN = () => {
                           <div>
                             <h3 className="font-bold text-foreground mb-2">Email</h3>
                             <p className="text-foreground/70">contact@crmconseil.com</p>
-                            <p className="text-sm text-foreground/60">Response within 24 hours</p>
                           </div>
                         </div>
                       </CardContent>
@@ -105,23 +103,7 @@ const ContactEN = () => {
                           </div>
                           <div>
                             <h3 className="font-bold text-foreground mb-2">Service Area</h3>
-                            <p className="text-foreground/70">South-East France</p>
-                            <p className="text-sm text-foreground/60">Nice, Monaco, Cannes, Antibes</p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-
-                    <Card className="border-0 bg-gradient-to-br from-background to-background/50">
-                      <CardContent className="p-6">
-                        <div className="flex items-start gap-4">
-                          <div className="p-3 bg-gradient-to-br from-orange-500/20 to-orange-500/10 rounded-2xl">
-                            <Clock className="h-6 w-6 text-orange-600" />
-                          </div>
-                          <div>
-                            <h3 className="font-bold text-foreground mb-2">Office Hours</h3>
-                            <p className="text-foreground/70">Monday to Friday</p>
-                            <p className="text-sm text-foreground/60">9:00 AM - 6:00 PM</p>
+                            <p className="text-foreground/70">Monaco • France • Europe • International</p>
                           </div>
                         </div>
                       </CardContent>
