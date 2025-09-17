@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
@@ -6,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
 import { 
   Mail, 
   Phone, 
@@ -18,6 +20,42 @@ import contactBackground from "@/assets/contact-background-professional.jpg";
 import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString()
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message envoyé avec succès !",
+          description: "Merci pour votre message. Nous vous répondrons dans les plus brefs délais.",
+          variant: "default",
+        });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        throw new Error('Network response was not ok');
+      }
+    } catch (error) {
+      toast({
+        title: "Erreur d'envoi",
+        description: "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer ou nous contacter directement.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -154,7 +192,7 @@ const Contact = () => {
                 name="contact-fr" 
                 method="POST" 
                 data-netlify="true"
-                action="/contact?success=true"
+                onSubmit={handleSubmit}
                 className="space-y-6" 
                 aria-label="Formulaire de contact"
               >
@@ -245,10 +283,11 @@ const Contact = () => {
                   variant="sustainable" 
                   size="lg" 
                   className="w-full group"
+                  disabled={isSubmitting}
                   aria-label="Envoyer votre message de contact"
                 >
                   <Send className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
-                  Envoyer le message
+                  {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center">

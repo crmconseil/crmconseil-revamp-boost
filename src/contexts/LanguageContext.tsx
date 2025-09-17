@@ -64,6 +64,13 @@ const translations = {
     'services.ready_transform': 'Prêt à transformer votre entreprise avec performance et durabilité ?',
     'services.transform_desc': 'Réservez votre consultation gratuite de 30 minutes pour discuter de vos besoins en optimisation commerciale, business development et stratégie RSE.',
     
+    // Contact form confirmation messages
+    'contact.success_toast_title': 'Message envoyé avec succès !',
+    'contact.success_toast_description': 'Merci pour votre message. Nous vous répondrons dans les plus brefs délais.',
+    'contact.error_toast_title': 'Erreur d\'envoi',
+    'contact.error_toast_description': 'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer ou nous contacter directement.',
+    'contact.sending': 'Envoi en cours...',
+    
     // Footer
     'footer.company': 'CRM Conseil',
     'footer.description': 'Votre partenaire pour une performance commerciale durable. Alliant excellence commerciale, génération de leads et développement durable.',
@@ -480,6 +487,13 @@ const translations = {
     'services.deliverable_4_rse': 'Team training on CSR strategy',
     'services.deliverable_5': '5 - 15 person-days ~ €6,000 to €12,000 with possibility of BPI France subsidies of 40 to 50%, if eligible',
     'services.pricing_commercial': '5 - 15 person-days ~ €6,000 to €12,000 with possibility of BPI France subsidies of 40 to 50%, if eligible',
+    
+    // Contact form confirmation messages
+    'contact.success_toast_title': 'Message sent successfully!',
+    'contact.success_toast_description': 'Thank you for your message. We will respond to you as soon as possible.',
+    'contact.error_toast_title': 'Submission error',
+    'contact.error_toast_description': 'An error occurred while sending your message. Please try again or contact us directly.',
+    'contact.sending': 'Sending...',
   }
 };
 

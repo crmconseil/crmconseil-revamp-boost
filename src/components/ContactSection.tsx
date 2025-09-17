@@ -1,8 +1,10 @@
+import React, { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useToast } from "@/hooks/use-toast";
 import { 
   Mail, 
   Phone, 
@@ -18,6 +20,42 @@ import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 export const ContactSection = () => {
   const { t } = useLanguage();
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString()
+      });
+
+      if (response.ok) {
+        toast({
+          title: t('contact.success_toast_title'),
+          description: t('contact.success_toast_description'),
+          variant: "default",
+        });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        throw new Error('Network response was not ok');
+      }
+    } catch (error) {
+      toast({
+        title: t('contact.error_toast_title'),
+        description: t('contact.error_toast_description'),
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <section id="contact" className="relative py-12 overflow-hidden">
@@ -137,7 +175,7 @@ export const ContactSection = () => {
               name="contact-homepage" 
               method="POST" 
               data-netlify="true"
-              action="/?success=true"
+              onSubmit={handleSubmit}
               className="space-y-6"
             >
               <input type="hidden" name="form-name" value="contact-homepage" />
@@ -217,9 +255,15 @@ export const ContactSection = () => {
                 />
               </div>
 
-              <Button type="submit" variant="sustainable" size="lg" className="w-full group">
+              <Button 
+                type="submit" 
+                variant="sustainable" 
+                size="lg" 
+                className="w-full group"
+                disabled={isSubmitting}
+              >
                 <Send className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
-                {t('contact.form_send')}
+                {isSubmitting ? t('contact.sending') : t('contact.form_send')}
               </Button>
 
               <p className="text-xs text-muted-foreground text-center">

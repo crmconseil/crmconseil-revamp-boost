@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SEOHead } from "@/components/SEOHead";
@@ -8,10 +9,47 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
 import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from "lucide-react";
 import contactBackground from "@/assets/contact-background-professional.jpg";
 
 const ContactEN = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString()
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for your message. We will respond to you as soon as possible.",
+          variant: "default",
+        });
+        (e.target as HTMLFormElement).reset();
+      } else {
+        throw new Error('Network response was not ok');
+      }
+    } catch (error) {
+      toast({
+        title: "Submission error",
+        description: "An error occurred while sending your message. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="min-h-screen">
       <SEOHead 
@@ -127,7 +165,7 @@ const ContactEN = () => {
                         name="contact-en" 
                         method="POST" 
                         data-netlify="true"
-                        action="/en/contact?success=true"
+                        onSubmit={handleSubmit}
                         className="space-y-6"
                       >
                         <input type="hidden" name="form-name" value="contact-en" />
@@ -197,9 +235,10 @@ const ContactEN = () => {
                         <Button 
                           type="submit" 
                           size="lg" 
+                          disabled={isSubmitting}
                           className="w-full group"
                         >
-                          Send Message
+                          {isSubmitting ? "Sending..." : "Send Message"}
                           <Send className="ml-2 h-5 w-5" />
                         </Button>
                       </form>
