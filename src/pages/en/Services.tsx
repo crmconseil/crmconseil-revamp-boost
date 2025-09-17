@@ -131,7 +131,6 @@ const ServicesEN = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Optimisation des process commerciaux */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
@@ -144,7 +143,6 @@ const ServicesEN = () => {
                 </p>
             </div>
 
-            {/* Choix et Configuration d'outils de pilotage */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
@@ -157,7 +155,6 @@ const ServicesEN = () => {
                 </p>
             </div>
 
-            {/* Générations de leads B2B */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
@@ -170,7 +167,6 @@ const ServicesEN = () => {
                 </p>
             </div>
 
-            {/* Valorisation commerciale pour levée de fonds */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
@@ -188,12 +184,9 @@ const ServicesEN = () => {
           <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
             <h3 className="text-2xl font-bold text-center mb-8">{t('services.what_we_bring')}</h3>
             
-            {/* Infographie visuelle améliorée */}
             <div className="relative">
               <div className="grid lg:grid-cols-2 gap-8">
-                {/* Phase 1 - Acquisition */}
                 <div className="relative bg-gradient-to-br from-primary/5 via-primary/10 to-primary/20 rounded-2xl p-8 border-2 border-primary/30 shadow-xl overflow-hidden">
-                  {/* Éléments décoratifs */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
                   <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full -ml-12 -mb-12"></div>
                   
@@ -218,7 +211,7 @@ const ServicesEN = () => {
                             </div>
                           </div>
                           <div>
-                            <div className="text-3xl font-bold text-primary mb-1">+30 à +50%</div>
+                            <div className="text-3xl font-bold text-primary mb-1">+30 to +50%</div>
                             <p className="text-sm text-muted-foreground">{t('services.conversion_increase')}</p>
                           </div>
                         </div>
@@ -233,7 +226,7 @@ const ServicesEN = () => {
                             </div>
                           </div>
                           <div>
-                            <div className="text-3xl font-bold text-primary mb-1">+25 à +40%</div>
+                            <div className="text-3xl font-bold text-primary mb-1">+25 to +40%</div>
                             <p className="text-sm text-muted-foreground">{t('services.cycle_acceleration')}</p>
                           </div>
                         </div>
@@ -248,7 +241,7 @@ const ServicesEN = () => {
                             </div>
                           </div>
                           <div>
-                            <div className="text-3xl font-bold text-primary mb-1">+20 à +35%</div>
+                            <div className="text-3xl font-bold text-primary mb-1">+20 to +35%</div>
                             <p className="text-sm text-muted-foreground">{t('services.qualified_meetings')}</p>
                           </div>
                         </div>
@@ -257,9 +250,7 @@ const ServicesEN = () => {
                   </div>
                 </div>
                 
-                {/* Phase 2 - Accélération */}
                 <div className="relative bg-gradient-to-br from-sustainable/5 via-sustainable/10 to-sustainable/20 rounded-2xl p-8 border-2 border-sustainable/30 shadow-xl overflow-hidden">
-                  {/* Éléments décoratifs */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-sustainable/10 rounded-full -mr-16 -mt-16"></div>
                   <div className="absolute bottom-0 left-0 w-24 h-24 bg-sustainable/5 rounded-full -ml-12 -mb-12"></div>
                   
@@ -284,7 +275,7 @@ const ServicesEN = () => {
                             </div>
                           </div>
                           <div>
-                            <div className="text-3xl font-bold text-sustainable mb-1">+40 à +60%</div>
+                            <div className="text-3xl font-bold text-sustainable mb-1">+40 to +60%</div>
                             <p className="text-sm text-muted-foreground">{t('services.pipeline_value_increase')}</p>
                           </div>
                         </div>
@@ -299,7 +290,7 @@ const ServicesEN = () => {
                             </div>
                           </div>
                           <div>
-                            <div className="text-3xl font-bold text-sustainable mb-1">x2 à x3</div>
+                            <div className="text-3xl font-bold text-sustainable mb-1">x2 to x3</div>
                             <p className="text-sm text-muted-foreground">{t('services.commercial_efficiency')}</p>
                           </div>
                         </div>
@@ -325,97 +316,41 @@ const ServicesEN = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Section RSE */}
-      <section id="accompagnements-rse" className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-sustainable mb-4">
-              {t('services.rse_support')}
-            </h2>
-            <div className="max-w-4xl mx-auto mt-8">
-              <p className="text-lg text-muted-foreground text-justify">
-                {t('services.rse_intro')}
-              </p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Scope 1 */}
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Leaf className="w-6 h-6 text-sustainable" />
-                </div>
-                <h3 className="text-xl font-bold">{t('services.scope1_title')}</h3>
+          {/* Nos livrables */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-8">
+            <h3 className="text-2xl font-bold text-center mb-8">{t('services.deliverables')}</h3>
+            <div className="grid md:grid-cols-3 gap-4 mb-8">
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">{t('services.deliverable_1')}</span>
               </div>
-              <div className="text-muted-foreground text-justify space-y-2">
-                {t('services.scope1_items').split('\n').map((item, index) => (
-                  <p key={index}>{item}</p>
-                ))}
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">{t('services.deliverable_2')}</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">{t('services.deliverable_3')}</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">{t('services.deliverable_4')}</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">{t('services.deliverable_5')}</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">{t('services.deliverable_6')}</span>
               </div>
             </div>
-
-            {/* Scope 1,2,3 */}
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Globe className="w-6 h-6 text-sustainable" />
-                </div>
-                <h3 className="text-xl font-bold">{t('services.scope123_title')}</h3>
-              </div>
-              <div className="text-muted-foreground text-justify space-y-2">
-                {t('services.scope123_items').split('\n').map((item, index) => (
-                  <p key={index}>{item}</p>
-                ))}
-              </div>
+            <div className="text-center">
+              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
+                {t('services.pricing_commercial')}
+              </span>
             </div>
-
-            {/* Biodiversité */}
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Handshake className="w-6 h-6 text-sustainable" />
-                </div>
-                <h3 className="text-xl font-bold">{t('services.biodiversity_title')}</h3>
-              </div>
-              <div className="text-muted-foreground text-justify space-y-2">
-                {t('services.biodiversity_items').split('\n').map((item, index) => (
-                  <p key={index}>{item}</p>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Final */}
-      <section className="py-16 bg-gradient-to-r from-primary/10 to-sustainable/10">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            {t('services.ready_transform')}
-          </h2>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            {t('services.transform_desc')}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="group"
-              onClick={() => window.location.href = getLocalizedPath('/book-appointment')}
-            >
-              {t('common.book_appointment')}
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => window.location.href = getLocalizedPath('/contact')}
-            >
-              {t('common.contact_us')}
-            </Button>
           </div>
         </div>
       </section>
