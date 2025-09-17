@@ -123,12 +123,20 @@ const ContactEN = () => {
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                      <form className="space-y-6">
+                      <form 
+                        name="contact-en" 
+                        method="POST" 
+                        data-netlify="true"
+                        className="space-y-6"
+                      >
+                        <input type="hidden" name="form-name" value="contact-en" />
+                        
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           <div className="space-y-2">
                             <Label htmlFor="firstName">First Name *</Label>
                             <Input 
-                              id="firstName" 
+                              id="firstName"
+                              name="firstName"
                               placeholder="Your first name"
                               required
                             />
@@ -136,7 +144,8 @@ const ContactEN = () => {
                           <div className="space-y-2">
                             <Label htmlFor="lastName">Last Name *</Label>
                             <Input 
-                              id="lastName" 
+                              id="lastName"
+                              name="lastName"
                               placeholder="Your last name"
                               required
                             />
@@ -146,7 +155,8 @@ const ContactEN = () => {
                         <div className="space-y-2">
                           <Label htmlFor="email">Email *</Label>
                           <Input 
-                            id="email" 
+                            id="email"
+                            name="email"
                             type="email" 
                             placeholder="your.email@example.com"
                             required
@@ -156,7 +166,8 @@ const ContactEN = () => {
                         <div className="space-y-2">
                           <Label htmlFor="company">Company</Label>
                           <Input 
-                            id="company" 
+                            id="company"
+                            name="company"
                             placeholder="Your company name"
                           />
                         </div>
@@ -164,7 +175,8 @@ const ContactEN = () => {
                         <div className="space-y-2">
                           <Label htmlFor="subject">Subject *</Label>
                           <Input 
-                            id="subject" 
+                            id="subject"
+                            name="subject"
                             placeholder="Subject of your message"
                             required
                           />
@@ -173,7 +185,8 @@ const ContactEN = () => {
                         <div className="space-y-2">
                           <Label htmlFor="message">Message *</Label>
                           <Textarea 
-                            id="message" 
+                            id="message"
+                            name="message"
                             placeholder="Describe your project, your needs, your challenges..."
                             rows={6}
                             required

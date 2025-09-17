@@ -2,7 +2,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { 
   Mail, 
@@ -14,37 +13,11 @@ import {
   Leaf,
   TrendingUp
 } from "lucide-react";
-import { useState } from "react";
 import contactBackground from "@/assets/contact-background-professional.jpg";
 import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 export const ContactSection = () => {
-  const { toast } = useToast();
   const { t } = useLanguage();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    service: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real application, you would send this data to your backend
-    toast({
-      title: t('contact.toast_sent'),
-      description: t('contact.description'),
-    });
-    setFormData({ name: '', email: '', company: '', service: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <section id="contact" className="relative py-12 overflow-hidden">
@@ -160,7 +133,14 @@ export const ContactSection = () => {
 
           {/* Contact Form */}
           <Card className="p-8 shadow-card-sustainable">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form 
+              name="contact-homepage" 
+              method="POST" 
+              data-netlify="true"
+              className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="contact-homepage" />
+              
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -170,8 +150,6 @@ export const ContactSection = () => {
                     id="name"
                     name="name"
                     type="text"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                     placeholder={t('contact.form_name_placeholder')}
                     className="w-full"
@@ -185,8 +163,6 @@ export const ContactSection = () => {
                     id="email"
                     name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     placeholder={t('contact.form_email_placeholder')}
                     className="w-full"
@@ -202,8 +178,6 @@ export const ContactSection = () => {
                   id="company"
                   name="company"
                   type="text"
-                  value={formData.company}
-                  onChange={handleChange}
                   required
                   placeholder={t('contact.form_company_placeholder')}
                   className="w-full"
@@ -217,8 +191,6 @@ export const ContactSection = () => {
                 <select
                   id="service"
                   name="service"
-                  value={formData.service}
-                  onChange={handleChange}
                   className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 >
                   <option value="">{t('contact.form_service_select')}</option>
@@ -237,8 +209,6 @@ export const ContactSection = () => {
                 <Textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   placeholder={t('contact.form_message_placeholder')}
                   rows={4}

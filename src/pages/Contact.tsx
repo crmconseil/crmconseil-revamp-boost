@@ -6,7 +6,6 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
 import { 
   Mail, 
   Phone, 
@@ -15,36 +14,10 @@ import {
   Leaf,
   TrendingUp
 } from "lucide-react";
-import { useState } from "react";
 import contactBackground from "@/assets/contact-background-professional.jpg";
 import logoImage from "@/assets/crm-conseil-logo.jpg";
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    service: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real application, you would send this data to your backend
-    toast({
-      title: "Message envoyé !",
-      description: "Nous vous recontacterons dans les plus brefs délais.",
-    });
-    setFormData({ name: '', email: '', company: '', service: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <div className="min-h-screen">
@@ -177,7 +150,15 @@ const Contact = () => {
 
             {/* Contact Form */}
             <Card className="p-8 shadow-card-sustainable">
-              <form onSubmit={handleSubmit} className="space-y-6" aria-label="Formulaire de contact">
+              <form 
+                name="contact-fr" 
+                method="POST" 
+                data-netlify="true"
+                className="space-y-6" 
+                aria-label="Formulaire de contact"
+              >
+                <input type="hidden" name="form-name" value="contact-fr" />
+                
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -187,8 +168,6 @@ const Contact = () => {
                       id="name"
                       name="name"
                       type="text"
-                      value={formData.name}
-                      onChange={handleChange}
                       required
                       placeholder="Votre nom"
                       className="w-full"
@@ -203,8 +182,6 @@ const Contact = () => {
                       id="email"
                       name="email"
                       type="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       required
                       placeholder="votre@email.com"
                       className="w-full"
@@ -221,8 +198,6 @@ const Contact = () => {
                     id="company"
                     name="company"
                     type="text"
-                    value={formData.company}
-                    onChange={handleChange}
                     required
                     placeholder="Nom de votre entreprise"
                     className="w-full"
@@ -237,8 +212,6 @@ const Contact = () => {
                   <select
                     id="service"
                     name="service"
-                    value={formData.service}
-                    onChange={handleChange}
                     className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                     aria-label="Sélectionnez le service qui vous intéresse"
                   >
@@ -258,8 +231,6 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     required
                     placeholder="Décrivez brièvement votre projet ou vos besoins..."
                     rows={4}
