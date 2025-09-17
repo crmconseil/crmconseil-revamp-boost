@@ -58,6 +58,13 @@ export const Header = () => {
             >
               Qui sommes-nous
             </a>
+            <a
+              href="/contact"
+              className="text-foreground hover:text-primary transition-colors"
+              aria-label="Contactez CRM Conseil"
+            >
+              Contact
+            </a>
             <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
@@ -100,6 +107,13 @@ export const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Qui sommes-nous
+              </a>
+              <a
+                href="/contact"
+                className="text-left text-foreground hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
               </a>
               <Button 
                 variant="outline"
