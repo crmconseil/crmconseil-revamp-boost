@@ -50,7 +50,7 @@ const MentionsLegales = () => {
                     EDITION DU SITE
                   </h2>
                   <p className="mb-4">
-                    L'édition du Site est assurée par la société CRM Conseil, dont le gérant est Sabrina Broggini, immatriculée au Registre du Commerce et des Sociétés de Monaco sous le numéro RCI 20P09690 dont le siège social est situé au 12 BOULEVARD PRINCESSE CHARLOTTE,
+                    L'édition du Site est assurée par la société CRM Conseil, dont le gérant est Sabrina Broggini, immatriculée au Registre du Commerce et des Sociétés de Monaco sous le numéro RCI 20P09690 dont le siège social est situé au 12 BOULEVARD PRINCESSE CHARLOTTE, 98000 MONACO.
                   </p>
                   <div className="bg-muted/50 rounded-lg p-4 mb-4">
                     <ul className="space-y-2 text-sm">
