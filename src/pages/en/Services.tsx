@@ -452,24 +452,24 @@ const ServicesEN = () => {
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-sustainable mb-1">Up to -30%</div>
-                        <p className="text-xs text-muted-foreground">reduction in energy costs / year through energy efficiency</p>
+                         <div className="text-2xl font-bold text-sustainable mb-1">Up to -30%</div>
+                         <p className="text-xs text-muted-foreground">reduction in energy costs / year through energy efficiency</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-sustainable mb-1">-20%</div>
-                        <p className="text-xs text-muted-foreground">reduction in operating costs through waste reduction and valorization</p>
+                         <div className="text-2xl font-bold text-sustainable mb-1">-20%</div>
+                         <p className="text-xs text-muted-foreground">operating costs through waste reduction and valorization</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-sustainable mb-1">Direct ROI</div>
-                        <p className="text-xs text-muted-foreground">2 to 3x the investment from the 1st year (for SMEs with €200K to €2M annual revenue)</p>
+                         <div className="text-2xl font-bold text-sustainable mb-1">Direct ROI</div>
+                         <p className="text-xs text-muted-foreground">2 to 3x the investment from the 1st year (for TPE/SME with €200K to €2M annual revenue)</p>
                       </div>
                     </div>
                   </div>
