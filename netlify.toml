@@ -15,14 +15,9 @@
 [[forms]]
   name = "contact-homepage"
 
-# Notifications for form submissions
-[[plugins]]
-  package = "@netlify/plugin-forms"
-
 # Email notifications (require configuration in Netlify dashboard)
-[form.notifications]
-  # Configure in Netlify dashboard: Site settings > Forms > Form notifications
-  # Add email notification to: contact@crmconseil.com
+# Configure in Netlify dashboard: Site settings > Forms > Form notifications
+# Add email notification to: contact@crmconseil.com
 
 # Headers
 [[headers]]
