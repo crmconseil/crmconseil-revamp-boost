@@ -26,6 +26,7 @@ export const Footer = () => {
                 <a href="/" className="hover:text-primary-foreground transition-colors">Accueil</a>
                 <a href="/services" className="hover:text-primary-foreground transition-colors">Services</a>
                 <a href="/a-propos" className="hover:text-primary-foreground transition-colors">À propos</a>
+                <a href="/mentions-legales" className="hover:text-primary-foreground transition-colors">Mentions légales</a>
               </div>
             </div>
           </div>
@@ -56,17 +57,9 @@ export const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
               <p className="text-xs text-primary-foreground/60">
                 © 2025 CRM Conseil. Tous droits réservés.
               </p>
-              <a 
-                href="/mentions-legales" 
-                className="text-xs text-primary-foreground/60 hover:text-primary-foreground transition-colors underline"
-              >
-                Mentions légales
-              </a>
-            </div>
             <div className="flex items-center space-x-4 text-xs text-primary-foreground/60">
               <span>Certifié MIT Sustainable Strategy</span>
               <span>•</span>
