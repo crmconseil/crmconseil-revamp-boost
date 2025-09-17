@@ -54,9 +54,9 @@ export const Header = () => {
             <Button 
               variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-white"
-              onClick={() => window.location.href = '/contact'}
+              onClick={() => window.location.href = '/rendez-vous'}
             >
-              Nous contacter
+              Prendre rendez-vous
             </Button>
           </nav>
 
@@ -99,10 +99,10 @@ export const Header = () => {
                 className="w-fit border-primary text-primary hover:bg-primary hover:text-white"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  window.location.href = '/contact';
+                  window.location.href = '/rendez-vous';
                 }}
               >
-                Nous contacter
+                Prendre rendez-vous
               </Button>
             </nav>
           </div>
