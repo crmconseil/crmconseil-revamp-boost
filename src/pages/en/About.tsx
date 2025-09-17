@@ -355,29 +355,93 @@ const AboutEN = () => {
         </div>
       </section>
 
-      {/* Methods Section */}
-      <section className="py-8 bg-muted/50">
+      {/* Mission Flow Section - 4-step diagram */}
+      <section className="py-6">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-6">{t('about.methods_title')}</h2>
+          <h3 className="text-xl font-semibold text-foreground mb-4 text-left">{t('about.mission_flow_title')}</h3>
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center justify-center relative space-y-8 lg:space-y-0 lg:space-x-16">
+              {/* Step 1 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
+                  <span className="text-white font-bold text-xl">1</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{t('about.step_1_title')}</h3>
+                <p className="text-sm text-muted-foreground max-w-xs">{t('about.step_1_desc')}</p>
+              </div>
+
+              {/* Arrow 1 */}
+              <div className="hidden lg:block">
+                <ArrowRight className="w-8 h-8 text-primary" />
+              </div>
+              <div className="lg:hidden">
+                <ArrowRight className="w-6 h-6 text-primary rotate-90" />
+              </div>
+
+              {/* Step 2 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
+                  <span className="text-white font-bold text-xl">2</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{t('about.step_2_title')}</h3>
+                <p className="text-sm text-muted-foreground max-w-xs">{t('about.step_2_desc')}</p>
+              </div>
+
+              {/* Arrow 2 */}
+              <div className="hidden lg:block">
+                <ArrowRight className="w-8 h-8 text-primary" />
+              </div>
+              <div className="lg:hidden">
+                <ArrowRight className="w-6 h-6 text-primary rotate-90" />
+              </div>
+
+              {/* Step 3 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
+                  <span className="text-white font-bold text-xl">3</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{t('about.step_3_title')}</h3>
+                <p className="text-sm text-muted-foreground max-w-xs">{t('about.step_3_desc')}</p>
+              </div>
+
+              {/* Arrow 3 */}
+              <div className="hidden lg:block">
+                <ArrowRight className="w-8 h-8 text-primary" />
+              </div>
+              <div className="lg:hidden">
+                <ArrowRight className="w-6 h-6 text-primary rotate-90" />
+              </div>
+
+              {/* Step 4 */}
+              <div className="flex flex-col items-center text-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-sustainable to-primary rounded-full flex items-center justify-center mb-4">
+                  <span className="text-white font-bold text-xl">4</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{t('about.step_4_title')}</h3>
+                <p className="text-sm text-muted-foreground max-w-xs">{t('about.step_4_desc')}</p>
+              </div>
+            </div>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {methods.map((method, index) => {
               const IconComponent = method.icon;
               return (
-                <Card key={index} className="p-6 hover:shadow-lg transition-shadow duration-300">
+                <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
                   <div className="flex items-center mb-4">
-                    <div className="p-2 bg-primary/20 rounded-full mr-4">
-                      <IconComponent className="w-6 h-6 text-primary" />
+                    <div className="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                      <IconComponent className="text-primary" size={20} />
                     </div>
-                    <h3 className="text-lg font-semibold text-foreground">{method.title}</h3>
+                    <h3 className="text-xl font-bold text-foreground">{method.title}</h3>
                   </div>
-                  <ul className="space-y-2 text-muted-foreground">
+                  <div className="space-y-2 text-muted-foreground text-sm">
                     {method.points.map((point, pointIndex) => (
-                      <li key={pointIndex} className="text-sm">{point}</li>
+                      <div key={pointIndex} className="flex items-start">
+                        <span className="font-bold text-primary mr-2">{pointIndex + 1}.</span>
+                        <span>{point.replace(/^\d+\.\s*/, '')}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </Card>
               );
             })}
@@ -385,59 +449,175 @@ const AboutEN = () => {
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className="py-8 bg-gradient-to-br from-primary/5 to-secondary/5">
+      {/* Our commitments */}
+      <section className="py-12 bg-gradient-to-br from-secondary/30 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-6">{t('about.our_values')}</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-6">{t('about.commitments_title')}</h2>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
-                <Card key={index} className="text-center p-8 bg-background/80 backdrop-blur-sm">
-                  <div className="mx-auto mb-4 p-3 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl w-fit">
-                    <IconComponent className="h-8 w-8 text-primary" />
+                <Card key={index} className="p-8 text-center hover:shadow-lg transition-all duration-300 group">
+                  <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                    <IconComponent className="text-primary" size={32} />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-4">{value.title}</h3>
-                  <p className="text-muted-foreground">{value.description}</p>
+                  <p className="text-muted-foreground text-justify">{value.description}</p>
                 </Card>
               );
             })}
           </div>
+
+          {/* Quote moved here */}
+          <div className="text-center mb-8">
+            <p className="text-xl text-muted-foreground">
+              {t('about.commitments_intro')}
+            </p>
+          </div>
+
+          {/* Our CSR Actions in 4 pillars - moved here */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Pillar 1: Clients & CSR Strategy */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Handshake className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                  {t('about.pillar_1_title')}
+                </h3>
+              </div>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_1_item_1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_1_item_2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_1_item_3')}</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pillar 2: Sustainable Transport */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-primary/20 rounded-full mr-4">
+                  <Activity className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                  {t('about.pillar_2_title')}
+                </h3>
+              </div>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_2_item_1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_2_item_2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_2_item_3')}</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pillar 3: Clean Energy Sourcing */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Zap className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                  {t('about.pillar_3_title')}
+                </h3>
+              </div>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_3_item_1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_3_item_2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_3_item_3')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_3_item_4')}</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Pillar 4: Waste Management */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-primary/10">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-primary/20 rounded-full mr-4">
+                  <Globe className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary">
+                  {t('about.pillar_4_title')}
+                </h3>
+              </div>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_4_item_1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_4_item_2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                  <span>{t('about.pillar_4_item_3')}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to transform your business?
-            </h2>
-            <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-              Contact us for a free consultation and discover how we can support your company in its sustainable transformation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="secondary"
-                className="group bg-white text-primary hover:bg-white/90"
-                onClick={() => window.location.href = '/en/rendez-vous'}
-              >
-                {t('about.meet_team')}
-                <Calendar className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              </Button>
-              <Button 
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-primary"
-                onClick={() => window.location.href = '/en/contact'}
-              >
-                Contact us
-              </Button>
-            </div>
+      {/* CTA Section - Ready to transform business sustainably */}
+      <section className="py-16 bg-gradient-to-r from-primary/5 to-sustainable/5">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold text-foreground mb-6">
+            {t('about.transform_sustainably')}
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            {t('about.transform_desc')}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="group bg-gradient-to-r from-sustainable to-primary hover:from-sustainable/90 hover:to-primary/90"
+              onClick={() => window.location.href = '/en/book-appointment'}
+            >
+              {t('about.book_consultation')}
+              <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="group"
+              onClick={() => window.location.href = '/en/contact'}
+            >
+              {t('about.contact_us')}
+              <ArrowRight className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
+            </Button>
           </div>
         </div>
       </section>
@@ -691,7 +871,7 @@ const AboutEN = () => {
             <Button 
               size="lg" 
               className="group bg-gradient-to-r from-sustainable to-primary hover:from-sustainable/90 hover:to-primary/90"
-              onClick={() => window.location.href = '/en/rendez-vous'}
+              onClick={() => window.location.href = '/en/book-appointment'}
             >
               {t('about.book_consultation')}
               <Calendar className="group-hover:translate-x-1 transition-transform ml-2" size={20} />
