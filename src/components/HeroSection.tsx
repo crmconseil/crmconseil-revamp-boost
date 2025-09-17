@@ -31,7 +31,7 @@ export const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
         role="img"
-        aria-label="Image de fond représentant une entreprise durable et performante"
+        aria-label="CRM Conseil - Performance commerciale durable et stratégie RSE pour startups innovantes"
       >
         <div className="absolute inset-0 bg-gradient-hero opacity-80"></div>
       </div>

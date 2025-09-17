@@ -277,7 +277,7 @@ const AboutEN = () => {
             <div className="relative">
               <img 
                 src={evolutionImage} 
-                alt="Evolution of CRM Conseil from traditional commercial to CSR and sustainable approach"
+                alt="Evolution CRM Conseil: from commercial optimization to CSR strategy and sustainable development"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -347,7 +347,7 @@ const AboutEN = () => {
             <div className="relative">
               <img 
                 src={partenaireImage} 
-                alt="Two professionals giving each other a high five to celebrate their partnership"
+                alt="Sustainable commercial partnership - CRM Conseil supports companies towards CSR performance"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>

@@ -25,7 +25,7 @@ export const Header = () => {
             <a href={getLocalizedPath('/')} aria-label="CRM Conseil - Retour à l'accueil">
               <img 
                 src={crmLogo} 
-                alt="CRM Conseil - Logo de l'entreprise spécialisée en performance commerciale durable" 
+                alt="CRM Conseil - Expert en optimisation commerciale et stratégie RSE pour startups et PME" 
                 className="h-16 w-auto"
                 width="64"
                 height="64"

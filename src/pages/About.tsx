@@ -308,7 +308,7 @@ const About = () => {
             <div className="relative">
               <img 
                 src={evolutionImage} 
-                alt="Évolution de CRM Conseil du commercial traditionnel vers l'approche RSE et durable"
+                alt="Évolution CRM Conseil : de l'optimisation commerciale traditionnelle vers la stratégie RSE et développement durable"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -380,7 +380,7 @@ const About = () => {
             <div className="relative">
               <img 
                 src={partenaireImage} 
-                alt="Deux professionnels se tapent dans la main pour célébrer leur partenariat"
+                alt="Partenariat commercial durable - CRM Conseil accompagne les entreprises vers la performance RSE"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>

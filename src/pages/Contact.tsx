@@ -61,7 +61,7 @@ const Contact = () => {
               <div className="text-center">
                 <img 
                   src={logoImage} 
-                  alt="CRM Conseil - Logo de l'entreprise spécialisée en performance commerciale durable" 
+                  alt="CRM Conseil - Développement commercial durable et stratégie RSE pour entreprises innovantes" 
                   className="h-20 w-auto mx-auto mb-6"
                   width="80"
                   height="80"
