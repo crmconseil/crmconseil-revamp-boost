@@ -5,14 +5,17 @@ import { StructuredData } from "@/components/StructuredData";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowRight, Users, Target, Award, Handshake, Leaf, TrendingUp, Calendar } from "lucide-react";
 import evolutionImage from "@/assets/evolution-histoire.png";
 
 const AboutEN = () => {
+  const { t } = useLanguage();
+  
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="About - CRM Conseil | Commercial Performance & CSR Experts"
+        title={t('about.page_title')}
         description="Discover CRM Conseil, your partner for commercial performance and CSR. Expert team supporting SMEs in South-East France for sustainable transformation."
         keywords="CRM Conseil team, commercial consultant, CSR expert, sustainable development, Nice Monaco consultant, business transformation"
         canonical="/en/a-propos"
@@ -46,28 +49,20 @@ const AboutEN = () => {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                    Our Story
+                    {t('about.our_story')}
                   </h2>
                   <p className="text-lg text-foreground/80 mb-6">
-                    Founded with the conviction that commercial performance and environmental responsibility 
-                    are not contradictory but complementary, CRM Conseil was born from the desire to 
-                    support companies in their sustainable transformation.
-                  </p>
-                  <p className="text-lg text-foreground/80 mb-6">
-                    With over 10 years of experience in commercial consulting and a growing expertise 
-                    in CSR, we help SMEs in South-East France develop winning strategies that respect 
-                    both their economic objectives and environmental challenges.
+                    {t('about.story_desc_1')}
                   </p>
                   <p className="text-lg text-foreground/80 mb-8">
-                    Our approach is based on deep understanding of local markets and the specific 
-                    challenges facing companies in our region.
+                    {t('about.story_desc_2')}
                   </p>
                   <Button 
                     size="lg" 
                     className="group"
                     onClick={() => window.location.href = '/en/book-appointment'}
                   >
-                    Meet our team
+                    {t('about.meet_team')}
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </div>
@@ -88,7 +83,7 @@ const AboutEN = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Our Values
+                {t('about.our_values')}
               </h2>
               <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
                 Values that guide our daily actions and our relationship with clients
@@ -101,11 +96,11 @@ const AboutEN = () => {
                   <div className="mx-auto mb-4 p-3 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl w-fit">
                     <Handshake className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="text-xl font-bold">Trust</CardTitle>
+                  <CardTitle className="text-xl font-bold">{t('about.trust')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-foreground/70">
-                    We build lasting relationships based on transparency, honesty and mutual respect.
+                    {t('about.trust_desc')}
                   </p>
                 </CardContent>
               </Card>
@@ -115,11 +110,11 @@ const AboutEN = () => {
                   <div className="mx-auto mb-4 p-3 bg-gradient-to-br from-green-500/20 to-green-500/10 rounded-2xl w-fit">
                     <Leaf className="h-8 w-8 text-green-600" />
                   </div>
-                  <CardTitle className="text-xl font-bold">Sustainability</CardTitle>
+                  <CardTitle className="text-xl font-bold">{t('about.sustainability')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-foreground/70">
-                    We integrate environmental and social responsibility into all our recommendations.
+                    {t('about.sustainability_desc')}
                   </p>
                 </CardContent>
               </Card>
@@ -129,11 +124,11 @@ const AboutEN = () => {
                   <div className="mx-auto mb-4 p-3 bg-gradient-to-br from-blue-500/20 to-blue-500/10 rounded-2xl w-fit">
                     <Target className="h-8 w-8 text-blue-600" />
                   </div>
-                  <CardTitle className="text-xl font-bold">Excellence</CardTitle>
+                  <CardTitle className="text-xl font-bold">{t('about.excellence')}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-foreground/70">
-                    We strive for excellence in every mission, with personalized and quality support.
+                    {t('about.excellence_desc')}
                   </p>
                 </CardContent>
               </Card>
@@ -146,7 +141,7 @@ const AboutEN = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Our Expertise
+                {t('about.our_expertise')}
               </h2>
               <p className="text-xl text-foreground/70 max-w-3xl mx-auto">
                 Recognized skills in commercial performance and sustainable development
@@ -225,5 +220,7 @@ const AboutEN = () => {
     </div>
   );
 };
+
+export default AboutEN;
 
 export default AboutEN;
