@@ -1,10 +1,19 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
+import { StructuredData } from "@/components/StructuredData";
 import contactBackground from "@/assets/contact-background-light.jpg";
 
 const RendezVous = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Rendez-vous - CRM Conseil | Réservez votre consultation gratuite"
+        description="Prenez rendez-vous avec nos experts en performance commerciale et RSE. Consultation gratuite pour votre projet d'accompagnement commercial durable. Disponible à Nice, Monaco, Cannes."
+        keywords="rendez-vous CRM conseil, consultation gratuite, expert commercial RSE, prise de contact, accompagnement personnalisé"
+        canonical="/rendez-vous"
+      />
+      <StructuredData type="service" />
       <Header />
       <main className="pt-24">
         <section className="relative py-12 overflow-hidden">

@@ -3,6 +3,8 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { SEOHead } from "@/components/SEOHead";
+import { StructuredData } from "@/components/StructuredData";
 import { 
   Users, 
   TrendingUp, 
@@ -152,6 +154,13 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="À Propos - CRM Conseil | Expertise Performance Commerciale Durable"
+        description="Découvrez CRM Conseil et Sabrina Broggini. Expert certifié en accompagnement commercial et RSE pour startups et PME. Plus de 100 entreprises accompagnées vers la performance durable."
+        keywords="à propos CRM conseil, Sabrina Broggini, expert commercial RSE, accompagnement PME startups, consultant développement durable"
+        canonical="/a-propos"
+      />
+      <StructuredData type="organization" />
       <Header />
       
       {/* Hero Section */}

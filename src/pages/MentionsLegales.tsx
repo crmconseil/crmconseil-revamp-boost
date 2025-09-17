@@ -1,9 +1,17 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEOHead } from "@/components/SEOHead";
 
 const MentionsLegales = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Mentions Légales - CRM Conseil | Informations légales"
+        description="Mentions légales de CRM Conseil. Informations sur l'éditeur, l'hébergement, la collecte des données et la politique de cookies conforme RGPD."
+        keywords="mentions légales CRM conseil, informations légales, politique cookies, RGPD, protection données"
+        canonical="/mentions-legales"
+        noindex={true}
+      />
       <Header />
       
       {/* Hero Section */}

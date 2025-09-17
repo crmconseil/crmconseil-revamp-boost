@@ -1,6 +1,8 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { SEOHead } from "@/components/SEOHead";
+import { StructuredData } from "@/components/StructuredData";
 import { Link } from "react-router-dom";
 import { Leaf, Users, Briefcase, Target, Settings, TrendingUp, CheckCircle, Globe, Handshake, Award, ArrowRight, Rocket, Clock, Calendar, BarChart3, Zap, Sparkles } from "lucide-react";
 import servicesBackground from "@/assets/services-background.jpg";
@@ -8,6 +10,13 @@ import servicesBackground from "@/assets/services-background.jpg";
 const Services = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Services - CRM Conseil | Accompagnement Commercial & RSE pour PME"
+        description="Découvrez nos services d'accompagnement commercial et RSE : bilan carbone, stratégie commerciale, conseil développement durable. Expertise certifiée pour startups et PME à Nice, Monaco, Cannes."
+        keywords="services conseil commercial, bilan carbone PME, accompagnement RSE, stratégie commerciale, développement durable entreprise, consultant Nice Monaco"
+        canonical="/services"
+      />
+      <StructuredData type="service" />
       <Header />
       
       {/* Hero Section */}

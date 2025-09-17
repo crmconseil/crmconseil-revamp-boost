@@ -1,0 +1,7 @@
+# Redirects for SPA
+/*    /index.html   200
+
+# Redirect old URLs if any
+/mentions_legales  /mentions-legales  301
+/contact.html      /contact           301
+/services.html     /services          301
