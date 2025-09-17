@@ -446,6 +446,40 @@ const translations = {
     'services.transform_subtitle': 'Ready to optimize your commercial performance while building a strong CSR strategy?',
     'services.book_appointment': 'Book Your Strategic Consultation',
     'services.contact_us': 'Contact Our Experts',
+    
+    // Additional About page translations - commitments and pillars
+    'about.commitments_title': 'Our CSR Commitments',
+    'about.commitments_intro': 'At CRM Conseil, we practice what we preach by implementing concrete CSR actions organized around 4 strategic pillars.',
+    'about.pillar_1_title': 'Clients & CSR Strategy',
+    'about.pillar_1_item_1': 'Prioritize low-carbon clients aligned with CSR values',
+    'about.pillar_1_item_2': 'Support eco-responsible companies in their sustainable development',
+    'about.pillar_1_item_3': 'Develop commercial partnerships with certified sustainable businesses',
+    'about.pillar_2_title': 'Sustainable Transport',
+    'about.pillar_2_item_1': 'Electric vehicle for all client visits within a 50km radius',
+    'about.pillar_2_item_2': 'Public transport for trips exceeding 50km when possible',
+    'about.pillar_2_item_3': 'Carbon offsetting for unavoidable flights through certified programs',
+    'about.pillar_3_title': 'Clean Energy Sourcing',
+    'about.pillar_3_item_1': '100% renewable energy for our offices',
+    'about.pillar_3_item_2': 'Green energy suppliers certified by responsible energy labels',
+    'about.pillar_3_item_3': 'Digital carbon footprint optimization through eco-designed tools',
+    'about.pillar_3_item_4': 'Energy-efficient equipment and responsible consumption practices',
+    'about.pillar_4_title': 'Waste Management',
+    'about.pillar_4_item_1': 'Systematic waste sorting and recycling in offices',
+    'about.pillar_4_item_2': 'Paperless office policy and digital document management',
+    'about.pillar_4_item_3': 'Partnership with local recycling and reuse circuits',
+    'about.transform_sustainably': 'Ready to transform your business sustainably?',
+    'about.transform_desc': 'Discover how we can support you in your growth while integrating a high-performance CSR approach.',
+    'about.book_consultation': 'Book a consultation',
+    'about.contact_us': 'Contact us',
+    
+    // Additional Services page translations - deliverables and pricing
+    'services.deliverables': 'Our deliverables',
+    'services.deliverable_1_rse': 'Quantified carbon analysis report valuable at ADEME level',
+    'services.deliverable_2_rse': 'Quantified CSR assessment and strategy report with ROI',
+    'services.deliverable_3_rse': 'Quantified Biodiversity Impact Report',
+    'services.deliverable_4_rse': 'Team training on CSR strategy',
+    'services.deliverable_5': '5 - 15 person-days ~ €6,000 to €12,000 with possibility of BPI France subsidies of 40 to 50%, if eligible',
+    'services.pricing_commercial': '5 - 15 person-days ~ €6,000 to €12,000 with possibility of BPI France subsidies of 40 to 50%, if eligible',
   }
 };
 
