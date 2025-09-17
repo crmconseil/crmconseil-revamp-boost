@@ -355,6 +355,292 @@ const ServicesEN = () => {
         </div>
       </section>
 
+      {/* Section RSE */}
+      <section id="accompagnements-rse" className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
+              CSR & Sustainability Enhancement
+            </h2>
+            <div className="max-w-4xl mx-auto mt-8">
+              <p className="text-lg text-muted-foreground text-justify mb-4">
+                What if integrating sustainable practices into your strategy became a commercial asset?
+              </p>
+              <p className="text-lg text-muted-foreground text-justify mb-4">
+                Our expertise combines economic performance and societal responsibility to create a sustainable strategy that strengthens your competitive positioning.
+              </p>
+              <p className="text-lg text-muted-foreground text-justify mb-4">
+                We help you move from strategy to action with concrete support: Completion of your ADEME carbon footprint, Implementation of a comprehensive CSR strategy integrating direct and indirect actions, your company's double materiality, and evaluation of your biodiversity impact.
+              </p>
+              <div className="text-lg text-muted-foreground text-left">
+                <p className="font-semibold mb-3">Results:</p>
+                <ul className="space-y-2 list-disc list-inside">
+                  <li>Direct reduction of your energy costs</li>
+                  <li>Reduction of your carbon and biodiversity impact</li>
+                  <li>Loyalty of your teams and clients</li>
+                  <li>Increased sales and access to new markets</li>
+                  <li>Increased options for investors seeking CSR-committed companies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Scope 1 */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Globe className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Assessment - Direct Emissions - Scope 1</h3>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                The Scope 1 Assessment evaluates your direct greenhouse gas emissions from your energy consumption and own activities. It highlights your efficiency levers, proposes quantified energy optimization scenarios and supports implementation. Result: direct measurable energy savings, clear and rapid ROI, and immediate reduction of your impacts.
+              </p>
+            </div>
+
+            {/* Scope 1,2,3 */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Leaf className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">ADEME® Carbon Footprint - Scope 1, 2, 3</h3>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                The ADEME® CSR carbon footprint analyzes your direct and indirect emissions across the entire value chain, while evaluating societal impacts on your employees, customers and society. It integrates double materiality: climate risks suffered by your company and the impacts it generates on the environment and society. Results: sustainable transformation, opening of new markets, deep reduction of your carbon impact, competitive repositioning of your company, and enhanced attractiveness to employees and investors.
+              </p>
+            </div>
+
+            {/* Biodiversité */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Award className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">{t('services.biodiversity_title')}</h3>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                The biodiversity assessment allows SMEs to identify their impacts and dependencies regarding ecosystems. It provides a clear vision of risks and opportunities, helps reduce pressures on nature and build a concrete action plan. Result: more resilience, value and regulatory alignment.
+              </p>
+            </div>
+          </div>
+
+          {/* Ce que nous vous apportons - Infographie RSE */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
+            <h3 className="text-2xl font-bold text-center mb-8">{t('services.what_we_bring')}</h3>
+            
+            {/* Infographie visuelle RSE sur 3 colonnes */}
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Colonne 1 - Bilan Carbone Scope 1 */}
+              <div className="relative bg-gradient-to-br from-sustainable/5 via-sustainable/10 to-sustainable/20 rounded-2xl p-8 border-2 border-sustainable/30 shadow-xl overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-sustainable/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-sustainable/5 rounded-full -ml-12 -mb-12"></div>
+                
+                <div className="relative z-10">
+                  <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-sustainable to-sustainable/80 rounded-2xl shadow-lg mb-4">
+                      <Globe className="w-10 h-10 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold text-sustainable mb-2">Direct Emissions Assessment Scope 1</h4>
+                    <div className="inline-block px-3 py-1 bg-sustainable/20 rounded-full">
+                      <p className="text-xs font-medium text-sustainable">Direct impacts</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-sustainable mb-1">Up to -30%</div>
+                        <p className="text-xs text-muted-foreground">reduction in energy costs / year through energy efficiency</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-sustainable mb-1">-20%</div>
+                        <p className="text-xs text-muted-foreground">reduction in operating costs through waste reduction and valorization</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-sustainable mb-1">Direct ROI</div>
+                        <p className="text-xs text-muted-foreground">2 to 3x the investment from the 1st year (for SMEs with €200K to €2M annual revenue)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Colonne 2 - Stratégie RSE complète */}
+              <div className="relative bg-gradient-to-br from-primary/5 via-primary/10 to-primary/20 rounded-2xl p-8 border-2 border-primary/30 shadow-xl overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full -ml-12 -mb-12"></div>
+                
+                <div className="relative z-10">
+                  <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
+                      <Leaf className="w-10 h-10 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold text-primary mb-2">Carbon Footprint® - Complete CSR Strategy</h4>
+                    <div className="inline-block px-3 py-1 bg-primary/20 rounded-full">
+                      <p className="text-xs font-medium text-primary">Scope 1, 2, 3 + societal and human</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-primary mb-1">+10 to 30%</div>
+                        <p className="text-xs text-muted-foreground">additional revenue on new markets/clients sensitive to CSR criteria</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-primary mb-1">+30%</div>
+                        <p className="text-xs text-muted-foreground">fundraising value capture</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-primary mb-1">+25 to 50%</div>
+                        <p className="text-xs text-muted-foreground">client and employee loyalty</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-primary mb-1">Mixed ROI</div>
+                        <p className="text-xs text-muted-foreground">10x to 20x the investment</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Colonne 3 - Bilan Impact Biodiversité */}
+              <div className="relative bg-gradient-to-br from-accent/5 via-accent/10 to-accent/20 rounded-2xl p-8 border-2 border-accent/30 shadow-xl overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full -mr-16 -mt-16"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/5 rounded-full -ml-12 -mb-12"></div>
+                
+                <div className="relative z-10">
+                  <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-accent to-accent/80 rounded-2xl shadow-lg mb-4">
+                      <Sparkles className="w-10 h-10 text-white" />
+                    </div>
+                    <h4 className="text-xl font-bold text-accent mb-2">{t('services.biodiversity_title')}</h4>
+                    <div className="inline-block px-3 py-1 bg-accent/20 rounded-full">
+                      <p className="text-xs font-medium text-accent">Ecosystems</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">-20 to -30%</div>
+                        <p className="text-xs text-muted-foreground">reduction in financial risks related to supply chains</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">10 to 25%</div>
+                        <p className="text-xs text-muted-foreground">additional billable on differentiated products/services through biodiversity criteria integration</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">+40%</div>
+                        <p className="text-xs text-muted-foreground">increased positive image with stakeholders (Deloitte study)</p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                      <div className="relative">
+                        <div className="text-2xl font-bold text-accent mb-1">Mixed ROI</div>
+                        <p className="text-xs text-muted-foreground">5x to 10x the investment</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Nos livrables RSE */}
+          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-4xl mx-auto mt-8">
+            <h3 className="text-2xl font-bold text-center mb-8">{t('services.deliverables')}</h3>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Quantified carbon analysis report valuable at ADEME level</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Quantified CSR assessment and strategy report with ROI</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Quantified Biodiversity Impact Report</span>
+              </div>
+              <div className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-sustainable mr-3 mt-0.5" />
+                <span className="text-muted-foreground">Team training on CSR strategy</span>
+              </div>
+            </div>
+            <div className="text-center">
+               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-sustainable bg-clip-text text-transparent">
+                 5 - 15 person-days ~ €6,000 to €12,000 with possibility of BPI France subsidies of 40 to 50%, if eligible
+               </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-16 bg-gradient-to-r from-primary/10 to-sustainable/10">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            {t('services.ready_transform')}
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            {t('services.transform_desc')}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button 
+              size="lg" 
+              className="group"
+              onClick={() => window.location.href = getLocalizedPath('/book-appointment')}
+            >
+              {t('common.book_appointment')}
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={() => window.location.href = getLocalizedPath('/contact')}
+            >
+              {t('common.contact_us')}
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
