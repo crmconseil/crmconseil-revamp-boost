@@ -13,8 +13,8 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead 
         title="CRM Conseil - Expert Stratégie Commerciale & RSE | Nice Monaco Cannes"
-        description="Expert en stratégie commerciale durable depuis 15 ans. Accompagnement RSE, bilan carbone ADEME, développement commercial pour startups et PME. Certification environnementale garantie."
-        keywords="conseil commercial RSE, stratégie commerciale durable, bilan carbone ADEME, développement durable entreprise, RSE startup PME, consultant commercial Nice Monaco, performance commerciale éthique, certification environnementale"
+        description="Expert en stratégie commerciale durable depuis 15 ans. Accompagnement RSE, bilan GES, développement commercial pour startups et PME. Certification environnementale garantie."
+        keywords="conseil commercial RSE, stratégie commerciale durable, bilan GES, développement durable entreprise, RSE startup PME, consultant commercial Nice Monaco, performance commerciale éthique, certification environnementale"
         canonical="/"
       />
       <StructuredData type="organization" />

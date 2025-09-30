@@ -84,7 +84,7 @@ const About = () => {
     },
     {
       icon: Globe,
-      title: "Bilan Carbone",
+      title: "Bilan GES",
       points: [
         "1. Analyse des impacts carbone existants",
         "2. Brainstorming corporate des changements plus durables",
@@ -267,8 +267,8 @@ const About = () => {
                   <p className="text-xs text-muted-foreground">Sustainable Strategy Design</p>
                 </div>
                 <div className="p-4 bg-muted/30 rounded-lg">
-                  <h4 className="font-semibold text-primary mb-2">ADEME</h4>
-                  <p className="text-xs text-muted-foreground">Partenaire Officiel</p>
+                  <h4 className="font-semibold text-primary mb-2">Stratégie RSE</h4>
+                  <p className="text-xs text-muted-foreground">Expert Bilan GES</p>
                 </div>
                 <div className="p-4 bg-muted/30 rounded-lg">
                   <h4 className="font-semibold text-sustainable mb-2">Pacte National</h4>

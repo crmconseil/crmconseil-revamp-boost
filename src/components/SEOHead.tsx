@@ -12,8 +12,8 @@ interface SEOProps {
 
 export const SEOHead = ({
   title = "CRM Conseil - Performance Commerciale Durable | Accompagnement Startups & PME",
-  description = "CRM Conseil accompagne les startups et PME innovantes avec une approche unique alliant performance commerciale et développement durable. Expertise RSE, bilan carbone, stratégie commerciale.",
-  keywords = "conseil commercial, RSE, développement durable, startup, PME, performance commerciale, bilan carbone, stratégie commerciale, accompagnement entreprise",
+  description = "CRM Conseil accompagne les startups et PME innovantes avec une approche unique alliant performance commerciale et développement durable. Expertise RSE, bilan GES, stratégie commerciale.",
+  keywords = "conseil commercial, RSE, développement durable, startup, PME, performance commerciale, bilan GES, stratégie commerciale, accompagnement entreprise",
   canonical,
   image = "https://lovable.dev/opengraph-image-p98pqg.png",
   type = "website",

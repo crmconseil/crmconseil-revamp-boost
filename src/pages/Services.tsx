@@ -12,8 +12,8 @@ const Services = () => {
     <div className="min-h-screen">
       <SEOHead 
         title="Services - CRM Conseil | Accompagnement Commercial & RSE pour PME"
-        description="Découvrez nos services d'accompagnement commercial et RSE : bilan carbone, stratégie commerciale, conseil développement durable. Expertise certifiée pour startups et PME à Nice, Monaco, Cannes."
-        keywords="services conseil commercial, bilan carbone PME, accompagnement RSE, stratégie commerciale, développement durable entreprise, consultant Nice Monaco"
+        description="Découvrez nos services d'accompagnement commercial et RSE : bilan GES, stratégie commerciale, conseil développement durable. Expertise certifiée pour startups et PME à Nice, Monaco, Cannes."
+        keywords="services conseil commercial, bilan GES PME, accompagnement RSE, stratégie commerciale, développement durable entreprise, consultant Nice Monaco"
         canonical="/nos-services"
       />
       <StructuredData type="service" />
@@ -369,7 +369,7 @@ const Services = () => {
                 Notre expertise combine performance économique et responsabilité sociétale pour créer une stratégie durable qui renforce votre positionnement concurrentiel.
               </p>
               <p className="text-lg text-muted-foreground text-justify mb-4">
-                Nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : Réalisation de votre bilan carbone ADEME, Implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
+                Nous vous aidons à passer de la stratégie à l'action avec un accompagnement concret : Réalisation de votre bilan GES, Implémentation d'une stratégie RSE globale intégrant les actions directes et indirectes, la double matérialité de votre entreprise, et l'évaluation de votre impact biodiversité.
               </p>
               <div className="text-lg text-muted-foreground text-left">
                 <p className="font-semibold mb-3">Résultats :</p>
@@ -404,10 +404,10 @@ const Services = () => {
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Leaf className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Bilan Carbone ADEME® - Scope 1, 2, 3</h3>
+                <h3 className="text-xl font-bold">Bilan GES - Scope 1, 2, 3</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Le bilan carbone RSE ADEME® analyse vos émissions directes et indirectes sur l'ensemble de la chaîne de valeur, tout en évaluant les impacts sociétaux sur vos employés, vos clients et la société. Il intègre la double matérialité : les risques climatiques subis par votre entreprise et les impacts qu'elle génère sur l'environnement et la société. Résultats : transformation durable, ouverture de nouveaux marchés, réduction profonde de votre impact carbone, repositionnement compétitif de votre entreprise, et attractivité renforcée vis-à-vis d'employés et investisseurs.
+                  Le bilan GES RSE analyse vos émissions directes et indirectes sur l'ensemble de la chaîne de valeur, tout en évaluant les impacts sociétaux sur vos employés, vos clients et la société. Il intègre la double matérialité : les risques climatiques subis par votre entreprise et les impacts qu'elle génère sur l'environnement et la société. Résultats : transformation durable, ouverture de nouveaux marchés, réduction profonde de votre impact carbone, repositionnement compétitif de votre entreprise, et attractivité renforcée vis-à-vis d'employés et investisseurs.
                 </p>
             </div>
 
@@ -487,7 +487,7 @@ const Services = () => {
                     <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
                       <Leaf className="w-10 h-10 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold text-primary mb-2">Bilan Carbone® - Stratégie RSE complète</h4>
+                    <h4 className="text-xl font-bold text-primary mb-2">Bilan GES - Stratégie RSE complète</h4>
                     <div className="inline-block px-3 py-1 bg-primary/20 rounded-full">
                       <p className="text-xs font-medium text-primary">Scope 1, 2, 3 + sociétal et humain</p>
                     </div>

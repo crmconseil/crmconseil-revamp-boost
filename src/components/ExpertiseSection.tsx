@@ -165,7 +165,6 @@ export const ExpertiseSection = () => {
                   <h4 className="font-semibold text-sustainable">{t('expertise.rse_biodiversity')}</h4>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">MIT</Badge>
-                    <Badge variant="secondary">ADEME</Badge>
                     <Badge variant="secondary">GBS</Badge>
                     <Badge variant="secondary">ENCORE</Badge>
                   </div>

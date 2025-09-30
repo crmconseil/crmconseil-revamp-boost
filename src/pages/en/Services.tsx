@@ -370,7 +370,7 @@ const ServicesEN = () => {
                 Our expertise combines economic performance and societal responsibility to create a sustainable strategy that strengthens your competitive positioning.
               </p>
               <p className="text-lg text-muted-foreground text-justify mb-4">
-                We help you move from strategy to action with concrete support: Completion of your ADEME carbon footprint, Implementation of a comprehensive CSR strategy integrating direct and indirect actions, your company's double materiality, and evaluation of your biodiversity impact.
+                We help you move from strategy to action with concrete support: Completion of your GHG assessment, Implementation of a comprehensive CSR strategy integrating direct and indirect actions, your company's double materiality, and evaluation of your biodiversity impact.
               </p>
               <div className="text-lg text-muted-foreground text-left">
                 <p className="font-semibold mb-3">Results:</p>
@@ -405,10 +405,10 @@ const ServicesEN = () => {
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Leaf className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">ADEME® Carbon Footprint - Scope 1, 2, 3</h3>
+                <h3 className="text-xl font-bold">GHG Assessment - Scope 1, 2, 3</h3>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                The ADEME® CSR carbon footprint analyzes your direct and indirect emissions across the entire value chain, while evaluating societal impacts on your employees, customers and society. It integrates double materiality: climate risks suffered by your company and the impacts it generates on the environment and society. Results: sustainable transformation, opening of new markets, deep reduction of your carbon impact, competitive repositioning of your company, and enhanced attractiveness to employees and investors.
+                The CSR GHG assessment analyzes your direct and indirect emissions across the entire value chain, while evaluating societal impacts on your employees, customers and society. It integrates double materiality: climate risks suffered by your company and the impacts it generates on the environment and society. Results: sustainable transformation, opening of new markets, deep reduction of your carbon impact, competitive repositioning of your company, and enhanced attractiveness to employees and investors.
               </p>
             </div>
 
@@ -486,7 +486,7 @@ const ServicesEN = () => {
                     <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
                       <Leaf className="w-10 h-10 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold text-primary mb-2">Carbon Footprint® - Complete CSR Strategy</h4>
+                    <h4 className="text-xl font-bold text-primary mb-2">GHG Assessment - Complete CSR Strategy</h4>
                     <div className="inline-block px-3 py-1 bg-primary/20 rounded-full">
                       <p className="text-xs font-medium text-primary">Scope 1, 2, 3 + societal and human</p>
                     </div>
