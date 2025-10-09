@@ -72,9 +72,11 @@ export const Footer = () => {
               </p>
             <div className="flex items-center space-x-4 text-xs text-primary-foreground/60">
               <span>{t('footer.certifications')}</span>
+              <div id="wcb" className="carbonbadge"></div>
             </div>
           </div>
         </div>
+        <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
       </div>
     </footer>
   );
