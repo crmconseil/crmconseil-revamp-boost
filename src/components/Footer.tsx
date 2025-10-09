@@ -1,8 +1,22 @@
 import { Leaf, Mail, Phone } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useEffect } from "react";
 
 export const Footer = () => {
   const { language, t } = useLanguage();
+  
+  useEffect(() => {
+    // Load the carbon badge script dynamically
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/website-carbon-badges@1.1.3/b.min.js';
+    script.defer = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      // Cleanup: remove script on unmount
+      document.body.removeChild(script);
+    };
+  }, []);
   
   const getLocalizedPath = (path: string) => {
     if (language === 'en') {
