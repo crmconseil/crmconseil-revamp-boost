@@ -386,31 +386,19 @@ const ServicesEN = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Scope 1 */}
+            {/* Carbon Assessment® - Scope 1, 2 and/or 3 */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Globe className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Assessment - Direct Emissions - Scope 1</h3>
+                <h3 className="text-xl font-bold">Carbon Assessment® - Scope 1, 2 and/or 3</h3>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                The Scope 1 Assessment evaluates your direct greenhouse gas emissions from your energy consumption and own activities. It highlights your efficiency levers, proposes quantified energy optimization scenarios and supports implementation. Result: direct measurable energy savings, clear and rapid ROI, and immediate reduction of your impacts.
+                The CSR GHG Assessment analyzes all your direct and indirect emissions and integrates double materiality to measure both the climate risks facing your company and the impacts you generate. The result: significant reduction of your carbon footprint, new markets, strategic repositioning and enhanced attractiveness to talents and investors.
               </p>
             </div>
 
-            {/* Scope 1,2,3 */}
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Leaf className="w-6 h-6 text-sustainable" />
-                </div>
-                <h3 className="text-xl font-bold">GHG Assessment - Scope 1, 2, 3</h3>
-              </div>
-              <p className="text-muted-foreground text-justify mb-4">
-                The CSR GHG assessment analyzes your direct and indirect emissions across the entire value chain, while evaluating societal impacts on your employees, customers and society. It integrates double materiality: climate risks suffered by your company and the impacts it generates on the environment and society. Results: sustainable transformation, opening of new markets, deep reduction of your carbon impact, competitive repositioning of your company, and enhanced attractiveness to employees and investors.
-              </p>
-            </div>
 
             {/* Biodiversité */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
