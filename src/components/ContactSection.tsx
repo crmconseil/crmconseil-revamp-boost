@@ -156,18 +156,6 @@ export const ContactSection = () => {
 
               <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
                 <div className="flex items-center space-x-4">
-                  <div className="bg-commercial-light p-3 rounded-lg group-hover:scale-110 transition-transform">
-                    <MapPin className="text-commercial" size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">{t('contact.address_label')}</h4>
-                    <p className="text-muted-foreground">{t('contact.address_value')}</p>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
-                <div className="flex items-center space-x-4">
                   <div className="bg-primary-light p-3 rounded-lg group-hover:scale-110 transition-transform">
                     <MapPin className="text-primary" size={24} />
                   </div>
