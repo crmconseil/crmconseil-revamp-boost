@@ -22,7 +22,7 @@ export const HeroSection = () => {
 
   return (
     <section 
-      className="relative pt-16 md:pt-20 min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative pt-12 md:pt-16 min-h-screen flex items-center justify-center overflow-hidden"
       role="banner"
       aria-label="Section principale - Performance commerciale durable"
     >
@@ -38,7 +38,7 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center">
-        <header className="max-w-4xl mx-auto py-4 md:py-0">
+        <header className="max-w-4xl mx-auto">
           {/* Title */}
           <h1 className="text-2xl sm:text-3xl md:text-[2.75rem] lg:text-5xl font-bold text-white mb-6 md:mb-8 leading-tight px-2">
             <span className="block mb-1 md:mb-2">
