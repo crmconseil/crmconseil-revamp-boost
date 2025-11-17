@@ -385,31 +385,19 @@ const Services = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Bilan - Emissions Directes - Scope 1 */}
+            {/* Bilan Carbone® - Scope 1, 2 et/ou 3 */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Globe className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Bilan - Emissions Directes - Scope 1</h3>
+                <h3 className="text-xl font-bold">Bilan Carbone® - Scope 1, 2 et/ou 3</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Le Bilan Scope 1 évalue vos émissions directes de gaz à effet de serre issues de vos consommations énergétiques et activités propres. Il met en lumière vos leviers d'efficacité, propose des scénarios d'optimisation énergétiques chiffrés et accompagne la mise en œuvre. Résultat : économies énergétiques mesurables directes, ROI clair et rapide, et réduction immédiate de vos impacts.
+                  Le Bilan GES RSE analyse l'ensemble de vos émissions directes et indirectes et intègre la double matérialité pour mesurer à la fois les risques climatiques qui pèsent sur votre entreprise et les impacts que vous générez. À la clé : réduction significative de votre empreinte carbone, nouveaux marchés, repositionnement stratégique et attractivité renforcée auprès des talents et des investisseurs.
                 </p>
             </div>
 
-            {/* Bilan RSE Complet – Scope 1, 2, 3 */}
-            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Leaf className="w-6 h-6 text-sustainable" />
-                </div>
-                <h3 className="text-xl font-bold">Bilan GES - Scope 1, 2, 3</h3>
-              </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  Le bilan GES RSE analyse vos émissions directes et indirectes sur l'ensemble de la chaîne de valeur, tout en évaluant les impacts sociétaux sur vos employés, vos clients et la société. Il intègre la double matérialité : les risques climatiques subis par votre entreprise et les impacts qu'elle génère sur l'environnement et la société. Résultats : transformation durable, ouverture de nouveaux marchés, réduction profonde de votre impact carbone, repositionnement compétitif de votre entreprise, et attractivité renforcée vis-à-vis d'employés et investisseurs.
-                </p>
-            </div>
 
             {/* Bilan Impact Biodiversité */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
