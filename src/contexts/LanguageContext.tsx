@@ -36,13 +36,13 @@ const translations = {
     // Hero Section - Optimized with keywords
     'hero.title': 'Votre partenaire pour une',
     'hero.title_highlight': 'Performance commerciale durable & Stratégie RSE',
-    'hero.subtitle': 'Accompagnement en optimisation commerciale, développement commercial, génération de leads et stratégie RSE. Expert bilan GES pour startups innovantes et PME en quête de développement durable et performance commerciale.',
+    'hero.subtitle': 'Et si vos engagements durables devenaient l\'accélérateur de vos résultats commerciaux?',
     'hero.commercial_performance': 'Optimisation Commerciale',
     'hero.sustainable_development': 'Stratégie RSE & Bilan GES',
     
     // Services Section - Optimized with keywords
-    'services.title': 'Nos Services d\'Optimisation Commerciale & Stratégie RSE',
-    'services.subtitle': 'Solutions expertes en développement commercial, génération de leads, bilan GES et innovation durable pour startups',
+    'services.title': 'Nos Services',
+    'services.subtitle': 'CRM Conseil unit optimisation commerciale et transition durable pour redéfinir avec ses clients, startups, TPEs et PMEs, leur stratégie de croissance responsable.\nEn transformant vos actions RSE en véritables leviers de performance, votre entreprise gagne en compétitivité et durabilité.\nFaisons de votre engagement un atout commercial et stratégique.',
     'services.commercial_optimization': 'Optimisation commerciale & Business Development',
     'services.rse_support': 'Stratégie RSE, Bilan GES & Développement Durable',
     'services.targeting_title': 'Ciblage / Génération de leads',
