@@ -22,7 +22,7 @@ export const HeroSection = () => {
 
   return (
     <section 
-      className="relative pt-12 md:pt-16 min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative pt-12 md:pt-16 min-h-[85vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden"
       role="banner"
       aria-label="Section principale - Performance commerciale durable"
     >
