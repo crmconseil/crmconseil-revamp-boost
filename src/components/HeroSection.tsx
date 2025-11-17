@@ -41,13 +41,20 @@ export const HeroSection = () => {
         <header className="max-w-4xl mx-auto">
           {/* Tagline */}
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            {t('hero.title')}{" "}
-            <span className="text-primary-glow">{t('hero.title_highlight')}</span>
+            <span className="block">{t('hero.title')}</span>
+            <span className="block">
+              {t('hero.title_highlight')}{" "}
+              <span className="text-sustainable-light">{t('hero.title_highlight_sustainable')}</span>
+            </span>
           </h1>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed">
             {t('hero.subtitle')}
+          </p>
+          
+          <p className="text-base md:text-lg text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
+            {t('hero.description')}
           </p>
 
           {/* Value Props */}

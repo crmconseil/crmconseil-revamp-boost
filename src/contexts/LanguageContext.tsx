@@ -35,14 +35,16 @@ const translations = {
     
     // Hero Section - Optimized with keywords
     'hero.title': 'Votre partenaire pour une',
-    'hero.title_highlight': 'Performance commerciale durable & Stratégie RSE',
-    'hero.subtitle': 'Et si vos engagements durables devenaient l\'accélérateur de vos résultats commerciaux?',
+    'hero.title_highlight': 'Optimisation commerciale',
+    'hero.title_highlight_sustainable': 'Durable',
+    'hero.subtitle': 'Et si vos engagements RSE devenaient l\'accélérateur de vos résultats commerciaux?',
+    'hero.description': 'CRM Conseil unit optimisation commerciale et transition durable pour redéfinir avec ses clients, startups, TPEs et PMEs, leur stratégie de croissance responsable. En transformant vos actions RSE en véritables leviers de performance, votre entreprise gagne en compétitivité et résultats chiffrés. Faisons de votre engagement un atout commercial et stratégique.',
     'hero.commercial_performance': 'Optimisation Commerciale',
     'hero.sustainable_development': 'Stratégie RSE & Bilan GES',
     
     // Services Section - Optimized with keywords
     'services.title': 'Nos Services',
-    'services.subtitle': 'CRM Conseil unit optimisation commerciale et transition durable pour redéfinir avec ses clients, startups, TPEs et PMEs, leur stratégie de croissance responsable.\nEn transformant vos actions RSE en véritables leviers de performance, votre entreprise gagne en compétitivité et durabilité.\nFaisons de votre engagement un atout commercial et stratégique.',
+    'services.subtitle': '',
     'services.commercial_optimization': 'Optimisation commerciale & Business Development',
     'services.rse_support': 'Stratégie RSE, Bilan GES & Développement Durable',
     'services.targeting_title': 'Ciblage / Génération de leads',
@@ -184,14 +186,16 @@ const translations = {
     
     // Hero Section - Optimized with keywords
     'hero.title': 'Your partner for',
-    'hero.title_highlight': 'Sustainable Commercial Performance & CSR Strategy',
-    'hero.subtitle': 'Expert in commercial optimization, business development, lead generation and CSR strategy. GHG assessment expertise for innovative startups and SMEs seeking sustainable development and commercial performance.',
+    'hero.title_highlight': 'Sustainable Commercial Optimization',
+    'hero.title_highlight_sustainable': 'Sustainable',
+    'hero.subtitle': 'What if your CSR commitments became the accelerator for your business results?',
+    'hero.description': 'CRM Conseil combines commercial optimization and sustainable transition to redefine with its clients, startups, VSEs and SMEs, their responsible growth strategy. By transforming your CSR actions into real performance drivers, your company gains in competitiveness and measurable results. Let\'s make your commitment a commercial and strategic asset.',
     'hero.commercial_performance': 'Commercial Optimization',
     'hero.sustainable_development': 'CSR Strategy & GHG Assessment',
     
     // Services Section - Optimized with keywords
-    'services.title': 'Our Commercial Optimization & CSR Strategy Services',
-    'services.subtitle': 'Expert solutions in business development, lead generation, GHG assessment and sustainable innovation for startups',
+    'services.title': 'Our Services',
+    'services.subtitle': '',
     'services.commercial_optimization': 'Commercial optimization & Business Development',
     'services.rse_support': 'CSR Strategy, GHG Assessment & Sustainable Development',
     'services.targeting_title': 'Targeting / Lead Generation',
