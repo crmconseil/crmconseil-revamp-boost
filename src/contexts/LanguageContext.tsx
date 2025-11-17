@@ -34,17 +34,15 @@ const translations = {
     'common.learn_more_services': 'En savoir plus sur nos services',
     
     // Hero Section - Optimized with keywords
-    'hero.title': 'Votre partenaire pour une',
-    'hero.title_highlight': 'Optimisation commerciale',
-    'hero.title_highlight_sustainable': 'Durable',
-    'hero.subtitle': 'Et si vos engagements RSE devenaient l\'accélérateur de vos résultats commerciaux?',
+    'hero.title': 'Et si vos engagements de Durabilité devenaient l\'accélérateur de vos résultats commerciaux',
+    'hero.subtitle': '',
     'hero.description': 'CRM Conseil unit optimisation commerciale et transition durable pour redéfinir avec ses clients, startups, TPEs et PMEs, leur stratégie de croissance responsable.\nTransformons vos actions RSE en véritables leviers de performance et compétitivité.',
     'hero.commercial_performance': 'Optimisation Commerciale',
     'hero.sustainable_development': 'Stratégie RSE & Bilan GES',
     
     // Services Section - Optimized with keywords
     'services.title': 'Nos Services',
-    'services.subtitle': '',
+    'services.subtitle': 'Votre partenaire pour une Optimisation commerciale Durable',
     'services.commercial_optimization': 'Optimisation commerciale',
     'services.rse_support': 'Transition durable / RSE',
     'services.targeting_title': 'Démarrage / Acquisition clients',
@@ -185,17 +183,15 @@ const translations = {
     'common.learn_more_services': 'Learn more about our services',
     
     // Hero Section - Optimized with keywords
-    'hero.title': 'Your partner for',
-    'hero.title_highlight': 'Sustainable Commercial Optimization',
-    'hero.title_highlight_sustainable': 'Sustainable',
-    'hero.subtitle': 'What if your CSR commitments became the accelerator for your business results?',
+    'hero.title': 'What if your Sustainability commitments became the accelerator for your business results',
+    'hero.subtitle': '',
     'hero.description': 'CRM Conseil combines commercial optimization and sustainable transition to redefine with its clients, startups, VSEs and SMEs, their responsible growth strategy.\nLet\'s transform your CSR actions into real performance and competitiveness drivers.',
     'hero.commercial_performance': 'Commercial Optimization',
     'hero.sustainable_development': 'CSR Strategy & GHG Assessment',
     
     // Services Section - Optimized with keywords
     'services.title': 'Our Services',
-    'services.subtitle': '',
+    'services.subtitle': 'Your partner for Sustainable Commercial Optimization',
     'services.commercial_optimization': 'Commercial Optimization',
     'services.rse_support': 'Sustainable Transition / CSR',
     'services.targeting_title': 'Startup / Customer Acquisition',

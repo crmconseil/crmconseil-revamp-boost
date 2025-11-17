@@ -39,19 +39,17 @@ export const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <header className="max-w-4xl mx-auto">
-          {/* Tagline */}
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            <span className="block">{t('hero.title')}</span>
+          {/* Title */}
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             <span className="block">
-              {t('hero.title_highlight')}{" "}
-              <span className="text-sustainable-light">{t('hero.title_highlight_sustainable')}</span>
+              Et si vos engagements de{" "}
+              <span className="text-sustainable-light">Durabilité</span>
+            </span>
+            <span className="block">
+              devenaient l'accélérateur de vos{" "}
+              <span className="text-sustainable-light">résultats commerciaux</span>
             </span>
           </h1>
-
-          {/* Description */}
-          <p className="text-lg md:text-xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed">
-            {t('hero.subtitle')}
-          </p>
           
           <p className="text-base md:text-lg text-white/85 mb-8 max-w-3xl mx-auto leading-relaxed">
             {t('hero.description')}
