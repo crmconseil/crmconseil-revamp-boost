@@ -127,10 +127,10 @@ const Services = () => {
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <TrendingUp className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Optimisation des process commerciaux</h3>
+                <h3 className="text-xl font-bold">Optimisation des process et supports commerciaux</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Analyse et restructuration de vos processus de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation des argumentaires et méthodes de prospection pour maximiser votre efficacité commerciale.
+                  Analyse et restructuration de vos processus et supports de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation de la qualification des leads et opportunités pour maximiser votre efficacité commerciale.
                 </p>
             </div>
 
@@ -143,7 +143,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Choix et Configuration d'outils de pilotage (CRM/ERP)</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
+                  Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial. Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés.
                 </p>
             </div>
 
@@ -153,10 +153,10 @@ const Services = () => {
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Users className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Générations de leads B2B</h3>
+                <h3 className="text-xl font-bold">Génération de leads B2B externalisée</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Stratégies de prospection multicanales, qualification de leads, mise en place de campagnes ciblées et accompagnement dans la génération de prospects qualifiés pour développer votre portefeuille clients.
+                  Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et plus de temps à signer.
                 </p>
             </div>
 
@@ -166,10 +166,10 @@ const Services = () => {
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Target className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Valorisation commerciale pour levée de fonds</h3>
+                <h3 className="text-xl font-bold">Préparation à la levée de fonds</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Préparation de pitchs investisseurs, valorisation de votre modèle économique, coaching pour les présentations et optimisation de votre approche commerciale pour séduire les investisseurs.
+                  Boostez vos chances de convaincre investisseurs, fonds et family offices grâce à un pitch deck ultra-design, une valorisation solide de vos KPIs et de votre modèle, un discours dirigeant percutant et des accroches investisseurs personnalisées. Tout ce qu'il faut pour transformer l'intérêt… en investissement.
                 </p>
             </div>
           </div>
@@ -192,7 +192,7 @@ const Services = () => {
                       <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
                         <Target className="w-10 h-10 text-white" />
                       </div>
-                      <h4 className="text-2xl font-bold text-primary mb-2">Phase 1 – Ciblage / Acquisition</h4>
+                      <h4 className="text-2xl font-bold text-primary mb-2">Ciblage / Acquisition 1ers clients</h4>
                       <div className="inline-block px-4 py-2 bg-primary/20 rounded-full">
                         <p className="text-sm font-medium text-primary">Startups early stage</p>
                       </div>
@@ -209,7 +209,7 @@ const Services = () => {
                           </div>
                           <div>
                             <div className="text-3xl font-bold text-primary mb-1">+30 à +50%</div>
-                            <p className="text-sm text-muted-foreground">d'augmentation du taux de conversion prospects → clients</p>
+                            <p className="text-sm text-muted-foreground">d'augmentation du taux de conversion</p>
                           </div>
                         </div>
                       </div>
@@ -258,7 +258,7 @@ const Services = () => {
                       <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-sustainable to-sustainable/80 rounded-2xl shadow-lg mb-4">
                         <Rocket className="w-10 h-10 text-white" />
                       </div>
-                      <h4 className="text-2xl font-bold text-sustainable mb-2">Phase 2 – Accélération / Valorisation</h4>
+                      <h4 className="text-2xl font-bold text-sustainable mb-2">Accélération / Levée de fonds</h4>
                       <div className="inline-block px-4 py-2 bg-sustainable/20 rounded-full">
                         <p className="text-sm font-medium text-sustainable">Startups & PME établies</p>
                       </div>
