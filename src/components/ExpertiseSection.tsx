@@ -117,6 +117,20 @@ export const ExpertiseSection = () => {
                 <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
+                      <h4 className="font-semibold text-lg mb-2">{t('expertise.ademe_title')}</h4>
+                      <p className="text-muted-foreground text-sm">
+                        {t('expertise.ademe_desc')}
+                      </p>
+                    </div>
+                    <Badge variant="outline" className="ml-4">
+                      ADEME
+                    </Badge>
+                  </div>
+                </Card>
+
+                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+                  <div className="flex items-start justify-between">
+                    <div className="flex-1">
                       <h4 className="font-semibold text-lg mb-2">{t('expertise.sales_title')}</h4>
                       <p className="text-muted-foreground text-sm">
                         {t('expertise.sales_desc')}
