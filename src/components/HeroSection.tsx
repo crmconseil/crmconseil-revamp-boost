@@ -56,7 +56,7 @@ export const HeroSection = () => {
           </p>
 
           {/* Value Props */}
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 md:gap-6 px-2">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 px-2">
             <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-3 sm:px-4 py-2 rounded-full text-sm sm:text-base">
               <TrendingUp className="text-commercial-light" size={18} />
               <span className="text-white font-medium">{t('hero.commercial_performance')}</span>
