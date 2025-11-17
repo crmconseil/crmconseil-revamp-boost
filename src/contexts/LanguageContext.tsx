@@ -34,7 +34,7 @@ const translations = {
     'common.learn_more_services': 'En savoir plus sur nos services',
     
     // Hero Section - Optimized with keywords
-    'hero.title': 'Et si vos engagements de Durabilité devenaient l\'accélérateur de vos résultats commerciaux',
+    'hero.title': 'Et si vos engagements de Durabilité devenaient l\'accélérateur de vos résultats commerciaux ?',
     'hero.subtitle': '',
     'hero.description': 'CRM Conseil unit optimisation commerciale et transition durable pour redéfinir avec ses clients, startups, TPEs et PMEs, leur stratégie de croissance responsable.\nTransformons vos actions RSE en véritables leviers de performance et compétitivité.',
     'hero.commercial_performance': 'Optimisation Commerciale',
@@ -183,7 +183,7 @@ const translations = {
     'common.learn_more_services': 'Learn more about our services',
     
     // Hero Section - Optimized with keywords
-    'hero.title': 'What if your Sustainability commitments became the accelerator for your business results',
+    'hero.title': 'What if your Sustainability commitments became the accelerator for your business results?',
     'hero.subtitle': '',
     'hero.description': 'CRM Conseil combines commercial optimization and sustainable transition to redefine with its clients, startups, VSEs and SMEs, their responsible growth strategy.\nLet\'s transform your CSR actions into real performance and competitiveness drivers.',
     'hero.commercial_performance': 'Commercial Optimization',
