@@ -464,7 +464,7 @@ const ServicesEN = () => {
                 </div>
               </div>
               
-              {/* Colonne 2 - Stratégie RSE complète */}
+              {/* Colonne 2 - Formation et accompagnement équipes */}
               <div className="relative bg-gradient-to-br from-primary/5 via-primary/10 to-primary/20 rounded-2xl p-8 border-2 border-primary/30 shadow-xl overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full -ml-12 -mb-12"></div>
@@ -472,11 +472,11 @@ const ServicesEN = () => {
                 <div className="relative z-10">
                   <div className="text-center mb-8">
                     <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
-                      <Leaf className="w-10 h-10 text-white" />
+                      <Users className="w-10 h-10 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold text-primary mb-2">GHG Assessment - Complete CSR Strategy</h4>
+                    <h4 className="text-xl font-bold text-primary mb-2">Team Training & Sustainable Practices Support</h4>
                     <div className="inline-block px-3 py-1 bg-primary/20 rounded-full">
-                      <p className="text-xs font-medium text-primary">Scope 1, 2, 3 + societal and human</p>
+                      <p className="text-xs font-medium text-primary">Engagement & Training</p>
                     </div>
                   </div>
                   
@@ -484,39 +484,39 @@ const ServicesEN = () => {
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">+10 to 30%</div>
-                        <p className="text-xs text-muted-foreground">additional revenue on new markets/clients sensitive to CSR criteria</p>
+                        <div className="text-2xl font-bold text-primary mb-1">+40%</div>
+                        <p className="text-xs text-muted-foreground">employee engagement on CSR issues</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">+30%</div>
-                        <p className="text-xs text-muted-foreground">fundraising value capture</p>
+                        <div className="text-2xl font-bold text-primary mb-1">-25%</div>
+                        <p className="text-xs text-muted-foreground">turnover through an engaged corporate culture</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">+25 to 50%</div>
-                        <p className="text-xs text-muted-foreground">client and employee loyalty</p>
+                        <div className="text-2xl font-bold text-primary mb-1">+15%</div>
+                        <p className="text-xs text-muted-foreground">productivity through adoption of sustainable best practices</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">Mixed ROI</div>
-                        <p className="text-xs text-muted-foreground">10x to 20x the investment</p>
+                        <div className="text-2xl font-bold text-primary mb-1">Transformation</div>
+                        <p className="text-xs text-muted-foreground">deeply rooted and sustainable cultural change throughout the organization</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               
-              {/* Colonne 3 - Bilan Impact Biodiversité */}
+              {/* Colonne 3 - Valorisation commerciale RSE */}
               <div className="relative bg-gradient-to-br from-accent/5 via-accent/10 to-accent/20 rounded-2xl p-8 border-2 border-accent/30 shadow-xl overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full -mr-16 -mt-16"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/5 rounded-full -ml-12 -mb-12"></div>
@@ -524,11 +524,11 @@ const ServicesEN = () => {
                 <div className="relative z-10">
                   <div className="text-center mb-8">
                     <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-accent to-accent/80 rounded-2xl shadow-lg mb-4">
-                      <Sparkles className="w-10 h-10 text-white" />
+                      <Award className="w-10 h-10 text-white" />
                     </div>
-                    <h4 className="text-xl font-bold text-accent mb-2">{t('services.biodiversity_title')}</h4>
+                    <h4 className="text-xl font-bold text-accent mb-2">CSR Approach Commercial Valorization</h4>
                     <div className="inline-block px-3 py-1 bg-accent/20 rounded-full">
-                      <p className="text-xs font-medium text-accent">Ecosystems</p>
+                      <p className="text-xs font-medium text-accent">Business impact</p>
                     </div>
                   </div>
                   
@@ -536,32 +536,32 @@ const ServicesEN = () => {
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">-20 to -30%</div>
-                        <p className="text-xs text-muted-foreground">reduction in financial risks related to supply chains</p>
+                        <div className="text-2xl font-bold text-accent mb-1">+20 to 35%</div>
+                        <p className="text-xs text-muted-foreground">commercial growth through access to CSR-sensitive markets</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">10 to 25%</div>
-                        <p className="text-xs text-muted-foreground">additional billable on differentiated products/services through biodiversity criteria integration</p>
+                        <div className="text-2xl font-bold text-accent mb-1">+30%</div>
+                        <p className="text-xs text-muted-foreground">valuation in fundraising through strong CSR positioning</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">+40%</div>
-                        <p className="text-xs text-muted-foreground">increased positive image with stakeholders (Deloitte study)</p>
+                        <div className="text-2xl font-bold text-accent mb-1">Enhanced image</div>
+                        <p className="text-xs text-muted-foreground">Competitive differentiation and employer brand attractiveness</p>
                       </div>
                     </div>
                     
                     <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
                       <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                       <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">Mixed ROI</div>
-                        <p className="text-xs text-muted-foreground">5x to 10x the investment</p>
+                        <div className="text-2xl font-bold text-accent mb-1">Resilience</div>
+                        <p className="text-xs text-muted-foreground">Better access to financing and anticipated regulatory compliance</p>
                       </div>
                     </div>
                   </div>
