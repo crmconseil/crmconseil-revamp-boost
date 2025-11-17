@@ -40,7 +40,7 @@ export const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center">
         <header className="max-w-4xl mx-auto">
           {/* Title */}
-          <h1 className="text-2xl sm:text-3xl md:text-[2.75rem] lg:text-5xl font-bold text-white mb-6 md:mb-8 leading-tight px-2">
+          <h1 className="text-2xl sm:text-3xl md:text-[2.75rem] lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight px-2">
             <span className="block mb-1 md:mb-2">
               Et si vos engagements de{" "}
               <span className="text-sustainable-light">Durabilité</span>
@@ -51,7 +51,7 @@ export const HeroSection = () => {
             </span>
           </h1>
           
-          <p className="text-sm sm:text-base md:text-lg text-white/85 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed px-2">
+          <p className="text-sm sm:text-base md:text-lg text-white/85 mb-5 md:mb-6 max-w-3xl mx-auto leading-relaxed px-2">
             {t('hero.description')}
           </p>
 
