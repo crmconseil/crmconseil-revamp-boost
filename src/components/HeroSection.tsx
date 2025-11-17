@@ -58,7 +58,7 @@ export const HeroSection = () => {
           </p>
 
           {/* Value Props */}
-          <div className="flex flex-wrap justify-center gap-6 mb-12">
+          <div className="flex flex-wrap justify-center gap-6">
             <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
               <TrendingUp className="text-commercial-light" size={20} />
               <span className="text-white font-medium">{t('hero.commercial_performance')}</span>
@@ -68,29 +68,6 @@ export const HeroSection = () => {
               <span className="text-white font-medium">{t('hero.sustainable_development')}</span>
             </div>
           </div>
-
-          {/* CTA Buttons */}
-          <nav className="flex flex-col sm:flex-row gap-4 justify-center" aria-label="Actions principales">
-            <Button 
-              variant="hero" 
-              size="lg"
-              onClick={scrollToServices}
-              className="group"
-              aria-label="Découvrir nos services de conseil commercial et RSE"
-            >
-              {t('common.discover_services')}
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-            </Button>
-            <Button 
-              variant="outline-sustainable" 
-              size="lg"
-              onClick={() => window.location.href = getLocalizedPath('/contact')}
-              className="bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white hover:text-primary"
-              aria-label="Contacter CRM Conseil pour un accompagnement personnalisé"
-            >
-              {t('common.contact_us')}
-            </Button>
-          </nav>
         </header>
       </div>
 
