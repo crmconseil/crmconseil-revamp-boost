@@ -160,7 +160,7 @@ const translations = {
     'portfolio.healthtech_desc': 'Technologies médicales et santé digitale durable',
     'portfolio.digital': 'Digital & Innovation Tech',
     'portfolio.digital_desc': 'Solutions numériques et transformation digitale responsable',
-    'portfolio.partners': 'Nos Partenaires Innovation',
+    'portfolio.partners': 'Nos partenaires',
   },
   en: {
     // Navigation
@@ -302,7 +302,7 @@ const translations = {
     'portfolio.healthtech_desc': 'Medical technologies and sustainable digital health',
     'portfolio.digital': 'Digital & Innovation Tech',
     'portfolio.digital_desc': 'Digital solutions and responsible digital transformation',
-    'portfolio.partners': 'Our Innovation Partners',
+    'portfolio.partners': 'Our partners',
 
     // About page
     'about.page_title': 'About CRM Conseil - Commercial Performance & CSR Expert | Sabrina Broggini',
