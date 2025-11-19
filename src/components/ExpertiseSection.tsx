@@ -59,7 +59,7 @@ export const ExpertiseSection = () => {
                   <p className="text-white/90">{t('expertise.commercial_experience')}</p>
                 </div>
               </div>
-              <p className="text-white/90 mb-4">
+              <p className="text-white/90 mb-4 whitespace-pre-line">
                 {t('expertise.commercial_desc')}
               </p>
             </Card>
@@ -74,7 +74,7 @@ export const ExpertiseSection = () => {
                   <p className="text-white/90">{t('expertise.consulting_experience')}</p>
                 </div>
               </div>
-              <p className="text-white/90 mb-4">
+              <p className="text-white/90 mb-4 whitespace-pre-line">
                 {t('expertise.consulting_desc')}
               </p>
             </Card>
