@@ -40,6 +40,14 @@ import monacoTechLogo from "@/assets/logos/monacotech.png";
 import poleMerLogo from "@/assets/logos/pole-mer.png";
 import terresAzurLogo from "@/assets/logos/terres-azur.png";
 import metropoleNiceLogo from "@/assets/logos/metropole-nice.png";
+import abcLogo from "@/assets/logos/abc.png";
+import ademeLogo from "@/assets/logos/ademe.png";
+import aktantisLogo from "@/assets/logos/aktantis.png";
+import azupLogo from "@/assets/logos/azup.jpg";
+import innovagrasseLogo from "@/assets/logos/innovagrasse.jpg";
+import innovinLogo from "@/assets/logos/innovin.png";
+import irceLogo from "@/assets/logos/irce.jpg";
+import mteLogo from "@/assets/logos/mte.png";
 
 export const PortfolioSection = () => {
   const { t } = useLanguage();
@@ -85,7 +93,15 @@ export const PortfolioSection = () => {
     { name: "MonacoTech", type: "Startup Program" },
     { name: "Pôle Mer", type: "Financement" },
     { name: "Initiative Terres d'Azur Grasse", type: "Hub Innovation" },
-    { name: "Innovation Hub Nice Côte d'Azur", type: "Collectivité" }
+    { name: "Innovation Hub Nice Côte d'Azur", type: "Collectivité" },
+    { name: "ABC", type: "Partenaire" },
+    { name: "ADEME", type: "Partenaire" },
+    { name: "Aktantis", type: "Partenaire" },
+    { name: "AZUP", type: "Partenaire" },
+    { name: "Innova Grasse", type: "Partenaire" },
+    { name: "Innovin", type: "Partenaire" },
+    { name: "IRCE", type: "Partenaire" },
+    { name: "MTE", type: "Partenaire" }
   ];
 
   return (
@@ -210,7 +226,7 @@ export const PortfolioSection = () => {
           </h3>
           
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-            <div className="flex items-center justify-center gap-8 flex-wrap">
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-6 items-center justify-items-center">
               {partners.map((partner, index) => {
                 // Map partner names to imported logos
                 const getPartnerLogo = (name: string) => {
@@ -227,6 +243,22 @@ export const PortfolioSection = () => {
                       return terresAzurLogo;
                     case "Innovation Hub Nice Côte d'Azur":
                       return metropoleNiceLogo;
+                    case "ABC":
+                      return abcLogo;
+                    case "ADEME":
+                      return ademeLogo;
+                    case "Aktantis":
+                      return aktantisLogo;
+                    case "AZUP":
+                      return azupLogo;
+                    case "Innova Grasse":
+                      return innovagrasseLogo;
+                    case "Innovin":
+                      return innovinLogo;
+                    case "IRCE":
+                      return irceLogo;
+                    case "MTE":
+                      return mteLogo;
                     default:
                       return null;
                   }
@@ -235,7 +267,7 @@ export const PortfolioSection = () => {
                 const logoSrc = getPartnerLogo(partner.name);
                 
                 return (
-                  <div key={index} className="flex items-center justify-center h-16 w-32 hover:scale-110 transition-transform group">
+                  <div key={index} className="flex items-center justify-center h-16 w-24 hover:scale-110 transition-transform group">
                     {logoSrc ? (
                       <img 
                         src={logoSrc} 
