@@ -56,24 +56,31 @@ export const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString()
+      const { supabase } = await import("@/integrations/supabase/client");
+      
+      const response = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name: formData.get('name'),
+          email: formData.get('email'),
+          company: formData.get('company'),
+          message: formData.get('message'),
+          language: document.documentElement.lang || 'fr'
+        }
       });
 
-      if (response.ok) {
-        toast({
-          title: t('contact.success_toast_title'),
-          description: t('contact.success_toast_description'),
-          variant: "default",
-        });
-        (e.target as HTMLFormElement).reset();
-        setFormErrors({});
-      } else {
-        throw new Error('Network response was not ok');
+      if (response.error) {
+        throw response.error;
       }
+
+      toast({
+        title: t('contact.success_toast_title'),
+        description: t('contact.success_toast_description'),
+        variant: "default",
+      });
+      (e.target as HTMLFormElement).reset();
+      setFormErrors({});
     } catch (error) {
+      console.error('Error sending contact form:', error);
       toast({
         title: t('contact.error_toast_title'),
         description: t('contact.error_toast_description'),

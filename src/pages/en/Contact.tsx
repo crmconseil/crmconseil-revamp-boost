@@ -50,24 +50,34 @@ const ContactEN = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString()
+      const { supabase } = await import("@/integrations/supabase/client");
+      
+      const name = `${formData.get('firstName')} ${formData.get('lastName')}`;
+      
+      const response = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          name,
+          email: formData.get('email'),
+          company: formData.get('company'),
+          subject: formData.get('subject'),
+          message: formData.get('message'),
+          language: 'en'
+        }
       });
 
-      if (response.ok) {
-        toast({
-          title: "Message sent successfully!",
-          description: "Thank you for your message. We will respond to you as soon as possible.",
-          variant: "default",
-        });
-        (e.target as HTMLFormElement).reset();
-        setFormErrors({});
-      } else {
-        throw new Error('Network response was not ok');
+      if (response.error) {
+        throw response.error;
       }
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your message. We will respond to you as soon as possible.",
+        variant: "default",
+      });
+      (e.target as HTMLFormElement).reset();
+      setFormErrors({});
     } catch (error) {
+      console.error('Error sending contact form:', error);
       toast({
         title: "Submission error",
         description: "An error occurred while sending your message. Please try again or contact us directly.",
