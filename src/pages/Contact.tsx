@@ -23,6 +23,7 @@ const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formErrors, setFormErrors] = useState<{[key: string]: boolean}>({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateForm = (formData: FormData): boolean => {
     const errors: {[key: string]: boolean} = {};
@@ -79,6 +80,7 @@ const Contact = () => {
       });
       (e.target as HTMLFormElement).reset();
       setFormErrors({});
+      setIsSubmitted(true);
     } catch (error) {
       console.error('Error sending contact form:', error);
       toast({
@@ -222,112 +224,133 @@ const Contact = () => {
 
             {/* Contact Form */}
             <Card className="p-8 shadow-card-sustainable">
-              <form 
-                name="contact-fr" 
-                method="POST" 
-                data-netlify="true"
-                onSubmit={handleSubmit}
-                className="space-y-6" 
-                aria-label="Formulaire de contact"
-              >
-                <input type="hidden" name="form-name" value="contact-fr" />
-                
-                <div className="grid md:grid-cols-2 gap-4">
+              {isSubmitted ? (
+                <div className="text-center py-12 space-y-4">
+                  <div className="w-16 h-16 bg-gradient-sustainable rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Send className="text-sustainable-foreground" size={32} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Merci, votre message a bien été envoyé.
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Nous reviendrons vers vous sous peu.
+                  </p>
+                  <Button 
+                    onClick={() => setIsSubmitted(false)}
+                    variant="outline"
+                    className="mt-6"
+                  >
+                    Envoyer un autre message
+                  </Button>
+                </div>
+              ) : (
+                <form 
+                  name="contact-fr" 
+                  method="POST" 
+                  data-netlify="true"
+                  onSubmit={handleSubmit}
+                  className="space-y-6" 
+                  aria-label="Formulaire de contact"
+                >
+                  <input type="hidden" name="form-name" value="contact-fr" />
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                        Nom complet *
+                      </label>
+                      <Input
+                        id="name"
+                        name="name"
+                        type="text"
+                        required
+                        placeholder="Votre nom"
+                        className={`w-full ${formErrors.name ? 'border-destructive focus-visible:ring-destructive' : ''}`}
+                        aria-describedby="name-required"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                        Email *
+                      </label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        required
+                        placeholder="votre@email.com"
+                        className={`w-full ${formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}`}
+                        aria-describedby="email-required"
+                      />
+                    </div>
+                  </div>
+
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                      Nom complet *
+                    <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+                      Entreprise *
                     </label>
                     <Input
-                      id="name"
-                      name="name"
+                      id="company"
+                      name="company"
                       type="text"
                       required
-                      placeholder="Votre nom"
-                      className={`w-full ${formErrors.name ? 'border-destructive focus-visible:ring-destructive' : ''}`}
-                      aria-describedby="name-required"
+                      placeholder="Nom de votre entreprise"
+                      className={`w-full ${formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}`}
+                      aria-describedby="company-required"
                     />
                   </div>
+
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                      Email *
+                    <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
+                      Service d'intérêt
                     </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
+                    <select
+                      id="service"
+                      name="service"
+                      className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                      aria-label="Sélectionnez le service qui vous intéresse"
+                    >
+                      <option value="">Sélectionnez un service</option>
+                      <option value="commercial">Accompagnement Commercial</option>
+                      <option value="rse-scope1">Bilan RSE - Scope 1</option>
+                      <option value="rse-complet">Bilan RSE Complet - Scope 1,2,3</option>
+                      <option value="biodiversite">Bilan Impact Biodiversité</option>
+                      <option value="autre">Autre / Conseil personnalisé</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                      Message *
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
                       required
-                      placeholder="votre@email.com"
-                      className={`w-full ${formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}`}
-                      aria-describedby="email-required"
+                      placeholder="Décrivez brièvement votre projet ou vos besoins..."
+                      rows={4}
+                      className={`w-full ${formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}`}
+                      aria-describedby="message-required"
                     />
                   </div>
-                </div>
 
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                    Entreprise *
-                  </label>
-                  <Input
-                    id="company"
-                    name="company"
-                    type="text"
-                    required
-                    placeholder="Nom de votre entreprise"
-                    className={`w-full ${formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}`}
-                    aria-describedby="company-required"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
-                    Service d'intérêt
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                    aria-label="Sélectionnez le service qui vous intéresse"
+                  <Button 
+                    type="submit" 
+                    variant="sustainable" 
+                    size="lg" 
+                    className="w-full group"
+                    disabled={isSubmitting}
+                    aria-label="Envoyer votre message de contact"
                   >
-                    <option value="">Sélectionnez un service</option>
-                    <option value="commercial">Accompagnement Commercial</option>
-                    <option value="rse-scope1">Bilan RSE - Scope 1</option>
-                    <option value="rse-complet">Bilan RSE Complet - Scope 1,2,3</option>
-                    <option value="biodiversite">Bilan Impact Biodiversité</option>
-                    <option value="autre">Autre / Conseil personnalisé</option>
-                  </select>
-                </div>
+                    <Send className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
+                    {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
+                  </Button>
 
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                    Message *
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    required
-                    placeholder="Décrivez brièvement votre projet ou vos besoins..."
-                    rows={4}
-                    className={`w-full ${formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}`}
-                    aria-describedby="message-required"
-                  />
-                </div>
-
-                <Button 
-                  type="submit" 
-                  variant="sustainable" 
-                  size="lg" 
-                  className="w-full group"
-                  disabled={isSubmitting}
-                  aria-label="Envoyer votre message de contact"
-                >
-                  <Send className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
-                  {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
-                </Button>
-
-                <p className="text-xs text-muted-foreground text-center">
-                  * Champs obligatoires. Vos données sont traitées de manière confidentielle.
-                </p>
-              </form>
+                  <p className="text-xs text-muted-foreground text-center">
+                    * Champs obligatoires. Vos données sont traitées de manière confidentielle.
+                  </p>
+                </form>
+              )}
             </Card>
           </div>
         </div>
