@@ -6,6 +6,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { 
@@ -110,7 +112,7 @@ export const PortfolioSection = () => {
   ];
 
   return (
-    <section id="references" className="relative py-12 overflow-hidden">
+    <section id="references" className="relative py-12 pb-6 overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -299,6 +301,8 @@ export const PortfolioSection = () => {
                   );
                 })}
               </CarouselContent>
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
             </Carousel>
           </div>
         </div>
