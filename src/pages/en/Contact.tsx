@@ -17,6 +17,7 @@ const ContactEN = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formErrors, setFormErrors] = useState<{[key: string]: boolean}>({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateForm = (formData: FormData): boolean => {
     const errors: {[key: string]: boolean} = {};
@@ -76,6 +77,7 @@ const ContactEN = () => {
       });
       (e.target as HTMLFormElement).reset();
       setFormErrors({});
+      setIsSubmitted(true);
     } catch (error) {
       console.error('Error sending contact form:', error);
       toast({
@@ -198,94 +200,115 @@ const ContactEN = () => {
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="space-y-6">
-                      <form 
-                        name="contact-en" 
-                        method="POST" 
-                        data-netlify="true"
-                        onSubmit={handleSubmit}
-                        className="space-y-6"
-                      >
-                        <input type="hidden" name="form-name" value="contact-en" />
-                        
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                          <div className="space-y-2">
-                            <Label htmlFor="firstName">First Name *</Label>
-                            <Input 
-                              id="firstName"
-                              name="firstName"
-                              placeholder="Your first name"
-                              required
-                              className={formErrors.firstName ? 'border-destructive focus-visible:ring-destructive' : ''}
-                            />
+                      {isSubmitted ? (
+                        <div className="text-center py-12 space-y-4">
+                          <div className="w-16 h-16 bg-gradient-sustainable rounded-full flex items-center justify-center mx-auto mb-4">
+                            <Send className="text-sustainable-foreground" size={32} />
                           </div>
-                          <div className="space-y-2">
-                            <Label htmlFor="lastName">Last Name *</Label>
-                            <Input 
-                              id="lastName"
-                              name="lastName"
-                              placeholder="Your last name"
-                              required
-                              className={formErrors.lastName ? 'border-destructive focus-visible:ring-destructive' : ''}
-                            />
-                          </div>
+                          <h3 className="text-2xl font-bold text-foreground">
+                            Thank you, your message has been sent.
+                          </h3>
+                          <p className="text-muted-foreground">
+                            We will get back to you shortly.
+                          </p>
+                          <Button 
+                            onClick={() => setIsSubmitted(false)}
+                            variant="outline"
+                            className="mt-6"
+                          >
+                            Send another message
+                          </Button>
                         </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="email">Email *</Label>
-                          <Input 
-                            id="email"
-                            name="email"
-                            type="email" 
-                            placeholder="your.email@example.com"
-                            required
-                            className={formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}
-                          />
-                        </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="company">Company *</Label>
-                          <Input 
-                            id="company"
-                            name="company"
-                            placeholder="Your company name"
-                            required
-                            className={formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}
-                          />
-                        </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="subject">Subject *</Label>
-                          <Input 
-                            id="subject"
-                            name="subject"
-                            placeholder="Subject of your message"
-                            required
-                            className={formErrors.subject ? 'border-destructive focus-visible:ring-destructive' : ''}
-                          />
-                        </div>
-                        
-                        <div className="space-y-2">
-                          <Label htmlFor="message">Message *</Label>
-                          <Textarea 
-                            id="message"
-                            name="message"
-                            placeholder="Describe your project, your needs, your challenges..."
-                            rows={6}
-                            required
-                            className={formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}
-                          />
-                        </div>
-                        
-                        <Button 
-                          type="submit" 
-                          size="lg" 
-                          disabled={isSubmitting}
-                          className="w-full group"
+                      ) : (
+                        <form 
+                          name="contact-en" 
+                          method="POST" 
+                          data-netlify="true"
+                          onSubmit={handleSubmit}
+                          className="space-y-6"
                         >
-                          {isSubmitting ? "Sending..." : "Send Message"}
-                          <Send className="ml-2 h-5 w-5" />
-                        </Button>
-                      </form>
+                          <input type="hidden" name="form-name" value="contact-en" />
+                          
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="space-y-2">
+                              <Label htmlFor="firstName">First Name *</Label>
+                              <Input 
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Your first name"
+                                required
+                                className={formErrors.firstName ? 'border-destructive focus-visible:ring-destructive' : ''}
+                              />
+                            </div>
+                            <div className="space-y-2">
+                              <Label htmlFor="lastName">Last Name *</Label>
+                              <Input 
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Your last name"
+                                required
+                                className={formErrors.lastName ? 'border-destructive focus-visible:ring-destructive' : ''}
+                              />
+                            </div>
+                          </div>
+                          
+                          <div className="space-y-2">
+                            <Label htmlFor="email">Email *</Label>
+                            <Input 
+                              id="email"
+                              name="email"
+                              type="email" 
+                              placeholder="your.email@example.com"
+                              required
+                              className={formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}
+                            />
+                          </div>
+                          
+                          <div className="space-y-2">
+                            <Label htmlFor="company">Company *</Label>
+                            <Input 
+                              id="company"
+                              name="company"
+                              placeholder="Your company name"
+                              required
+                              className={formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}
+                            />
+                          </div>
+                          
+                          <div className="space-y-2">
+                            <Label htmlFor="subject">Subject *</Label>
+                            <Input 
+                              id="subject"
+                              name="subject"
+                              placeholder="Subject of your message"
+                              required
+                              className={formErrors.subject ? 'border-destructive focus-visible:ring-destructive' : ''}
+                            />
+                          </div>
+                          
+                          <div className="space-y-2">
+                            <Label htmlFor="message">Message *</Label>
+                            <Textarea 
+                              id="message"
+                              name="message"
+                              placeholder="Describe your project, your needs, your challenges..."
+                              rows={6}
+                              required
+                              className={formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}
+                            />
+                          </div>
+                          
+                          <Button 
+                            type="submit" 
+                            size="lg" 
+                            disabled={isSubmitting}
+                            className="w-full group"
+                          >
+                            {isSubmitting ? "Sending..." : "Send Message"}
+                            <Send className="ml-2 h-5 w-5" />
+                          </Button>
+                        </form>
+                      )}
                     </CardContent>
                   </Card>
                 </div>

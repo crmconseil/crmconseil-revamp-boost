@@ -23,6 +23,7 @@ export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formErrors, setFormErrors] = useState<{[key: string]: boolean}>({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateForm = (formData: FormData): boolean => {
     const errors: {[key: string]: boolean} = {};
@@ -79,6 +80,7 @@ export const ContactSection = () => {
       });
       (e.target as HTMLFormElement).reset();
       setFormErrors({});
+      setIsSubmitted(true);
     } catch (error) {
       console.error('Error sending contact form:', error);
       toast({
@@ -193,102 +195,123 @@ export const ContactSection = () => {
 
           {/* Contact Form */}
           <Card className="p-8 shadow-card-sustainable">
-            <form 
-              name="contact-homepage" 
-              method="POST" 
-              data-netlify="true"
-              onSubmit={handleSubmit}
-              className="space-y-6"
-            >
-              <input type="hidden" name="form-name" value="contact-homepage" />
-              
-              <div className="grid md:grid-cols-2 gap-4">
+            {isSubmitted ? (
+              <div className="text-center py-12 space-y-4">
+                <div className="w-16 h-16 bg-gradient-sustainable rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Send className="text-sustainable-foreground" size={32} />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground">
+                  Merci, votre message a bien été envoyé.
+                </h3>
+                <p className="text-muted-foreground">
+                  Nous reviendrons vers vous sous peu.
+                </p>
+                <Button 
+                  onClick={() => setIsSubmitted(false)}
+                  variant="outline"
+                  className="mt-6"
+                >
+                  Envoyer un autre message
+                </Button>
+              </div>
+            ) : (
+              <form 
+                name="contact-homepage" 
+                method="POST" 
+                data-netlify="true"
+                onSubmit={handleSubmit}
+                className="space-y-6"
+              >
+                <input type="hidden" name="form-name" value="contact-homepage" />
+                
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                      {t('contact.form_full_name')}
+                    </label>
+                    <Input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      placeholder={t('contact.form_name_placeholder')}
+                      className={`w-full ${formErrors.name ? 'border-destructive focus-visible:ring-destructive' : ''}`}
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                      {t('contact.form_email')}
+                    </label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      placeholder={t('contact.form_email_placeholder')}
+                      className={`w-full ${formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}`}
+                    />
+                  </div>
+                </div>
+
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    {t('contact.form_full_name')}
+                  <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
+                    {t('contact.form_company')}
                   </label>
                   <Input
-                    id="name"
-                    name="name"
+                    id="company"
+                    name="company"
                     type="text"
                     required
-                    placeholder={t('contact.form_name_placeholder')}
-                    className={`w-full ${formErrors.name ? 'border-destructive focus-visible:ring-destructive' : ''}`}
+                    placeholder={t('contact.form_company_placeholder')}
+                    className={`w-full ${formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                   />
                 </div>
+
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    {t('contact.form_email')}
+                  <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
+                    {t('contact.form_service')}
                   </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
+                  <select
+                    id="service"
+                    name="service"
+                    className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                  >
+                    <option value="">{t('contact.form_service_select')}</option>
+                    <option value="conseil-commercial">{t('contact.form_service_conseil_commercial')}</option>
+                    <option value="rse-bilan-carbone">{t('contact.form_service_rse_bilan')}</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    {t('contact.form_message')}
+                  </label>
+                  <Textarea
+                    id="message"
+                    name="message"
                     required
-                    placeholder={t('contact.form_email_placeholder')}
-                    className={`w-full ${formErrors.email ? 'border-destructive focus-visible:ring-destructive' : ''}`}
+                    placeholder={t('contact.form_message_placeholder')}
+                    rows={4}
+                    className={`w-full ${formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}`}
                   />
                 </div>
-              </div>
 
-              <div>
-                <label htmlFor="company" className="block text-sm font-medium text-foreground mb-2">
-                  {t('contact.form_company')}
-                </label>
-                <Input
-                  id="company"
-                  name="company"
-                  type="text"
-                  required
-                  placeholder={t('contact.form_company_placeholder')}
-                  className={`w-full ${formErrors.company ? 'border-destructive focus-visible:ring-destructive' : ''}`}
-                />
-              </div>
-
-              <div>
-                <label htmlFor="service" className="block text-sm font-medium text-foreground mb-2">
-                  {t('contact.form_service')}
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                <Button 
+                  type="submit" 
+                  variant="sustainable" 
+                  size="lg" 
+                  className="w-full group"
+                  disabled={isSubmitting}
                 >
-                  <option value="">{t('contact.form_service_select')}</option>
-                  <option value="conseil-commercial">{t('contact.form_service_conseil_commercial')}</option>
-                  <option value="rse-bilan-carbone">{t('contact.form_service_rse_bilan')}</option>
-                </select>
-              </div>
+                  <Send className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
+                  {isSubmitting ? t('contact.sending') : t('contact.form_send')}
+                </Button>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  {t('contact.form_message')}
-                </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  required
-                  placeholder={t('contact.form_message_placeholder')}
-                  rows={4}
-                  className={`w-full ${formErrors.message ? 'border-destructive focus-visible:ring-destructive' : ''}`}
-                />
-              </div>
-
-              <Button 
-                type="submit" 
-                variant="sustainable" 
-                size="lg" 
-                className="w-full group"
-                disabled={isSubmitting}
-              >
-                <Send className="mr-2 group-hover:translate-x-1 transition-transform" size={20} />
-                {isSubmitting ? t('contact.sending') : t('contact.form_send')}
-              </Button>
-
-              <p className="text-xs text-muted-foreground text-center">
-                {t('contact.form_required')}
-              </p>
-            </form>
+                <p className="text-xs text-muted-foreground text-center">
+                  {t('contact.form_privacy')}
+                </p>
+              </form>
+            )}
           </Card>
         </div>
       </div>
