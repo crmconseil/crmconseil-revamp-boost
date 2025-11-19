@@ -248,11 +248,8 @@ export const ContactSection = () => {
                   className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 >
                   <option value="">{t('contact.form_service_select')}</option>
-                  <option value="commercial">{t('contact.form_service_commercial')}</option>
-                  <option value="rse-scope1">{t('contact.form_service_scope1')}</option>
-                  <option value="rse-complet">{t('contact.form_service_complete')}</option>
-                  <option value="biodiversite">{t('contact.form_service_biodiversity')}</option>
-                  <option value="autre">{t('contact.form_service_other')}</option>
+                  <option value="conseil-commercial">{t('contact.form_service_conseil_commercial')}</option>
+                  <option value="rse-bilan-carbone">{t('contact.form_service_rse_bilan')}</option>
                 </select>
               </div>
 
