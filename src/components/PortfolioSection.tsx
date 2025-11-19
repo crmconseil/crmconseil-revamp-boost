@@ -2,6 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { 
   Leaf, 
   Brain, 
@@ -88,7 +94,6 @@ export const PortfolioSection = () => {
   ];
 
   const partners = [
-    { name: "Pôle SCS", type: "Réseau Innovation" },
     { name: "Incubateur Paca-Est", type: "Incubateur" },
     { name: "MonacoTech", type: "Startup Program" },
     { name: "Pôle Mer", type: "Financement" },
@@ -226,61 +231,75 @@ export const PortfolioSection = () => {
           </h3>
           
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg">
-            <div className="grid grid-cols-4 md:grid-cols-7 gap-6 items-center justify-items-center">
-              {partners.map((partner, index) => {
-                // Map partner names to imported logos
-                const getPartnerLogo = (name: string) => {
-                  switch(name) {
-                    case "Pôle SCS":
-                      return poleScsLogo;
-                    case "Incubateur Paca-Est":
-                      return incubateurPacaLogo;
-                    case "MonacoTech":
-                      return monacoTechLogo;
-                    case "Pôle Mer":
-                      return poleMerLogo;
-                    case "Initiative Terres d'Azur Grasse":
-                      return terresAzurLogo;
-                    case "Innovation Hub Nice Côte d'Azur":
-                      return metropoleNiceLogo;
-                    case "ABC":
-                      return abcLogo;
-                    case "ADEME":
-                      return ademeLogo;
-                    case "Aktantis":
-                      return aktantisLogo;
-                    case "AZUP":
-                      return azupLogo;
-                    case "Innova Grasse":
-                      return innovagrasseLogo;
-                    case "Innovin":
-                      return innovinLogo;
-                    case "IRCE":
-                      return irceLogo;
-                    case "MTE":
-                      return mteLogo;
-                    default:
-                      return null;
-                  }
-                };
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                  stopOnInteraction: false,
+                }),
+              ]}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
+                {partners.map((partner, index) => {
+                  // Map partner names to imported logos
+                  const getPartnerLogo = (name: string) => {
+                    switch(name) {
+                      case "Incubateur Paca-Est":
+                        return incubateurPacaLogo;
+                      case "MonacoTech":
+                        return monacoTechLogo;
+                      case "Pôle Mer":
+                        return poleMerLogo;
+                      case "Initiative Terres d'Azur Grasse":
+                        return terresAzurLogo;
+                      case "Innovation Hub Nice Côte d'Azur":
+                        return metropoleNiceLogo;
+                      case "ABC":
+                        return abcLogo;
+                      case "ADEME":
+                        return ademeLogo;
+                      case "Aktantis":
+                        return aktantisLogo;
+                      case "AZUP":
+                        return azupLogo;
+                      case "Innova Grasse":
+                        return innovagrasseLogo;
+                      case "Innovin":
+                        return innovinLogo;
+                      case "IRCE":
+                        return irceLogo;
+                      case "MTE":
+                        return mteLogo;
+                      default:
+                        return null;
+                    }
+                  };
 
-                const logoSrc = getPartnerLogo(partner.name);
-                
-                return (
-                  <div key={index} className="flex items-center justify-center h-16 w-24 hover:scale-110 transition-transform group">
-                    {logoSrc ? (
-                      <img 
-                        src={logoSrc} 
-                        alt={`${partner.name} logo`}
-                        className="max-h-14 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                      />
-                    ) : (
-                      <Building2 className="text-muted-foreground group-hover:text-primary transition-colors" size={32} />
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+                  const logoSrc = getPartnerLogo(partner.name);
+                  
+                  return (
+                    <CarouselItem key={index} className="pl-4 basis-1/3 md:basis-1/4 lg:basis-1/6">
+                      <div className="flex items-center justify-center h-20 hover:scale-110 transition-transform group">
+                        {logoSrc ? (
+                          <img 
+                            src={logoSrc} 
+                            alt={`${partner.name} logo`}
+                            className="max-h-16 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                          />
+                        ) : (
+                          <Building2 className="text-muted-foreground group-hover:text-primary transition-colors" size={32} />
+                        )}
+                      </div>
+                    </CarouselItem>
+                  );
+                })}
+              </CarouselContent>
+            </Carousel>
           </div>
         </div>
 
