@@ -13,11 +13,40 @@ import {
   Award
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useEffect, useRef, useState } from "react";
 import servicesBackground from "@/assets/services-background.jpg";
 
 export const ServicesSection = () => {
   const { language, t } = useLanguage();
+  const [visibleCards, setVisibleCards] = useState<Set<number>>(new Set());
+  const observerRef = useRef<IntersectionObserver | null>(null);
   
+  useEffect(() => {
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const cardIndex = parseInt(entry.target.getAttribute('data-card-index') || '0');
+            setVisibleCards((prev) => new Set(prev).add(cardIndex));
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '50px',
+      }
+    );
+
+    const cards = document.querySelectorAll('[data-card-index]');
+    cards.forEach((card) => {
+      observerRef.current?.observe(card);
+    });
+
+    return () => {
+      observerRef.current?.disconnect();
+    };
+  }, []);
+
   const getLocalizedPath = (path: string) => {
     if (language === 'en') {
       return path === '/' ? '/en' : `/en${path}`;
@@ -64,7 +93,13 @@ export const ServicesSection = () => {
             </div>
 
             <div className="space-y-6">
-              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+              <Card 
+                data-card-index="0"
+                className={`p-6 hover:shadow-card-sustainable transition-all duration-500 group ${
+                  visibleCards.has(0) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: '0ms' }}
+              >
                 <div className="flex items-start space-x-4">
                   <div className="bg-commercial-light p-3 rounded-lg group-hover:scale-110 transition-transform">
                     <Target className="text-commercial" size={24} />
@@ -78,7 +113,13 @@ export const ServicesSection = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+              <Card 
+                data-card-index="1"
+                className={`p-6 hover:shadow-card-sustainable transition-all duration-500 group ${
+                  visibleCards.has(1) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: '150ms' }}
+              >
                 <div className="flex items-start space-x-4">
                   <div className="bg-commercial-light p-3 rounded-lg group-hover:scale-110 transition-transform">
                     <TrendingUp className="text-commercial" size={24} />
@@ -92,7 +133,13 @@ export const ServicesSection = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+              <Card 
+                data-card-index="2"
+                className={`p-6 hover:shadow-card-sustainable transition-all duration-500 group ${
+                  visibleCards.has(2) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: '300ms' }}
+              >
                 <div className="flex items-start space-x-4">
                   <div className="bg-commercial-light p-3 rounded-lg group-hover:scale-110 transition-transform">
                     <Settings className="text-commercial" size={24} />
@@ -117,7 +164,13 @@ export const ServicesSection = () => {
             </div>
 
             <div className="space-y-6">
-              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+              <Card 
+                data-card-index="3"
+                className={`p-6 hover:shadow-card-sustainable transition-all duration-500 group ${
+                  visibleCards.has(3) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: '0ms' }}
+              >
                 <div className="flex items-start space-x-4">
                   <div className="bg-sustainable-light p-3 rounded-lg group-hover:scale-110 transition-transform">
                     <BarChart3 className="text-sustainable" size={24} />
@@ -131,7 +184,13 @@ export const ServicesSection = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+              <Card 
+                data-card-index="4"
+                className={`p-6 hover:shadow-card-sustainable transition-all duration-500 group ${
+                  visibleCards.has(4) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: '150ms' }}
+              >
                 <div className="flex items-start space-x-4">
                   <div className="bg-sustainable-light p-3 rounded-lg group-hover:scale-110 transition-transform">
                     <Shield className="text-sustainable" size={24} />
@@ -145,7 +204,13 @@ export const ServicesSection = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
+              <Card 
+                data-card-index="5"
+                className={`p-6 hover:shadow-card-sustainable transition-all duration-500 group ${
+                  visibleCards.has(5) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: '300ms' }}
+              >
                 <div className="flex items-start space-x-4">
                   <div className="bg-sustainable-light p-3 rounded-lg group-hover:scale-110 transition-transform">
                     <Leaf className="text-sustainable" size={24} />
