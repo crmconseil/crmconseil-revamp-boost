@@ -14,6 +14,7 @@ const MentionsLegales = () => {
       />
       <Header />
       
+      <main role="main">
       {/* Hero Section */}
       <section className="relative pt-20 py-20">
         <div className="container mx-auto px-4">
@@ -246,6 +247,7 @@ const MentionsLegales = () => {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

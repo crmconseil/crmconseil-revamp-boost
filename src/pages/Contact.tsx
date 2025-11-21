@@ -104,8 +104,9 @@ const Contact = () => {
       <StructuredData type="service" />
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative pt-24 pb-12 overflow-hidden">
+      <main role="main">
+        {/* Hero Section */}
+        <section className="relative pt-24 pb-12 overflow-hidden">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -139,6 +140,7 @@ const Contact = () => {
                   className="h-20 w-auto mx-auto mb-6"
                   width="80"
                   height="80"
+                  loading="lazy"
                 />
               </div>
 
@@ -355,6 +357,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

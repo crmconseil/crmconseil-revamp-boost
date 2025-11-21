@@ -19,7 +19,7 @@ const IndexEN = () => {
       />
       <StructuredData type="organization" />
       <Header />
-      <main>
+      <main role="main">
         <HeroSection />
         <ServicesSection />
         <ExpertiseSection />

@@ -210,6 +210,7 @@ export const PortfolioSection = () => {
                             src={logoSrc} 
                             alt={`${company} logo`}
                             className="max-h-16 max-w-full object-contain"
+                            loading="lazy"
                           />
                         </div>
                       ) : (
@@ -291,6 +292,7 @@ export const PortfolioSection = () => {
                             src={logoSrc} 
                             alt={`${partner.name} logo`}
                             className="max-h-16 max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                            loading="lazy"
                           />
                         ) : (
                           <Building2 className="text-muted-foreground group-hover:text-primary transition-colors" size={32} />

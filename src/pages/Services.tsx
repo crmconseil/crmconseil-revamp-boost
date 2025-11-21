@@ -19,8 +19,9 @@ const Services = () => {
       <StructuredData type="service" />
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative pt-20 py-20">
+      <main role="main">
+        {/* Hero Section */}
+        <section className="relative pt-20 py-20">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{ backgroundImage: `url(${servicesBackground})` }}
@@ -498,6 +499,7 @@ const Services = () => {
           </Link>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

@@ -15,7 +15,7 @@ const RendezVousEN = () => {
       />
       <StructuredData type="service" />
       <Header />
-      <main className="pt-24">
+      <main role="main" className="pt-24">
         <section className="relative py-12 overflow-hidden">
           {/* Background Image */}
           <div 
