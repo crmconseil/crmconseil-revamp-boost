@@ -35,11 +35,11 @@ const translations = {
     
     // Hero Section - Optimized with keywords
     'hero.title': 'Développement Commercial & RSE à Monaco, Nice, Cannes | CRM Conseil région PACA',
-    'hero.subtitle': 'CRM Conseil à Monaco unit développement commercial et transition durable pour redéfinir avec ses clients startups, TPEs et PMEs de la région PACA (Menton, Nice, Cannes, Grasse) leur stratégie de croissance responsable. Expert en optimisation commerciale, CRM et business development, nous transformons vos actions RSE en véritables leviers de performance et compétitivité.',
-    'hero.description': 'CRM Conseil à Monaco, Nice, Cannes unit développement commercial et transition durable pour redéfinir avec ses clients startups, TPEs et PMEs de la région PACA leur stratégie de croissance responsable. Expert en optimisation commerciale, CRM et business development Côte d\'Azur.\nTransformons vos actions RSE en véritables leviers de performance et compétitivité sur le marché Alpes-Maritimes et au-delà.',
+    'hero.subtitle': 'CRM Conseil à Monaco unit développement commercial et transition durable pour redéfinir avec ses clients startups, TPEs et PMEs de la région PACA (Menton, Nice, Cannes, Grasse, Sophia-Antipolis) leur stratégie de croissance responsable. Expert en optimisation commerciale, CRM et business development, nous transformons vos actions RSE en véritables leviers de performance et compétitivité.',
+    'hero.description': 'CRM Conseil à Monaco unit développement commercial et transition durable pour redéfinir avec ses clients startups, TPEs et PMEs de la région PACA (Menton, Nice, Cannes, Grasse, Sophia-Antipolis) leur stratégie de croissance responsable. Expert en optimisation commerciale, CRM et business development, nous transformons vos actions RSE en véritables leviers de performance et compétitivité.',
     'hero.commercial_performance': 'Performance commerciale',
     'hero.sustainable_development': 'RSE & Bilan Carbone®',
-    'hero.location_tag': 'PACA/Alpes Maritimes : Monaco, Menton, Nice, Grasse, Toulon',
+    'hero.location_tag': 'PACA/Alpes Maritimes : Monaco, Menton, Nice, Cannes, Grasse, Sophia-Antipolis, Toulon',
     
     // Services Section - Optimized with keywords
     'services.title': 'Nos Services',
@@ -85,7 +85,7 @@ const translations = {
     
     // Contact Section
       'contact.title': 'Contactez-nous',
-      'contact.subtitle': 'Parlons de votre projet développement commercial, optimisation CRM et RSE. Région PACA : Menton, Monaco, Nice, Cannes, Grasse, Toulon.',
+      'contact.subtitle': 'Parlons de votre projet développement commercial, optimisation CRM et RSE. Région PACA : Menton, Monaco, Nice, Cannes, Grasse, Sophia-Antipolis, Toulon.',
     'contact.description': 'Nous vous recontacterons dans les plus brefs délais pour votre projet Côte d\'Azur.',
     'contact.phone_label': 'Téléphone',
     'contact.address_label': 'Zone d\'intervention', 
@@ -117,7 +117,7 @@ const translations = {
     'contact.success_message': 'Nous vous recontacterons dans les plus brefs délais pour votre projet.',
     
     // Expertise Section
-    'expertise.title': 'Notre Expertise Monaco Nice Cannes',
+    'expertise.title': 'Notre expertise',
     'expertise.subtitle': 'Depuis 2014, CRM Conseil à Monaco, accompagne la croissance de startups et TPE/PMEs de la région PACA (Nice, Cannes, Grasse) engagées dans l\'amélioration de leurs résultats commerciaux. Passez dès aujourd\'hui à l\'étape d\'après, en faisant de votre transition durable un levier d\'accélération commerciale pour l\'avenir.',
     'expertise.commercial_years': '26+ ans',
     'expertise.commercial_experience': 'Développement et optimisation commerciaux',
