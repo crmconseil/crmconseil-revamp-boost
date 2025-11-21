@@ -31,7 +31,7 @@ import {
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
 import partenaireImage from "@/assets/partenariat-handshake.png";
-import rseBackgroundImage from "@/assets/rse-background.jpg";
+import rseBackgroundImage from "@/assets/rse-nature-background.jpg";
 import abcLogo from "@/assets/logos/abc-certification.png";
 import millerHeimanLogo from "@/assets/logos/miller-heiman.gif";
 import mitLogo from "@/assets/logos/mit.png";
