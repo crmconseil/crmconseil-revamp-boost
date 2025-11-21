@@ -36,13 +36,13 @@ export const ExpertiseSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            {t('expertise.title')}
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <div className="text-center mb-8">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             {t('expertise.subtitle')}
           </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+            {t('expertise.title')}
+          </h2>
         </div>
 
         {/* Main Expertise Grid */}
@@ -95,94 +95,45 @@ export const ExpertiseSection = () => {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center">
                 <GraduationCap className="mr-3 text-primary" size={28} />
-                {t('expertise.certifications_title')}
-              </h3>
-              
-              <div className="space-y-4">
-                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">{t('expertise.mit_title')}</h4>
-                      <p className="text-muted-foreground text-sm">
-                        {t('expertise.mit_desc')}
-                      </p>
-                    </div>
-                    <Badge variant="outline" className="ml-4">
-                      <Star size={14} className="mr-1" />
-                      MIT
-                    </Badge>
-                  </div>
-                </Card>
-
-                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">{t('expertise.ademe_title')}</h4>
-                      <p className="text-muted-foreground text-sm">
-                        {t('expertise.ademe_desc')}
-                      </p>
-                    </div>
-                    <Badge variant="outline" className="ml-4">
-                      ADEME
-                    </Badge>
-                  </div>
-                </Card>
-
-                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">{t('expertise.sales_title')}</h4>
-                      <p className="text-muted-foreground text-sm">
-                        {t('expertise.sales_desc')}
-                      </p>
-                    </div>
-                    <Badge variant="outline" className="ml-4">
-                      Commercial
-                    </Badge>
-                  </div>
-                </Card>
-
-                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group">
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-lg mb-2">{t('expertise.mba_title')}</h4>
-                      <p className="text-muted-foreground text-sm">
-                        {t('expertise.mba_desc')}
-                      </p>
-                    </div>
-                    <Badge variant="outline" className="ml-4">
-                      MBA
-                    </Badge>
-                  </div>
-                </Card>
-              </div>
-            </div>
-
-            {/* Methodologies */}
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">
-                {t('expertise.methodologies')}
+                Nos certifications
               </h3>
               
               <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-commercial">{t('expertise.commercial_optimization')}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">Business Model Canvas</Badge>
-                    <Badge variant="secondary">BANT</Badge>
-                    <Badge variant="secondary">ACDC</Badge>
-                    <Badge variant="secondary">Miller Heiman</Badge>
+                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group flex flex-col items-center text-center">
+                  <div className="mb-4 flex items-center justify-center h-20">
+                    <div className="text-4xl font-bold text-primary">SKEMA</div>
                   </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-sustainable">{t('expertise.rse_biodiversity')}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">MIT</Badge>
-                    <Badge variant="secondary">GBS</Badge>
-                    <Badge variant="secondary">ENCORE</Badge>
+                  <p className="text-sm text-muted-foreground">
+                    Bachelor in Business Administration
+                  </p>
+                </Card>
+
+                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group flex flex-col items-center text-center">
+                  <div className="mb-4 flex items-center justify-center h-20">
+                    <div className="text-3xl font-bold text-commercial">Miller Heiman</div>
                   </div>
-                </div>
+                  <p className="text-sm text-muted-foreground">
+                    Certification Miller Heiman en vente stratégique
+                  </p>
+                </Card>
+
+                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group flex flex-col items-center text-center">
+                  <div className="mb-4 flex items-center justify-center h-20">
+                    <div className="text-4xl font-bold text-sustainable">MIT</div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Certification Sustainable Strategy Design
+                  </p>
+                </Card>
+
+                <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group flex flex-col items-center text-center">
+                  <div className="mb-4 flex items-center justify-center h-20">
+                    <div className="text-3xl font-bold text-primary">ABC</div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Certification Bilan Carbone®
+                  </p>
+                </Card>
               </div>
             </div>
           </div>
