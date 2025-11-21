@@ -19,6 +19,7 @@ import {
   Lightbulb,
   Award,
   Heart,
+  Palmtree,
   Zap,
   Cpu,
   Activity,
@@ -30,6 +31,10 @@ import {
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
 import partenaireImage from "@/assets/partenariat-handshake.png";
+import abcLogo from "@/assets/logos/abc-certification.png";
+import millerHeimanLogo from "@/assets/logos/miller-heiman.gif";
+import mitLogo from "@/assets/logos/mit.png";
+import skemaLogo from "@/assets/logos/skema-certification.jpg";
 
 const AboutEN = () => {
   const { t } = useLanguage();
@@ -153,7 +158,7 @@ const AboutEN = () => {
     { icon: Leaf, title: "Greentech" },
     { icon: Brain, title: "Deeptech" },
     { icon: Cog, title: "Devtech" },
-    { icon: Heart, title: "Tourism" }
+    { icon: Palmtree, title: "Tourism" }
   ];
 
   return (
@@ -231,25 +236,27 @@ const AboutEN = () => {
             })}
           </div>
 
-          {/* Our certifications & Partnerships */}
-          <div className="bg-background rounded-2xl p-6 shadow-lg border border-primary/10">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-6">
-                {t('about.certifications_title')}
-              </h3>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div className="p-4 bg-muted/30 rounded-lg">
-                  <h4 className="font-semibold text-sustainable mb-2">{t('about.mit_cert')}</h4>
-                  <p className="text-xs text-muted-foreground">{t('about.mit_cert_desc')}</p>
-                </div>
-                <div className="p-4 bg-muted/30 rounded-lg">
-                  <h4 className="font-semibold text-primary mb-2">{t('about.ademe_partner')}</h4>
-                  <p className="text-xs text-muted-foreground">{t('about.ademe_partner_desc')}</p>
-                </div>
-                <div className="p-4 bg-muted/30 rounded-lg">
-                  <h4 className="font-semibold text-sustainable mb-2">{t('about.pacte_national')}</h4>
-                  <p className="text-xs text-muted-foreground">{t('about.pacte_national_desc')}</p>
-                </div>
+          {/* Our certifications */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              {t('about.certifications_title_new')}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+              <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+                <img src={skemaLogo} alt="SKEMA Business School" className="h-20 w-auto mb-4 object-contain" />
+                <p className="text-sm text-muted-foreground">Bachelor in Business Administration</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+                <img src={millerHeimanLogo} alt="Miller Heiman" className="h-20 w-auto mb-4 object-contain" />
+                <p className="text-sm text-muted-foreground">{t('about.cert_miller_heiman')}</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+                <img src={mitLogo} alt="MIT" className="h-20 w-auto mb-4 object-contain" />
+                <p className="text-sm text-muted-foreground">{t('about.cert_mit')}</p>
+              </div>
+              <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
+                <img src={abcLogo} alt="ABC" className="h-20 w-auto mb-4 object-contain" />
+                <p className="text-sm text-muted-foreground">{t('about.cert_abc')}</p>
               </div>
             </div>
           </div>
