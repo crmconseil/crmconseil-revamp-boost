@@ -364,7 +364,7 @@ const Services = () => {
                   <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                     <Users className="w-6 h-6 text-sustainable" />
                   </div>
-                  <h3 className="text-xl font-bold">Mise en place, suivi et formation des équipes aux actions durables</h3>
+                  <h3 className="text-xl font-bold">Accompagnement opérationnel des équipes aux actions durables</h3>
                 </div>
               </div>
               <div className="flex gap-2 justify-center mb-4">
@@ -372,12 +372,16 @@ const Services = () => {
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                Le succès d'une transition d'entreprise vers des démarches plus durables passent obligatoirement par la sensibilisation, et l'engagement des équipes. Les dirigeants sont souvent démunis quant au pilotage opérationnels des équipes sur ces actions, face à certaines réticences au changement. CRM Conseil propose un accompagnement sur la mise en place de la stratégie de durabilité définie, avec non seulement un support de suivi des objectifs, mais aussi des formations motivationnelles aux gestes de durabilité essentiels liés à chaque secteur d'activité.
-                <br /><strong>Vos gains :</strong>
+                La transition vers des pratiques durables nécessite l'engagement actif de vos équipes. CRM Conseil vous accompagne sur le pilotage opérationnel de votre stratégie de durabilité avec un support de suivi des objectifs et des formations motivationnelles aux gestes essentiels de votre secteur :
               </p>
               <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
-                <li>Des équipes impliquées et des objectifs concrets respectés</li>
+                <li>Mise en place et suivi de la stratégie définie</li>
+                <li>Formation aux actions durables sectorielles</li>
+                <li>Accompagnement du changement organisationnel</li>
               </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Vos gains : Des équipes impliquées et des objectifs respectés</strong>
+              </p>
               <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
                   <span className="text-sm text-muted-foreground">Engagement collaborateurs RSE</span>
@@ -405,7 +409,8 @@ const Services = () => {
                 <br /><strong>Vos gains :</strong>
               </p>
               <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
-                <li>ROI de la démarche de durabilité et augmentation des résultats</li>
+                <li>ROI chiffré de votre démarche de durabilité</li>
+                <li>Augmentation concrète de vos résultats commerciaux</li>
               </ul>
               <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
