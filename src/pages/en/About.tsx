@@ -24,7 +24,8 @@ import {
   Activity,
   Cog,
   Globe,
-  Settings
+  Settings,
+  Brain
 } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
@@ -40,7 +41,7 @@ const AboutEN = () => {
   const keyStats = [
     { icon: Users, number: "100+", label: t('about.stat_startups') },
     { icon: TrendingUp, number: "+37%", label: t('about.stat_growth') },
-    { icon: Target, number: "4", label: t('about.stat_sectors') },
+    { icon: Target, number: "+18%", label: t('about.stat_csr_impact') },
     { icon: Euro, number: "16M€", label: t('about.stat_funding') }
   ];
 
@@ -149,10 +150,10 @@ const AboutEN = () => {
   ];
 
   const sectors = [
-    { icon: Leaf, title: t('about.greentech'), desc: t('about.greentech_desc') },
-    { icon: Activity, title: t('about.healthtech'), desc: t('about.healthtech_desc') },
-    { icon: Cog, title: t('about.industry'), desc: t('about.industry_desc') },
-    { icon: Cpu, title: t('about.dev_ai'), desc: t('about.dev_ai_desc') }
+    { icon: Leaf, title: "Greentech" },
+    { icon: Brain, title: "Deeptech" },
+    { icon: Cog, title: "Devtech" },
+    { icon: Heart, title: "Tourism" }
   ];
 
   return (
@@ -192,7 +193,7 @@ const AboutEN = () => {
       </section>
 
       {/* Our Expertise Section with key figures */}
-      <section id="expertise" className="py-2 bg-gradient-to-r from-primary/10 to-sustainable/10">
+      <section id="expertise" className="pt-0 pb-6 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-6">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
@@ -220,14 +221,11 @@ const AboutEN = () => {
             {sectors.map((sector, index) => {
               const IconComponent = sector.icon;
               return (
-                <div key={index} className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
-                  <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
+                <div key={index} className="bg-background rounded-xl p-4 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-24 flex flex-col justify-center">
+                  <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-2">
                     <IconComponent className="w-5 h-5 text-sustainable" />
                   </div>
-                  <h3 className="text-lg font-semibold text-center mb-2">{sector.title}</h3>
-                  <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
-                    {sector.desc}
-                  </p>
+                  <h3 className="text-lg font-semibold text-center">{sector.title}</h3>
                 </div>
               );
             })}
