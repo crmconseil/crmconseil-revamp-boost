@@ -363,7 +363,7 @@ const Services = () => {
                   <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                     <Users className="w-6 h-6 text-sustainable" />
                   </div>
-                  <h3 className="text-xl font-bold">Accompagnement opérationnel des équipes aux actions durables</h3>
+                  <h3 className="text-xl font-bold">Accompagnement des équipes aux actions durables</h3>
                 </div>
               </div>
               <div className="flex gap-2 justify-center mb-4">

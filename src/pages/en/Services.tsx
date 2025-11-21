@@ -131,52 +131,139 @@ const ServicesEN = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Optimisation des process commerciaux */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <TrendingUp className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <TrendingUp className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Process and Sales Support Optimization</h3>
                 </div>
-                <h3 className="text-xl font-bold">{t('services.process_optimization_title')}</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  {t('services.process_optimization_desc')}
-                </p>
+              <div className="flex gap-2 justify-center mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & Established SMEs</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Are your sales always blocked at the same stage? Are your cycles long? CRM Conseil supports its clients on concrete commercial optimization actions:
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Review of your sales process</li>
+                <li>Co-optimization of your sales materials</li>
+                <li>Automation of repetitive follow-up tasks</li>
+                <li>Support during strategic client meetings</li>
+                <li>Optimization of lead and opportunity qualification to maximize your sales efficiency</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Your gains: Faster deal signing</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
+                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Conversion rate increase</span>
+                  <span className="text-xl font-bold text-primary">+30 to 50%</span>
+                </div>
+              </div>
             </div>
 
+            {/* Choix et Configuration d'outils de pilotage */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Settings className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Settings className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Selection and Configuration of Management Tools (CRM/ERP)</h3>
                 </div>
-                <h3 className="text-xl font-bold">{t('services.tools_configuration_title')}</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  {t('services.tools_configuration_desc')}
-                </p>
+              <div className="flex gap-2 justify-center mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & Established SMEs</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Good CRM/ERP tools can have a real impact on your results and productivity. Tool-agnostic, CRM Conseil guides you towards solutions best suited to your needs, budget and scalability prospects to avoid costly tool changes. Our support includes:
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Selection of tools adapted to your sector and size</li>
+                <li>Configuration of workflows, automations and key metrics tracking</li>
+                <li>Engagement and training of your teams</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Your gains: Weeks of analysis and months of deploying unsuitable tools saved</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
+                <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Sales cycle acceleration</span>
+                  <span className="text-xl font-bold text-sustainable">+25 to 40%</span>
+                </div>
+              </div>
             </div>
 
+            {/* Générations de leads B2B */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Users className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Users className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Outsourced B2B Lead Generation</h3>
                 </div>
-                <h3 className="text-xl font-bold">{t('services.lead_generation_title')}</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  {t('services.lead_generation_desc')}
-                </p>
+              <div className="flex gap-2 justify-center mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & Established SMEs</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Boost your sales pipeline in less than a month with our outsourced campaigns. We continuously feed your teams with highly qualified opportunities:
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Precise targeting of your ideal prospects</li>
+                <li>Rigorous opportunity qualification</li>
+                <li>Qualified appointment setting for your sales team</li>
+                <li>Detailed campaign and results reporting</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Your gains: More leads, more signatures, faster!</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
+                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Qualified appointments obtained</span>
+                  <span className="text-xl font-bold text-primary">+20 to 35%</span>
+                </div>
+              </div>
             </div>
 
+            {/* Valorisation commerciale pour levée de fonds */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Target className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Target className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Fundraising Preparation</h3>
                 </div>
-                <h3 className="text-xl font-bold">{t('services.valorization_title')}</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  {t('services.valorization_desc')}
-                </p>
+              <div className="flex gap-2 justify-center mb-4">
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & Established SMEs</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Maximize your chances of convincing investors, funds and family offices. Our comprehensive support prepares you to transform interest into investment:
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Ultra-design and impactful pitch deck</li>
+                <li>Solid valuation of your KPIs and economic model</li>
+                <li>Executive speech coaching</li>
+                <li>Personalized investor hooks by profile</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Your gains: Increased funding chances</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
+                <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Fundraising success rate</span>
+                  <span className="text-xl font-bold text-accent">+45 to 55%</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -386,31 +473,101 @@ const ServicesEN = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Carbon Assessment® - Scope 1, 2 and/or 3 */}
+            {/* Bilan GES Durabilité / Bilan Carbone® */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Globe className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Globe className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">GHG Sustainability / Carbon® Assessment</h3>
                 </div>
-                <h3 className="text-xl font-bold">Carbon Assessment® - Scope 1, 2 and/or 3</h3>
+              </div>
+              <div className="flex gap-2 justify-center mb-4">
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & Established SMEs</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                The CSR GHG Assessment analyzes all your direct and indirect emissions and integrates double materiality to measure both the climate risks facing your company and the impacts you generate. The result: significant reduction of your carbon footprint, new markets, strategic repositioning and enhanced attractiveness to talents and investors.
+                The GHG or Carbon® Assessment analyzes all your carbon emissions, including an analysis of climate risks facing your company and the climate impacts you generate, and defines a more sustainable transition plan. This voluntary approach allows you to reposition your company in a valuable sustainability approach.
+                <br /><strong>Your gains:</strong>
               </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Reduction of your costs and carbon energy dependence</li>
+                <li>Development of new markets</li>
+                <li>Enhanced attractiveness to talents and investors</li>
+              </ul>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
+                <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Energy costs reduction/year</span>
+                  <span className="text-xl font-bold text-sustainable">Up to -30%</span>
+                </div>
+              </div>
             </div>
 
-
-            {/* Biodiversité */}
+            {/* Mise en place, suivi et formation des équipes aux actions durables */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Award className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Users className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Team Support for Sustainable Actions</h3>
                 </div>
-                <h3 className="text-xl font-bold">{t('services.biodiversity_title')}</h3>
+              </div>
+              <div className="flex gap-2 justify-center mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & Established SMEs</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                The biodiversity assessment allows SMEs to identify their impacts and dependencies regarding ecosystems. It provides a clear vision of risks and opportunities, helps reduce pressures on nature and build a concrete action plan. Result: more resilience, value and regulatory alignment.
+                The transition to sustainable practices requires active engagement from your teams. CRM Conseil supports you in the operational management of your sustainability strategy with monitoring support for objectives and motivational training on essential actions in your sector:
               </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>CSR strategy monitoring</li>
+                <li>Sustainable actions training</li>
+                <li>Change management support</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Your gains:</strong>
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Engaged teams</li>
+                <li>Objectives met</li>
+              </ul>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
+                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">CSR employee engagement</span>
+                  <span className="text-xl font-bold text-primary">+40%</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Valorisation commerciale de la démarche RSE */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Award className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Commercial Valorization of CSR Approach</h3>
+                </div>
+              </div>
+              <div className="flex gap-2 justify-center mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & Established SMEs</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                CRM Conseil rightly considers that a company's commitment to sustainability brings real commercial and financial returns. We model the ROI of your actions over several years both in terms of cost reductions, product repositioning, and new markets. We manage lead generation campaigns on these new markets for our clients, allowing quick validation of commercial returns.
+                <br /><strong>Your gains:</strong>
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Quantified ROI of your sustainability approach</li>
+                <li>Concrete increase in your commercial results</li>
+              </ul>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
+                <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Growth via CSR markets</span>
+                  <span className="text-xl font-bold text-accent">+20 to 35%</span>
+                </div>
+              </div>
             </div>
           </div>
 
