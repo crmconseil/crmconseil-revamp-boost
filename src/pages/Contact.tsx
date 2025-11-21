@@ -313,11 +313,8 @@ const Contact = () => {
                       aria-label="Sélectionnez le service qui vous intéresse"
                     >
                       <option value="">Sélectionnez un service</option>
-                      <option value="commercial">Accompagnement Commercial</option>
-                      <option value="rse-scope1">Bilan RSE - Scope 1</option>
-                      <option value="rse-complet">Bilan RSE Complet - Scope 1,2,3</option>
-                      <option value="biodiversite">Bilan Impact Biodiversité</option>
-                      <option value="autre">Autre / Conseil personnalisé</option>
+                      <option value="commercial-crm">Accompagnement commercial / CRM</option>
+                      <option value="rse-bilan-carbone">Stratégie RSE / Bilan Carbone</option>
                     </select>
                   </div>
 
