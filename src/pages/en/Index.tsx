@@ -12,9 +12,9 @@ const IndexEN = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="CRM Conseil | Commercial Performance & CSR Expert - Nice, Monaco, Cannes"
-        description="15 years of expertise in sustainable commercial development. GHG assessment expertise. Personalized CSR support for innovative startups and SMEs across Europe."
-        keywords="commercial CSR consulting, sustainable commercial strategy, GHG assessment, sustainable business development, CSR startup SME, commercial consultant Nice Monaco, ethical commercial performance, environmental certification"
+        title="CRM Conseil | Commercial Development & CSR Expert - CRM Business Optimization"
+        description="15 years of expertise in sustainable commercial development and CSR. Business development consulting, CRM optimization, carbon assessment, sustainable transition. Certified ecology and sustainability solutions for startups and SMEs."
+        keywords="commercial development, business optimization, CRM, business development, CSR, sustainable transition, sustainability, ecology, carbon assessment, business consulting, CRM consultant, CSR strategy"
         canonical="/en"
       />
       <StructuredData type="organization" />

@@ -92,9 +92,9 @@ const ContactEN = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="Contact - CRM Conseil | Get in Touch with Our Experts"
-        description="Contact CRM Conseil for your commercial performance and CSR projects. Free consultation, personalized support in Nice, Monaco, Cannes. Phone, email, appointment."
-        keywords="contact CRM Conseil, commercial consultant Nice, CSR expert contact, free consultation, business support contact"
+        title="Contact CRM Conseil | Commercial Development & CSR | Business Sustainability Consulting"
+        description="Contact CRM Conseil for your commercial development and CSR project. Free consultation in business optimization, CRM, business development, carbon assessment and sustainable transition. Sustainability and ecology consulting experts for startups and SMEs."
+        keywords="contact CRM conseil, commercial development, business optimization, CRM consulting, business development, CSR, carbon assessment, sustainable transition, sustainability consulting, business ecology"
         canonical="/en/contact"
       />
       <StructuredData type="organization" />
