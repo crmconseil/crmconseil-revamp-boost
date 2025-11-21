@@ -173,6 +173,7 @@ const AboutEN = () => {
       <StructuredData type="organization" />
       <Header />
       
+      <main role="main">
       {/* Hero Section */}
       <section className="relative pt-20 py-20 overflow-hidden">
         <div 
@@ -244,19 +245,19 @@ const AboutEN = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
               <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
-                <img src={skemaLogo} alt="SKEMA Business School" className="h-20 w-auto mb-4 object-contain" />
+                <img src={skemaLogo} alt="SKEMA Business School" className="h-20 w-auto mb-4 object-contain" loading="lazy" />
                 <p className="text-sm text-muted-foreground">Bachelor in Business Administration</p>
               </div>
               <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
-                <img src={millerHeimanLogo} alt="Miller Heiman" className="h-20 w-auto mb-4 object-contain" />
+                <img src={millerHeimanLogo} alt="Miller Heiman" className="h-20 w-auto mb-4 object-contain" loading="lazy" />
                 <p className="text-sm text-muted-foreground">{t('about.cert_miller_heiman')}</p>
               </div>
               <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
-                <img src={mitLogo} alt="MIT" className="h-20 w-auto mb-4 object-contain" />
+                <img src={mitLogo} alt="MIT" className="h-20 w-auto mb-4 object-contain" loading="lazy" />
                 <p className="text-sm text-muted-foreground">{t('about.cert_mit')}</p>
               </div>
               <div className="flex flex-col items-center text-center p-6 bg-card rounded-lg border border-border">
-                <img src={abcLogo} alt="ABC" className="h-20 w-auto mb-4 object-contain" />
+                <img src={abcLogo} alt="ABC" className="h-20 w-auto mb-4 object-contain" loading="lazy" />
                 <p className="text-sm text-muted-foreground">{t('about.cert_abc')}</p>
               </div>
             </div>
@@ -609,6 +610,7 @@ const AboutEN = () => {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>
