@@ -375,13 +375,17 @@ const Services = () => {
                 La transition vers des pratiques durables nécessite l'engagement actif de vos équipes. CRM Conseil vous accompagne sur le pilotage opérationnel de votre stratégie de durabilité avec un support de suivi des objectifs et des formations motivationnelles aux gestes essentiels de votre secteur :
               </p>
               <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
-                <li>Mise en place et suivi de la stratégie définie</li>
-                <li>Formation aux actions durables sectorielles</li>
-                <li>Accompagnement du changement organisationnel</li>
+                <li>Suivi de la stratégie RSE</li>
+                <li>Formation aux actions durables</li>
+                <li>Accompagnement au changement</li>
               </ul>
               <p className="text-muted-foreground text-justify mb-4">
-                <strong>Vos gains : Des équipes impliquées et des objectifs respectés</strong>
+                <strong>Vos gains :</strong>
               </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Des équipes impliquées</li>
+                <li>Des objectifs respectés</li>
+              </ul>
               <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
                   <span className="text-sm text-muted-foreground">Engagement collaborateurs RSE</span>
