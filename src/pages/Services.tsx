@@ -131,7 +131,7 @@ const Services = () => {
                   <h3 className="text-xl font-bold">Optimisation des process et supports commerciaux</h3>
                 </div>
               </div>
-              <div className="flex gap-2 mb-4">
+              <div className="flex gap-2 justify-center mb-4">
                 <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
@@ -139,14 +139,10 @@ const Services = () => {
                 Analyse et restructuration de vos processus et supports de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation de la qualification des leads et opportunités pour maximiser votre efficacité commerciale.
                 <br /><strong>Vos gains : Signature de deals plus rapide</strong>
               </p>
-              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
                   <span className="text-sm text-muted-foreground">Augmentation du taux de conversion</span>
-                  <span className="text-2xl font-bold text-primary">+30 à +50%</span>
-                </div>
-                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
-                  <span className="text-sm text-muted-foreground">Accélération du cycle de vente</span>
-                  <span className="text-2xl font-bold text-primary">+25 à +40%</span>
+                  <span className="text-xl font-bold text-primary">+30 à 50%</span>
                 </div>
               </div>
             </div>
@@ -161,7 +157,7 @@ const Services = () => {
                   <h3 className="text-xl font-bold">Choix et Configuration d'outils de pilotage (CRM/ERP)</h3>
                 </div>
               </div>
-              <div className="flex gap-2 mb-4">
+              <div className="flex gap-2 justify-center mb-4">
                 <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
@@ -169,10 +165,10 @@ const Services = () => {
                 Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
                 <br /><strong>Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés.</strong>
               </p>
-              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
                   <span className="text-sm text-muted-foreground">Accélération du cycle de vente</span>
-                  <span className="text-2xl font-bold text-sustainable">+25 à +40%</span>
+                  <span className="text-xl font-bold text-sustainable">+25 à 40%</span>
                 </div>
               </div>
             </div>
@@ -187,7 +183,7 @@ const Services = () => {
                   <h3 className="text-xl font-bold">Génération de leads B2B externalisée</h3>
                 </div>
               </div>
-              <div className="flex gap-2 mb-4">
+              <div className="flex gap-2 justify-center mb-4">
                 <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
@@ -195,10 +191,10 @@ const Services = () => {
                 Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et se focalisent sur la signature de deals.
                 <br /><strong>Vos gains : Plus de leads, plus de signatures, plus rapidement!</strong>
               </p>
-              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
                   <span className="text-sm text-muted-foreground">Rendez-vous qualifiés obtenus</span>
-                  <span className="text-2xl font-bold text-primary">+20 à +35%</span>
+                  <span className="text-xl font-bold text-primary">+20 à 35%</span>
                 </div>
               </div>
             </div>
@@ -213,17 +209,17 @@ const Services = () => {
                   <h3 className="text-xl font-bold">Préparation à la levée de fonds</h3>
                 </div>
               </div>
-              <div className="flex gap-2 mb-4">
+              <div className="flex gap-2 justify-center mb-4">
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
                 Boostez vos chances de convaincre investisseurs, fonds et family offices grâce à un pitch deck ultra-design, une valorisation solide de vos KPIs et de votre modèle, un discours dirigeant percutant et des accroches investisseurs personnalisées. Tout ce qu'il faut pour transformer l'intérêt… en investissement.
                 <br /><strong>Vos gains : Augmentation de vos chances de financement</strong>
               </p>
-              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
-                  <span className="text-sm text-muted-foreground">Valorisation en levée de fonds</span>
-                  <span className="text-2xl font-bold text-accent">+30%</span>
+                  <span className="text-sm text-muted-foreground">Taux de succès de la levée de fonds</span>
+                  <span className="text-xl font-bold text-accent">+45 à 55%</span>
                 </div>
               </div>
             </div>
@@ -308,22 +304,23 @@ const Services = () => {
                   <h3 className="text-xl font-bold">Bilan GES Durabilité / Bilan Carbone®</h3>
                 </div>
               </div>
-              <div className="flex gap-2 mb-4">
+              <div className="flex gap-2 justify-center mb-4">
                 <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
                 Le Bilan GES ou Bilan Carbone® analyse l'ensemble de vos émissions carbone, incluant par ailleurs une analyse des risques climatiques qui pèsent sur votre entreprise et les impacts climatiques que vous générez et définit un plan de transition plus durable. Cette démarche volontaire permet de repositionner votre entreprise dans une démarche valorisable, de durabilité.
-                <br /><strong>Vos gains : réduction de vos couts et votre dépendance énergétique carbonée, développement de nouveaux marchés, attractivité renforcée auprès des talents et d'investisseurs.</strong>
+                <br /><strong>Vos gains :</strong>
               </p>
-              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Réduction de vos coûts et votre dépendance énergétique carbonée</li>
+                <li>Développement de nouveaux marchés</li>
+                <li>Attractivité renforcée auprès des talents et d'investisseurs</li>
+              </ul>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
                   <span className="text-sm text-muted-foreground">Réduction des coûts énergétiques/an</span>
-                  <span className="text-2xl font-bold text-sustainable">Jusqu'à -30%</span>
-                </div>
-                <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
-                  <span className="text-sm text-muted-foreground">Réduction coûts d'exploitation</span>
-                  <span className="text-2xl font-bold text-sustainable">-20%</span>
+                  <span className="text-xl font-bold text-sustainable">Jusqu'à -30%</span>
                 </div>
               </div>
             </div>
@@ -338,22 +335,21 @@ const Services = () => {
                   <h3 className="text-xl font-bold">Mise en place, suivi et formation des équipes aux actions durables</h3>
                 </div>
               </div>
-              <div className="flex gap-2 mb-4">
+              <div className="flex gap-2 justify-center mb-4">
                 <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
                 Le succès d'une transition d'entreprise vers des démarches plus durables passent obligatoirement par la sensibilisation, et l'engagement des équipes. Les dirigeants sont souvent démunis quant au pilotage opérationnels des équipes sur ces actions, face à certaines réticences au changement. CRM Conseil propose un accompagnement sur la mise en place de la stratégie de durabilité définie, avec non seulement un support de suivi des objectifs, mais aussi des formations motivationnelles aux gestes de durabilité essentiels liés à chaque secteur d'activité.
-                <br /><strong>Vos gains : des équipes impliquées et des objectifs concrets respectés</strong>
+                <br /><strong>Vos gains :</strong>
               </p>
-              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Des équipes impliquées et des objectifs concrets respectés</li>
+              </ul>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
                   <span className="text-sm text-muted-foreground">Engagement collaborateurs RSE</span>
-                  <span className="text-2xl font-bold text-primary">+40%</span>
-                </div>
-                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
-                  <span className="text-sm text-muted-foreground">Réduction turnover</span>
-                  <span className="text-2xl font-bold text-primary">-25%</span>
+                  <span className="text-xl font-bold text-primary">+40%</span>
                 </div>
               </div>
             </div>
@@ -368,22 +364,21 @@ const Services = () => {
                   <h3 className="text-xl font-bold">Valorisation commerciale de la démarche RSE</h3>
                 </div>
               </div>
-              <div className="flex gap-2 mb-4">
+              <div className="flex gap-2 justify-center mb-4">
                 <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
                 CRM Conseil considère à juste titre que l'engagement dans la durabilité d'une entreprise apporte de réelles retombées commerciales et financières. Nous modélisons le ROI de vos actions sur plusieurs années tant par rapport aux réductions de couts, au repositionnement de produits, aux nouveaux marchés. Nous pilotons pour nos clients des campagnes de générations de leads sur ces nouveaux marchés permettant de rapidement valider les retombées commerciales.
-                <br /><strong>Vos gains : ROI de la démarche de durabilité et augmentation des résultats</strong>
+                <br /><strong>Vos gains :</strong>
               </p>
-              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>ROI de la démarche de durabilité et augmentation des résultats</li>
+              </ul>
+              <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
                   <span className="text-sm text-muted-foreground">Croissance via marchés RSE</span>
-                  <span className="text-2xl font-bold text-accent">+20 à 35%</span>
-                </div>
-                <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
-                  <span className="text-sm text-muted-foreground">Valorisation levée de fonds</span>
-                  <span className="text-2xl font-bold text-accent">+30%</span>
+                  <span className="text-xl font-bold text-accent">+20 à 35%</span>
                 </div>
               </div>
             </div>
