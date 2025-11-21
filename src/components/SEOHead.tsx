@@ -56,9 +56,13 @@ export const SEOHead = ({
       
       {/* Geo tags pour le local SEO */}
       <meta name="geo.region" content="FR-06" />
-      <meta name="geo.placename" content="Nice, France" />
-      <meta name="geo.position" content="43.7102;7.2620" />
-      <meta name="ICBM" content="43.7102, 7.2620" />
+      <meta name="geo.placename" content="Monaco, Nice, Cannes, Grasse, Menton, Toulon" />
+      <meta name="geo.position" content="43.7384;7.4246" />
+      <meta name="ICBM" content="43.7384, 7.4246" />
+      
+      {/* Local Business Schema */}
+      <meta name="locality" content="Monaco" />
+      <meta name="region" content="Provence-Alpes-Côte d'Azur" />
       
       {/* Language */}
       <meta httpEquiv="content-language" content="fr-FR" />
