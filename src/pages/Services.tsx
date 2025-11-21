@@ -156,7 +156,7 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Génération de leads B2B externalisée</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et plus de temps à signer.
+                  Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et se focalisent sur la signature de deals. Vos gains : Plus de leads, plus de signatures, plus rapidement!
                 </p>
             </div>
 
