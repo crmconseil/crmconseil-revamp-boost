@@ -489,15 +489,15 @@ const About = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Ciblage clients / partenaires / fournisseurs avec engagements RSE</span>
+                  <span>95% des clients, partenaires et fournisseurs avec engagements RSE</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Adhérent Pacte National Transition Énergétique</span>
+                  <span>Adhérent Pacte National Transition Energétique de Monaco</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Accompagnement et formation des équipes (MIT)</span>
+                  <span>100% de l'équipe formée à la RSE (MIT/Bilan Carbone®)</span>
                 </li>
               </ul>
             </div>
@@ -515,15 +515,15 @@ const About = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Limitation des déplacements</span>
+                  <span>85% de réduction de déplacements</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Abonnements transports partagés</span>
+                  <span>Abonnement transports partagés</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Vélo électrique d'entreprise</span>
+                  <span>2 vélos électriques d'entreprise</span>
                 </li>
               </ul>
             </div>
@@ -541,19 +541,19 @@ const About = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Électricité 100% renouvelable</span>
+                  <span>100% Electricité renouvelable</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Équipements/Matières 1ères recyclables/recyclés</span>
+                  <span>80% Equipements/Matières 1ères recyclable/recyclés</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>LED / Thermostats intelligents</span>
+                  <span>100% LED / Thermostats intelligents</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-sustainable rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Digitalisation des documents</span>
+                  <span>100% Digital / 0 papier</span>
                 </li>
               </ul>
             </div>
@@ -571,15 +571,15 @@ const About = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Tri sélectif</span>
+                  <span>100% tri sélectif</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>Compostage</span>
+                  <span>75% Compostage</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span>No Plastic</span>
+                  <span>0% Plastiques</span>
                 </li>
               </ul>
             </div>
