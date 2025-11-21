@@ -184,15 +184,15 @@ const AboutEN = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-              Since 2014, CRM Conseil has supported the growth of innovative and committed startups and SMEs. 
-              Take the next step today by making your CSR commitment a commercial acceleration lever for the future.
+              Since 2014, CRM Conseil has been supporting the growth of startups and micro-enterprises/SMEs committed to improving their commercial results. 
+              Take the next step today by making your sustainable transition a commercial acceleration lever for the future.
             </p>
           </div>
         </div>
       </section>
 
       {/* Our Expertise Section with key figures */}
-      <section id="expertise" className="py-6 bg-gradient-to-r from-primary/10 to-sustainable/10">
+      <section id="expertise" className="py-2 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-6">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">

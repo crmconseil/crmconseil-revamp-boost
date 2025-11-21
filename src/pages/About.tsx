@@ -181,15 +181,15 @@ const About = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-4xl mx-auto leading-relaxed">
-              Depuis 2014, CRM Conseil accompagne la croissance de startups et PMEs innovantes et engagées. 
-              Passez dès aujourd'hui à l'étape d'après en faisant de votre engagement RSE une levier d'accélération commerciale pour l'avenir.
+              Depuis 2014, CRM Conseil accompagne la croissance de startups et TPE/PMEs engagées dans l'amélioration de leurs résultats commerciaux. 
+              Passez dès aujourd'hui à l'étape d'après, en faisant de votre transition durable un levier d'accélération commerciale pour l'avenir.
             </p>
           </div>
         </div>
       </section>
 
       {/* Notre Expertise Section avec chiffres clés */}
-      <section id="expertise" className="py-6 bg-gradient-to-r from-primary/10 to-sustainable/10">
+      <section id="expertise" className="py-2 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-6">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
