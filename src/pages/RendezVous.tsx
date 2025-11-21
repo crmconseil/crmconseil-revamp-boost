@@ -8,9 +8,9 @@ const RendezVous = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="Rendez-vous - CRM Conseil | Réservez votre consultation gratuite"
-        description="Prenez rendez-vous avec nos experts en performance commerciale et RSE. Consultation gratuite pour votre projet d'accompagnement commercial durable. Disponible à Nice, Monaco, Cannes."
-        keywords="rendez-vous CRM conseil, consultation gratuite, expert commercial RSE, prise de contact, accompagnement personnalisé"
+        title="Rendez-vous Monaco Nice Cannes - Consultation Expert Commercial RSE PACA"
+        description="Réservez consultation gratuite à Monaco, Nice, Cannes, Menton, Grasse, Toulon avec experts développement commercial et RSE région PACA. Accompagnement personnalisé startups PME Côte d'Azur pour optimiser performance commerciale et transition durable."
+        keywords="rendez-vous consultation Monaco, expert commercial Nice, conseil RSE Cannes, consultation gratuite PACA, accompagnement startup Monaco Nice, développement commercial Côte d'Azur, transition durable Alpes-Maritimes, bilan carbone région PACA, RDV conseil Menton Grasse Toulon"
         canonical="/book-appointment"
       />
       <StructuredData type="service" />

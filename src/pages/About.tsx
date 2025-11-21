@@ -162,9 +162,9 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="À Propos CRM Conseil | Expert Développement Commercial & RSE | Conseil Durabilité"
-        description="Découvrez CRM Conseil et Sabrina Broggini. Expert certifié en développement commercial, optimisation business, conseil CRM, bilan carbone, transition durable et RSE pour startups et PME. Plus de 100 entreprises accompagnées vers la durabilité écologique."
-        keywords="à propos CRM conseil, expert développement commercial, optimisation commerciale, consultant CRM, expert RSE, bilan carbone, transition durable, conseil durabilité, écologie entreprise"
+        title="Sabrina Broggini Monaco Nice | Expert Commercial RSE Certifié ADEME PACA"
+        description="Sabrina Broggini, consultante développement commercial et RSE à Monaco, Nice, Cannes depuis 15 ans. Certifications ADEME, ABC, MIT Sloan, SKEMA. Accompagnement startups et PME région PACA en performance commerciale durable et transition écologique Côte d'Azur."
+        keywords="Sabrina Broggini Monaco, consultant développement commercial Nice, expert RSE Monaco Cannes, certification ADEME région PACA, bilan carbone Côte d'Azur, MIT Sloan, SKEMA Business School, accompagnement startup Monaco Nice Menton, performance commerciale durable Alpes-Maritimes, transition écologique PACA, conseil CRM Cannes Grasse Toulon"
         canonical="/a-propos"
       />
       <StructuredData type="organization" />
