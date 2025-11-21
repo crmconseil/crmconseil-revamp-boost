@@ -26,7 +26,8 @@ import {
   Cog,
   Globe,
   Settings,
-  Brain
+  Brain,
+  Building2
 } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
@@ -158,7 +159,7 @@ const AboutEN = () => {
   const sectors = [
     { icon: Leaf, title: "Greentech" },
     { icon: Brain, title: "Deeptech" },
-    { icon: Cog, title: "Devtech" },
+    { icon: Building2, title: "Real Estate" },
     { icon: Palmtree, title: "Tourism" }
   ];
 
