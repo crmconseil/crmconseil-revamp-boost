@@ -136,11 +136,11 @@ const Services = () => {
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                CRM Conseil accompagne ses clients sur les sujets bloquants leur résultats commerciaux. Après audit du process de vente, nous pouvons travailler ensemble sur des sujets spécifiques tels que :
+                Vos ventes bloquent toujours à la même étape? Vos cycles sont longs? CRM Conseil accompagne ses clients sur des actions concrètes d'optimisation commerciale :
               </p>
               <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
-                <li>Restructuration de votre process commercial</li>
-                <li>Optimisation terrain co-construite de vos supports de vente</li>
+                <li>Révision de votre process commercial</li>
+                <li>Co-optimisation de vos supports de vente</li>
                 <li>Automatisation de tâches de relances répétitives</li>
                 <li>Accompagnement lors de RDV clients stratégiques</li>
                 <li>Optimisation de la qualification des leads et opportunités pour maximiser votre efficacité commerciale</li>
@@ -171,13 +171,12 @@ const Services = () => {
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                CRM Conseil vous oriente vers les outils CRM/ERP les plus adaptés à vos besoins, budget et perspectives de croissance. Nous privilégions les solutions scalables pour éviter les changements d'outils coûteux. Notre accompagnement inclut :
+                De bons outils CRM/ERP peuvent avoir un réel impact sur vos résultats et votre productivité. Agnostique de tout outil, CRM Conseil vous oriente vers les solutions les plus adaptées aux besoins, budget et perspectives de scalabilité pour éviter les changements d'outils coûteux. Notre accompagnement inclut :
               </p>
               <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
                 <li>Sélection d'outils adaptés à votre secteur et taille</li>
-                <li>Configuration personnalisée de vos tableaux de bord</li>
-                <li>Formation de vos équipes à l'utilisation optimale</li>
-                <li>Paramétrage des workflows et automatisations</li>
+                <li>Configuration de workflows, automatisations et suivi de chiffres clés</li>
+                <li>Engagement et formation de vos équipes</li>
               </ul>
               <p className="text-muted-foreground text-justify mb-4">
                 <strong>Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés</strong>
