@@ -112,7 +112,7 @@ const Services = () => {
             </h2>
             <div className="max-w-4xl mx-auto mt-8">
               <p className="text-lg text-muted-foreground text-justify mb-4">
-                Moins de 40 % du temps des commerciaux est dédié à la vente. CRM Conseil aide les startups et PME à éliminer les blocages, optimiser leurs processus de vente et maximiser leur efficacité commerciale. Simplifiez vos outils, perfectionnez vos pitchs et atteignez des résultats durables.
+                Moins de 40 % du temps des commerciaux est dédié à la vente. CRM Conseil aide les startups et PME à éliminer les blocages, réduire leur cycle de vente et maximiser leur efficacité commerciale. Simplifiez vos outils, perfectionnez vos pitchs et votre qualification prospects, et atteignez des résultats durables.
               </p>
               <p className="text-lg text-muted-foreground text-justify">
                 Notre approche combine analyse des performances actuelles, formation pratique et accompagnement sur le terrain pour transformer vos équipes commerciales en forces de vente performantes. Nos missions sont courtes et pratiques pour respecter les budgets et le temps rapide de nos clients startups et PMEs. Vous récupérez des éléments utilisables immédiatement pour continuer votre prospection en toute autonomie.
