@@ -162,9 +162,9 @@ const About = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="À Propos - CRM Conseil | Expertise Performance Commerciale Durable"
-        description="Découvrez CRM Conseil et Sabrina Broggini. Expert certifié en accompagnement commercial et RSE pour startups et PME. Plus de 100 entreprises accompagnées vers la performance durable."
-        keywords="à propos CRM conseil, Sabrina Broggini, expert commercial RSE, accompagnement PME startups, consultant développement durable"
+        title="À Propos CRM Conseil | Expert Développement Commercial & RSE | Conseil Durabilité"
+        description="Découvrez CRM Conseil et Sabrina Broggini. Expert certifié en développement commercial, optimisation business, conseil CRM, bilan carbone, transition durable et RSE pour startups et PME. Plus de 100 entreprises accompagnées vers la durabilité écologique."
+        keywords="à propos CRM conseil, expert développement commercial, optimisation commerciale, consultant CRM, expert RSE, bilan carbone, transition durable, conseil durabilité, écologie entreprise"
         canonical="/a-propos"
       />
       <StructuredData type="organization" />

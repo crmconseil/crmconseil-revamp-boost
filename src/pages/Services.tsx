@@ -11,9 +11,9 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="Services - CRM Conseil | Accompagnement Commercial & RSE pour PME"
-        description="Découvrez nos services d'accompagnement commercial et RSE : bilan GES, stratégie commerciale, conseil développement durable. Expertise certifiée pour startups et PME à Nice, Monaco, Cannes."
-        keywords="services conseil commercial, bilan GES PME, accompagnement RSE, stratégie commerciale, développement durable entreprise, consultant Nice Monaco"
+        title="Services CRM - Conseil Développement Commercial & RSE | Optimisation Business"
+        description="Découvrez nos services de développement commercial et RSE : conseil CRM, optimisation commerciale, business development, bilan carbone, transition durable. Expertise certifiée en écologie et durabilité pour startups et PME."
+        keywords="services développement commercial, conseil CRM, optimisation commerciale, business development, bilan carbone PME, accompagnement RSE, transition durable, écologie entreprise, consultant durabilité, conseil croissance durable"
         canonical="/nos-services"
       />
       <StructuredData type="service" />

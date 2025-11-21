@@ -165,9 +165,9 @@ const AboutEN = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title={t('about.page_title')}
-        description="Discover CRM Conseil and Sabrina Broggini. Certified expert in commercial support and CSR for startups and SMEs. Over 100 companies supported towards sustainable performance."
-        keywords="about CRM conseil, Sabrina Broggini, commercial CSR expert, SME startup support, sustainable development consultant"
+        title="About CRM Conseil | Commercial Development & CSR Expertise | Sustainability Consulting"
+        description="Discover CRM Conseil and Sabrina Broggini. Certified expert in commercial development, business optimization, CRM consulting, carbon assessment, sustainable transition and CSR for startups and SMEs. 100+ companies supported towards ecological sustainability."
+        keywords="about CRM conseil, commercial development expert, business optimization, CRM consultant, CSR expert, carbon assessment, sustainable transition, sustainability consulting, ecology business"
         canonical="/en/about"
       />
       <StructuredData type="organization" />
