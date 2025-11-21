@@ -123,198 +123,107 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Optimisation des process commerciaux */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <TrendingUp className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <TrendingUp className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Optimisation des process et supports commerciaux</h3>
                 </div>
-                <h3 className="text-xl font-bold">Optimisation des process et supports commerciaux</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  Analyse et restructuration de vos processus et supports de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation de la qualification des leads et opportunités pour maximiser votre efficacité commerciale.
-                  <br /><strong>Vos gains : Signature de deals plus rapide</strong>
-                </p>
+              <div className="flex gap-2 mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Analyse et restructuration de vos processus et supports de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation de la qualification des leads et opportunités pour maximiser votre efficacité commerciale.
+                <br /><strong>Vos gains : Signature de deals plus rapide</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Augmentation du taux de conversion</span>
+                  <span className="text-2xl font-bold text-primary">+30 à +50%</span>
+                </div>
+                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Accélération du cycle de vente</span>
+                  <span className="text-2xl font-bold text-primary">+25 à +40%</span>
+                </div>
+              </div>
             </div>
 
             {/* Choix et Configuration d'outils de pilotage */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Settings className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Settings className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Choix et Configuration d'outils de pilotage (CRM/ERP)</h3>
                 </div>
-                <h3 className="text-xl font-bold">Choix et Configuration d'outils de pilotage (CRM/ERP)</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
-                  <br /><strong>Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés.</strong>
-                </p>
+              <div className="flex gap-2 mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
+                <br /><strong>Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés.</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+                <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Accélération du cycle de vente</span>
+                  <span className="text-2xl font-bold text-sustainable">+25 à +40%</span>
+                </div>
+              </div>
             </div>
 
             {/* Générations de leads B2B */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Users className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Users className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Génération de leads B2B externalisée</h3>
                 </div>
-                <h3 className="text-xl font-bold">Génération de leads B2B externalisée</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et se focalisent sur la signature de deals.
-                  <br /><strong>Vos gains : Plus de leads, plus de signatures, plus rapidement!</strong>
-                </p>
+              <div className="flex gap-2 mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et se focalisent sur la signature de deals.
+                <br /><strong>Vos gains : Plus de leads, plus de signatures, plus rapidement!</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Rendez-vous qualifiés obtenus</span>
+                  <span className="text-2xl font-bold text-primary">+20 à +35%</span>
+                </div>
+              </div>
             </div>
 
             {/* Valorisation commerciale pour levée de fonds */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Target className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Target className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Préparation à la levée de fonds</h3>
                 </div>
-                <h3 className="text-xl font-bold">Préparation à la levée de fonds</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  Boostez vos chances de convaincre investisseurs, fonds et family offices grâce à un pitch deck ultra-design, une valorisation solide de vos KPIs et de votre modèle, un discours dirigeant percutant et des accroches investisseurs personnalisées. Tout ce qu'il faut pour transformer l'intérêt… en investissement.
-                  <br /><strong>Vos gains : Augmentation de vos chances de financement</strong>
-                </p>
-            </div>
-          </div>
-
-          {/* Ce que nous vous apportons - Infographie */}
-          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
-            <h3 className="text-2xl font-bold text-center mb-8">Ce que nous vous apportons:</h3>
-            
-            {/* Infographie visuelle améliorée */}
-            <div className="relative">
-              <div className="grid lg:grid-cols-2 gap-8">
-                {/* Phase 1 - Acquisition */}
-                <div className="relative bg-gradient-to-br from-primary/5 via-primary/10 to-primary/20 rounded-2xl p-8 border-2 border-primary/30 shadow-xl overflow-hidden">
-                  {/* Éléments décoratifs */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
-                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full -ml-12 -mb-12"></div>
-                  
-                  <div className="relative z-10">
-                    <div className="text-center mb-8">
-                      <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
-                        <Target className="w-10 h-10 text-white" />
-                      </div>
-                      <h4 className="text-2xl font-bold text-primary mb-2">Ciblage / Acquisition 1ers clients</h4>
-                      <div className="inline-block px-4 py-2 bg-primary/20 rounded-full">
-                        <p className="text-sm font-medium text-primary">Startups early stage</p>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-4">
-                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div className="relative flex items-center">
-                          <div className="mr-4">
-                            <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                              <TrendingUp className="w-6 h-6 text-primary" />
-                            </div>
-                          </div>
-                          <div>
-                            <div className="text-3xl font-bold text-primary mb-1">+30 à +50%</div>
-                            <p className="text-sm text-muted-foreground">d'augmentation du taux de conversion</p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div className="relative flex items-center">
-                          <div className="mr-4">
-                            <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                              <Clock className="w-6 h-6 text-primary" />
-                            </div>
-                          </div>
-                          <div>
-                            <div className="text-3xl font-bold text-primary mb-1">+25 à +40%</div>
-                            <p className="text-sm text-muted-foreground">d'accélération du cycle de vente</p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div className="relative flex items-center">
-                          <div className="mr-4">
-                            <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                              <Calendar className="w-6 h-6 text-primary" />
-                            </div>
-                          </div>
-                          <div>
-                            <div className="text-3xl font-bold text-primary mb-1">+20 à +35%</div>
-                            <p className="text-sm text-muted-foreground">de rendez-vous qualifiés obtenus</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Phase 2 - Accélération */}
-                <div className="relative bg-gradient-to-br from-sustainable/5 via-sustainable/10 to-sustainable/20 rounded-2xl p-8 border-2 border-sustainable/30 shadow-xl overflow-hidden">
-                  {/* Éléments décoratifs */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-sustainable/10 rounded-full -mr-16 -mt-16"></div>
-                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-sustainable/5 rounded-full -ml-12 -mb-12"></div>
-                  
-                  <div className="relative z-10">
-                    <div className="text-center mb-8">
-                      <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-sustainable to-sustainable/80 rounded-2xl shadow-lg mb-4">
-                        <Rocket className="w-10 h-10 text-white" />
-                      </div>
-                      <h4 className="text-2xl font-bold text-sustainable mb-2">Accélération / Levée de fonds</h4>
-                      <div className="inline-block px-4 py-2 bg-sustainable/20 rounded-full">
-                        <p className="text-sm font-medium text-sustainable">Startups & PME établies</p>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-4">
-                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                        <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div className="relative flex items-center">
-                          <div className="mr-4">
-                            <div className="w-12 h-12 bg-sustainable/20 rounded-lg flex items-center justify-center">
-                              <BarChart3 className="w-6 h-6 text-sustainable" />
-                            </div>
-                          </div>
-                          <div>
-                            <div className="text-3xl font-bold text-sustainable mb-1">+40 à +60%</div>
-                            <p className="text-sm text-muted-foreground">d'augmentation de la valeur du pipeline</p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                        <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div className="relative flex items-center">
-                          <div className="mr-4">
-                            <div className="w-12 h-12 bg-sustainable/20 rounded-lg flex items-center justify-center">
-                              <Zap className="w-6 h-6 text-sustainable" />
-                            </div>
-                          </div>
-                          <div>
-                            <div className="text-3xl font-bold text-sustainable mb-1">+25 à +50%</div>
-                            <p className="text-sm text-muted-foreground">d'opportunités additionnelles générées</p>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-5 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                        <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div className="relative flex items-center">
-                          <div className="mr-4">
-                            <div className="w-12 h-12 bg-sustainable/20 rounded-lg flex items-center justify-center">
-                              <TrendingUp className="w-6 h-6 text-sustainable" />
-                            </div>
-                          </div>
-                          <div>
-                            <div className="text-3xl font-bold text-sustainable mb-1">+50 à +60%</div>
-                            <p className="text-sm text-muted-foreground">de taux de succès de la levée de fonds</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div className="flex gap-2 mb-4">
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Boostez vos chances de convaincre investisseurs, fonds et family offices grâce à un pitch deck ultra-design, une valorisation solide de vos KPIs et de votre modèle, un discours dirigeant percutant et des accroches investisseurs personnalisées. Tout ce qu'il faut pour transformer l'intérêt… en investissement.
+                <br /><strong>Vos gains : Augmentation de vos chances de financement</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+                <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Valorisation en levée de fonds</span>
+                  <span className="text-2xl font-bold text-accent">+30%</span>
                 </div>
               </div>
             </div>
@@ -391,201 +300,90 @@ const Services = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Bilan GES Durabilité / Bilan Carbone® */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Globe className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Globe className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Bilan GES Durabilité / Bilan Carbone®</h3>
                 </div>
-                <h3 className="text-xl font-bold">Bilan GES Durabilité / Bilan Carbone®</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  Le Bilan GES ou Bilan Carbone® analyse l'ensemble de vos émissions carbone, incluant par ailleurs une analyse des risques climatiques qui pèsent sur votre entreprise et les impacts climatiques que vous générez et définit un plan de transition plus durable. Cette démarche volontaire permet de repositionner votre entreprise dans une démarche valorisable, de durabilité.
-                  <br /><strong>Vos gains : réduction de vos couts et votre dépendance énergétique carbonée, développement de nouveaux marchés, attractivité renforcée auprès des talents et d'investisseurs.</strong>
-                </p>
+              <div className="flex gap-2 mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Le Bilan GES ou Bilan Carbone® analyse l'ensemble de vos émissions carbone, incluant par ailleurs une analyse des risques climatiques qui pèsent sur votre entreprise et les impacts climatiques que vous générez et définit un plan de transition plus durable. Cette démarche volontaire permet de repositionner votre entreprise dans une démarche valorisable, de durabilité.
+                <br /><strong>Vos gains : réduction de vos couts et votre dépendance énergétique carbonée, développement de nouveaux marchés, attractivité renforcée auprès des talents et d'investisseurs.</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+                <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Réduction des coûts énergétiques/an</span>
+                  <span className="text-2xl font-bold text-sustainable">Jusqu'à -30%</span>
+                </div>
+                <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Réduction coûts d'exploitation</span>
+                  <span className="text-2xl font-bold text-sustainable">-20%</span>
+                </div>
+              </div>
             </div>
 
             {/* Mise en place, suivi et formation des équipes aux actions durables */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Users className="w-6 h-6 text-sustainable" />
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Users className="w-6 h-6 text-sustainable" />
+                  </div>
+                  <h3 className="text-xl font-bold">Mise en place, suivi et formation des équipes aux actions durables</h3>
                 </div>
-                <h3 className="text-xl font-bold">Mise en place, suivi et formation des équipes aux actions durables</h3>
               </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  Le succès d'une transition d'entreprise vers des démarches plus durables passent obligatoirement par la sensibilisation, et l'engagement des équipes. Les dirigeants sont souvent démunis quant au pilotage opérationnels des équipes sur ces actions, face à certaines réticences au changement. CRM Conseil propose un accompagnement sur la mise en place de la stratégie de durabilité définie, avec non seulement un support de suivi des objectifs, mais aussi des formations motivationnelles aux gestes de durabilité essentiels liés à chaque secteur d'activité.
-                  <br /><strong>Vos gains : des équipes impliquées et des objectifs concrets respectés</strong>
-                </p>
+              <div className="flex gap-2 mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
+              </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                Le succès d'une transition d'entreprise vers des démarches plus durables passent obligatoirement par la sensibilisation, et l'engagement des équipes. Les dirigeants sont souvent démunis quant au pilotage opérationnels des équipes sur ces actions, face à certaines réticences au changement. CRM Conseil propose un accompagnement sur la mise en place de la stratégie de durabilité définie, avec non seulement un support de suivi des objectifs, mais aussi des formations motivationnelles aux gestes de durabilité essentiels liés à chaque secteur d'activité.
+                <br /><strong>Vos gains : des équipes impliquées et des objectifs concrets respectés</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Engagement collaborateurs RSE</span>
+                  <span className="text-2xl font-bold text-primary">+40%</span>
+                </div>
+                <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Réduction turnover</span>
+                  <span className="text-2xl font-bold text-primary">-25%</span>
+                </div>
+              </div>
             </div>
 
             {/* Valorisation commerciale de la démarche RSE */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
-              <div className="flex items-center mb-6">
-                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
-                  <Award className="w-6 h-6 text-sustainable" />
-                </div>
-                <h3 className="text-xl font-bold">Valorisation commerciale de la démarche RSE</h3>
-              </div>
-                <p className="text-muted-foreground text-justify mb-4">
-                  CRM Conseil considère à juste titre que l'engagement dans la durabilité d'une entreprise apporte de réelles retombées commerciales et financières. Nous modélisons le ROI de vos actions sur plusieurs années tant par rapport aux réductions de couts, au repositionnement de produits, aux nouveaux marchés. Nous pilotons pour nos clients des campagnes de générations de leads sur ces nouveaux marchés permettant de rapidement valider les retombées commerciales.
-                  <br /><strong>Vos gains : ROI de la démarche de durabilité et augmentation des résultats</strong>
-                </p>
-            </div>
-          </div>
-
-          {/* Ce que nous vous apportons - Infographie RSE */}
-          <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 max-w-6xl mx-auto mt-12">
-            <h3 className="text-2xl font-bold text-center mb-8">Ce que nous vous apportons:</h3>
-            
-            {/* Infographie visuelle RSE sur 3 colonnes */}
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Colonne 1 - Bilan Carbone Scope 1 */}
-              <div className="relative bg-gradient-to-br from-sustainable/5 via-sustainable/10 to-sustainable/20 rounded-2xl p-8 border-2 border-sustainable/30 shadow-xl overflow-hidden">
-                {/* Éléments décoratifs */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-sustainable/10 rounded-full -mr-16 -mt-16"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-sustainable/5 rounded-full -ml-12 -mb-12"></div>
-                
-                <div className="relative z-10">
-                  <div className="text-center mb-8">
-                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-sustainable to-sustainable/80 rounded-2xl shadow-lg mb-4">
-                      <Globe className="w-10 h-10 text-white" />
-                    </div>
-                    <h4 className="text-xl font-bold text-sustainable mb-2">Bilan Emissions Directes Scope 1</h4>
-                    <div className="inline-block px-3 py-1 bg-sustainable/20 rounded-full">
-                      <p className="text-xs font-medium text-sustainable">Impacts directs</p>
-                    </div>
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center">
+                  <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                    <Award className="w-6 h-6 text-sustainable" />
                   </div>
-                  
-                  <div className="space-y-4">
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-sustainable mb-1">Jusqu'à -30%</div>
-                        <p className="text-xs text-muted-foreground">de réduction des couts énergétiques / an via l'efficacité énergétique</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-sustainable mb-1">-20%</div>
-                        <p className="text-xs text-muted-foreground">des coûts d'exploitation grâce à la diminution du gaspillage et valorisation des déchets</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-sustainable/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-sustainable/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-sustainable mb-1">ROI direct</div>
-                        <p className="text-xs text-muted-foreground">2 à 3x l'investissement dès la 1ère année (pour TPE/PME de 200K€ à 2M€ de CA annuel)</p>
-                      </div>
-                    </div>
-                  </div>
+                  <h3 className="text-xl font-bold">Valorisation commerciale de la démarche RSE</h3>
                 </div>
               </div>
-              
-              {/* Colonne 2 - Formation et accompagnement équipes */}
-              <div className="relative bg-gradient-to-br from-primary/5 via-primary/10 to-primary/20 rounded-2xl p-8 border-2 border-primary/30 shadow-xl overflow-hidden">
-                {/* Éléments décoratifs */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-primary/5 rounded-full -ml-12 -mb-12"></div>
-                
-                <div className="relative z-10">
-                  <div className="text-center mb-8">
-                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-primary to-primary/80 rounded-2xl shadow-lg mb-4">
-                      <Users className="w-10 h-10 text-white" />
-                    </div>
-                    <h4 className="text-xl font-bold text-primary mb-2">Suivi et formation des équipes aux démarches durables</h4>
-                    <div className="inline-block px-3 py-1 bg-primary/20 rounded-full">
-                      <p className="text-xs font-medium text-primary">Engagement & formation</p>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">+40%</div>
-                        <p className="text-xs text-muted-foreground">d'engagement collaborateurs sur les enjeux RSE</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">-25%</div>
-                        <p className="text-xs text-muted-foreground">de turnover grâce à une culture d'entreprise engagée</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">+15%</div>
-                        <p className="text-xs text-muted-foreground">de productivité grâce à l'appropriation des bonnes pratiques durables</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-primary mb-1">Transformation</div>
-                        <p className="text-xs text-muted-foreground">culturelle ancrée et pérenne dans toute l'organisation</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="flex gap-2 mb-4">
+                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
+                <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
-              
-              {/* Colonne 3 - Valorisation commerciale RSE */}
-              <div className="relative bg-gradient-to-br from-accent/5 via-accent/10 to-accent/20 rounded-2xl p-8 border-2 border-accent/30 shadow-xl overflow-hidden">
-                {/* Éléments décoratifs */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full -mr-16 -mt-16"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-accent/5 rounded-full -ml-12 -mb-12"></div>
-                
-                <div className="relative z-10">
-                  <div className="text-center mb-8">
-                    <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-accent to-accent/80 rounded-2xl shadow-lg mb-4">
-                      <Award className="w-10 h-10 text-white" />
-                    </div>
-                    <h4 className="text-xl font-bold text-accent mb-2">Valorisation commerciale de la démarche RSE</h4>
-                    <div className="inline-block px-3 py-1 bg-accent/20 rounded-full">
-                      <p className="text-xs font-medium text-accent">Impact business</p>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">+20 à 35%</div>
-                        <p className="text-xs text-muted-foreground">de croissance commerciale via l'accès à des marchés RSE-sensibles</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">+30%</div>
-                        <p className="text-xs text-muted-foreground">de valorisation en levée de fonds grâce à un positionnement RSE fort</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">Image renforcée</div>
-                        <p className="text-xs text-muted-foreground">Différenciation concurrentielle et attractivité marque employeur</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-accent/20 shadow-md hover:shadow-lg transition-all duration-300 group">
-                      <div className="absolute inset-0 bg-gradient-to-r from-accent/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <div className="relative">
-                        <div className="text-2xl font-bold text-accent mb-1">Résilience</div>
-                        <p className="text-xs text-muted-foreground">Meilleur accès aux financements et conformité réglementaire anticipée</p>
-                      </div>
-                    </div>
-                  </div>
+              <p className="text-muted-foreground text-justify mb-4">
+                CRM Conseil considère à juste titre que l'engagement dans la durabilité d'une entreprise apporte de réelles retombées commerciales et financières. Nous modélisons le ROI de vos actions sur plusieurs années tant par rapport aux réductions de couts, au repositionnement de produits, aux nouveaux marchés. Nous pilotons pour nos clients des campagnes de générations de leads sur ces nouveaux marchés permettant de rapidement valider les retombées commerciales.
+                <br /><strong>Vos gains : ROI de la démarche de durabilité et augmentation des résultats</strong>
+              </p>
+              <div className="mt-6 pt-6 border-t border-sustainable/20 space-y-3">
+                <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Croissance via marchés RSE</span>
+                  <span className="text-2xl font-bold text-accent">+20 à 35%</span>
+                </div>
+                <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
+                  <span className="text-sm text-muted-foreground">Valorisation levée de fonds</span>
+                  <span className="text-2xl font-bold text-accent">+30%</span>
                 </div>
               </div>
             </div>
