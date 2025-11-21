@@ -337,7 +337,6 @@ const Services = () => {
                 </div>
               </div>
               <div className="flex gap-2 justify-center mb-4">
-                <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-medium rounded-full">Early stage</span>
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
