@@ -23,7 +23,8 @@ import {
   Activity,
   Cog,
   Globe,
-  Settings
+  Settings,
+  Brain
 } from "lucide-react";
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
@@ -37,7 +38,7 @@ const About = () => {
   const keyStats = [
     { icon: Users, number: "100+", label: "Startups et PME innovantes accompagnées" },
     { icon: TrendingUp, number: "+37%", label: "Augmentation des résultats commerciaux" },
-    { icon: Target, number: "4", label: "Secteurs d'expertise" },
+    { icon: Target, number: "+18%", label: "Impact commercial d'une démarche RSE" },
     { icon: Euro, number: "16M€", label: "Financements cumulés pour un client fidèle" }
   ];
 
@@ -146,10 +147,10 @@ const About = () => {
   ];
 
   const sectors = [
-    { icon: Leaf, title: "GreenTech" },
-    { icon: Activity, title: "HealthTech" },
-    { icon: Cog, title: "Industrie 4.0" },
-    { icon: Cpu, title: "Dev-AI" }
+    { icon: Leaf, title: "Greentech" },
+    { icon: Brain, title: "Deeptech" },
+    { icon: Cog, title: "Devtech" },
+    { icon: Heart, title: "Tourisme" }
   ];
 
   return (
@@ -189,7 +190,7 @@ const About = () => {
       </section>
 
       {/* Notre Expertise Section avec chiffres clés */}
-      <section id="expertise" className="py-2 bg-gradient-to-r from-primary/10 to-sustainable/10">
+      <section id="expertise" className="pt-0 pb-6 bg-gradient-to-r from-primary/10 to-sustainable/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-6">
             <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sustainable to-primary mb-4">
@@ -214,45 +215,17 @@ const About = () => {
 
           {/* Secteurs d'activité - dans le même bloc */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
-              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
-                <Leaf className="w-5 h-5 text-sustainable" />
-              </div>
-              <h3 className="text-lg font-semibold text-center mb-2">GreenTech</h3>
-              <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
-                Accompagnement des entreprises innovantes dans les technologies vertes et développement durable.
-              </p>
-            </div>
-
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
-              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
-                <Activity className="w-5 h-5 text-sustainable" />
-              </div>
-              <h3 className="text-lg font-semibold text-center mb-2">HealthTech</h3>
-              <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
-                Solutions commerciales dédiées aux entreprises de technologies de santé et dispositifs médicaux innovants.
-              </p>
-            </div>
-
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
-              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
-                <Cog className="w-5 h-5 text-sustainable" />
-              </div>
-              <h3 className="text-lg font-semibold text-center mb-2">Industrie</h3>
-              <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
-                Optimisation des processus commerciaux et transformation digitale pour les acteurs industriels modernes.
-              </p>
-            </div>
-
-            <div className="bg-background rounded-xl p-6 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-40 flex flex-col justify-center">
-              <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-3">
-                <Cpu className="w-5 h-5 text-sustainable" />
-              </div>
-              <h3 className="text-lg font-semibold text-center mb-2">Dev-AI</h3>
-              <p className="text-xs text-muted-foreground text-justify leading-tight line-clamp-4">
-                Stratégies commerciales pour les entreprises de développement logiciel et intelligence artificielle.
-              </p>
-            </div>
+            {sectors.map((sector, index) => {
+              const IconComponent = sector.icon;
+              return (
+                <div key={index} className="bg-background rounded-xl p-4 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors h-24 flex flex-col justify-center">
+                  <div className="p-2 bg-sustainable/20 rounded-full w-fit mx-auto mb-2">
+                    <IconComponent className="w-5 h-5 text-sustainable" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-center">{sector.title}</h3>
+                </div>
+              );
+            })}
           </div>
 
           {/* Nos certifications & Partenariats */}

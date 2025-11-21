@@ -305,6 +305,7 @@ const translations = {
     'about.key_stats_title': 'Our Impact in Numbers',
     'about.stat_startups': 'Startups & SMEs supported',
     'about.stat_growth': 'Average commercial performance increase',
+    'about.stat_csr_impact': 'Commercial impact of a CSR approach',
     'about.stat_sectors': 'Innovation sectors',
     'about.stat_funding': 'Funding optimization generated',
     'about.company_history': 'Our Story: From Commercial Optimization to Sustainable Development',
