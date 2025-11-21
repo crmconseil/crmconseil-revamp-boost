@@ -171,8 +171,16 @@ const Services = () => {
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
-                <br /><strong>Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés.</strong>
+                CRM Conseil vous oriente vers les outils CRM/ERP les plus adaptés à vos besoins, budget et perspectives de croissance. Nous privilégions les solutions scalables pour éviter les changements d'outils coûteux. Notre accompagnement inclut :
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Sélection d'outils adaptés à votre secteur et taille</li>
+                <li>Configuration personnalisée de vos tableaux de bord</li>
+                <li>Formation de vos équipes à l'utilisation optimale</li>
+                <li>Paramétrage des workflows et automatisations</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés</strong>
               </p>
               <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-sustainable/5 rounded-lg p-3">
@@ -197,8 +205,16 @@ const Services = () => {
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et se focalisent sur la signature de deals.
-                <br /><strong>Vos gains : Plus de leads, plus de signatures, plus rapidement!</strong>
+                Boostez votre pipeline commercial en moins d'un mois grâce à nos campagnes externalisées. Nous alimentons en continu vos équipes avec des opportunités hautement qualifiées :
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Ciblage précis de vos prospects idéaux</li>
+                <li>Qualification rigoureuse des opportunités</li>
+                <li>Prise de rendez-vous qualifiés pour vos commerciaux</li>
+                <li>Reporting détaillé des campagnes et résultats</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Vos gains : Plus de leads, plus de signatures, plus rapidement!</strong>
               </p>
               <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
@@ -222,8 +238,16 @@ const Services = () => {
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                Boostez vos chances de convaincre investisseurs, fonds et family offices grâce à un pitch deck ultra-design, une valorisation solide de vos KPIs et de votre modèle, un discours dirigeant percutant et des accroches investisseurs personnalisées. Tout ce qu'il faut pour transformer l'intérêt… en investissement.
-                <br /><strong>Vos gains : Augmentation de vos chances de financement</strong>
+                Maximisez vos chances de convaincre investisseurs, fonds et family offices. Notre accompagnement complet vous prépare à transformer l'intérêt en investissement :
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Pitch deck ultra-design et percutant</li>
+                <li>Valorisation solide de vos KPIs et modèle économique</li>
+                <li>Coaching du discours dirigeant</li>
+                <li>Accroches investisseurs personnalisées par profil</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Vos gains : Augmentation de vos chances de financement</strong>
               </p>
               <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-accent/5 rounded-lg p-3">
