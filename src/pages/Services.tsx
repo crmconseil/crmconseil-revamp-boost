@@ -131,6 +131,7 @@ const Services = () => {
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
                   Analyse et restructuration de vos processus et supports de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation de la qualification des leads et opportunités pour maximiser votre efficacité commerciale.
+                  <br /><strong>Vos gains : Signature de deals plus rapide</strong>
                 </p>
             </div>
 
@@ -143,7 +144,8 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Choix et Configuration d'outils de pilotage (CRM/ERP)</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial. Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés.
+                  Sélection et configuration d'outils (CRM/ERP) adaptés à vos besoins, budget et perspectives de croissance. CRM Conseil vous oriente vers les outils les plus scalable pour éviter d'avoir à multiplier ou changer d'outils au fil de votre développement. Nous formons vos équipes, configurons vos tableaux de bord de pilotage commercial.
+                  <br /><strong>Vos gains : Des semaines d'analyses et des mois de déploiement d'outils inadaptés économisés.</strong>
                 </p>
             </div>
 
@@ -156,7 +158,8 @@ const Services = () => {
                 <h3 className="text-xl font-bold">Génération de leads B2B externalisée</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et se focalisent sur la signature de deals. Vos gains : Plus de leads, plus de signatures, plus rapidement!
+                  Boostez votre pipeline en moins d'un mois grâce à nos campagnes externalisées de génération de leads. Nous alimentons en continu vos commerciaux avec des opportunités hautement qualifiées, pour qu'ils passent moins de temps à prospecter… et se focalisent sur la signature de deals.
+                  <br /><strong>Vos gains : Plus de leads, plus de signatures, plus rapidement!</strong>
                 </p>
             </div>
 
@@ -170,6 +173,7 @@ const Services = () => {
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
                   Boostez vos chances de convaincre investisseurs, fonds et family offices grâce à un pitch deck ultra-design, une valorisation solide de vos KPIs et de votre modèle, un discours dirigeant percutant et des accroches investisseurs personnalisées. Tout ce qu'il faut pour transformer l'intérêt… en investissement.
+                  <br /><strong>Vos gains : Augmentation de vos chances de financement</strong>
                 </p>
             </div>
           </div>
