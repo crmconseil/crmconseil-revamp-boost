@@ -30,6 +30,7 @@ import {
 import heroImage from "@/assets/hero-sustainable-business.jpg";
 import evolutionImage from "@/assets/evolution-histoire.png";
 import partenaireImage from "@/assets/partenariat-handshake.png";
+import rseBackgroundImage from "@/assets/rse-background.jpg";
 import abcLogo from "@/assets/logos/abc-certification.png";
 import millerHeimanLogo from "@/assets/logos/miller-heiman.gif";
 import mitLogo from "@/assets/logos/mit.png";
@@ -435,36 +436,18 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            {methods.map((method, index) => {
-              const IconComponent = method.icon;
-              return (
-                <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-primary/10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
-                      <IconComponent className="text-primary" size={20} />
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground">{method.title}</h3>
-                  </div>
-                  <div className="space-y-2 text-muted-foreground text-sm">
-                    {method.points.map((point, pointIndex) => (
-                      <div key={pointIndex} className="flex items-start">
-                        <span className="font-bold text-primary mr-2">{pointIndex + 1}.</span>
-                        <span>{point.replace(/^\d+\.\s*/, '')}</span>
-                      </div>
-                    ))}
-                  </div>
-                </Card>
-              );
-            })}
-          </div>
         </div>
       </section>
 
       {/* Nos engagements */}
-      <section className="py-12 bg-gradient-to-br from-secondary/30 to-background">
-        <div className="container mx-auto px-4">
+      <section className="py-12 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{ backgroundImage: `url(${rseBackgroundImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-sustainable/20 via-sustainable/10 to-background/95" />
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-6">Nos engagements d'excellence et de durabilité</h2>
           </div>
