@@ -389,30 +389,45 @@ const Services = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {/* Bilan Carbone® - Scope 1, 2 et/ou 3 */}
+            {/* Bilan GES Durabilité / Bilan Carbone® */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Globe className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Bilan Carbone® - Scope 1, 2 et/ou 3</h3>
+                <h3 className="text-xl font-bold">Bilan GES Durabilité / Bilan Carbone®</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Le Bilan GES RSE analyse l'ensemble de vos émissions directes et indirectes et intègre la double matérialité pour mesurer à la fois les risques climatiques qui pèsent sur votre entreprise et les impacts que vous générez. À la clé : réduction significative de votre empreinte carbone, nouveaux marchés, repositionnement stratégique et attractivité renforcée auprès des talents et des investisseurs.
+                  Le Bilan GES ou Bilan Carbone® analyse l'ensemble de vos émissions carbone, incluant par ailleurs une analyse des risques climatiques qui pèsent sur votre entreprise et les impacts climatiques que vous générez et définit un plan de transition plus durable. Cette démarche volontaire permet de repositionner votre entreprise dans une démarche valorisable, de durabilité.
+                  <br /><strong>Vos gains : réduction de vos couts et votre dépendance énergétique carbonée, développement de nouveaux marchés, attractivité renforcée auprès des talents et d'investisseurs.</strong>
                 </p>
             </div>
 
+            {/* Mise en place, suivi et formation des équipes aux actions durables */}
+            <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
+              <div className="flex items-center mb-6">
+                <div className="p-3 bg-sustainable/20 rounded-full mr-4">
+                  <Users className="w-6 h-6 text-sustainable" />
+                </div>
+                <h3 className="text-xl font-bold">Mise en place, suivi et formation des équipes aux actions durables</h3>
+              </div>
+                <p className="text-muted-foreground text-justify mb-4">
+                  Le succès d'une transition d'entreprise vers des démarches plus durables passent obligatoirement par la sensibilisation, et l'engagement des équipes. Les dirigeants sont souvent démunis quant au pilotage opérationnels des équipes sur ces actions, face à certaines réticences au changement. CRM Conseil propose un accompagnement sur la mise en place de la stratégie de durabilité définie, avec non seulement un support de suivi des objectifs, mais aussi des formations motivationnelles aux gestes de durabilité essentiels liés à chaque secteur d'activité.
+                  <br /><strong>Vos gains : des équipes impliquées et des objectifs concrets respectés</strong>
+                </p>
+            </div>
 
-            {/* Bilan Impact Biodiversité */}
+            {/* Valorisation commerciale de la démarche RSE */}
             <div className="bg-background rounded-2xl p-8 shadow-lg border border-sustainable/20 hover:border-sustainable/40 transition-colors">
               <div className="flex items-center mb-6">
                 <div className="p-3 bg-sustainable/20 rounded-full mr-4">
                   <Award className="w-6 h-6 text-sustainable" />
                 </div>
-                <h3 className="text-xl font-bold">Bilan Impact Biodiversité</h3>
+                <h3 className="text-xl font-bold">Valorisation commerciale de la démarche RSE</h3>
               </div>
                 <p className="text-muted-foreground text-justify mb-4">
-                  Le bilan biodiversité permet aux TPE et PME d'identifier leurs impacts et dépendances vis-à-vis des écosystèmes. Il offre une vision claire des risques et opportunités, aide à réduire les pressions sur la nature et à construire un plan d'action concret. Résultat : plus de résilience, de valeur et d'alignement réglementaire.
+                  CRM Conseil considère à juste titre que l'engagement dans la durabilité d'une entreprise apporte de réelles retombées commerciales et financières. Nous modélisons le ROI de vos actions sur plusieurs années tant par rapport aux réductions de couts, au repositionnement de produits, aux nouveaux marchés. Nous pilotons pour nos clients des campagnes de générations de leads sur ces nouveaux marchés permettant de rapidement valider les retombées commerciales.
+                  <br /><strong>Vos gains : ROI de la démarche de durabilité et augmentation des résultats</strong>
                 </p>
             </div>
           </div>
