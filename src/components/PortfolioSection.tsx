@@ -9,13 +9,11 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
 import { 
   Leaf, 
   Brain, 
-  Heart, 
-  Monitor,
   Building2,
+  Palmtree,
   Users,
   ArrowRight
 } from "lucide-react";
@@ -66,33 +64,51 @@ export const PortfolioSection = () => {
       title: t('portfolio.greentech'),
       color: "text-sustainable",
       bgColor: "bg-sustainable-light",
-      companies: ["ActionAir", "Mycophyto", "Hydro", "Inalve", "La Pousseraie"],
-      description: t('portfolio.greentech_desc')
     },
     {
       icon: Brain,
       title: t('portfolio.deeptech'),
       color: "text-commercial",
       bgColor: "bg-commercial-light",
-      companies: ["Daia", "HimyData", "Toumai", "Neurodec", "Akidaia", "Plenesys"],
-      description: t('portfolio.deeptech_desc')
     },
     {
-      icon: Heart,
-      title: t('portfolio.healthtech'),
-      color: "text-pink-600",
-      bgColor: "bg-pink-100",
-      companies: ["LifeScientis", "Laselis", "Sensoria", "Tethys", "Azoth Systems"],
-      description: t('portfolio.healthtech_desc')
+      icon: Building2,
+      title: t('portfolio.real_estate'),
+      color: "text-primary",
+      bgColor: "bg-primary/10",
     },
     {
-      icon: Monitor,
-      title: t('portfolio.digital'),
+      icon: Palmtree,
+      title: t('portfolio.tourism'),
       color: "text-blue-600",
       bgColor: "bg-blue-100",
-      companies: ["Tekoway", "Orange", "Lumata", "Arcan Security", "Inovafi", "Ononpay"],
-      description: t('portfolio.digital_desc')
     }
+  ];
+
+  // All company logos in one array
+  const allCompanies = [
+    { name: "ActionAir", logo: actionAirLogo },
+    { name: "Mycophyto", logo: mycophytoLogo },
+    { name: "Hydro", logo: hydroLogo },
+    { name: "Inalve", logo: inalveLogo },
+    { name: "La Pousseraie", logo: laPousseraieLogo },
+    { name: "Daia", logo: daiaLogo },
+    { name: "HimyData", logo: himydataLogo },
+    { name: "Toumai", logo: toumaiLogo },
+    { name: "Neurodec", logo: neurodecLogo },
+    { name: "Akidaia", logo: akidaiaLogo },
+    { name: "Plenesys", logo: plenesysLogo },
+    { name: "LifeScientis", logo: lifescientisLogo },
+    { name: "Laselis", logo: laselisLogo },
+    { name: "Sensoria", logo: sensoriaLogo },
+    { name: "Tethys", logo: tethysLogo },
+    { name: "Azoth Systems", logo: azothSystemsLogo },
+    { name: "Tekoway", logo: tekowayLogo },
+    { name: "Orange", logo: orangeLogo },
+    { name: "Lumata", logo: lumataLogo },
+    { name: "Arcan Security", logo: arcanSecurityLogo },
+    { name: "Inovafi", logo: inovafiLogo },
+    { name: "Ononpay", logo: ononpayLogo },
   ];
 
   const partners = [
@@ -134,96 +150,54 @@ export const PortfolioSection = () => {
         </div>
 
         {/* Sectors Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {sectors.map((sector, index) => {
             const IconComponent = sector.icon;
             return (
-              <Card key={index} className="p-8 hover:shadow-card-sustainable transition-all duration-300 group">
-                <div className="flex items-start space-x-4 mb-6">
-                  <div className={`${sector.bgColor} p-3 rounded-lg group-hover:scale-110 transition-transform`}>
-                    <IconComponent className={sector.color} size={32} />
+              <Card key={index} className="p-6 hover:shadow-card-sustainable transition-all duration-300 group text-center">
+                <div className="flex flex-col items-center space-y-4">
+                  <div className={`${sector.bgColor} p-4 rounded-lg group-hover:scale-110 transition-transform`}>
+                    <IconComponent className={sector.color} size={40} />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">{sector.title}</h3>
-                  </div>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="grid grid-cols-3 gap-4">
-                    {sector.companies.map((company, idx) => {
-                      const getCompanyLogo = (companyName: string) => {
-                        switch(companyName) {
-                          case "ActionAir":
-                            return actionAirLogo;
-                          case "Mycophyto":
-                            return mycophytoLogo;
-                          case "Tethys":
-                            return tethysLogo;
-                          case "Hydro":
-                            return hydroLogo;
-                          case "Inalve":
-                            return inalveLogo;
-                          case "La Pousseraie":
-                            return laPousseraieLogo;
-                          case "Lumata":
-                            return lumataLogo;
-                          case "Daia":
-                            return daiaLogo;
-                          case "HimyData":
-                            return himydataLogo;
-                          case "Toumai":
-                            return toumaiLogo;
-                          case "Neurodec":
-                            return neurodecLogo;
-                          case "Akidaia":
-                            return akidaiaLogo;
-                          case "Plenesys":
-                            return plenesysLogo;
-                          case "Arcan Security":
-                            return arcanSecurityLogo;
-                          case "Tekoway":
-                            return tekowayLogo;
-                          case "Orange":
-                            return orangeLogo;
-                          case "Inovafi":
-                            return inovafiLogo;
-                          case "Ononpay":
-                            return ononpayLogo;
-                          case "LifeScientis":
-                            return lifescientisLogo;
-                          case "Laselis":
-                            return laselisLogo;
-                          case "Sensoria":
-                            return sensoriaLogo;
-                          case "Azoth Systems":
-                            return azothSystemsLogo;
-                          default:
-                            return null;
-                        }
-                      };
-                      
-                      const logoSrc = getCompanyLogo(company);
-                      
-                      return logoSrc ? (
-                        <div key={idx} className="flex items-center justify-center h-20 bg-white/50 rounded-lg p-4">
-                          <img 
-                            src={logoSrc} 
-                            alt={`${company} logo`}
-                            className="max-h-16 max-w-full object-contain"
-                            loading="lazy"
-                          />
-                        </div>
-                      ) : (
-                        <Badge key={idx} variant="secondary" className="text-sm justify-center py-2">
-                          {company}
-                        </Badge>
-                      );
-                    })}
-                  </div>
+                  <h3 className="text-xl font-bold text-foreground">{sector.title}</h3>
                 </div>
               </Card>
             );
           })}
+        </div>
+
+        {/* Companies Carousel */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-center text-foreground mb-8">
+            Nos clients
+          </h3>
+          
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
+                {allCompanies.map((company, index) => (
+                  <CarouselItem key={index} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                    <div className="flex items-center justify-center h-24 bg-white rounded-lg p-4 hover:shadow-md transition-shadow">
+                      <img 
+                        src={company.logo} 
+                        alt={`${company.name} logo`}
+                        className="max-h-20 max-w-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
+            </Carousel>
+          </div>
         </div>
 
         {/* Partners Section */}
@@ -238,12 +212,6 @@ export const PortfolioSection = () => {
                 align: "start",
                 loop: true,
               }}
-              plugins={[
-                Autoplay({
-                  delay: 2000,
-                  stopOnInteraction: false,
-                }),
-              ]}
               className="w-full"
             >
               <CarouselContent className="-ml-4">
