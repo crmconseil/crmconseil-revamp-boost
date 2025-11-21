@@ -136,8 +136,17 @@ const Services = () => {
                 <span className="inline-block px-3 py-1 bg-sustainable/20 text-sustainable text-xs font-medium rounded-full">Startups & PME établies</span>
               </div>
               <p className="text-muted-foreground text-justify mb-4">
-                Analyse et restructuration de vos processus et supports de vente, amélioration du cycle commercial, accompagnement lors de RDV clients stratégiques, optimisation de la qualification des leads et opportunités pour maximiser votre efficacité commerciale.
-                <br /><strong>Vos gains : Signature de deals plus rapide</strong>
+                CRM Conseil accompagne ses clients sur les sujets bloquants leur résultats commerciaux. Après audit du process de vente, nous pouvons travailler ensemble sur des sujets spécifiques tels que :
+              </p>
+              <ul className="text-muted-foreground text-justify mb-4 list-disc list-inside space-y-1">
+                <li>Restructuration de votre process commercial</li>
+                <li>Optimisation terrain co-construite de vos supports de vente</li>
+                <li>Automatisation de tâches de relances répétitives</li>
+                <li>Accompagnement lors de RDV clients stratégiques</li>
+                <li>Optimisation de la qualification des leads et opportunités pour maximiser votre efficacité commerciale</li>
+              </ul>
+              <p className="text-muted-foreground text-justify mb-4">
+                <strong>Vos gains : Signature de deals plus rapide</strong>
               </p>
               <div className="mt-6 pt-6 border-t border-sustainable/20">
                 <div className="flex items-center justify-between bg-primary/5 rounded-lg p-3">
