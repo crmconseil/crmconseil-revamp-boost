@@ -54,6 +54,8 @@ import innovagrasseLogo from "@/assets/logos/innovagrasse.jpg";
 import innovinLogo from "@/assets/logos/innovin.png";
 import irceLogo from "@/assets/logos/irce.jpg";
 import mteLogo from "@/assets/logos/mte.png";
+import nicePortDuplexLogo from "@/assets/logos/nice-port-duplex.png";
+import villaBainaLogo from "@/assets/logos/villa-baina.jpg";
 
 export const PortfolioSection = () => {
   const { t } = useLanguage();
@@ -109,6 +111,8 @@ export const PortfolioSection = () => {
     { name: "Arcan Security", logo: arcanSecurityLogo },
     { name: "Inovafi", logo: inovafiLogo },
     { name: "Ononpay", logo: ononpayLogo },
+    { name: "Nice Port Duplex", logo: nicePortDuplexLogo },
+    { name: "Villa Baina", logo: villaBainaLogo },
   ];
 
   const partners = [
