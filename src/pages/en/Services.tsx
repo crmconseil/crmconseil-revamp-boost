@@ -21,9 +21,9 @@ const ServicesEN = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title={t('services.page_title')}
-        description={t('services.page_description')}
-        keywords={t('services.page_keywords')}
+        title="CRM Services - Sales Optimization & CSR | Business Development Consulting"
+        description="Discover our sales optimization and sustainability services: CRM consulting, business development, sales automation, climate change action, sustainable transition. Certified expertise in sales results and sustainability for startups and SMEs."
+        keywords="sales optimization, business development, CRM, sales results, sales automation, climate change, sustainability, sustainable transition, CSR consulting, business growth"
         canonical="/en/nos-services"
       />
       <StructuredData type="service" />

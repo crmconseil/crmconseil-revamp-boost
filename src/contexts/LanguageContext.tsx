@@ -287,9 +287,9 @@ const translations = {
     'expertise.certifications_desc': 'MIT, Carbon Assessment® and Miller Heiman training for cutting-edge expertise in commercial performance and sustainability.',
     'expertise.discover_about': 'Discover our journey',
     
-    // Portfolio Section
+    // Portfolio Section EN
     'portfolio.title': 'Our References',
-    'portfolio.subtitle': 'More than 100 startups and SMEs supported in their commercial optimization and CSR strategy',
+    'portfolio.subtitle': 'More than 100 startups and SMEs supported in their sales optimization, business development and sustainability strategy',
     'portfolio.greentech': 'Greentech',
     'portfolio.greentech_desc': '',
     'portfolio.deeptech': 'Deeptech',

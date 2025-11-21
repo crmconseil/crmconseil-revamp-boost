@@ -12,9 +12,9 @@ const IndexEN = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="CRM Conseil | Commercial Development & CSR Expert - CRM Business Optimization"
-        description="15 years of expertise in sustainable commercial development and CSR. Business development consulting, CRM optimization, carbon assessment, sustainable transition. Certified ecology and sustainability solutions for startups and SMEs."
-        keywords="commercial development, business optimization, CRM, business development, CSR, sustainable transition, sustainability, ecology, carbon assessment, business consulting, CRM consultant, CSR strategy"
+        title="CRM Conseil | Sales Optimization & CSR Expert - Business Development Consulting"
+        description="15 years of expertise in sales optimization, business development and sustainable transition. CRM consulting, sales automation, climate change action, sustainability strategy. Certified sales results and sustainability solutions for startups and SMEs."
+        keywords="sales optimization, business development, CRM, sales results, sales automation, climate change, sustainability, sustainable transition, CSR, business consulting"
         canonical="/en"
       />
       <StructuredData type="organization" />
