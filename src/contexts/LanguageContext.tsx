@@ -409,7 +409,7 @@ const translations = {
     'services.tools_configuration_title': 'CRM & Business Development Tools Configuration',
     'services.tools_configuration_desc': 'Selection and configuration of tools (CRM/ERP) adapted to your needs, budget and growth perspectives. CRM Conseil guides you towards the most scalable tools to avoid having to multiply or change tools as you develop. We train your teams and configure your commercial dashboards. Your gains: Weeks of analysis and months of inappropriate tool deployment saved.',
     'services.lead_generation_title': 'Outsourced B2B Lead Generation',
-    'services.lead_generation_desc': 'Boost your pipeline in less than a month through our outsourced lead generation campaigns. We continuously feed your sales teams with highly qualified opportunities, so they spend less time prospecting… and more time closing deals.',
+    'services.lead_generation_desc': 'Boost your pipeline in less than a month through our outsourced lead generation campaigns. We continuously feed your sales teams with highly qualified opportunities, so they spend less time prospecting… and focus on closing deals. Your gains: More leads, more signatures, faster!',
     'services.valorization_title': 'Fundraising Preparation',
     'services.valorization_desc': 'Boost your chances of convincing investors, funds and family offices with an ultra-designed pitch deck, solid valorization of your KPIs and model, an impactful executive pitch and personalized investor hooks. Everything you need to transform interest… into investment.',
     'services.what_we_bring': 'Expected Results: Commercial Performance & Sustainable Development Impact',
