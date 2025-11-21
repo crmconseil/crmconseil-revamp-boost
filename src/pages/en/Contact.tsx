@@ -276,14 +276,16 @@ const ContactEN = () => {
                           </div>
                           
                           <div className="space-y-2">
-                            <Label htmlFor="subject">Subject *</Label>
-                            <Input 
-                              id="subject"
-                              name="subject"
-                              placeholder="Subject of your message"
-                              required
-                              className={formErrors.subject ? 'border-destructive focus-visible:ring-destructive' : ''}
-                            />
+                            <Label htmlFor="service">Service of Interest</Label>
+                            <select
+                              id="service"
+                              name="service"
+                              className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                            >
+                              <option value="">Select a service</option>
+                              <option value="commercial-crm">Sales Support / CRM</option>
+                              <option value="rse-bilan-carbone">CSR Strategy / Carbon Footprint</option>
+                            </select>
                           </div>
                           
                           <div className="space-y-2">
