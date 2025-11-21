@@ -250,7 +250,7 @@ export const ServicesSection = () => {
             <p className="text-muted-foreground">{t('services.stats_startups')}</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-sustainable mb-2">+37%</div>
+            <div className="text-4xl font-bold text-sustainable mb-2">+18%</div>
             <p className="text-muted-foreground">{t('services.stats_sectors')}</p>
           </div>
           <div className="text-center">
