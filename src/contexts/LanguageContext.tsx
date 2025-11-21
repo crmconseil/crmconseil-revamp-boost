@@ -34,11 +34,12 @@ const translations = {
     'common.learn_more_services': 'En savoir plus sur nos services',
     
     // Hero Section - Optimized with keywords
-    'hero.title': 'Et si vos engagements de Durabilité devenaient l\'accélérateur de vos résultats commerciaux ?',
-    'hero.subtitle': '',
+    'hero.title': 'Développement Commercial & RSE à Monaco, Nice, Cannes | CRM Conseil région PACA',
+    'hero.subtitle': 'CRM Conseil à Monaco unit développement commercial et transition durable pour redéfinir avec ses clients startups, TPEs et PMEs de la région PACA (Menton, Nice, Cannes, Grasse) leur stratégie de croissance responsable. Expert en optimisation commerciale, CRM et business development, nous transformons vos actions RSE en véritables leviers de performance et compétitivité.',
     'hero.description': 'CRM Conseil à Monaco, Nice, Cannes unit développement commercial et transition durable pour redéfinir avec ses clients startups, TPEs et PMEs de la région PACA leur stratégie de croissance responsable. Expert en optimisation commerciale, CRM et business development Côte d\'Azur.\nTransformons vos actions RSE en véritables leviers de performance et compétitivité sur le marché Alpes-Maritimes et au-delà.',
-    'hero.commercial_performance': 'Développement Commercial & CRM région PACA',
-    'hero.sustainable_development': 'RSE & Bilan Carbone Monaco Nice Cannes',
+    'hero.commercial_performance': 'Performance commerciale',
+    'hero.sustainable_development': 'RSE & Bilan Carbone®',
+    'hero.location_tag': 'PACA/Alpes Maritimes : Monaco, Menton, Nice, Grasse, Toulon',
     
     // Services Section - Optimized with keywords
     'services.title': 'Nos Services',
@@ -75,7 +76,7 @@ const translations = {
     
     // Footer
     'footer.company': 'CRM Conseil Monaco Nice Cannes',
-    'footer.description': 'Expert développement commercial durable et RSE à Monaco, Nice, Cannes, Menton, Grasse, Toulon. Conseil en optimisation commerciale, CRM, business development, bilan carbone ADEME et transition durable pour startups et PME région PACA Côte d\'Azur. Solutions écologie et durabilité Alpes-Maritimes.',
+    'footer.description': 'Expert en développement commercial et RSE certifié à Monaco. Spécialisé dans l\'optimisation commerciale, CRM et stratégies durables pour startups et PMEs en région PACA (Menton, Nice, Cannes, Grasse, Toulon). Certifications SKEMA, Miller Heiman, MIT et ABC Bilan Carbone®.',
     'footer.certification': 'Certifié Développement Durable MIT',
     'footer.contact': 'Contact',
     'footer.consultant': 'Consultante Senior Développement Commercial & RSE région PACA',
@@ -83,8 +84,8 @@ const translations = {
     'footer.certifications': 'Expert CRM Monaco Nice • Certifié MIT Sustainable Strategy • Miller Heiman Certified • Bilan Carbone® ADEME',
     
     // Contact Section
-    'contact.title': 'Contactez-nous à Monaco, Nice, Cannes',
-    'contact.subtitle': 'Parlons de votre projet développement commercial, optimisation CRM et RSE région PACA',
+      'contact.title': 'Contactez-nous',
+      'contact.subtitle': 'Parlons de votre projet développement commercial, optimisation CRM et RSE. Région PACA : Menton, Monaco, Nice, Cannes, Grasse, Toulon.',
     'contact.description': 'Nous vous recontacterons dans les plus brefs délais pour votre projet Côte d\'Azur.',
     'contact.phone_label': 'Téléphone',
     'contact.address_label': 'Zone d\'intervention', 
@@ -117,7 +118,7 @@ const translations = {
     
     // Expertise Section
     'expertise.title': 'Notre Expertise Monaco Nice Cannes',
-    'expertise.subtitle': 'Depuis 2014, CRM Conseil à Monaco, Nice, Cannes accompagne la croissance de startups et TPE/PMEs de la région PACA engagées dans l\'amélioration de leurs résultats commerciaux. Passez dès aujourd\'hui à l\'étape d\'après en Côte d\'Azur, en faisant de votre transition durable un levier d\'accélération commerciale pour l\'avenir.',
+    'expertise.subtitle': 'Depuis 2014, CRM Conseil à Monaco, accompagne la croissance de startups et TPE/PMEs de la région PACA (Nice, Cannes, Grasse) engagées dans l\'amélioration de leurs résultats commerciaux. Passez dès aujourd\'hui à l\'étape d\'après, en faisant de votre transition durable un levier d\'accélération commerciale pour l\'avenir.',
     'expertise.commercial_years': '26+ ans',
     'expertise.commercial_experience': 'Développement et optimisation commerciaux',
     'expertise.commercial_desc': '• Vente et pilotage d\'équipes commerciales France et International\n• Optimisation commerciale terrain de startups et TPE/PMEs\n• Préparation pratique de la levée de fonds dans les secteurs Greentech, Deeptech, Agritech, Healthtech et Telecom\n• Optimisation commerciale secteur Tourisme.',
@@ -148,8 +149,8 @@ const translations = {
     'expertise.discover_about': 'Découvrir notre parcours',
     
     // Portfolio Section
-    'portfolio.title': 'Nos Références région PACA',
-    'portfolio.subtitle': 'Plus de 100 startups et PMEs Monaco Nice Cannes accompagnées dans leur optimisation commerciale CRM et stratégie RSE Côte d\'Azur',
+      'portfolio.title': 'Nos Références',
+      'portfolio.subtitle': 'Plus de 100 startups et PMEs accompagnées dans leur optimisation commerciale CRM et stratégie RSE sur la Côte d\'Azur',
     'portfolio.greentech': 'Greentech',
     'portfolio.greentech_desc': '',
     'portfolio.deeptech': 'Deeptech',

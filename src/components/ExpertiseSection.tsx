@@ -12,6 +12,10 @@ import {
   ArrowRight
 } from "lucide-react";
 import expertiseBackground from "@/assets/expertise-background.jpg";
+import abcLogo from "@/assets/logos/abc-certification-new.png";
+import millerHeimanLogo from "@/assets/logos/miller-heiman-new.gif";
+import mitLogo from "@/assets/logos/mit-new.png";
+import skemaLogo from "@/assets/logos/skema-new.jpg";
 
 export const ExpertiseSection = () => {
   const { language, t } = useLanguage();
@@ -78,16 +82,6 @@ export const ExpertiseSection = () => {
                 {t('expertise.consulting_desc')}
               </p>
             </Card>
-
-            <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300">
-              <div className="flex items-center space-x-4 mb-4">
-                <Building2 className="text-primary" size={24} />
-                <h4 className="text-xl font-semibold">{t('expertise.entrepreneurship')}</h4>
-              </div>
-              <p className="text-muted-foreground">
-                {t('expertise.entrepreneurship_desc')}
-              </p>
-            </Card>
           </div>
 
           {/* Right Column - Certifications */}
@@ -98,10 +92,10 @@ export const ExpertiseSection = () => {
                 Nos certifications
               </h3>
               
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 mb-8">
                 <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group flex flex-col items-center text-center">
                   <div className="mb-4 flex items-center justify-center h-20">
-                    <div className="text-4xl font-bold text-primary">SKEMA</div>
+                    <img src={skemaLogo} alt="SKEMA Business School" className="max-h-16 max-w-full object-contain" />
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Bachelor in Business Administration
@@ -110,7 +104,7 @@ export const ExpertiseSection = () => {
 
                 <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group flex flex-col items-center text-center">
                   <div className="mb-4 flex items-center justify-center h-20">
-                    <div className="text-3xl font-bold text-commercial">Miller Heiman</div>
+                    <img src={millerHeimanLogo} alt="Miller Heiman" className="max-h-16 max-w-full object-contain" />
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Certification Miller Heiman en vente stratégique
@@ -119,7 +113,7 @@ export const ExpertiseSection = () => {
 
                 <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group flex flex-col items-center text-center">
                   <div className="mb-4 flex items-center justify-center h-20">
-                    <div className="text-4xl font-bold text-sustainable">MIT</div>
+                    <img src={mitLogo} alt="MIT Management" className="max-h-16 max-w-full object-contain" />
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Certification Sustainable Strategy Design
@@ -128,7 +122,7 @@ export const ExpertiseSection = () => {
 
                 <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300 group flex flex-col items-center text-center">
                   <div className="mb-4 flex items-center justify-center h-20">
-                    <div className="text-3xl font-bold text-primary">ABC</div>
+                    <img src={abcLogo} alt="ABC Bilan Carbone" className="max-h-16 max-w-full object-contain" />
                   </div>
                   <p className="text-sm text-muted-foreground">
                     Certification Bilan Carbone®
@@ -136,6 +130,16 @@ export const ExpertiseSection = () => {
                 </Card>
               </div>
             </div>
+
+            <Card className="p-6 hover:shadow-card-sustainable transition-all duration-300">
+              <div className="flex items-center space-x-4 mb-4">
+                <Building2 className="text-primary" size={24} />
+                <h4 className="text-xl font-semibold">{t('expertise.entrepreneurship')}</h4>
+              </div>
+              <p className="text-muted-foreground">
+                {t('expertise.entrepreneurship_desc')}
+              </p>
+            </Card>
           </div>
         </div>
 

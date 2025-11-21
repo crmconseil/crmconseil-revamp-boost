@@ -66,6 +66,13 @@ export const HeroSection = () => {
               <span className="text-white font-medium">{t('hero.sustainable_development')}</span>
             </div>
           </div>
+          
+          {/* Location Tag */}
+          {language === 'fr' && (
+            <p className="text-xs sm:text-sm text-white/70 mt-4 max-w-2xl mx-auto">
+              {t('hero.location_tag')}
+            </p>
+          )}
         </header>
       </div>
 
