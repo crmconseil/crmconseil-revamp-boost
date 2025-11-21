@@ -2,13 +2,13 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://crmconseil.com/sitemap.xml
+Sitemap: https://www.crmconseil.com/sitemap.xml
 
-# Disallow admin areas (if any in the future)
+# Disallow admin areas
 Disallow: /admin/
 Disallow: /private/
 
-# Allow all CSS, JS, and image files
+# Allow all CSS, JS, and image files for proper rendering
 Allow: /assets/
 Allow: /*.css
 Allow: /*.js
@@ -19,5 +19,27 @@ Allow: /*.gif
 Allow: /*.svg
 Allow: /*.webp
 
-# Crawl-delay (optional, adjust as needed)
+# Crawl-delay for respectful crawling
 Crawl-delay: 1
+
+# Specific user agents optimization
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block common bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
