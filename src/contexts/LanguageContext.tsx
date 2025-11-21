@@ -402,7 +402,7 @@ const translations = {
     'services.discover_services': 'Discover Our Expertise in Commercial Optimization & Sustainable Development',
     'services.commercial_optimization_missions': 'Commercial Optimization & Business Development',
     'services.rse_support_bilans': 'CSR Strategy & GHG Assessment',
-    'services.commercial_intro_1': 'Our commercial optimization expertise helps startups and SMEs accelerate their business development through proven lead generation strategies and performance enhancement methodologies.',
+    'services.commercial_intro_1': 'Less than 40% of salespeople\'s time is dedicated to selling. CRM Conseil helps startups and SMEs eliminate bottlenecks, reduce their sales cycle, and maximize their commercial efficiency. Simplify your tools, perfect your pitches and prospect qualification, and achieve sustainable results.',
     'services.commercial_intro_2': 'We combine traditional commercial excellence with sustainable development principles to create lasting competitive advantages and measurable performance improvements.',
     'services.process_optimization_title': 'Commercial Process & Materials Optimization',
     'services.process_optimization_desc': 'Analysis and restructuring of your sales processes and materials, sales cycle improvement, support during strategic client meetings, optimization of lead and opportunity qualification to maximize your commercial efficiency.',
