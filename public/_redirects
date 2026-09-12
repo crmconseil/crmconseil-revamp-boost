@@ -1,3 +1,10 @@
+# Redirection des domaines secondaires vers relyumpartner.com
+https://crmconseil.com/*      https://relyumpartner.com/:splat   301!
+https://www.crmconseil.com/*  https://relyumpartner.com/:splat   301!
+https://relyumpartner.fr/*    https://relyumpartner.com/:splat   301!
+https://crmconseil.eu/*       https://relyumpartner.com/:splat   301!
+https://crmconseil.fr/*       https://relyumpartner.com/:splat   301!
+
 # Redirects for SPA
 /*    /index.html   200
 
